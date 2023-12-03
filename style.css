@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'SuisseIntl';
+    font-weight: 300;
+    src: url('./src/assets/fonts/SuisseIntl-Light.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'SuisseIntl';
+    font-weight: 400;
+    src: url('./src/assets/fonts/SuisseIntl-Medium.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'SuisseIntl';
+    font-weight: 500;
+    src: url('./src/assets/fonts/SuisseIntl-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'SuisseIntl';
+    font-weight: 600;
+    src: url('./src/assets/fonts/SuisseIntl-SemiBold.ttf') format('ttf');
+}
+
+body {
+    font-family: 'SuisseIntl', sans-serif;
+}
+
+/* scroll-bar */
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background-color: #d9d9d9;
+    border: 3px solid transparent;
+    background-clip: content-box;
+}
