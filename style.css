@@ -1,19 +1,19 @@
 @font-face {
     font-family: 'SuisseIntl';
     font-weight: 300;
-    src: url('./src/assets/fonts/SuisseIntl-Light.ttf') format('ttf');
+    src: url('./src/assets/fonts/SuisseIntl-Light.woff') format('woff');
 }
 
 @font-face {
     font-family: 'SuisseIntl';
     font-weight: 400;
-    src: url('./src/assets/fonts/SuisseIntl-Medium.ttf') format('ttf');
+    src: url('./src/assets/fonts/SuisseIntl-Regular.woff') format('woff');
 }
 
 @font-face {
     font-family: 'SuisseIntl';
     font-weight: 500;
-    src: url('./src/assets/fonts/SuisseIntl-Regular.ttf') format('ttf');
+    src: url('./src/assets/fonts/SuisseIntl-Medium.woff') format('woff');
 }
 
 @font-face {
