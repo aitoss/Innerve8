@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        'secondColor': '#DD6843',
+        'minuteColor': '#F5AEDD',
+        'hourColor': '#61D290',
+        'dayColor': '#61D290',
+      },
+    },
   },
   plugins: [],
 }
