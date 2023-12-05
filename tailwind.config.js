@@ -13,6 +13,9 @@ export default {
         'dayColor': '#61D290',
       },
     },
+    // fontSize: {
+    //   'innerveSize':'15rem'
+    // }
   },
   plugins: [],
 }
