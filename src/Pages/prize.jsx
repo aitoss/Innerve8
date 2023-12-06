@@ -31,7 +31,7 @@ const StackedCards = () => {
     return (
         <div className="flex py-6 justify-center items-center">
             <motion.div
-                whileHover={{ y: -35, x: -300, rotate: 0 }}
+                whileHover={{ y: -35, x: -215, rotate: 0 }}
                 initial={{ rotate: -15, y: -10, x: -40 }}
                 className="m-2 relative z-2"
             >
@@ -47,7 +47,7 @@ const StackedCards = () => {
             </motion.div>
 
             <motion.div
-                whileHover={{ y: -35, x: 300, rotate: 0 }}
+                whileHover={{ y: -35, x: 215, rotate: 0 }}
                 initial={{ rotate: 15, y: -10, x: 40 }}
                 className="m-2 relative z-2"
             >
