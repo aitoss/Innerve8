@@ -72,7 +72,7 @@ const StackedCards = () => {
             <motion.div
                 initial={{ rotate: 0, y: -60, x: 0 }}
                 // whileHover={{ y: -60, rotate: 0 }}
-                className="m-2 absolute z-50"
+                className="m-2 absolute z-30"
             >
                 <Card color="bg-gradient-to-t from-[#FDDE56] via-[#FFEA8C] to-[#FDF0B7]"
                     textColor="text-[hsla(0,0%,13%,90%)]"
