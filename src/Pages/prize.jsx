@@ -18,7 +18,7 @@ const DummyBanner = () => {
         <div className=" absolute top-10 left-0 right-0 overflow-hidden">
             <motion.div
                 animate={{ x: "-100%" }}
-                transition={{ repeat: Infinity, duration: 1000, ease: "linear" }}
+                transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
                 className="text-[#787470] text-5xl font-medium "
             >
                 <div className="flex gap-4 items-center justify-center">
