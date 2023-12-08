@@ -1,0 +1,131 @@
+
+
+.content h1 {
+  position: absolute;
+  /* color:black; */
+  transform: translate(-50%, -35%);
+  z-index: 1000;
+  font-size: 28rem;
+  font-weight: 900;
+}
+
+.content h1:nth-child(1){
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+}
+
+.content h1:nth-child(3){
+    color: transparent;
+    -webkit-text-stroke: 0 black;
+}
+
+.content h1:nth-child(2) {
+  color: rgba(253 , 222 , 86 ,1);
+  /* color:black; */
+  animation: animate 3s ease-in-out infinite;
+}
+
+.content h1:nth-child(3) {
+    color: rgba(201 , 127 , 176 ,1);
+    /* color:black; */
+    animation: animate1 6s ease-in-out infinite;
+  }
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      15% 44%,
+      32% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+        0% 60%,
+        16% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%
+      );
+  }
+}
+
+@keyframes animate1 {
+    0%,
+    100% {
+      clip-path: polygon(
+        0% 60%,
+        16% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%
+      );
+    }
+    50% {
+      clip-path: polygon(
+        0% 45%,
+        15% 44%,
+        32% 50%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%
+        );
+    }
+  }
+
+
+  @media screen and (max-width: 1440px) {
+    .content h1 {
+        font-size: 22rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .content h1 {
+        font-size: 16rem;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .content h1 {
+        font-size: 14rem;
+    }
+}
+@media screen and (max-width: 750px) {
+    .content h1 {
+        font-size: 11rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .content h1 {
+        font-size: 8rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    .content h1 {
+        font-size: 6rem;
+    }
+}
+@media screen and (max-width: 350px) {
+    .content h1 {
+        font-size: 4rem;
+    }
+}
