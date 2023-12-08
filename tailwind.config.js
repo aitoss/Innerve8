@@ -7,10 +7,10 @@ export default {
   theme: {
     extend: {
       colors:{
-        'secondColor': '#DD6843',
+        'secondColor': '#DF6E47',
         'minuteColor': '#F5AEDD',
-        'hourColor': '#61D290',
-        'dayColor': '#61D290',
+        'hourColor': '#90C280',
+        'dayColor': '#FDDE56',
       },
     },
     // fontSize: {
