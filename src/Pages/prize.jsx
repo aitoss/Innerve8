@@ -5,7 +5,7 @@ const Prize = () => {
     return (
         <div className="relative w-screen bg-[#212121] h-screen overflow-hidden">
             <DummyBanner />
-            <div className="w-screen pt-40 flex-col items-center h-full">
+            <div className="w-screen pt-40  flex-col items-center h-full">
                 <StackedCards />
                 <Heading />
             </div>
@@ -59,7 +59,7 @@ const StackedCards = () => {
 
 const Heading = () => {
     return (
-        <div className="text-center tracking-[8px] font-medium text-[200px] sticky -z-1 text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
+        <div className="text-center tracking-[8px] font-medium text-[200px] bottom-0 -z-1 text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
             <motion.div
                 className=""
             >
