@@ -58,8 +58,8 @@ const StackedCards = () => {
     return (
         <div className="flex py-6 justify-center items-center">
             <motion.div
-                initial={{ x: -40, y: 0, rotate: -15 }}
-                whileHover={{ x: -230, y: -60, rotate: 0 }}
+                initial={{ x: 60, y: 0, rotate: -5 }}
+                whileHover={{ x: -100, y: -60, rotate: 0 }}
                 className="m-2 relative z-10"
             >
                 <Card color="bg-gradient-to-t from-[#8FB781] via-[#90C280] to-[#C1D29D]"
@@ -72,7 +72,7 @@ const StackedCards = () => {
             <motion.div
                 initial={{ rotate: 0, y: -60, x: 0 }}
                 // whileHover={{ y: -60, rotate: 0 }}
-                className="m-2 absolute z-30"
+                className="m-2 relative z-30"
             >
                 <Card color="bg-gradient-to-t from-[#FDDE56] via-[#FFEA8C] to-[#FDF0B7]"
                     textColor="text-[hsla(0,0%,13%,90%)]"

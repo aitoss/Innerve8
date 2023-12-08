@@ -5,6 +5,7 @@ import Prize from './Pages/prize.jsx'
 import Tracks from './Pages/tracks.jsx'
 import Noise from "/src/assets/images/White-noise.gif";
 import './Components/noise.css'
+import Timeline from './Pages/timeline.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,9 @@ function App() {
       <Home />
       <Prize  />
       <Tracks  />
+      <Timeline />
+      <Timeline />
+      <Timeline />
     </>
   )
 }
