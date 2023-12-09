@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTransform, useScroll } from 'framer-motion';
 import { useRef } from 'react';
 import { motion } from 'framer-motion';
+import Lenis from '@studio-freight/lenis'
 
 const Testimonial = () => {
     const container = useRef(null);
@@ -9,13 +10,25 @@ const Testimonial = () => {
         target: container,
         offset: ['start end', 'end start']
     });
-    const y = useTransform(scrollYProgress, [0, 1], [10, 500]);
+    const y = useTransform(scrollYProgress, [0, 1], [1, 1000]);
     const images = [
         "1.jpg",
         "2.jpg",
         "3.jpg",
         "4.jpg",
     ];
+
+    useEffect(() => {
+        const lenis = new Lenis()
+
+        
+        function raf(time) {
+          lenis.raf(time)
+          requestAnimationFrame(raf)
+        }
+        
+        requestAnimationFrame(raf)
+    }, [])
 
     return (
         <>

@@ -13,6 +13,7 @@
     "@react-three/drei": "^9.90.1",
     "@react-three/fiber": "^8.15.12",
     "@react-three/flex": "^1.0.1",
+    "@studio-freight/lenis": "^1.0.29",
     "@types/three": "^0.159.0",
     "framer-motion": "^10.16.15",
     "leva": "^0.9.35",
