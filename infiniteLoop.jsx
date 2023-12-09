@@ -5,7 +5,7 @@ import { Flex } from "@react-three/flex";
 
 export default function Infinity(scale) {
   const ref = useRef();
-  const modelPath = "model/infinity.glb";
+  const modelPath = "./model/infinity.glb";
   const { nodes, animations } = useGLTF(modelPath);
   const { actions } = useAnimations(animations, ref);
 
