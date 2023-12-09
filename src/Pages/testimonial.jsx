@@ -35,7 +35,7 @@ const Testimonial = () => {
 
     return (
         <>
-            <section className="bg-[#121212]">
+            <section className="bg-[#121212] ">
                 <div className="flex justify-center relative top-[450px] z-30 py-8 text-7xl items-center">Connect with Code - Cultivate Growth
                 </div>
                 <div

@@ -10,6 +10,7 @@ import Testimonial from './Pages/testimonial.jsx'
 import Dates from './Pages/dates.jsx'
 import Sponsor from './Pages/sponsor.jsx'
 import Bannercard from './Pages/bannercard.jsx'
+import Footer from './Pages/footer.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -27,6 +28,7 @@ function App() {
       <Testimonial/>
       <Sponsor/>
       <Bannercard/>
+      <Footer/>
     </>
   )
 }
