@@ -11,13 +11,13 @@ const Tracks = () => {
                     <Slider text={['EdTech', 'GameDev', 'Logistics', 'Web3.0', 'Healthcare', 'XR','FinTech','Blockchain']} />
                 </div>
                 <div className="flex pt-[6vh] flex-wrap gap-20 justify-center px-[20%] z-10">
-                    <Track />
-                    <Track />
-                    <Track />
-                    <Track />
-                    <Track />
-                    <Track />
-                    <Track />
+                    <Track title="EdTech" img="src/assets/images/Vector.svg"/>
+                    <Track title="Logistics"/>
+                    <Track title="GameDev"/>
+                    <Track title="XR"/>
+                    <Track title="Web3.0"/>
+                    <Track title="Healthcare"/>
+                    <Track title="FinTech"/>
                 </div>
                 <div className="pt-[10vh] z-[0]">
                 <Heading />
@@ -27,14 +27,20 @@ const Tracks = () => {
     )
 }
 
-const Track = () => {
+const Track = ({title, img}) => {
     return(
         <>
             <div className="flex flex-col align-middle items-center">
-            <div className="w-[200px] h-[200px] rounded-full bg-[#D9D9D9] flex-shrink-0">
+            <div className="w-[175px] h-[175px] rounded-full bg-[#D9D9D9] flex-shrink-0 flex justify-center relative">
+                <motion.div
+                initial={{ scale: 0.2 }}
+                animate={{ scale: 1 }}
+                >
+                <img src={img} alt="" style={{padding: '20%', justifyContent: 'center', paddingTop: '30%'}}/>
+                </motion.div>
             </div>
             <div className="text-4xl text-[#212121]">
-                Text
+                {title}
             </div>
             </div>
         </>
