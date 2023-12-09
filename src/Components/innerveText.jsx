@@ -2,6 +2,7 @@ import React from "react";
 import InnText from "../assets/images/innText.svg";
 import "../Components/innerveTextStyles.css";
 
+import '../../style.css'
 export default function InnerveText() {
   return (
     <div className="content">

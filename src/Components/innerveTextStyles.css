@@ -1,3 +1,5 @@
+
+
 .content h1 {
   position: absolute;
   /* color:black; */
@@ -7,6 +9,8 @@
   font-weight: 900;
   font-family: 'SuisseIntl', sans-serif;
 }
+
+
 
 .content h1:nth-child(1) {
   color: transparent;

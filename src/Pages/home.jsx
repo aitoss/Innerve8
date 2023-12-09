@@ -4,7 +4,6 @@ import Dots from "/src/assets/images/dots.svg";
 import Timer from "../Components/timer.jsx";
 import InnerveText from "../Components/innerveText.jsx";
 import Devfolio from "../Components/devfolio.jsx";
-
 export default function Home() {
   React.useEffect(() => {
     const script = document.createElement('script');
