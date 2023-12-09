@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import { motion } from 'framer-motion';
 import Lenis from '@studio-freight/lenis'
 
+
 const Testimonial = () => {
     const container = useRef(null);
     const { scrollYProgress } = useScroll({
@@ -11,6 +12,9 @@ const Testimonial = () => {
         offset: ['start end', 'end start']
     });
     const y = useTransform(scrollYProgress, [0, 1], [1, 1000]);
+    const y2 = useTransform(scrollYProgress, [0, 1], [1, 500]);
+    const y3 = useTransform(scrollYProgress, [0, 1], [1, -1000]);
+    const y4 = useTransform(scrollYProgress, [0, 1], [1, -400]);
     const images = [
         "1.jpg",
         "2.jpg",
@@ -32,17 +36,18 @@ const Testimonial = () => {
 
     return (
         <>
-            <section>
-                <div className="spacer h-[100vh]"></div>
+            <section className="bg-slate-950">
+            <div className="flex justify-center items-center h-screen z-50">CODE CONNECT GROW</div>
+
                 <div
                     ref={container}
-                    className="gallery overflow-hidden h-full bg-slate-950 flex flex-row gap-[2vw] p-[2vw] border-box"
+                    className="gallery overflow-hidden h-full bg-slate-950  flex flex-row gap-[2vw] p-[2vw] border-box"
                     style={{ y }}
                 >
-                    <Column className="w-[25%] h-[50%] flex flex-col gap-[2vw] min-w-[250px]" images={[images[0], images[1], images[2]]} y={y} />
-                    <Column className="w-[25%] h-[50%] flex flex-col gap-[2vw] min-w-[250px]" images={[images[1], images[0], images[2]]} />
-                    <Column className="w-[25%] h-[50%] flex flex-col gap-[2vw] min-w-[250px]" images={[images[2], images[0], images[2]]} />
-                    <Column className="w-[25%] h-[50%] flex flex-col gap-[2vw] min-w-[250px]" images={[images[1], images[2], images[2]]} />
+                    <Column className="w-[25%] h-[50%] relative flex -top-[10%] flex-col gap-[2vw] min-w-[250px]" images={[images[0], images[1], images[2]]} y={y} />
+                    <Column className="w-[25%] h-[50%] flex -top-[75%] flex-col gap-[2vw] min-w-[250px]" images={[images[1], images[0], images[2]]} y={y2} />
+                    <Column className="w-[25%] h-[50%] flex flex-col gap-[2vw] min-w-[250px]" images={[images[2], images[0], images[2]]} y={y3} />
+                    <Column className="w-[25%] h-[50%] flex flex-col gap-[2vw] min-w-[250px]" images={[images[1], images[2], images[2]]} y={y4} />
                 </div>
                 <div className="spacer h-[100vh]"></div>
             </section>
@@ -52,7 +57,7 @@ const Testimonial = () => {
 
 const Column = ({ images, y=0 }) => {
     return (
-        <motion.div style={{y}} className="w-[25%] h-[50%] flex flex-col gap-[2vw] min-w-[250px]">
+        <motion.div style={{y}} className="w-[25%] h-[50%] relative flex flex-col gap-[2vw] min-w-[250px]">
             {images.map(
                 (src, index) => {
                     return (
