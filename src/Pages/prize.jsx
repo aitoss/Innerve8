@@ -55,15 +55,14 @@ const DummyBanner = () => {
 };
 
 const StackedCards = () => {
-    const { scrollY } = useScroll();
     return (
         <motion.div 
         initial={{ }}
         whileHover={{}}
         className="flex py-6 justify-center items-center">
             <motion.div
-                initial={{ x: -40 , y: -20 , rotate: -15 }}
-                whileHover={{ x: -230, y: -60, rotate: 0 }}
+                initial={{ x: 65 , y: -30 , rotate: -10 }}
+                whileHover={{ x: -15, y: -60, rotate: 0 }}
                 className="m-2 relative z-10"
             >
                 <Card color="bg-gradient-to-t from-[#8FB781] via-[#90C280] to-[#C1D29D]"
@@ -87,8 +86,8 @@ const StackedCards = () => {
             </motion.div>
 
             <motion.div
-                initial={{ x: 40, y: 0, rotate: 15 }}
-                whileHover={{ x: 230, y: -60, rotate: 0 }}
+                initial={{ x: -65, y: -30, rotate: 10 }}
+                whileHover={{ x: 15, y: -60, rotate: 0 }}
                 className="m-2 relative z-20"
             >
                 <Card color="bg-gradient-to-t from-[#C97FB0] via-[#F27CCA] to-[#F5AEDD]"
