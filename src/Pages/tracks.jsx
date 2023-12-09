@@ -1,108 +1,56 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"; 
+import Marquee from "react-fast-marquee";
+import Slider from "../Components/slider";
 
 const Tracks = () => {
     return(
         <>
-            <div className="relative w-screen h-screen overflow-hidden bg-[#212121]">
-            <div className="text-center pt-[6%] text-7xl text-[#F9F0E7]">
-            Projects on various Tracks
+            <div className="h-screen w-screen overflow-hidden bg-[#F9F0E7] max-w-[1920px] justify-center">
+                <div className="w-full h-fit flex-col pt-10">
+                    <Slider text={['EdTech', 'GameDev', 'Logistics', 'Web3.0', 'Healthcare', 'XR','FinTech','Blockchain']} />
+                </div>
+                <div className="flex pt-[6vh] flex-wrap gap-20 justify-center px-[20%] z-10">
+                    <Track />
+                    <Track />
+                    <Track />
+                    <Track />
+                    <Track />
+                    <Track />
+                    <Track />
+                </div>
+                <div className="pt-[10vh] z-[0]">
+                <Heading />
+                </div>
             </div>
-            <div className="pl-[5%]">
-            <div className="w-full absolute translate-x-[-3%] translate-y-[15vh] flex-col items-center h-full z-0">
-            <EdCard />
+        </>
+    )
+}
+
+const Track = () => {
+    return(
+        <>
+            <div className="flex flex-col align-middle items-center">
+            <div className="w-[200px] h-[200px] rounded-full bg-[#D9D9D9] flex-shrink-0">
             </div>
-            <div className="w-full absolute translate-x-[12%] translate-y-[28vh] flex-col items-center h-full z-1">
-                <W3Card />
-            </div>
-            <div className="w-full absolute translate-x-[28%] translate-y-[12vh] flex-col items-center h-full z-2">
-                <HCard />
-            </div>
-            <div className="w-full absolute translate-x-[46%] translate-y-[25vh] flex-col items-center h-full z-3">
-                <CCard />
-            </div>
-            <div className="w-full absolute translate-x-[62%] translate-y-[10vh] flex-col items-center h-full z-0">
-                <LCard />
+            <div className="text-4xl text-[#212121]">
+                Text
             </div>
             </div>
+        </>
+    )
+}
+
+const Heading = () => {
+    return (
+        <div className="text-center tracking-[8px] font-medium text-[200px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
+            <motion.div
+                className=" translate-y-[-120px] tracking-tight text-transparent bg-clip-text bg-gradient-to-t from-[#372F2F] to-[#FFFFFF] whitespace-nowrap"
+            >
+                Tracks
+            </motion.div>
         </div>
-        </>
-    )
-}
+    );
+};
 
-const EdCard = () =>
-{
-    return(
-        <>
-        <motion.div
-         className="w-[400px] h-[300px] ml-[5%] rounded-3xl backdrop-blur-xl bg-[#F9F0E7] shadow-xl rotate-[15deg]"
-        >
-            <div className="relative pt-[10%] text-center text-[#6B6B70] text-5xl">
-            EdTech
-            </div>
-        </motion.div>
-        </>
-    )
-}
-
-const W3Card = () =>
-{
-    return(
-        <>
-        <motion.div
-         className="w-[400px] h-[300px] ml-[5%] rounded-3xl backdrop-blur-lg bg-[#F9F0E7] shadow-2xl rotate-[-6deg]"
-        >
-            <div className="relative pt-[10%] text-center text-[#6B6B70] text-5xl">
-            Web 3.0
-            </div>
-        </motion.div>
-        </>
-    )
-}
-
-const HCard = () =>
-{
-    return(
-        <>
-        <motion.div
-         className="w-[400px] h-[300px] ml-[5%] rounded-3xl backdrop-blur-lg bg-[#F9F0E7] shadow-xl rotate-[-15deg]"
-        >
-            <div className="relative pt-[10%] text-center text-[#6B6B70] text-5xl">
-            Healthcare
-            </div>
-        </motion.div>
-        </>
-    )
-}
-
-const CCard = () =>
-{
-    return(
-        <>
-        <motion.div
-         className="w-[400px] h-[300px] ml-[5%] rounded-3xl backdrop-blur-lg bg-[#F9F0E7] shadow-xl rotate-[4deg]"
-        >
-            <div className="relative pt-[10%] text-center text-[#6B6B70] text-5xl">
-            Cybersec
-            </div>
-        </motion.div>
-        </>
-    )
-}
-
-const LCard = () =>
-{
-    return(
-        <>
-        <motion.div
-         className="w-[400px] h-[300px] ml-[5%] rounded-3xl backdrop-blur-lg bg-[#F9F0E7] shadow-xl rotate-[-10deg]"
-        >
-            <div className="relative pt-[10%] text-center text-[#6B6B70] text-5xl">
-                Logistics
-            </div>
-        </motion.div>
-        </>
-    )
-}
-
-export default Tracks
+export default Tracks;
