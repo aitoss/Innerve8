@@ -1,15 +1,28 @@
 import React from 'react'
 import { motion } from "framer-motion";
+import udchalo from "../assets/images/udchalo.png"
+import accops from "../assets/images/accops.png"
+import byte from "../assets/images/byte.png"
+import mro from "../assets/images/mro.png"
 
 const Sponsor = () => {
   return (
     <>
      <DummyBanner/>
-    <section className="h-[100vh] flex flex-col justify-center items-center ">
+    <section className=" p-4 flex flex-col mt-[60px] justify-center items-center ">
    
-    <Heading title="Title Sponsor" />
-    <Heading title="Platinum Sposor" />
-    <Heading title="Gold Sponsor" />
+    <Heading title="{Title Sponsor}" />
+    <SponsorLogos logoCount={4} />
+    <SponsorLogos logoCount={2} />
+    <Heading title="{Platinum Sposor}" />
+    <SponsorLogos logoCount={4} />
+    <SponsorLogos logoCount={2} />
+    <Heading title="{Gold Sponsor}" />
+    <SponsorLogos logoCount={4} />
+    <SponsorLogos logoCount={3} />
+    <Heading title="{Co Sponsor}" />
+    <SponsorLogos logoCount={4} />
+    <SponsorLogos logoCount={3} />
         </section>
     </>
   )
@@ -58,7 +71,7 @@ const DummyBanner = () => {
 
 const Heading = ({ title }) => {
     return (
-        <div className="text-center flex justify-center items-center font-medium text-[36px] text-black whitespace-nowrap">
+        <div className="text-center flex  mt-14 font-medium text-[36px] text-black whitespace-nowrap">
             <motion.div className="tracking-tight ttext-black bg-clip-text whitespace-nowrap">
                 {title}
             </motion.div>
@@ -66,7 +79,21 @@ const Heading = ({ title }) => {
     );
 };
 
+const SponsorLogos = ({ logoCount }) => {
+    const sponsorLogos = [udchalo, byte, mro, accops].slice(0, logoCount);
 
-
+    return (
+        <div className="flex justify-center items-center space-x-8 mt-8">
+            {sponsorLogos.map((logo, idx) => (
+                <img
+                    key={idx}
+                    src={logo}
+                    alt={`Sponsor Logo ${idx + 1}`}
+                    className="max-h-16 max-w-16"
+                />
+            ))}
+        </div>
+    );
+};
 
 export default Sponsor
