@@ -5,7 +5,7 @@ import { Flex } from "@react-three/flex";
 
 export default function Infinity(scale) {
   const ref = useRef();
-  const modelPath = "model/infinity.glb";
+  const modelPath = "model/infinity1.glb";
   const { nodes, animations } = useGLTF(modelPath);
   const { actions } = useAnimations(animations, ref);
 
@@ -23,8 +23,8 @@ export default function Infinity(scale) {
         <primitive
           object={nodes.Scene}
           scale={scale.scale.scale}
-          rotation={[0.0, -0.05, 0]}
-          position={[0, -1 * scale.scale.position, 0]}
+          rotation={[0.0, 0, 0]}
+          position={[0, 0, 0]}
           ref={ref}
         />
       </Flex>

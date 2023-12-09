@@ -6,8 +6,9 @@ import Tracks from './Pages/tracks.jsx'
 import Noise from "/src/assets/images/white-noise.gif";
 import './Components/noise.css'
 import Timeline from './Pages/timeline.jsx'
-import Threejs from './Pages/threejs.jsx'
+import Threejs from './Components/threejs.jsx'
 import Testimonial from './Pages/testimonial.jsx'
+import Dates from './Pages/dates.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,7 +17,7 @@ function App() {
     <>
       <div className="noise"></div>
       <Home />
-      <Threejs />
+      <Dates />
       <Prize  />
       <Tracks  />
       <Timeline />
