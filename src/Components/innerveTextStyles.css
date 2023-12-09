@@ -5,6 +5,7 @@
   z-index: 1000;
   font-size: 25rem;
   font-weight: 900;
+  font-family: 'SuisseIntl', sans-serif;
 }
 
 .content h1:nth-child(1) {
