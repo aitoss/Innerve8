@@ -9,6 +9,7 @@ import Threejs from './Components/threejs.jsx'
 import Testimonial from './Pages/testimonial.jsx'
 import Dates from './Pages/dates.jsx'
 import Sponsor from './Pages/sponsor.jsx'
+import Bannercard from './Pages/bannercard.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,6 +26,7 @@ function App() {
       <Timeline />
       <Testimonial/>
       <Sponsor/>
+      <Bannercard/>
     </>
   )
 }
