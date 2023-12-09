@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const Testimonial = () => {
     const container = useRef(null);
     const { scrollYProgress } = useScroll({
-        target: () => container.current,
+        target: container,
         offset: ['start end', 'end start']
     });
     const y = useTransform(scrollYProgress, [0, 1], [10, 500]);
