@@ -10,9 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "framer-motion": "^10.16.12",
+    "@react-three/drei": "^9.90.1",
+    "@react-three/fiber": "^8.15.12",
+    "@react-three/flex": "^1.0.1",
+    "@studio-freight/lenis": "^1.0.29",
+    "@types/three": "^0.159.0",
+    "framer-motion": "^10.16.15",
+    "leva": "^0.9.35",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "three": "^0.159.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.37",
@@ -24,6 +31,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
     "postcss": "^8.4.32",
+    "sass": "^1.69.5",
     "tailwindcss": "^3.3.5",
     "vite": "^5.0.0"
   }

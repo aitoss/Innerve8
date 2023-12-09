@@ -5,7 +5,7 @@ const Prize = () => {
     return (
         <div className="relative w-screen bg-[#212121] h-screen overflow-hidden">
             <DummyBanner />
-            <div className="w-screen pt-40 flex-col items-center h-full">
+            <div className="w-screen pt-40  flex-col items-center h-full">
                 <StackedCards />
                 <Heading />
             </div>
@@ -56,10 +56,13 @@ const DummyBanner = () => {
 
 const StackedCards = () => {
     return (
-        <div className="flex py-6 justify-center items-center">
+        <motion.div 
+        initial={{ }}
+        whileHover={{}}
+        className="flex py-6 justify-center items-center">
             <motion.div
-                initial={{ x: -40, y: 0, rotate: -15 }}
-                whileHover={{ x: -230, y: -60, rotate: 0 }}
+                initial={{ x: 65 , y: -30 , rotate: -10 }}
+                whileHover={{ x: -15, y: -60, rotate: 0 }}
                 className="m-2 relative z-10"
             >
                 <Card color="bg-gradient-to-t from-[#8FB781] via-[#90C280] to-[#C1D29D]"
@@ -72,7 +75,7 @@ const StackedCards = () => {
             <motion.div
                 initial={{ rotate: 0, y: -60, x: 0 }}
                 // whileHover={{ y: -60, rotate: 0 }}
-                className="m-2 absolute z-30"
+                className="m-2 relative z-30"
             >
                 <Card color="bg-gradient-to-t from-[#FDDE56] via-[#FFEA8C] to-[#FDF0B7]"
                     textColor="text-[hsla(0,0%,13%,90%)]"
@@ -83,8 +86,8 @@ const StackedCards = () => {
             </motion.div>
 
             <motion.div
-                initial={{ x: 40, y: 0, rotate: 15 }}
-                whileHover={{ x: 230, y: -60, rotate: 0 }}
+                initial={{ x: -65, y: -30, rotate: 10 }}
+                whileHover={{ x: 15, y: -60, rotate: 0 }}
                 className="m-2 relative z-20"
             >
                 <Card color="bg-gradient-to-t from-[#C97FB0] via-[#F27CCA] to-[#F5AEDD]"
@@ -94,7 +97,7 @@ const StackedCards = () => {
 
                 />
             </motion.div>
-        </div>
+        </motion.div>
     );
 };
 
