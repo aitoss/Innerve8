@@ -1,12 +1,12 @@
 .noise {
+    /* position: fixed; */
     width: 100%;
     height: 100vh;
     position: fixed;
     background-image: url('../images/white-noise.gif');
-    background-repeat: repeat;
+    /* background-repeat: no-repeat; */
     mix-blend-mode: soft-light;
-    opacity: 15%;
+    opacity: 10%;
     z-index: 100000;
     pointer-events: none;
-
 }

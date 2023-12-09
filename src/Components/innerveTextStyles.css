@@ -3,87 +3,43 @@
   /* color:black; */
   transform: translate(-50%, -50%);
   z-index: 1000;
-  font-size: 28rem;
+  font-size: 25rem;
   font-weight: 900;
 }
 
-.content h1:nth-child(1){
+.content h1:nth-child(1) {
   color: transparent;
   /* -webkit-text-stroke: 2px black; */
-  -webkit-text-fill-color: transparent; /* Make the text transparent */
-      -webkit-text-stroke: 2px linear-gradient(to right, #ff0000, #00ff00, #0000ff);
-      text-fill-color: transparent; /* Make the text transparent */
-      text-stroke: 2px linear-gradient(to right, #ff0000, #00ff00, #0000ff);
-      
-  
+  background: -webkit-linear-gradient(90deg, #5a5a5a, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 4px transparent;
+  color: #F9F0E7;
+
 }
 
-.content h1:nth-child(3){
-    color: transparent;
-    -webkit-text-stroke: 0 black;
-    
+.content h1:nth-child(3) {
+  color: transparent;
+  -webkit-text-stroke: 0 black;
+
 }
 
 .content h1:nth-child(2) {
-  color: rgba(253 , 222 , 86 ,1);
+  color: rgba(253, 222, 86, 1);
   /* color:black; */
   animation: animate 3s ease-in-out infinite;
 }
 
 .content h1:nth-child(3) {
-    color: rgba(201 , 127 , 176 ,1);
-    /* color:black; */
-    animation: animate1 6s ease-in-out infinite;
-  }
-
-@keyframes animate {
-  0%,
-  100% {
-    clip-path: polygon(
-      0% 45%,
-      15% 44%,
-      32% 50%,
-      54% 60%,
-      70% 61%,
-      84% 59%,
-      100% 52%,
-      100% 100%,
-      0% 100%
-    );
-  }
-  50% {
-    clip-path: polygon(
-        0% 60%,
-        16% 65%,
-        34% 66%,
-        51% 62%,
-        67% 50%,
-        84% 45%,
-        100% 46%,
-        100% 100%,
-        0% 100%
-      );
-  }
+  color: rgba(201, 127, 176, 1);
+  /* color:black; */
+  animation: animate1 6s ease-in-out infinite;
 }
 
-@keyframes animate1 {
-    0%,
-    100% {
-      clip-path: polygon(
-        0% 60%,
-        16% 65%,
-        34% 66%,
-        51% 62%,
-        67% 50%,
-        84% 45%,
-        100% 46%,
-        100% 100%,
-        0% 100%
-      );
-    }
-    50% {
-      clip-path: polygon(
-        0% 45%,
+@keyframes animate {
+
+  0%,
+  100% {
+    clip-path: polygon(0% 45%,
         15% 44%,
         32% 50%,
         54% 60%,
@@ -91,46 +47,89 @@
         84% 59%,
         100% 52%,
         100% 100%,
-        0% 100%
-        );
-    }
+        0% 100%);
   }
 
+  50% {
+    clip-path: polygon(0% 60%,
+        16% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%);
+  }
+}
 
-  @media screen and (max-width: 1440px) {
-    .content h1 {
-        font-size: 22rem;
-    }
+@keyframes animate1 {
+
+  0%,
+  100% {
+    clip-path: polygon(0% 60%,
+        16% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%);
+  }
+
+  50% {
+    clip-path: polygon(0% 45%,
+        15% 44%,
+        32% 50%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%);
+  }
+}
+
+
+@media screen and (max-width: 1440px) {
+  .content h1 {
+    font-size: 22rem;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-    .content h1 {
-        font-size: 16rem;
-    }
+  .content h1 {
+    font-size: 16rem;
+  }
 }
 
 @media screen and (max-width: 860px) {
-    .content h1 {
-        font-size: 14rem;
-    }
+  .content h1 {
+    font-size: 14rem;
+  }
 }
+
 @media screen and (max-width: 750px) {
-    .content h1 {
-        font-size: 11rem;
-    }
+  .content h1 {
+    font-size: 11rem;
+  }
 }
+
 @media screen and (max-width: 600px) {
-    .content h1 {
-        font-size: 8rem;
-    }
+  .content h1 {
+    font-size: 8rem;
+  }
 }
+
 @media screen and (max-width: 450px) {
-    .content h1 {
-        font-size: 6rem;
-    }
+  .content h1 {
+    font-size: 6rem;
+  }
 }
+
 @media screen and (max-width: 350px) {
-    .content h1 {
-        font-size: 4rem;
-    }
+  .content h1 {
+    font-size: 4rem;
+  }
 }

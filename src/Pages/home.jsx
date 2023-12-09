@@ -38,7 +38,7 @@ export default function Home() {
           <InnerveText />
         </div>
         <div className="absolute w-full flex justify-center overflow-hidden -z-1">
-          <img src={Dots} alt="dots" className="scale-110" />
+          <img src={Dots} alt="dots" className="scale-100 opacity-50" />
         </div>
       </div>
     </div>
