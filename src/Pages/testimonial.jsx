@@ -1,41 +1,59 @@
-import React from 'react'
+import React from 'react';
+import { useTransform, useScroll } from 'framer-motion';
+import { useRef } from 'react';
+import { motion } from 'framer-motion';
 
-const testimonial = () => {
+const Testimonial = () => {
+    const container = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: () => container.current,
+        offset: ['start end', 'end start']
+    });
+    const y = useTransform(scrollYProgress, [0, 1], [10, 500]);
     const images = [
         "1.jpg",
         "2.jpg",
         "3.jpg",
         "4.jpg",
-    ]
-  return (
-    <>
-    <section>
+    ];
 
-    </section>
-    </>
-
-  )
-}
-
-const Column = ({images}) => {
     return (
-        <div>
-{
-    images.map(
-        (src, index) => {
-            return <div key={index} className="">
-                <Image
-                src={src}
-                fill
-                alt='image'
-                 />
-            </div>
-        }
-    )
-}
+        <>
+            <section>
+                <div className="spacer h-[100vh]"></div>
+                <div
+                    ref={container}
+                    className="gallery overflow-hidden h-full bg-slate-950 flex flex-row gap-[2vw] p-[2vw] border-box"
+                    style={{ y }}
+                >
+                    <Column className="w-[25%] h-[50%] flex flex-col gap-[2vw] min-w-[250px]" images={[images[0], images[1], images[2]]} y={y} />
+                    <Column className="w-[25%] h-[50%] flex flex-col gap-[2vw] min-w-[250px]" images={[images[1], images[0], images[2]]} />
+                    <Column className="w-[25%] h-[50%] flex flex-col gap-[2vw] min-w-[250px]" images={[images[2], images[0], images[2]]} />
+                    <Column className="w-[25%] h-[50%] flex flex-col gap-[2vw] min-w-[250px]" images={[images[1], images[2], images[2]]} />
+                </div>
+                <div className="spacer h-[100vh]"></div>
+            </section>
+        </>
+    );
+};
 
-        </div>
-    )
-}
+const Column = ({ images, y=0 }) => {
+    return (
+        <motion.div style={{y}} className="w-[25%] h-[50%] flex flex-col gap-[2vw] min-w-[250px]">
+            {images.map(
+                (src, index) => {
+                    return (
+                        <div key={index} className="w-[100%] py-2 rounded-lg overflow-hidden relative  ">
+                            <img className="object-cover"
+                                src={`/images/${src}`} fill
+                                alt='image'
+                            />
+                        </div>
+                    );
+                }
+            )}
+        </motion.div>
+    );
+};
 
-export default testimonial
+export default Testimonial;
