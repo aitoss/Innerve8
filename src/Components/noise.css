@@ -6,6 +6,7 @@
     background-repeat: repeat;
     mix-blend-mode: soft-light;
     opacity: 15%;
-    z-index: 1000000;
+    z-index: 100000;
     pointer-events: none;
+
 }
