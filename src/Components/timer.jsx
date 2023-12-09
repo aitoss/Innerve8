@@ -42,7 +42,7 @@ export default function Timer() {
   const { days, hours, minutes, seconds } = timeRemaining;
 
   return (
-    <div className="flex flex-row w-3/6 h-full justify-between pt-14 max-w-3xl">
+    <div className="flex flex-row w-2/6 h-full justify-between pt-14 max-w-3xl">
       <div className="">
         <span className="flex flex-col w-24 h-24 justify-center border-2 bg-dayColor rounded-md">
           <p className="text-white flex justify-center text-lg md:text-3xl lg:text-4xl xl:text-5xl">{days}</p>

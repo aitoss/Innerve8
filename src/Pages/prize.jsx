@@ -55,10 +55,14 @@ const DummyBanner = () => {
 };
 
 const StackedCards = () => {
+    const { scrollY } = useScroll();
     return (
-        <div className="flex py-6 justify-center items-center">
+        <motion.div 
+        initial={{ }}
+        whileHover={{}}
+        className="flex py-6 justify-center items-center">
             <motion.div
-                initial={{ x: -40, y: 0, rotate: -15 }}
+                initial={{ x: -40 + scrollY / 5, y: -20 - scrollY / 10, rotate: -15 }}
                 whileHover={{ x: -230, y: -60, rotate: 0 }}
                 className="m-2 relative z-10"
             >
@@ -94,7 +98,7 @@ const StackedCards = () => {
 
                 />
             </motion.div>
-        </div>
+        </motion.div>
     );
 };
 
