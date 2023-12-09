@@ -44,25 +44,25 @@ export default function Timer() {
   return (
     <div className="flex flex-row w-2/6 h-full justify-between pt-14 max-w-2xl">
       <div className="">
-        <span className="flex flex-col w-24 h-24 justify-center border-2 bg-dayColor rounded-md sm:w-10 md:w-16 lg:w-20 xl:w-24 ">
+        <span className="flex flex-col w-24 h-24 justify-center border-2 border-[#ffffff40] bg-dayColor rounded-md sm:w-10 md:w-16 lg:w-20 xl:w-24 ">
           <p className="text-white flex justify-center text-lg md:text-3xl lg:text-4xl xl:text-5xl">{days}</p>
           <p className="text-white flex justify-center">Days</p>
         </span>
       </div>
       <div>
-        <span className="flex flex-col  w-24 h-24 justify-center border-2 bg-hourColor rounded-md">
+        <span className="flex flex-col  w-24 h-24 justify-center border-2 border-[#ffffff40] bg-hourColor rounded-md">
           <p className="text-white flex justify-center text-lg md:text-3xl lg:text-4xl xl:text-5xl">{hours}</p>
           <p className="text-white flex justify-center">Hours</p>
         </span>
       </div>
       <div>
-        <span className="flex flex-col  w-24 h-24 justify-center border-2 bg-minuteColor rounded-md">
+        <span className="flex flex-col  w-24 h-24 justify-center border-2 border-[#ffffff40] bg-minuteColor rounded-md">
           <p className="text-white flex justify-center text-lg md:text-3xl lg:text-4xl xl:text-5xl">{minutes}</p>
           <p className="text-white flex justify-center">Minutes</p>
         </span>
       </div>
       <div>
-        <span className="flex flex-col  w-24 h-24 justify-center border-2 bg-secondColor rounded-md">
+        <span className="flex flex-col  w-24 h-24 justify-center border-2 border-[#ffffff40] bg-secondColor rounded-md">
           <p className="text-white flex justify-center text-lg md:text-3xl lg:text-4xl xl:text-5xl">{seconds}</p>
           <p className="text-white flex justify-center">Seconds</p>
         </span>
