@@ -12,7 +12,6 @@ import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 // import GitHubIcon from '@mui/icons-material/GitHub';
 export default function Footer() {
-
   let sphereSize = Math.min(window.innerWidth, window.innerHeight) / 400;
   // useEffect(() => {
   //   const handleScroll = () => {
@@ -36,15 +35,13 @@ export default function Footer() {
       console.log("Resizing");
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
       console.log(sphereSize);
     };
-    
   }, []);
-
 
   return (
     <div className="w-screen h-screen flex flex-col justify-center items-center relative bg-black">
@@ -55,30 +52,31 @@ export default function Footer() {
               Presented By:
             </h1>
             <div className="w-full h-5/6 z-100 flex justify-start ">
-                <div>
-              <Canvas
-              // orthographic={true}
-              // camera={{zoom: 50 }}
-              // Adjust the camera position
-              // fog={new THREE.Fog("rgb(5, 15, 45)", 5, 15)} // Add fog to the scene
-              >
-                {/* <directionalLight position={[0.028, 4.895, 8.407]} /> */}
-                <ambientLight intensity={5} />
+              <div>
+                <Canvas
+                // orthographic={true}
+                // camera={{zoom: 50 }}
+                // Adjust the camera position
+                // fog={new THREE.Fog("rgb(5, 15, 45)", 5, 15)} // Add fog to the scene
+                >
+                  {/* <directionalLight position={[0.028, 4.895, 8.407]} /> */}
+                  <ambientLight intensity={5} />
 
-                <Sphere
-                  position={[0, 0, 0]}
-                  args={[sphereSize, 32, 32]}
-                  color={"green"}
-                  text="Three JS"
-                />
-                <OrbitControls
-                  enableZoom={false}
-                  autoRotate={true}
-                  // rotateSpeed={1}
-                />
-              </Canvas>
+                  <Sphere
+                    position={[0, 0, 0]}
+                    args={[sphereSize, 32, 32]}
+                    color={"green"}
+                    text="Three JS"
+                  />
+                  <OrbitControls
+                    enableZoom={false}
+                    autoRotate={true}
+                    // rotateSpeed={1}
+                  />
+                </Canvas>
               </div>
             </div>
+            <div className="w-full h-0.5 bg-[#303030] rounded-full"></div>
           </div>
           <div className="w-full h-2/6 ">
             <div className="w-full h-1/2 ">
@@ -120,6 +118,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
+          <div className="w-full h-0.5 bg-[#303030] rounded-full"></div>
           <div className="w-full h-3/6 flex flex-col justify-between">
             <h1>Venue</h1>
             <div className="w-full h-4/6 bg-white rounded-md"></div>
@@ -128,28 +127,28 @@ export default function Footer() {
       </div>
       <div className="w-5/6 h-1/6 absolute bottom-6">
         <div>
-        <div className="down-footer flex-col flex justify-center items-center">
+          <div className="down-footer flex-col flex justify-center items-center">
             <div className="flex flex-row justify-center space-x-6 items-center">
-        <FaGithub  className="text-6xl  p-2  rounded-full" />
-        <p className="text-white px-2 text-[22px]">Github</p>
-        <div className="mx-auto w-1 h-16 bg-[#303030] "></div>    
-        <FaLinkedin  className="text-6xl  p-2  " />
-        <p className="text-white px-2 text-[22px]">LinkedIn</p>
-        <div className="mx-auto w-1 h-16 bg-[#303030] "></div>    
-        <FaInstagram  className="text-6xl  p-2 " />
-        <p className="text-white px-2 text-[22px]">Instagram</p>
-        <div className="mx-auto w-1 h-16 bg-[#303030] "></div>    
-        <FaXTwitter  className="text-6xl  p-2 " />
-        <p className="text-white px-2 text-[22px]">Twitter</p>
+              <FaGithub className="text-6xl  p-2  rounded-full" />
+              <p className="text-white px-2 text-[22px]">Github</p>
+              <div className="mx-auto w-1 h-16 bg-[#303030] rounded-full "></div>
+              <FaLinkedin className="text-6xl  p-2  " />
+              <p className="text-white px-2 text-[22px]">LinkedIn</p>
+              <div className="mx-auto w-1 h-16 bg-[#303030] "></div>
+              <FaInstagram className="text-6xl  p-2 " />
+              <p className="text-white px-2 text-[22px]">Instagram</p>
+              <div className="mx-auto w-1 h-16 bg-[#303030] "></div>
+              <FaXTwitter className="text-6xl  p-2 " />
+              <p className="text-white px-2 text-[22px]">Twitter</p>
             </div>
             <div>
-            <p className="text-[28px] py-4">Made with ❤️ by Open Source Software Club</p>
+              <p className="text-[28px] py-4">
+                Made with ❤️ by Open Source Software Club
+              </p>
             </div>
+          </div>
         </div>
-        </div>
-        <div>
-          
-        </div>
+        <div></div>
       </div>
     </div>
   );
