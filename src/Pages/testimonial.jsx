@@ -48,7 +48,7 @@ const Testimonial = () => {
                     <Column className="w-[20%] h-[40%] flex flex-col gap-[2vw] min-w-[250px]" images={[images[2], images[0], images[2]]} y={y3} />
                     <Column className="w-[20%] h-[40%] flex flex-col gap-[2vw] min-w-[250px]" images={[images[1], images[2], images[2]]} y={y4} />
                 </div>
-                <div className="spacer h-[100vh]"></div>
+                {/* <div className="spacer h-[100vh]"></div> */}
             </section>
         </>
     );
