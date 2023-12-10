@@ -5,7 +5,12 @@ import { Canvas } from "@react-three/fiber";
 import { MeshWobbleMaterial, OrbitControls } from "@react-three/drei";
 import Sphere from "../Components/sphere";
 import { useEffect } from "react";
-
+import { IoLogoInstagram } from "react-icons/io5";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+// import GitHubIcon from '@mui/icons-material/GitHub';
 export default function Footer() {
 
   let sphereSize = Math.min(window.innerWidth, window.innerHeight) / 400;
@@ -121,9 +126,26 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="w-5/6 h-1/6 bg-red-500 absolute bottom-6">
+      <div className="w-5/6 h-1/6 absolute bottom-6">
         <div>
-
+        <div className="down-footer flex-col flex justify-center items-center">
+            <div className="flex flex-row justify-center space-x-6 items-center">
+        <FaGithub  className="text-6xl  p-2  rounded-full" />
+        <p className="text-white px-2 text-[22px]">Github</p>
+        <div className="mx-auto w-1 h-16 bg-[#303030] "></div>    
+        <FaLinkedin  className="text-6xl  p-2  " />
+        <p className="text-white px-2 text-[22px]">LinkedIn</p>
+        <div className="mx-auto w-1 h-16 bg-[#303030] "></div>    
+        <FaInstagram  className="text-6xl  p-2 " />
+        <p className="text-white px-2 text-[22px]">Instagram</p>
+        <div className="mx-auto w-1 h-16 bg-[#303030] "></div>    
+        <FaXTwitter  className="text-6xl  p-2 " />
+        <p className="text-white px-2 text-[22px]">Twitter</p>
+            </div>
+            <div>
+            <p className="text-[28px] py-4">Made with ❤️ by Open Source Software Club</p>
+            </div>
+        </div>
         </div>
         <div>
           

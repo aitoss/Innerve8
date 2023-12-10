@@ -9,6 +9,9 @@ import Threejs from './Components/threejs.jsx'
 import Testimonial from './Pages/testimonial.jsx'
 import Dates from './Pages/dates.jsx'
 import Footer from './Pages/footer.jsx'
+import Sponsor from './Pages/sponsor.jsx'
+import Bannercard from './Pages/bannercard.jsx'
+import Problems from './Pages/problems.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,11 +23,14 @@ function App() {
       <Dates />
       <Prize  />
       <Tracks  />
+      <Problems />
       <Timeline />
       <Timeline />
       <Timeline />
       <Testimonial/>
-      <Footer />
+      <Sponsor/>
+      <Bannercard/>
+      <Footer/>
     </>
   )
 }

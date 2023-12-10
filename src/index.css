@@ -1,10 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('/src/assets/fonts/SuisseIntl-Light.woff');
-@import url('/src/assets/fonts/SuisseIntl-Regular.woff');
-@import url('/src/assets/fonts/SuisseIntl-Medium.woff');
-@import url('/src/assets/fonts/SuisseIntl-SemiBold.woff');
+
 
 
 :root {
