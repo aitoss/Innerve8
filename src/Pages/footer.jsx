@@ -44,7 +44,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <div className="w-screen h-screen flex flex-col justify-center items-center gap-12 bg-black">
+    <div className="w-screen h-screen flex flex-col justify-center items-center gap-12 bg-gradient-to-t from-[#000000] to-[#121212]">
       <div className="w-5/6 h-4/6 flex justify-between">
         <div className=" h-full w-2/6">
           <div className="w-full h-4/6 ">

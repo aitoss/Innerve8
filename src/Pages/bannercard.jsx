@@ -4,33 +4,37 @@ import { IoLogoInstagram } from "react-icons/io";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 const Bannercard = () => {
-  return (
-    <>
- <section className="bg-[#121212] w-screen p-16 h-[60vh]">
-            <div className="bg-green-300 flex flex-row gap-[500px] rounded-3xl p-16 h-[45vh] shadow-xl">
-                <div className="flex flex-col w-[50%] gap-24">
-                    <p className="text-[#121212] text-[48px] font-medium">Got any question <br></br>for us?</p>
-                    <p className="text-[#121212] text-[48px] font-medium">Want to sponsor us?</p>
-                </div>
+    return (
+        <>
+            <section className="bg-[#121212] w-screen p-16 ">
+                <div className="bg-green-300 flex flex-col gap-8 rounded-3xl p-16">
+                    <div className="w-full flex justify-between items-center">
+                        <p className="text-[#121212e6] text-[48px] font-medium">Got questions? <br />Contact us</p>
+                        <div className="btn flex items-center justify-center gap-3 border border-[#212121] rounded-full p-2 cursor-pointer">
+                            <h3 className="text-[#121212e6] text-2xl font-[400]">aitoss@aitpune.edu.in</h3>
+                            <div className="w-[30px] h-[30px] flex items-center justify-center text-base text-[#121212e6] border border-[#121212e6] rounded-full hover:rotate-45">↗</div>
+                        </div>
+                    </div>
+                    <div className="w-full flex justify-between items-center">
 
-                <div className="flex flex-col w-[50%]  space-y-12 mt-2 items-start justify-center">
-                    <div className="flex text-3xl text-[#121212] gap-4 items-center">
-                        <IoMdMail className="text-6xl border-2 p-2 border-[#9f9f9f59] rounded-full" />
-                        <p>aitpune.edu.in</p>
-                    </div>
-                    <div className="flex text-3xl text-[#121212] gap-4  items-center">
-                        <IoLogoInstagram  className="text-6xl border-2 p-2 border-[#9f9f9f59] rounded-full" />
-                        <p>ossclub</p>
-                    </div>
-                    <div className="flex text-3xl text-[#121212] gap-4 items-center">
-                        <IoIosArrowRoundForward className="text-6xl border-2 p-2 border-[#9f9f9f59] rounded-full" />
-                        <p>brochure</p>
+                        <p className="text-[#121212e6] text-[48px] font-medium">Want to <br />sponsor us?</p>
+                        <div className="flex flex-col gap-4">
+
+                            <div className="btn flex items-center justify-center gap-3 border border-[#212121] rounded-full p-2 cursor-pointer">
+                                <h3 className="text-[#121212e6] text-2xl font-[400]">Fill the form</h3>
+                                <div className="w-[30px] h-[30px] flex items-center justify-center text-[#121212e6] border border-[#121212e6] rounded-full hover:rotate-45">↗</div>
+                            </div>
+                            <div className="btn flex items-center justify-center gap-3 border border-[#121212e6] rounded-full p-2 cursor-pointer">
+                                <h3 className="text-[#121212e6] text-2xl font-[400]">Brochure</h3>
+                                <div className="w-[30px] h-[30px] flex items-center justify-center text-[#121212e6] border border-[#121212e6] rounded-full hover:rotate-45">↗</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </>
-  )
+                {/* </div> */}
+            </section>
+        </>
+    )
 }
 
 export default Bannercard
