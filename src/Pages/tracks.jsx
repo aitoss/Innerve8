@@ -51,7 +51,7 @@ const Heading = () => {
     return (
         <div className="text-center tracking-[8px] font-medium text-[200px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
             <motion.div
-                className=" translate-y-[-120px] tracking-tight text-transparent bg-clip-text bg-gradient-to-t from-[#372F2F] to-[#FFFFFF] whitespace-nowrap"
+                className=" translate-y-[-120px] tracking-tight text-transparent bg-clip-text bg-gradient-to-t from-[#222121] to-[#525252] whitespace-nowrap"
             >
                 Tracks
             </motion.div>
