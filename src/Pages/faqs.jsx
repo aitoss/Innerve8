@@ -44,21 +44,21 @@ function Faqs() {
   ]);
 
   const [travelList, setTravelList] = useState([
-   {
-      question: "Where can I stay during Innerve 7?",
-      answer: "We have partnered with several hotels nearby. You can find more information on our accommodation page.",
+    {
+      question: "What travel arrangements are available?",
+      answer: "We recommend checking our travel guide for information on transportation options.",
     },
     {
-        question: "Where can I stay during Innerve 7?",
-        answer: "We have partnered with several hotels nearby. You can find more information on our accommodation page.",
+        question: "What travel arrangements are available?",
+        answer: "We recommend checking our travel guide for information on transportation options.",
       },
       {
-        question: "Where can I stay during Innerve 7?",
-        answer: "We have partnered with several hotels nearby. You can find more information on our accommodation page.",
+        question: "What travel arrangements are available?",
+        answer: "We recommend checking our travel guide for information on transportation options.",
       },
       {
-        question: "Where can I stay during Innerve 7?",
-        answer: "We have partnered with several hotels nearby. You can find more information on our accommodation page.",
+        question: "What travel arrangements are available?",
+        answer: "We recommend checking our travel guide for information on transportation options.",
       },
   ]);
 
@@ -143,7 +143,7 @@ function Faqs() {
 
 const Heading = ({ title }) => {
   return (
-    <div className="text-center flex mt-14 font-medium text-[48px] text-black whitespace-nowrap">
+    <div className="text-center flex mt-14 font-medium text-[60px] text-black whitespace-nowrap">
       <div className="tracking-tight ttext-black bg-clip-text whitespace-nowrap">
         {title}
       </div>
