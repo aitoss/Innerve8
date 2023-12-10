@@ -40,10 +40,16 @@ function Faqs() {
   }, []);
 
   return (
-    <div className='bg-[#F9F0E7] h-screen  flex justify-center items-center'>
-        <div className="flex text-[#121212] flex-col">
+    <>
+    <div className="bg-[#F9F0E7] flex flex-row h-screen">
+    <div className="flex text-[#121212] items-start space-y-[66px] mt-[80px] lg:ml-[200px] flex-col">
         <Heading title="FAQs" />
+        <Button label="General"/>
+        <Button label="Stay"/>
+        <Button label="Travel"/>
+        <Button label="Expenses"/>
         </div>
+        <div className='bg-[#F9F0E7] h-screen lg:ml-[180px] flex justify-center items-center'>
       <div className='list'>
         {list.map((item, index) => (
           <Accordion
@@ -55,17 +61,32 @@ function Faqs() {
         ))}
       </div>
     </div>
+    </div>
+
+    </>
   );
 }
 
 const Heading = ({ title }) => {
     return (
-        <div className="text-center flex  mt-14 font-medium text-[36px] text-black whitespace-nowrap">
+        <div className="text-center flex  mt-14 font-medium text-[48px] text-black whitespace-nowrap">
             <div className="tracking-tight ttext-black bg-clip-text whitespace-nowrap">
                 {title}
             </div>
         </div>
     );
 };
+
+const Button = ({ label, onClick }) => {
+    return (
+      <button
+        className="bg-blue-500 w-[150px] items-start hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+
+      >
+        {label}
+      </button>
+    );
+  };
+
 
 export default Faqs;
