@@ -8,9 +8,9 @@ import Timeline from './Pages/timeline.jsx'
 import Threejs from './Components/threejs.jsx'
 import Testimonial from './Pages/testimonial.jsx'
 import Dates from './Pages/dates.jsx'
+import Footer from './Pages/footer.jsx'
 import Sponsor from './Pages/sponsor.jsx'
 import Bannercard from './Pages/bannercard.jsx'
-import Footer from './Pages/footer.jsx'
 import Problems from './Pages/problems.jsx'
 import Faqs from './Pages/faqs.jsx'
 
@@ -30,7 +30,10 @@ function App() {
       <Timeline />
       <Sponsor/>
       <Testimonial/>
+<<<<<<< HEAD
       <Faqs/>
+=======
+>>>>>>> 8df2dd1bcc64bc2e81adf24465e00eb42c5edbb3
       <Bannercard/>
       <Footer/>
     </>
