@@ -30,10 +30,7 @@ function App() {
       <Timeline />
       <Sponsor/>
       <Testimonial/>
-<<<<<<< HEAD
       <Faqs/>
-=======
->>>>>>> 8df2dd1bcc64bc2e81adf24465e00eb42c5edbb3
       <Bannercard/>
       <Footer/>
     </>
