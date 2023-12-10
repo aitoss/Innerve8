@@ -16,11 +16,10 @@ const Bannercard = () => {
                         </div>
                     </div>
                     <div className="w-full flex justify-between items-center">
-
                         <p className="text-[#121212e6] text-[48px] font-medium">Want to <br />sponsor us?</p>
-                        <div className="flex flex-col gap-4">
 
-                            <div className="btn flex items-center justify-center gap-3 border border-[#212121] rounded-full p-2 cursor-pointer">
+                        <div className="flex flex-col justify-center items-end gap-4">
+                            <div className="btn flex items-center gap-3 border border-[#212121] rounded-full p-2 cursor-pointer">
                                 <h3 className="text-[#121212e6] text-2xl font-[400]">Fill the form</h3>
                                 <div className="w-[30px] h-[30px] flex items-center justify-center text-[#121212e6] border border-[#121212e6] rounded-full hover:rotate-45">↗</div>
                             </div>
