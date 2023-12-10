@@ -1,11 +1,8 @@
 import React from "react";
 import Threejs from "../Components/threejs";
 import { motion } from "framer-motion";
-<<<<<<< HEAD
-=======
 import ossSphere from "../Components/ossSphere";
 import Slider from "../Components/slider";
->>>>>>> cac1d048559dd6ca1f2637bb226eb3fba5c048d5
 
 function DummyBanner() {
   return (
