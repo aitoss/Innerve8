@@ -8,6 +8,18 @@ function Faqs() {
       question: "What are the perks of attending Innerve 7?",
       answer: "Sessions with the top experts in their fields, a 24-hour hackathon with incredible problems, and rewards Swags and Goodies. C'mon, still need more?",
     },
+    {
+        question: "What are the perks of attending Innerve 7?",
+        answer: "Sessions with the top experts in their fields, a 24-hour hackathon with incredible problems, and rewards Swags and Goodies. C'mon, still need more?",
+      },
+      {
+        question: "What are the perks of attending Innerve 7?",
+        answer: "Sessions with the top experts in their fields, a 24-hour hackathon with incredible problems, and rewards Swags and Goodies. C'mon, still need more?",
+      },
+      {
+        question: "What are the perks of attending Innerve 7?",
+        answer: "Sessions with the top experts in their fields, a 24-hour hackathon with incredible problems, and rewards Swags and Goodies. C'mon, still need more?",
+      },
   
   ]);
 
@@ -16,22 +28,57 @@ function Faqs() {
       question: "Where can I stay during Innerve 7?",
       answer: "We have partnered with several hotels nearby. You can find more information on our accommodation page.",
     },
+    {
+        question: "Where can I stay during Innerve 7?",
+        answer: "We have partnered with several hotels nearby. You can find more information on our accommodation page.",
+      },
+      {
+        question: "Where can I stay during Innerve 7?",
+        answer: "We have partnered with several hotels nearby. You can find more information on our accommodation page.",
+      },
+      {
+        question: "Where can I stay during Innerve 7?",
+        answer: "We have partnered with several hotels nearby. You can find more information on our accommodation page.",
+      },
  
   ]);
 
   const [travelList, setTravelList] = useState([
-    {
-      question: "How do I travel to the event venue?",
-      answer: "You can find detailed travel information on our website. We recommend using public transportation or ride-sharing services.",
+   {
+      question: "Where can I stay during Innerve 7?",
+      answer: "We have partnered with several hotels nearby. You can find more information on our accommodation page.",
     },
- 
+    {
+        question: "Where can I stay during Innerve 7?",
+        answer: "We have partnered with several hotels nearby. You can find more information on our accommodation page.",
+      },
+      {
+        question: "Where can I stay during Innerve 7?",
+        answer: "We have partnered with several hotels nearby. You can find more information on our accommodation page.",
+      },
+      {
+        question: "Where can I stay during Innerve 7?",
+        answer: "We have partnered with several hotels nearby. You can find more information on our accommodation page.",
+      },
   ]);
 
   const [expensesList, setExpensesList] = useState([
     {
       question: "What expenses are covered?",
-      answer: "Innerve 7 covers registration fees, but other expenses such as travel and accommodation are the responsibility of the attendees. Check our FAQs for more details.",
+      answer: "Innerve 7 covers registration fees",
     },
+    {
+        question: "What expenses are covered?",
+        answer: "Innerve 7 covers registration fees",
+      },
+      {
+        question: "What expenses are covered?",
+        answer: "Innerve 7 covers registration fees",
+      },
+      {
+        question: "What expenses are covered?",
+        answer: "Innerve 7 covers registration fees",
+      },
  
   ]);
 
