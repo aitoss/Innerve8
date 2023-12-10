@@ -42,8 +42,7 @@ function Faqs() {
   return (
     <div className='bg-[#F9F0E7] h-screen  flex justify-center items-center'>
         <div className="flex text-[#121212] flex-col">
-
-            
+        <Heading title="FAQs" />
         </div>
       <div className='list'>
         {list.map((item, index) => (
@@ -58,5 +57,15 @@ function Faqs() {
     </div>
   );
 }
+
+const Heading = ({ title }) => {
+    return (
+        <div className="text-center flex  mt-14 font-medium text-[36px] text-black whitespace-nowrap">
+            <div className="tracking-tight ttext-black bg-clip-text whitespace-nowrap">
+                {title}
+            </div>
+        </div>
+    );
+};
 
 export default Faqs;
