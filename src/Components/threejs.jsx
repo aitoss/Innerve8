@@ -19,7 +19,7 @@ export default function Threejs() {
         <pointLight position={[0.465, 2.915, 5.777]} intensity={1} />
         <pointLight position={[0.067, 2.813, 5.720]} intensity={1} />
         <group 
-        position={[17.5, -11, -25]}
+        position={[17.5, -10.5, -25]}
         >
           <mesh>
             <Infinity scale={{ scale:4, position: 0.5 }} />

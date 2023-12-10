@@ -1,10 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Slider from "../Components/slider";
+import DarkSlider from "../Components/darkSlider";
 
 const Prize = () => {
     return (
         <div className="relative w-screen bg-[#212121] h-screen overflow-hidden">
-            <DummyBanner />
+            {/* <Slider text={['EdTech', 'GameDev', 'Logistics', 'Web3.0', 'Healthcare', 'XR','FinTech','Blockchain']} /> */}
+            {/* <DummyBanner /> */}
+             <DarkSlider text={['10lac+ Prize pool']} />
             <div className="w-screen pt-40  flex-col items-center h-full">
                 <StackedCards />
                 <Heading />

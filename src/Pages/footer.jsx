@@ -12,7 +12,6 @@ import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 // import GitHubIcon from '@mui/icons-material/GitHub';
 export default function Footer() {
-
   let sphereSize = Math.min(window.innerWidth, window.innerHeight) / 400;
   // useEffect(() => {
   //   const handleScroll = () => {
@@ -36,15 +35,13 @@ export default function Footer() {
       console.log("Resizing");
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
       console.log(sphereSize);
     };
-
   }, []);
-
 
   return (
     <div className="w-screen h-screen flex flex-col justify-center items-center gap-12 bg-black">
@@ -74,11 +71,12 @@ export default function Footer() {
                   <OrbitControls
                     enableZoom={false}
                     autoRotate={true}
-                  // rotateSpeed={1}
+                    // rotateSpeed={1}
                   />
                 </Canvas>
               </div>
             </div>
+            <div className="w-full h-0.5 bg-[#303030] rounded-full"></div>
           </div>
           <div className="w-full h-2/6 ">
             <div className="w-full h-1/2 ">
@@ -120,6 +118,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
+          <div className="w-full h-0.5 bg-[#303030] rounded-full"></div>
           <div className="w-full h-3/6 flex flex-col justify-between">
             <h1>Venue</h1>
             <div className="w-full h-4/6 bg-white rounded-md"></div>
@@ -180,10 +179,10 @@ export default function Footer() {
               <p className="text-[#FFFFFFBF] text-xl">Made with ❤️ by Open Source Software Club</p>
             </div>
           </div>
+          </div>
         </div>
         <div>
         </div>
       </div>
-    </div>
   );
 }
