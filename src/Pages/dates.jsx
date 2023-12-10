@@ -1,6 +1,7 @@
 import React from "react";
 import Threejs from "../Components/threejs";
 import { motion } from "framer-motion";
+import ossSphere from "../Components/ossSphere";
 
 function DummyBanner() {
   return (
