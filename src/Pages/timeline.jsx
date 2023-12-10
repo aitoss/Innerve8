@@ -40,7 +40,7 @@ const Timeline = () => {
   ];
 
   return (
-    <div id="timeline-section" className="relative h-screen overflow-hidden">
+    <div id="timeline-section" className="relative h-screen overflow-hidden bg-[#121212]">
       <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-300"></div>
 
       {dots.map((dot) => (

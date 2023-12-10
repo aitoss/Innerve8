@@ -27,8 +27,8 @@ function App() {
       <Timeline />
       <Timeline />
       <Timeline />
-      <Testimonial/>
       <Sponsor/>
+      <Testimonial/>
       <Bannercard/>
       <Footer/>
     </>
