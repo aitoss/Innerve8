@@ -12,6 +12,7 @@ import Sponsor from './Pages/sponsor.jsx'
 import Bannercard from './Pages/bannercard.jsx'
 import Footer from './Pages/footer.jsx'
 import Problems from './Pages/problems.jsx'
+import Faqs from './Pages/faqs.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -27,8 +28,9 @@ function App() {
       <Timeline />
       <Timeline />
       <Timeline />
-      <Testimonial/>
       <Sponsor/>
+      <Testimonial/>
+      <Faqs/>
       <Bannercard/>
       <Footer/>
     </>

@@ -11,7 +11,7 @@ const Footer = () => {
 
         <div classname="upper-footer flex flex-col">
         <div>
-
+            
         </div>
 
         <div>
