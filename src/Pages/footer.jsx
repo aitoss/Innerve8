@@ -71,7 +71,7 @@ export default function Footer() {
                   <OrbitControls
                     enableZoom={false}
                     autoRotate={true}
-                    // rotateSpeed={1}
+                  // rotateSpeed={1}
                   />
                 </Canvas>
               </div>
@@ -160,6 +160,7 @@ export default function Footer() {
                     <path d="M12.6674 6.15283C8.90442 6.15283 5.85156 9.20449 5.85156 12.966C5.85156 16.7274 8.90442 19.7791 12.6674 19.7791C16.4303 19.7791 19.4831 16.7274 19.4831 12.966C19.4831 9.20449 16.4303 6.15283 12.6674 6.15283ZM12.6674 17.3854C10.2261 17.3854 8.24616 15.4063 8.24616 12.966C8.24616 10.5257 10.2261 8.54649 12.6674 8.54649C15.1086 8.54649 17.0885 10.5257 17.0885 12.966C17.0885 15.4063 15.1086 17.3854 12.6674 17.3854Z" fill="#D9D9D9" />
                     <path d="M21.3436 5.88357C21.3436 6.76435 20.6283 7.47416 19.7523 7.47416C18.8712 7.47416 18.1611 6.75917 18.1611 5.88357C18.1611 5.00278 18.8764 4.29297 19.7523 4.29297C20.6283 4.29297 21.3436 5.00796 21.3436 5.88357Z" fill="#D9D9D9" />
                   </svg>
+
                 </div>
                 <p className="text-[#FFFFFFBF] text-xl hover:text-[#ffffffe4] hover:cursor-pointer transition-all">Instagram</p>
               </div>
@@ -167,7 +168,7 @@ export default function Footer() {
               <div className="mx-auto w-[1px] h-8 bg-[#303030] "></div>
               <div className="twitter flex justify-center items-center gap-2">
                 <div className="flex justify-center items-center h-8 w-8 bg-[#212121] rounded-[0.375rem]">
-                  <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20.189 0.666992H24.0225L15.6474 10.2391L25.5 23.2647H17.7855L11.7432 15.3648L4.82949 23.2647H0.993673L9.95163 13.0262L0.5 0.666992H8.41035L13.872 7.88782L20.189 0.666992ZM18.8435 20.9701H20.9677L7.25613 2.84101H4.97666L18.8435 20.9701Z" fill="#D9D9D9" />
                   </svg>
                 </div>
@@ -179,10 +180,10 @@ export default function Footer() {
               <p className="text-[#FFFFFFBF] text-xl">Made with ❤️ by Open Source Software Club</p>
             </div>
           </div>
-          </div>
-        </div>
-        <div>
         </div>
       </div>
+      <div>
+      </div>
+    </div>
   );
 }

@@ -4,6 +4,7 @@ import Dots from "/src/assets/images/dots.svg";
 import Timer from "../Components/timer.jsx";
 import InnerveText from "../Components/innerveText.jsx";
 import Devfolio from "../Components/devfolio.jsx";
+
 export default function Home() {
   React.useEffect(() => {
     const script = document.createElement('script');
@@ -30,14 +31,14 @@ export default function Home() {
         <div className="h-full flex justify-center">
           <Timer />
         </div>
-        <div className="w-full flex justify-center z-10 relative -top-36">
+        <div className="w-full flex justify-center z-10 relative top-[-60px]">
           <Devfolio />
         </div>
         <div className="flex w-full justify-center overflow-hidden">
           <InnerveText />
         </div>
         <div className="absolute w-full flex justify-center overflow-hidden -z-1">
-          <img src={Dots} alt="dots" className="scale-100 opacity-50" />
+          <img src={Dots} alt="dots" className="scale-110" />
         </div>
       </div>
     </div>
