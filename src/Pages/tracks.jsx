@@ -11,7 +11,7 @@ const Tracks = () => {
             <div className="flex align-middle py-16  max-w-[1920px] w-screen h-auto overflow-hidden flex-col relative top-5">
                 <Slider text={["GameDev", 'Logistics', 'Web3.0', 'Healthcare', 'FinTech', 'EdTech']} />
                 <Heading2/>
-                <div id="Tracks" className="flex flex-row flex-wrap gap-x-36 gap-y-4 lg:gap-y-10 lg:px-[25%] px-[2%] justify-center items-center relative top-20">
+                <div id="Tracks" className="flex flex-row flex-wrap gap-x-[90px] lg:gap-x-36 gap-y-4 lg:gap-y-10 lg:px-[25%] px-[2%] justify-center items-center relative top-20">
                     {indiData.map((data) => (
                         <Track title={data[0]} img={data[1]} />
                     ))}
@@ -40,7 +40,7 @@ const Track = ({title, img}) => {
                         </motion.div>
                     </div>
                 </motion.div>
-                <div className="text-4xl py-2 text-[#212121] ">
+                <div className="text-3xl py-2 text-[#212121] ">
                     {title}
                 </div>
             </div>
