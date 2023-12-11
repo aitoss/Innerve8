@@ -60,6 +60,33 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.timer-seconds{
+  border-radius: 8.528px !important;
+  background: linear-gradient(308deg, #DF6E47 25.02%, #E7885A 60.24%, #F0A36D 96.24%) !important;
+}
+.timer-minutes{
+  border-radius: 8.528px;
+  background: linear-gradient(155deg, #F5AEDD 15.11%, #E493C9 49.48%, #C97FB0 83.26%); 
+}
+.timer-hours{
+  border-radius: 14.924px;
+  background: linear-gradient(135deg, #C1D29D 17.19%, #90C280 42.8%, #8FB781 67.96%);
+}
+.timer-days{
+  border-radius: 8.528px;
+  background: linear-gradient(128deg, #FDF0B7 -18.27%, #FFEA8C 15.95%, #FDDE56 49.56%);
+}
+.innerve-text{
+  position: absolute;
+  bottom: 20vh;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
