@@ -12,7 +12,7 @@ const TestimonialMob = () => {
         offset: ['end start', 'start end']
     });
     const y = useTransform(scrollYProgress, [0, 1], [1, -150]);
-    const y2 = useTransform(scrollYProgress, [0, 1], [1, 250]);
+    const y2 = useTransform(scrollYProgress, [0, 1], [1, 150]);
     const images = [
         "1.jpg",
         "2.jpg",
@@ -33,7 +33,7 @@ const TestimonialMob = () => {
 
     return (
         <>
-            <section className="bg-[#121212] lg:hidden md:hidden h-screen w-screen">
+            <section className="bg-[#121212] lg:hidden h-full w-screen">
                 <div className="flex justify-center relative top-[300px] z-30 py-8 text-3xl lg:text-7xl items-center">Connect with Code - Cultivate Growth
                 </div>
                 <div
@@ -41,8 +41,8 @@ const TestimonialMob = () => {
                     className="gallery overflow-hidden h-full bg-[#121212]  flex flex-row gap-[2vw] p-[2vw] border-box"
                     style={{ y }}
                 >
-                    <Column className=" w-[10%] h-[40%] relative flex -top-[10%] flex-col gap-[2vw] lg:min-w-[200px]" images={[images[0], images[1], images[2]]} y={y} />
-                    <Column className=" h-[40%] w-[10%] flex -top-[75%] flex-col gap-[2vw] lg:min-w-[250px]" images={[images[1], images[0], images[2]]} y={y2} />
+                    <Column className=" w-1/3 h-[40%] relative flex -top-[10%] flex-col gap-[2vw] " images={[images[0], images[1], images[2]]} y={y} />
+                    <Column className=" h-[40%] w-1/3 flex -top-[75%] flex-col gap-[2vw] " images={[images[1], images[0], images[2]]} y={y2} />
                    
                 </div>
             </section>
@@ -55,7 +55,7 @@ const TestimonialMob = () => {
 
 const Column = ({ images, y = 0 }) => {
     return (
-        <motion.div style={{ y }} className="w-[25%] h-[50%] relative flex flex-col gap-[2vw] min-w-[250px]">
+        <motion.div style={{ y }} className="w-screen h-[50%] relative flex flex-col gap-[2vw]">
             {images.map(
                 (src, index) => {
                     return (
