@@ -19,7 +19,7 @@ export default function Devfolio() {
             className="apply-button"
             data-hackathon-slug="innerve-2"
             data-button-theme="dark"
-            style={{ height: "50px", width: "312px" }}
+            style={{ height: "50px", width: "312px", marginBottom: "20px"}}
         ></div>
     );
 }   
