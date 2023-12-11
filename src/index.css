@@ -96,10 +96,43 @@ button:focus-visible {
   height: 100px;
   background-color: red;
 }
+.banner{
+  border-radius: 14px;
+  color: rgba(33, 33, 33, 0.80);
+  margin: 2rem;
+  background: var(--green, linear-gradient(135deg, #C1D29D 17.19%, #90C280 42.8%, #8FB781 67.96%));
+}
+.banner-heading{
+  font-size: 3rem;
+}
+.banner-subheading{
+  font-size: 1.2rem;
+}
+.banner-sub{
+  display: flex;
+  flex-wrap: wrap;
+}
 
 @media screen and (max-width: 450px) {
   .nav-inner{
     padding: 1rem 1rem;
+  }
+  .banner-sponser{
+    display: flex;
+    flex-flow: row !important;
+    flex-wrap: wrap !important;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .banner-heading{
+    font-size: 2.5rem;
+  }
+  .banner-subheading{
+    font-size: .9rem;
+  }
+  .banner{
+    padding: 1rem;
   }
 }
 
