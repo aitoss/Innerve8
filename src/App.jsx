@@ -13,6 +13,7 @@ import Sponsor from './Pages/sponsor.jsx'
 import Bannercard from './Pages/bannercard.jsx'
 import Problems from './Pages/problems.jsx'
 import Faqs from './Pages/faqs.jsx'
+import TestimonialMob from './Pages/testimonialMobile.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,6 +31,7 @@ function App() {
       <Timeline /> */}
       <Sponsor/>
       <Testimonial/>
+      <TestimonialMob/>
       <Faqs/>
       <Bannercard/>
       <Footer/>
