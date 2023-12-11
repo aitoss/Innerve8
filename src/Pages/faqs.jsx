@@ -118,11 +118,11 @@ function Faqs() {
 
   return (
     <>
+    <div className="h-screen bg-[#F9F0E7] ">
       <Heading title="FAQs" />
-      <div className="bg-[#F9F0E7] flex flex-col  w-screen lg:flex-row h-screen">
-  
       <HeadingMobile title="FAQs"/>
-      <div className="flex text-[#121212] ml-[50px] mt-8 items-center justify-center space-x-[6px] lg:flex-col lg:space-y-[70px]">
+      <div className=" flex flex-col items-center justify-center lg:mt-16  w-screen lg:flex-row ">
+      <div className="flex text-[#121212] lg:ml-[50px] mt-8 items-center justify-center space-x-[6px] lg:flex-col lg:space-y-[70px]">
   <Button label="General" onClick={() => setActiveList('general')} />
   <Button label="Stay" onClick={() => setActiveList('stay')} />
   <Button label="Travel" onClick={() => setActiveList('travel')} />
@@ -141,13 +141,14 @@ function Faqs() {
           </div>
         </div>
       </div>
+      </div>
     </>
   );
 }
 
 const Heading = ({ title }) => {
   return (
-      <div className="text-startflex hidden lg:block items-start mt-14 ml-16 font-medium text-6xl text-black whitespace-nowrap justify-start">
+      <div className="text-startflex hidden lg:block items-start mt-14 ml-16 font-medium text-7xl text-black whitespace-nowrap justify-start">
           <div className="tracking-tight text-black bg-clip-text whitespace-nowrap">
               {title}
           </div>
@@ -171,7 +172,7 @@ const Button = ({ label, onClick, isActive }) => {
 
 const HeadingMobile = ({ title }) => {
   return (
-      <div className="text-center ml-[16px] pb-6 flex py-2 lg:hidden item-start justify-start  font-medium text-[36px] text-black whitespace-nowrap">
+      <div className="text-center ml-[18px] pb-6 flex py-2 lg:hidden item-start justify-start  font-medium text-[36px] text-black whitespace-nowrap">
           <div className="tracking-tight ttext-black bg-clip-text whitespace-nowrap">
               {title}
           </div>

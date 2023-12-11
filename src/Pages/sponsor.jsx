@@ -10,8 +10,10 @@ import Slider from "../Components/slider";
 const Sponsor = () => {
   return (
     <>
-     <DummyBanner/>
-     {/* <Slider text={['Sponsors', 'Sponsors', 'Sponsors']} /> */}
+     {/* <DummyBanner/> */}
+     <div className='flex justify-center top-14'>
+     <Slider text={['Sponsors', 'Sponsors', 'Sponsors']} />
+     </div>
     <div className=" p-4 w-screen flex flex-col mt-[3%] justify-center flex-wrap items-center">
    
     <Heading title="{Title Sponsor}" />
