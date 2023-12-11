@@ -4,11 +4,13 @@ import Marquee from "react-fast-marquee";
 const Slider = ({ text }) => {
   return (
     <>
+    <div className="max-w-[1920px]">
       <Marquee autoFill="true" speed={80}>
         {text.map((item) => (
           <TextSlide text={item} />
         ))}
       </Marquee>
+      </div>
     </>
   );
 };
@@ -16,7 +18,7 @@ const Slider = ({ text }) => {
 const TextSlide = ({ text }) => {
   return (
     <>
-      <div className="flex items-center justify-center text-7xl h-12">
+      <div className="flex items-center justify-center text-7xl h-12 max-w-[1920px]">
         <h1 className=" tracking-tight text-5xl text-transparent bg-clip-text bg-gradient-to-t from-[#222121] to-[#525252] whitespace-nowrap px-3">
           {text}
         </h1>
