@@ -14,7 +14,6 @@ export default function Infinity(scale) {
   useEffect(() => {
     actions.loop.repetitions = Infinity;
     actions.loop.play();
-
   });
   console.log(scale);
   return (
