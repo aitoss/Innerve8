@@ -3,25 +3,21 @@ import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
 import Slider from "../Components/slider";
 
-const indiData=[['EdTech', 'src/assets/images/Vector.svg'],['Logistics','src/assets/images/Vector.svg'],['GameDev','src/assets/images/Vector.svg'],['XR','src/assets/images/Vector.svg'],['Web3.0','src/assets/images/Vector.svg'],['Healthcare','src/assets/images/Vector.svg'],['FinTech','src/assets/images/Vector.svg']]
+const indiData=[['EdTech', 'src/assets/images/Vector.svg'],['Logistics','src/assets/images/Vector.svg'],['GameDev','src/assets/images/Vector.svg'],['XR','src/assets/images/Vector.svg'],['Web3.0','src/assets/images/Vector.svg'],['Healthcare','src/assets/images/Vector.svg']]
 
 const Tracks = () => {
     return(
         <>
-            <div className="flex justify-center">
-            <div className="lg:h-screen w-full h-fit lg:overflow-hidden bg-[#F9F0E7] max-w-[1920px] justify-center">
-                <div className="w-full h-fit flex-col pt-10">
-                    <Slider text={['EdTech', 'GameDev', 'Logistics', 'Web3.0', 'Healthcare', 'XR','FinTech','Blockchain']} />
-                </div>
-                <div className="flex pt-[6vh] flex-wrap gap-20 justify-center px-[20%] z-10 flex-row">
+            <div className="flex align-middle  max-w-[1920px] w-screen h-auto overflow-hidden flex-col relative top-5">
+                <Slider text={["GameDev", 'Logistics', 'Web3.0', 'Healthcare', 'FinTech', 'EdTech']} />
+                <div id="Tracks" className="flex flex-row flex-wrap gap-20 lg:px-[25%] px-[2%] justify-center items-center relative top-20">
                     {indiData.map((data) => (
-                        <Track title={data.at(0)} img={data.at(1)}/>
+                        <Track title={data[0]} img={data[1]} />
                     ))}
                 </div>
-                <div className="pt-[10vh] z-[0]">
-                <Heading />
+                <div className="flex relative top-[8rem] justify-center">
+                    <Heading />
                 </div>
-            </div>
             </div>
         </>
     )
