@@ -87,6 +87,22 @@ button:focus-visible {
   justify-content: center;
 }
 
+.navigator{
+  display: none;
+}
+.active-nav{
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+@media screen and (max-width: 450px) {
+  .nav-inner{
+    padding: 1rem 1rem;
+  }
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

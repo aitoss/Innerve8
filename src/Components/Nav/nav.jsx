@@ -1,10 +1,21 @@
 import React from 'react';
 
 const Nav = () => {
+
+    const [nav, setNav] = React.useState(false);
+
+    const toggleNav = () => {
+        let preNav = nav;
+        setNav(!preNav);
+    }
+
     return (
         <>
+            {nav && (<div div className="navigtor">
+                {/* // code for hiden navigator goes here */}
+            </div>)}
             <div className="flex justify-center">
-                <div className="w-screen max-w-[1540px] px-14 py-8 flex flex-row justify-between">
+                <div className="w-screen max-w-[1540px] px-14 py-8 flex flex-row justify-between nav-inner">
                     <div className="flex gap-3">
                         <svg xmlns="http://www.w3.org/2000/svg" width="19" height="40" viewBox="0 0 19 40" fill="none">
                             <path d="M5.57422 0.655886V13.2C5.60196 13.5323 5.89044 14.0972 6.82248 13.6984C7.75451 13.2997 14.2566 9.37859 17.3911 7.4679C17.7239 7.30176 18.19 6.85316 17.3911 6.38795C16.5922 5.92274 9.84604 2.04044 6.57283 0.157446C6.23996 -0.0363921 5.57422 -0.208077 5.57422 0.655886Z" fill="#212121" />
@@ -12,7 +23,7 @@ const Nav = () => {
                         </svg>
                         <h1 className="text-[#212121] text-4xl font-[400]">Innerve</h1>
                     </div>
-                    <div className="btn flex items-center justify-center gap-3 border border-[#212121] rounded-full p-2 cursor-pointer">
+                    <div className="btn flex items-center justify-center gap-3 border border-[#212121] rounded-full px-4 py-2 cursor-pointer" onClick={toggleNav}>
                         <h3 className="text-[#212121] text-xl font-[400]">Menu</h3>
                         <div className="w-[30px] h-[30px] flex items-center justify-center text-[#212121] border border-[#212121] rounded-full hover:rotate-45">↗</div>
                     </div>
