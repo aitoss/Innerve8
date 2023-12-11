@@ -21,7 +21,7 @@ function App() {
     <>
       <div className="noise"></div>
       <Home />
-      <Dates />
+      {/* <Dates />
       <Prize  />
       <Tracks  />
       <Problems />
@@ -32,7 +32,7 @@ function App() {
       <Testimonial/>
       <Faqs/>
       <Bannercard/>
-      <Footer/>
+      <Footer/> */}
     </>
   )
 }
