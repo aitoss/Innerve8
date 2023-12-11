@@ -1,7 +1,7 @@
 import React from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import Infinity from "../../infiniteLoop";
+import Infinity from "./infiniteLoop";
 import Controls from "./control";
 
 export default function Threejs() {
