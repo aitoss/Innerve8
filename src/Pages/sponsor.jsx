@@ -4,11 +4,13 @@ import udchalo from "../assets/images/udchalo.png"
 import accops from "../assets/images/accops.png"
 import byte from "../assets/images/byte.png"
 import mro from "../assets/images/mro.png"
+import Slider from '../Components/slider';
 
 const Sponsor = () => {
   return (
     <>
      <DummyBanner/>
+     {/* <Slider text={["Sponsors"]} /> */}
     <section className=" p-4 flex flex-col mt-[60px] justify-center items-center ">
    
     <Heading title="{Title Sponsor}" />
