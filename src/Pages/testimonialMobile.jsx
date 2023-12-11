@@ -34,7 +34,7 @@ const TestimonialMob = () => {
     return (
         <>
             <section className="bg-[#121212] lg:hidden h-full w-screen">
-                <div className="flex justify-center relative top-[300px] z-30 text-5xl lg:text-7xl font-medium items-center">Connect with Code
+                <div className="flex justify-center relative top-[300px] z-30 text-4xl lg:text-7xl font-medium items-center">Connect with Code
                 </div>
                 <div
                     ref={container}
