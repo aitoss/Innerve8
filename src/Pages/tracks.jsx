@@ -6,7 +6,8 @@ import Slider from "../Components/slider";
 const Tracks = () => {
     return(
         <>
-            <div className="h-screen w-screen md:w-fit overflow-hidden bg-[#F9F0E7] max-w-[1920px] justify-center">
+            <div className="flex justify-center flex-grow">
+            <div className="h-screen w-full md:h-fit overflow-hidden bg-[#F9F0E7] max-w-[1920px] justify-center">
                 <div className="w-full h-fit flex-col pt-10">
                     <Slider text={['EdTech', 'GameDev', 'Logistics', 'Web3.0', 'Healthcare', 'XR','FinTech','Blockchain']} />
                 </div>
@@ -22,6 +23,7 @@ const Tracks = () => {
                 <div className="pt-[10vh] z-[0]">
                 <Heading />
                 </div>
+            </div>
             </div>
         </>
     )
