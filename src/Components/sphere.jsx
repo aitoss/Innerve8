@@ -12,8 +12,6 @@ const Sphere = ({ position, args, color ,text }) => {
     const [isHovered, setIsHovered] = useState(false);
     const [isClicked, setIsClicked] = useState(false);
 
-
-
     useFrame((state, delta) => {
         // ref.current.rotation.x += delta;
         // ref.current.rotation.y -= delta;
