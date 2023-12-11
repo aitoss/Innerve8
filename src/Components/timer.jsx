@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./componentCSS.css";
 
 
 export default function Timer() {
@@ -43,22 +44,22 @@ export default function Timer() {
   const { days, hours, minutes, seconds } = timeRemaining;
 
   return (
-    <div className="flex flex-row w-2/6 h-fit justify-between pt-14 max-w-2xl">
-        <span className="flex flex-col w-24 h-24 justify-center border-2 border-[#ffffff40] bg-dayColor rounded-md sm:w-10 md:w-16 lg:w-20 xl:w-24 timer-days">
-          <p className="text-white flex justify-center text-lg md:text-3xl lg:text-4xl xl:text-5xl">{days}</p>
-          <p className="text-white flex justify-center">Days</p>
+    <div className="flex flex-row h-fit justify-between pt-14 timer-width">
+        <span className="flex flex-col w-14 h-14 justify-center border-2 border-[#ffffff40] bg-dayColor rounded-md sm:w-18 sm:h-18 md:w-20 md:h-20 lg:w-22 lg:h-22 xl:w-24 xl:h-24 timer-days">
+          <p className="text-white flex justify-center timer-count">{days}</p>
+          <p className="text-white flex justify-center  timer-day">Days</p>
         </span>
-        <span className="flex flex-col  w-24 h-24 justify-center border-2 border-[#ffffff40] bg-hourColor rounded-md timer-hours">
-          <p className="text-white flex justify-center text-lg md:text-3xl lg:text-4xl xl:text-5xl">{hours}</p>
-          <p className="text-white flex justify-center">Hours</p>
+        <span className="flex flex-col  w-14 h-14 justify-center border-2 border-[#ffffff40] bg-hourColor rounded-md sm:w-18 sm:h-18 md:w-20 md:h-20 lg:w-22 lg:h-22 xl:w-24 xl:h-24 timer-hours">
+          <p className="text-white flex justify-center timer-count">{hours}</p>
+          <p className="text-white flex justify-center timer-day">Hours</p>
         </span>
-        <span className="flex flex-col  w-24 h-24 justify-center border-2 border-[#ffffff40] bg-minuteColor rounded-md timer-minutes">
-          <p className="text-white flex justify-center text-lg md:text-3xl lg:text-4xl xl:text-5xl">{minutes}</p>
-          <p className="text-white flex justify-center">Minutes</p>
+        <span className="flex flex-col  w-14 h-14 justify-center border-2 border-[#ffffff40] bg-minuteColor rounded-md sm:w-18 sm:h-18 md:w-20 md:h-20 lg:w-22 lg:h-22 xl:w-24 xl:h-24 timer-minutes">
+          <p className="text-white flex justify-center timer-count">{minutes}</p>
+          <p className="text-white flex justify-center timer-day">Minutes</p>
         </span>
-        <span className="flex flex-col  w-24 h-24 justify-center border-2 border-[#ffffff40] bg-secondColor rounded-md timer-seconds">
-          <p className="text-white flex justify-center text-lg md:text-3xl lg:text-4xl xl:text-5xl">{seconds}</p>
-          <p className="text-white flex justify-center">Seconds</p>
+        <span className="flex flex-col  w-14 h-14 justify-center border-2 border-[#ffffff40] bg-secondColor rounded-md sm:w-18 sm:h-18 md:w-20 md:h-20 lg:w-22 lg:h-22 xl:w-24 xl:h-24 timer-seconds">
+          <p className="text-white flex justify-center timer-count">{seconds}</p>
+          <p className="text-white flex justify-center timer-day">Seconds</p>
         </span>
     </div>
   );

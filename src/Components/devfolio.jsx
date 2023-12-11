@@ -16,10 +16,10 @@ export default function Devfolio() {
 
     return (
         <div
-            className="apply-button"
+            className="apply-button devfolio-button"
             data-hackathon-slug="innerve-2"
             data-button-theme="dark"
-            style={{ height: "50px", width: "312px", marginBottom: "20px"}}
+            // style={{ height: "50px", width: "312px", marginBottom: "20px"}}
         ></div>
     );
 }   
