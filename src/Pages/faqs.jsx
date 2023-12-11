@@ -123,7 +123,7 @@ function Faqs() {
       <Heading title="FAQs" />
       <HeadingMobile title="FAQs"/>
       <div className=" flex flex-col items-center justify-center lg:mt-16  w-screen lg:flex-row ">
-      <div className="flex text-[#121212] lg:ml-[50px] mt-8 items-center justify-center space-x-[6px] lg:flex-col lg:space-y-[70px]">
+      <div className="flex text-[#121212] lg:ml-[50px] px-4 mt-8 items-center justify-center space-x-[6px] lg:flex-col lg:space-y-[70px]">
 
 
   <Button label="General" onClick={() => setActiveList('general')} isActive={activeList === 'general'} />
@@ -164,8 +164,8 @@ const Heading = ({ title }) => {
 const Button = ({ label, onClick, isActive }) => {
   return (
     <button
-      className={`lg:w-[150px] items-center flex text-white font-bold py-1 px-2 rounded transition-colors duration-300 ease-in-out ${
-        isActive ? 'bg-orange-300' : 'bg-[#DD6843]'
+      className={`lg:w-[150px] items-center rounded-[4px] flex text-white font-bold py-2 none px-3 transition-colors duration-300 ease-in-out ${
+        isActive ? 'bg-orange-300 no-underline ' : 'bg-[#DD6843]  opacity-85 '
       }`}
       onClick={onClick}
     >
@@ -176,7 +176,7 @@ const Button = ({ label, onClick, isActive }) => {
 
 const HeadingMobile = ({ title }) => {
   return (
-      <div className="text-center ml-[18px] pb-6 flex py-2 lg:hidden item-start justify-start  font-medium text-[36px] text-black whitespace-nowrap">
+      <div className="text-center ml-[18px] pb-6 flex py-2 lg:hidden item-start justify-start  font-medium text-[54px] text-black whitespace-nowrap">
           <div className="tracking-tight ttext-black bg-clip-text whitespace-nowrap">
               {title}
           </div>
