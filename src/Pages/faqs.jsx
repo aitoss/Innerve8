@@ -92,6 +92,7 @@ function Faqs() {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
+
   useEffect(() => {
     const lenis = new Lenis();
 
@@ -123,10 +124,13 @@ function Faqs() {
       <HeadingMobile title="FAQs"/>
       <div className=" flex flex-col items-center justify-center lg:mt-16  w-screen lg:flex-row ">
       <div className="flex text-[#121212] lg:ml-[50px] mt-8 items-center justify-center space-x-[6px] lg:flex-col lg:space-y-[70px]">
-  <Button label="General" onClick={() => setActiveList('general')} />
-  <Button label="Stay" onClick={() => setActiveList('stay')} />
-  <Button label="Travel" onClick={() => setActiveList('travel')} />
-  <Button label="Expenses" onClick={() => setActiveList('expenses')} />
+
+
+  <Button label="General" onClick={() => setActiveList('general')} isActive={activeList === 'general'} />
+        <Button label="Stay" onClick={() => setActiveList('stay')} isActive={activeList === 'stay'} />
+        <Button label="Travel" onClick={() => setActiveList('travel')} isActive={activeList === 'travel'} />
+        <Button label="Expenses" onClick={() => setActiveList('expenses')} isActive={activeList === 'expenses'} />
+
 </div>
         <div className='bg-[#F9F0E7] w-screen pt-8 lg:ml-[120px] flex justify-center items-center'>
           <div className='list'>
@@ -148,7 +152,7 @@ function Faqs() {
 
 const Heading = ({ title }) => {
   return (
-      <div className="text-startflex hidden lg:block items-start mt-14 ml-16 font-medium text-7xl text-black whitespace-nowrap justify-start">
+      <div className="text-startflex hidden lg:block items-start mt-14 ml-[54px] font-medium text-7xl text-black whitespace-nowrap justify-start">
           <div className="tracking-tight text-black bg-clip-text whitespace-nowrap">
               {title}
           </div>
