@@ -36,11 +36,11 @@ const Testimonial = () => {
     return (
         <>
             <section className="bg-[#121212] w-screen hidden h-full lg:block">
-                <div className="flex justify-center relative top-[450px] z-30 py-8 text-3xl lg:text-7xl items-center">Connect with Code - Cultivate Growth
+                <div className="flex justify-center relative top-[450px] z-30 text-3xl lg:text-7xl items-center">Connect with Code - Cultivate Growth
                 </div>
                 <div
                     ref={container}
-                    className="gallery overflow-hidden h-full bg-[#121212]  flex flex-row gap-[2vw] p-[2vw] border-box"
+                    className="gallery overflow-hidden -top-10 h-full bg-[#121212]  flex flex-row gap-[2vw] p-[2vw] border-box"
                     style={{ y }}
                 >
                     <Column className="w-[20%] h-[40%] relative flex -top-[10%] flex-col gap-[2vw] " images={[images[0], images[1], images[2]]} y={y} />
