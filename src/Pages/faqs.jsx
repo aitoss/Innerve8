@@ -82,6 +82,8 @@ function Faqs() {
  
   ]);
 
+
+  
   const [activeList, setActiveList] = useState(generalList);
 
   const [activeIndex, setActiveIndex] = useState(null);
@@ -116,15 +118,17 @@ function Faqs() {
 
   return (
     <>
-      <div className="bg-[#F9F0E7] flex flex-row h-screen">
-        <div className="flex text-[#121212] items-start space-y-[66px] mt-[80px] lg:ml-[200px] flex-col">
-          <Heading title="FAQs" />
-          <Button label="General" onClick={() => setActiveList('general')} />
-          <Button label="Stay" onClick={() => setActiveList('stay')} />
-          <Button label="Travel" onClick={() => setActiveList('travel')} />
-          <Button label="Expenses" onClick={() => setActiveList('expenses')} />
-        </div>
-        <div className='bg-[#F9F0E7] h-screen lg:ml-[180px] flex justify-center items-center'>
+      <Heading title="FAQs" />
+      <div className="bg-[#F9F0E7] flex flex-col  w-screen lg:flex-row h-screen">
+  
+      <HeadingMobile title="FAQs"/>
+      <div className="flex text-[#121212] ml-[50px] mt-8 items-center justify-center space-x-[6px] lg:flex-col lg:space-y-[70px]">
+  <Button label="General" onClick={() => setActiveList('general')} />
+  <Button label="Stay" onClick={() => setActiveList('stay')} />
+  <Button label="Travel" onClick={() => setActiveList('travel')} />
+  <Button label="Expenses" onClick={() => setActiveList('expenses')} />
+</div>
+        <div className='bg-[#F9F0E7] w-screen pt-8 lg:ml-[120px] flex justify-center items-center'>
           <div className='list'>
             {renderActiveList().map((item, index) => (
               <Accordion
@@ -143,22 +147,35 @@ function Faqs() {
 
 const Heading = ({ title }) => {
   return (
-    <div className="text-center flex mt-14 font-medium text-[60px] text-black whitespace-nowrap">
-      <div className="tracking-tight ttext-black bg-clip-text whitespace-nowrap">
-        {title}
+      <div className="text-startflex hidden lg:block items-start mt-14 ml-16 font-medium text-6xl text-black whitespace-nowrap justify-start">
+          <div className="tracking-tight text-black bg-clip-text whitespace-nowrap">
+              {title}
+          </div>
       </div>
-    </div>
   );
 };
 
-const Button = ({ label, onClick }) => {
+
+const Button = ({ label, onClick, isActive }) => {
   return (
     <button
-      className="bg-blue-500 w-[150px] items-start hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      className={`lg:w-[150px] items-center flex text-white font-bold py-1 px-2 rounded transition-colors duration-300 ease-in-out ${
+        isActive ? 'bg-orange-300' : 'bg-[#DD6843]'
+      }`}
       onClick={onClick}
     >
       {label}
     </button>
+  );
+};
+
+const HeadingMobile = ({ title }) => {
+  return (
+      <div className="text-center ml-[16px] pb-6 flex py-2 lg:hidden item-start justify-start  font-medium text-[36px] text-black whitespace-nowrap">
+          <div className="tracking-tight ttext-black bg-clip-text whitespace-nowrap">
+              {title}
+          </div>
+      </div>
   );
 };
 
