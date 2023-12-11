@@ -60,7 +60,7 @@ export default function Footer() {
                 // fog={new THREE.Fog("rgb(5, 15, 45)", 5, 15)} // Add fog to the scene
                 >
                   {/* <directionalLight position={[0.028, 4.895, 8.407]} /> */}
-                  <ambientLight intensity={5} />
+                  <ambientLight intensity={7} />
 
                   <Sphere
                     position={[0, 0, 0]}
