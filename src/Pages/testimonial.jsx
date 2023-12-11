@@ -36,7 +36,7 @@ const Testimonial = () => {
     return (
         <>
             <section className="bg-[#121212] w-screen hidden h-full lg:block">
-                <div className="flex justify-center relative top-[450px] z-30 text-3xl lg:text-7xl items-center">Connect with Code - Cultivate Growth
+                <div className="flex justify-center relative top-[400px] z-30 lg:text-7xl items-center">Connect with Code
                 </div>
                 <div
                     ref={container}

@@ -12,7 +12,7 @@ const TestimonialMob = () => {
         offset: ['end start', 'start end']
     });
     const y = useTransform(scrollYProgress, [0, 1], [1, -150]);
-    const y2 = useTransform(scrollYProgress, [0, 1], [1, 150]);
+    const y2 = useTransform(scrollYProgress, [0, 1], [1, 200]);
     const images = [
         "1.jpg",
         "2.jpg",
@@ -34,7 +34,7 @@ const TestimonialMob = () => {
     return (
         <>
             <section className="bg-[#121212] lg:hidden h-full w-screen">
-                <div className="flex justify-center relative top-[350px] z-30 py-8 text-4xl lg:text-7xl font-medium items-center">Connect with Code
+                <div className="flex justify-center relative top-[300px] z-30 text-5xl lg:text-7xl font-medium items-center">Connect with Code
                 </div>
                 <div
                     ref={container}
