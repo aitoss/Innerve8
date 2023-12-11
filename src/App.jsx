@@ -20,19 +20,19 @@ function App() {
   return (
     <>
       <div className="noise max-w-[1400px]"></div>
-      {/* <Home />
+      <Home />
       <Dates />
       <Prize  />
       <Tracks  />
-      <Problems /> */}
+      <Problems />
       {/* <Timeline />
       <Timeline />
       <Timeline /> */}
-      {/* <Sponsor/>
+      <Sponsor/>
       <Testimonial/>
-      <Faqs/> */}
+      <Faqs/>
       <Bannercard/>
-      {/* <Footer/> */}
+      <Footer/>
     </>
   )
 }
