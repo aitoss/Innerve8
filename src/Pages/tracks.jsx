@@ -10,12 +10,12 @@ const Tracks = () => {
         <>
             <div className="flex align-middle  max-w-[1920px] w-screen h-auto overflow-hidden flex-col relative top-5">
                 <Slider text={["GameDev", 'Logistics', 'Web3.0', 'Healthcare', 'FinTech', 'EdTech']} />
-                <div id="Tracks" className="flex flex-row flex-wrap gap-20 lg:px-[25%] px-[2%] justify-center items-center relative top-20">
+                <div id="Tracks" className="flex flex-row flex-wrap gap-24 lg:px-[25%] px-[2%] justify-center items-center relative top-20">
                     {indiData.map((data) => (
                         <Track title={data[0]} img={data[1]} />
                     ))}
                 </div>
-                <div className="flex relative top-[8rem] justify-center">
+                <div className="flex relative top-[8rem] mt-10 justify-center">
                     <Heading />
                 </div>
             </div>
