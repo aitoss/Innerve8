@@ -76,7 +76,7 @@ button:focus-visible {
   border-radius: 8.528px;
   background: linear-gradient(128deg, #FDF0B7 -18.27%, #FFEA8C 15.95%, #FDDE56 49.56%);
 }
-.innerve-text{
+/* .innerve-text{
   position: absolute;
   bottom: 20vh;
   left: 0;
@@ -85,7 +85,7 @@ button:focus-visible {
   margin-right: auto;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .navigator{
   display: none;

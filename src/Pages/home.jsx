@@ -24,7 +24,7 @@ export default function Home() {
         <Nav />
       </div>
 
-      <div className="w-full flex flex-col h-3/6 justify-center">
+      <div className="w-full flex flex-col h-3/6 justify-center relative min-h-fit">
         <div className="flex flex-col w-full items-center justify-center">
             <div className="w-full flex justify-center">
             <p className="text-md sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl pt-6 text-black landing-text">India's biggest student driven hackathon</p>
@@ -34,10 +34,10 @@ export default function Home() {
         <div className="h-fit flex justify-center w-full">
           <Timer />
         </div>
-        <div className="w-full flex justify-center z-10 relative mt-10">
+        <div className="w-full flex justify-center z-10 relative mt-10 ">
           <Devfolio />
         </div>
-        <div className="flex innerve-text">
+        <div className="flex innerve-text w-full h-fit justify-center bg-black">
           <InnerveText />
         </div>
         <div className="absolute w-full flex justify-center overflow-hidden">

@@ -13,9 +13,11 @@
   }
   .devfolio-button{
      height: 50px; 
-     width: 312px; 
+     width: 10px; 
      margin-bottom: 20px;
   }
+
+  
 
 
 @media screen and (max-width: 1440px) {

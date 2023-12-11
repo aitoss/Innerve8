@@ -10,8 +10,8 @@ const Nav = () => {
     }
 
     return (
-        <>
-            {nav && (<div div className="navigtor">
+        <> 
+            {nav && (<div div className="navigtor bg-black h-screen w-screen">
                 {/* // code for hiden navigator goes here */}
             </div>)}
             <div className="flex justify-center">
