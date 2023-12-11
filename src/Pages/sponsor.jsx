@@ -5,34 +5,44 @@ import accops from "../assets/images/accops.png"
 import byte from "../assets/images/byte.png"
 import mro from "../assets/images/mro.png"
 import Slider from '../Components/slider';
+import Slider from "../Components/slider";
 
 const Sponsor = () => {
   return (
     <>
      <DummyBanner/>
-     {/* <Slider text={["Sponsors"]} /> */}
-    <section className=" p-4 flex flex-col mt-[60px] justify-center items-center ">
+     {/* <Slider text={['Sponsors', 'Sponsors', 'Sponsors']} /> */}
+    <div className=" p-4 w-screen flex flex-col mt-[3%] justify-center flex-wrap items-center">
    
     <Heading title="{Title Sponsor}" />
+    <div className='flex flex-wrap justify-center px-[20%] flex-row'>
     <SponsorLogos logoCount={4} />
     <SponsorLogos logoCount={2} />
-    <Heading title="{Platinum Sposor}" />
+    </div>
+    <Heading title="{Platinum Sponsor}" />
+    <div className='flex flex-wrap justify-center px-[20%]'>
     <SponsorLogos logoCount={4} />
     <SponsorLogos logoCount={2} />
+    </div>
     <Heading title="{Gold Sponsor}" />
+    <div className='flex flex-wrap justify-center px-[20%]'>
     <SponsorLogos logoCount={4} />
     <SponsorLogos logoCount={3} />
+    </div>
+    <div className='flex flex-wrap justify-center px-[20%] pb-[10vh]'>
     <Heading title="{Co Sponsor}" />
     <SponsorLogos logoCount={4} />
     <SponsorLogos logoCount={3} />
-        </section>
+    </div>
+        </div>
     </>
   )
 }
 
 const DummyBanner = () => {
     return (
-        <div className="relative top-14 left-0 right-0 overflow-hidden">
+        <div className='flex justify-center w-full'>
+        <div className="relative top-14 left-0 right-0 overflow-hidden flex justify-center">
             <motion.div
                 variants={{
                     start: { x: "100%" },
@@ -42,9 +52,9 @@ const DummyBanner = () => {
                 initial="start"
                 animate="end"
                 transition={{ repeat: Infinity, duration: 30, ease: "linear" }}
-                className="text-[#787470] text-5xl font-medium"
+                className="text-[#787470] text-5xl font-medium flex-col"
             >
-                <div className="w-[1990px] flex gap-6 items-center justify-center">
+                <div className="w-[100%] flex gap-6 items-center justify-center">
                     <h1 className=" tracking-tight text-5xl text-transparent bg-clip-text bg-gradient-to-t from-[#2c2a2a] to-[#525252] whitespace-nowrap">Sponsors</h1>
                     <svg xmlns="http://www.w3.org/2000/svg" width="41" height="42" viewBox="0 0 41 42" fill="none">
                         <rect x="0.618164" y="0.85083" width="40.2688" height="40.2985" rx="2.68558" fill="#929292" fill-opacity="0.4" />
@@ -68,13 +78,14 @@ const DummyBanner = () => {
                 </div>
             </motion.div>
         </div>
+        </div>
     );
 };
 
 const Heading = ({ title }) => {
     return (
-        <div className="text-center flex  mt-14 font-medium text-[36px] text-black whitespace-nowrap">
-            <motion.div className="tracking-tight ttext-black bg-clip-text whitespace-nowrap">
+        <div className="text-center flex  mt-14 font-medium text-4xl text-black whitespace-nowrap justify-center">
+            <motion.div className="tracking-tight text-black bg-clip-text whitespace-nowrap">
                 {title}
             </motion.div>
         </div>
@@ -85,14 +96,18 @@ const SponsorLogos = ({ logoCount }) => {
     const sponsorLogos = [udchalo, byte, mro, accops].slice(0, logoCount);
 
     return (
-        <div className="flex justify-center items-center space-x-8 mt-8">
+        <div className="flex justify-center items-center flex-row flex-wrap gap-7 mt-8">
             {sponsorLogos.map((logo, idx) => (
+                <motion.div
+                    
+                >
                 <img
                     key={idx}
                     src={logo}
                     alt={`Sponsor Logo ${idx + 1}`}
                     className="max-h-16 max-w-16"
                 />
+                </motion.div>
             ))}
         </div>
     );

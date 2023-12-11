@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-      <div className="noise"></div>
+      <div className="noise max-w-[1400px]"></div>
       <Home />
       <Dates />
       <Prize  />
