@@ -6,7 +6,7 @@ const Problems = () => {
     return (
         <>
         <div className="relative w-full items-center justify-center bg-[#F9F0E7] h-full overflow-hidden max-w-[1920px]">
-            <div className="w-full h-fit relative top-1 flex justify-center">
+            <div className="w-full h-fit relative top-1 py-4 flex justify-center">
             <Slider text={["Problem Statement"]}/>
             </div>
             <div className="flex flex-row justify-center relative items-center pt-[8vh] flex-wrap gap-8 px-[512px] ">
