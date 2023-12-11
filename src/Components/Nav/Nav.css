@@ -1,0 +1,39 @@
+.navigator {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Initial position off-screen */
+    width: 300px;
+    height: 100%;
+    background-color: #000;
+    transition: transform 1s ease-in-out;
+}
+
+.navigator.open {
+    transform: translateX(-300px); /* Slide in from the right */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000000;
+}
+
+.overlay.open {
+    display: block;
+}
