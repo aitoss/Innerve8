@@ -11,8 +11,8 @@ const TestimonialMob = () => {
         target: container,
         offset: ['end start', 'start end']
     });
-    const y = useTransform(scrollYProgress, [0, 1], [1, -150]);
-    const y2 = useTransform(scrollYProgress, [0, 1], [1, 200]);
+    const y = useTransform(scrollYProgress, [0, 1], [1, -700]);
+    const y2 = useTransform(scrollYProgress, [0, 1], [1, 700]);
     const images = [
         "1.jpg",
         "2.jpg",

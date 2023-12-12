@@ -157,7 +157,7 @@ const Button = ({ label, onClick, isActive = true}) => {
   return (
     <button
       className={`lg:w-[150px] items-center text-[20px] rounded-[4px] flex text-white font-bold py-2 border-none none px-3 transition-colors duration-300 ease-in-out ${
-        isActive ? 'bg-gradient-to-r from-[#DD6843] via-[#F0A36D] to-[#DD6843] no-underline ' : 'bg-gradient-to-r from-[#DD6843] via-[#F0A36D] to-[#DD6843]  no-underline  opacity-80 '
+        isActive ? 'bg-gradient-to-r from-[#DD6843] via-[#F0A36D] to-[#DD6843] no-underline border-none' : 'bg-gradient-to-r from-[#DD6843] via-[#F0A36D] to-[#DD6843]  no-underline border-none opacity-60 '
       }`}
       onClick={onClick}
     >
