@@ -5,7 +5,7 @@ import DarkSlider from "../Components/darkSlider";
 
 const Prize = () => {
   return (
-    <div className=" w-screen bg-[#212121] h-full ">
+    <div className=" w-screen bg-[#212121] h-full overflow-hidden">
       {/* <Slider text={['EdTech', 'GameDev', 'Logistics', 'Web3.0', 'Healthcare', 'XR','FinTech','Blockchain']} /> */}
       {/* <DummyBanner /> */}
       <DarkSlider text={["10lac+ Prize pool"]} />
