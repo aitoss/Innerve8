@@ -115,7 +115,7 @@ function Faqs() {
       <Heading title="FAQs" />
       <HeadingMobile title="FAQs"/>
       <div className=" flex flex-col items-center justify-center   w-screen lg:flex-row ">
-      <div className="flex text-[#121212] px-12 focus:border-none lg:ml-[36px] border-none lg:mt-8 mt-4 items-center justify-center gap-2 lg:flex-col lg:space-y-[40px]">
+      <div className="flex text-[#121212] px-12 focus:border-none  border-none lg:mt-8 mt-4 items-center justify-center gap-2 lg:flex-col lg:space-y-[40px]">
 
 
   <Button label="General" onClick={() => setActiveList('general')} isActive={activeList === 'general'} />
