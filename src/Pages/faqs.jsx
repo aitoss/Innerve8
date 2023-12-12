@@ -111,11 +111,11 @@ function Faqs() {
 
   return (
     <>
-    <div className="h-[90vh] bg-[#F9F0E7] ">
+    <div className="h-full bg-[#F9F0E7] ">
       <Heading title="FAQs" />
       <HeadingMobile title="FAQs"/>
-      <div className=" flex flex-col items-center justify-center lg:mt-16  w-screen lg:flex-row ">
-      <div className="flex text-[#121212] lg:ml-[50px] px-4 mt-8 items-center justify-center space-x-[10px] lg:flex-col lg:space-y-[70px]">
+      <div className=" flex flex-col items-center justify-center   w-screen lg:flex-row ">
+      <div className="flex text-[#121212] lg:ml-[36px] px-4 mt-8 items-center justify-center space-x-[10px] lg:flex-col lg:space-y-[70px]">
 
 
   <Button label="General" onClick={() => setActiveList('general')} isActive={activeList === 'general'} />
@@ -124,7 +124,7 @@ function Faqs() {
         <Button label="Expenses" onClick={() => setActiveList('expenses')} isActive={activeList === 'expenses'} />
 
 </div>
-        <div className='bg-[#F9F0E7] w-screen pt-16 lg:ml-[120px] flex justify-center items-center'>
+        <div className='bg-[#F9F0E7] w-screen pt-12 lg:ml-[120px] flex justify-center items-center'>
           <div className='list'>
             {renderActiveList().map((item, index) => (
               <Accordion
