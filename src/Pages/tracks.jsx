@@ -31,6 +31,7 @@ const Track = ({title, img}) => {
                 <motion.div
                     initial={{ scale: 1 }}
                     whileHover={{scale: 1.05, rotate: [0, 5, 0], duration: 0.1, style: {background: '#F9F0E7'}}}
+                    transition={{type: 'spring', stiffness: 300}}
                 >
                     <div className="lg:w-48 lg:h-48 h-32 w-32 rounded-[2.5rem] lg:rounded-[3.5rem] bg-[#D9D9D9] flex flex-wrap justify-center relative drop-shadow-md">
                         <motion.div
@@ -51,9 +52,9 @@ const Track = ({title, img}) => {
 
 const Heading = () => {
     return (
-        <div className="text-center hidden lg:block tracking-[8px] font-medium text-[200px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
+        <div className="text-center hidden lg:block tracking-[8px] text-[200px] sticky text-transparent bg-gradient-to-b from-[#FFFFFF] to-[rgba(55,47,47,0.5)] bg-clip-text">
             <motion.div
-                className=" translate-y-[-120px] tracking-tight text-transparent bg-clip-text bg-gradient-to-t from-[#222121] to-[#525252] whitespace-nowrap"
+                className=" translate-y-[-120px] tracking-tight text-transparent bg-clip-text bg-gradient-to-t from-[#FFFFFF] to-[rgba(55,47,47,0.5)] whitespace-nowrap"
             >
                 Tracks
             </motion.div>
@@ -67,7 +68,7 @@ const Heading2 = () => {
     return (
     <div className="text-center relative top-[20px] lg:hidden tracking-[8px] font-medium text-[80px] text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
             <motion.div
-                className=" tracking-tight text-transparent bg-clip-text bg-gradient-to-t from-[#222121] to-[#525252] whitespace-nowrap"
+                
             >
                 Tracks
             </motion.div>

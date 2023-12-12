@@ -4,12 +4,12 @@ import Marquee from "react-fast-marquee";
 const Slider = ({ text }) => {
   return (
     <>
-      <div className="max-w-[1920px]">
-        <Marquee autoFill="true" speed={80}>
-          {text.map((item) => (
-            <TextSlide text={item} />
-          ))}
-        </Marquee>
+    <div className="max-w-[1920px] w-screen z-[-1]">
+      <Marquee autoFill="true" speed={80}>
+        {text.map((item) => (
+          <TextSlide text={item} />
+        ))}
+      </Marquee>
       </div>
     </>
   );

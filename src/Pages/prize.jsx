@@ -5,10 +5,12 @@ import DarkSlider from "../Components/darkSlider";
 
 const Prize = () => {
   return (
-    <div className=" w-screen bg-[#212121] h-full overflow-hidden">
+    <div className="w-screen bg-[#212121] h-full overflow-hidden">
       {/* <Slider text={['EdTech', 'GameDev', 'Logistics', 'Web3.0', 'Healthcare', 'XR','FinTech','Blockchain']} /> */}
       {/* <DummyBanner /> */}
+      <div className="overflow-hidden">
       <DarkSlider text={["10lac+ Prize pool"]} />
+      </div>
       <div className="w-screen lg:pt-40  flex-col items-center h-full">
         <Heading2/>
         <StackedCards />

@@ -113,6 +113,15 @@ button:focus-visible {
   flex-wrap: wrap;
 }
 
+.activebtn {
+  background: var(--Shocking-Orange, linear-gradient(308deg, #DD6843 25.02%, #F0A36D 96.24%)); 
+}
+
+.normalbtn{
+opacity: 0.8;
+background: var(--Shocking-Orange, linear-gradient(308deg, #DD6843 25.02%, #F0A36D 96.24%));
+}
+
 @media screen and (max-width: 450px) {
   .nav-inner{
     padding: 1rem 1rem;

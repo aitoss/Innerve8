@@ -14,6 +14,7 @@ import Bannercard from './Pages/bannercard.jsx'
 import Problems from './Pages/problems.jsx'
 import Faqs from './Pages/faqs.jsx'
 import TestimonialMob from './Pages/testimonialMobile.jsx'
+import Teams from './Pages/teams.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -35,6 +36,7 @@ function App() {
       <Faqs/>
       <Bannercard/>
       <Footer/>
+
     </>
   )
 }

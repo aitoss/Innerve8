@@ -11,28 +11,28 @@ const Sponsor = () => {
   return (
     <>
      {/* <DummyBanner/> */}
-     <div className='flex justify-center w-screen top-16 relative '>
-     <Slider text={['Sponsors', 'Sponsors', 'Sponsors']} />
+     <div className='flex justify-center w-screen top-16 relative overflow-hidden'>
+     <Slider text={['Sponsors']} />
      </div>
     <div className=" p-4 w-screen flex flex-col mt-[3%] justify-center flex-wrap items-center">
    
     <Heading title="{Title Sponsor}" />
-    <div className='flex flex-wrap justify-center px-[20%] flex-row'>
+    <div className='flex flex-wrap justify-center px-[10%] flex-row'>
     <SponsorLogos logoCount={4} />
     <SponsorLogos logoCount={2} />
     </div>
     <Heading title="{Platinum Sponsor}" />
-    <div className='flex flex-wrap justify-center px-[20%]'>
+    <div className='flex flex-wrap px-[10%] justify-center'>
     <SponsorLogos logoCount={4} />
     <SponsorLogos logoCount={2} />
     </div>
     <Heading title="{Gold Sponsor}" />
-    <div className='flex flex-wrap justify-center px-[20%]'>
+    <div className='flex flex-wrap px-[10%] justify-center'>
     <SponsorLogos logoCount={4} />
     <SponsorLogos logoCount={3} />
     </div>
-    <div className='flex flex-wrap justify-center px-[20%] pb-[10vh]'>
     <Heading title="{Co Sponsor}" />
+    <div className='flex flex-wrap px-[10%] justify-center pb-[10vh]'>
     <SponsorLogos logoCount={4} />
     <SponsorLogos logoCount={3} />
     </div>
