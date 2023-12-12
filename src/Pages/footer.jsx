@@ -127,7 +127,7 @@ export default function Footer() {
       </div>
       <div className="w-5/6 h-1/6">
         <div>
-          <div className="down-footer flex-col flex justify-center items-center gap-6">
+          <div className="down-footer flex-col flex justify-center items-center gap-4">
             <div className="flex flex-row justify-center space-x-6 items-center">
 
               <div className="mx-auto w-[1px] h-8 bg-[#303030] "></div>

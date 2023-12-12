@@ -156,8 +156,8 @@ const Heading = ({ title }) => {
 const Button = ({ label, onClick, isActive = true}) => {
   return (
     <button
-      className={`lg:w-[150px] items-center rounded-[4px] flex text-white font-bold py-2 border-none none px-3 transition-colors duration-300 ease-in-out ${
-        isActive ? 'bg-orange-400 no-underline ' : 'bg-[#DD6843] no-underline  opacity-75 '
+      className={`lg:w-[150px] items-center text-[20px] rounded-[4px] flex text-white font-bold py-2 border-none none px-3 transition-colors duration-300 ease-in-out ${
+        isActive ? 'bg-gradient-to-r from-[#DD6843] via-[#F0A36D] to-[#DD6843] no-underline ' : 'bg-gradient-to-r from-[#DD6843] via-[#F0A36D] to-[#DD6843]  no-underline  opacity-80 '
       }`}
       onClick={onClick}
     >
