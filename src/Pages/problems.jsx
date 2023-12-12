@@ -29,7 +29,7 @@ const Cards = () => {
             <motion.div
             initial={{ scale: 0.9 }}
             whileInView={{scale: 1, duration: 0.5}}
-            whileHover={{scale: 1.05, rotate: [0, 1, 0], duration: 0.5}}
+            whileHover={{scale: 1.02, rotate: [0, 1, 0], duration: 0.5}}
             transition={{type: 'spring', stiffness: 300}}
             >
             <div className="flex flex-col rounded-lg w-[30rem] h-[18rem] p-[32px] bg-[#FFFFFF] opacity-80">
