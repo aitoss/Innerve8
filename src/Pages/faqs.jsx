@@ -156,8 +156,8 @@ const Heading = ({ title }) => {
 const Button = ({ label, onClick, isActive = true}) => {
   return (
     <button
-      className={`lg:w-[150px] items-center rounded-[4px] flex text-white font-bold py-2 none px-3 transition-colors duration-300 ease-in-out ${
-        isActive ? 'bg-orange-300 no-underline ' : 'bg-[#DD6843]  opacity-85 '
+      className={`lg:w-[150px] items-center rounded-[4px] flex text-white font-bold py-2 border-none none px-3 transition-colors duration-300 ease-in-out ${
+        isActive ? 'bg-orange-400 no-underline ' : 'bg-[#DD6843] no-underline  opacity-75 '
       }`}
       onClick={onClick}
     >
