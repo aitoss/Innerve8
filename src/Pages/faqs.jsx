@@ -75,9 +75,8 @@ function Faqs() {
       answer: "Yes, participants experiencing difficulties with travel expenses can reach out to the OSS Club for potential financial assistance or alternative solutions.",
   }]);
 
-  
-  const [activeList, setActiveList] = useState(generalList);
 
+  const [activeList, setActiveList] = useState('general');
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleActive = (index) => {
@@ -95,6 +94,7 @@ function Faqs() {
 
     requestAnimationFrame(raf);
   }, []);
+
 
   const renderActiveList = () => {
     switch (activeList) {
@@ -153,7 +153,7 @@ const Heading = ({ title }) => {
 };
 
 
-const Button = ({ label, onClick, isActive }) => {
+const Button = ({ label, onClick, isActive = true}) => {
   return (
     <button
       className={`lg:w-[150px] items-center rounded-[4px] flex text-white font-bold py-2 none px-3 transition-colors duration-300 ease-in-out ${
