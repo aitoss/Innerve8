@@ -115,7 +115,7 @@ function Faqs() {
       <Heading title="FAQs" />
       <HeadingMobile title="FAQs"/>
       <div className=" flex flex-col items-center justify-center   w-screen lg:flex-row ">
-      <div className="flex text-[#121212] lg:ml-[36px] px-4 mt-8 items-center justify-center space-x-[10px] lg:flex-col lg:space-y-[70px]">
+      <div className="flex text-[#121212] lg:ml-[36px] px-4 lg:mt-8 mt-2 items-center justify-center space-x-[10px] lg:flex-col lg:space-y-[70px]">
 
 
   <Button label="General" onClick={() => setActiveList('general')} isActive={activeList === 'general'} />
@@ -124,7 +124,7 @@ function Faqs() {
         <Button label="Expenses" onClick={() => setActiveList('expenses')} isActive={activeList === 'expenses'} />
 
 </div>
-        <div className='bg-[#F9F0E7] w-screen pt-12 lg:ml-[120px] flex justify-center items-center'>
+        <div className='bg-[#F9F0E7] w-screen lg:pt-12 pt-6 lg:ml-[120px] flex justify-center items-center'>
           <div className='list'>
             {renderActiveList().map((item, index) => (
               <Accordion
@@ -168,7 +168,7 @@ const Button = ({ label, onClick, isActive = true}) => {
 
 const HeadingMobile = ({ title }) => {
   return (
-      <div className="text-center ml-[18px] pb-6 flex py-2 lg:hidden item-start justify-start  font-medium text-[54px] text-black whitespace-nowrap">
+      <div className="text-center ml-[18px] pb-4 flex py-2 lg:hidden item-start justify-start  font-medium text-[54px] text-black whitespace-nowrap">
           <div className="tracking-tight ttext-black bg-clip-text whitespace-nowrap">
               {title}
           </div>

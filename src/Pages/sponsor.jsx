@@ -12,7 +12,7 @@ const Sponsor = () => {
     <>
      {/* <DummyBanner/> */}
      <div className='flex justify-center w-screen top-14 relative '>
-     <Slider text={['Sponsors', 'Sponsors', 'Sponsors']} />
+     {/* <Slider text={['Sponsors', 'Sponsors', 'Sponsors']} /> */}
      </div>
     <div className=" p-4 w-screen flex flex-col mt-[3%] justify-center flex-wrap items-center">
    
