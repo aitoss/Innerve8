@@ -69,7 +69,7 @@ button:focus-visible {
   background: linear-gradient(155deg, #F5AEDD 15.11%, #E493C9 49.48%, #C97FB0 83.26%); 
 }
 .timer-hours{
-  border-radius: 14.924px;
+  border-radius: 8.528px;
   background: linear-gradient(135deg, #C1D29D 17.19%, #90C280 42.8%, #8FB781 67.96%);
 }
 .timer-days{

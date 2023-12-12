@@ -46,12 +46,12 @@ export default function Footer() {
   return (
     <div className="w-screen h-screen flex flex-col justify-center items-center gap-12 bg-gradient-to-t from-[#000000] to-[#121212]">
       <div className="w-5/6 h-4/6 flex justify-between">
-        <div className=" h-full w-2/6">
+        <div className=" h-full w-2/6 flex flex-col">
           <div className="w-full h-4/6 ">
-            <h1 className="text-white md:text-3xl lg:text-4xl xl:text-5xl">
+            <h1 className="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
               Presented By:
             </h1>
-            <div className="w-full h-5/6 z-100 flex justify-start ">
+            <div className="w-full h-5/6 z-100 flex justify-start">
               <div>
                 <Canvas
                 // orthographic={true}
@@ -78,13 +78,13 @@ export default function Footer() {
             </div>
             <div className="w-full h-0.5 bg-[#303030] rounded-full"></div>
           </div>
-          <div className="w-full h-2/6 ">
-            <div className="w-full h-1/2 ">
-              <h1>Contact Us</h1>
+          <div className="w-full h-2/6">
+            <div className="w-full h-1/2">
+              <h1 className="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">Contact Us</h1>
             </div>
-            <div className="flex flex-col gap-5">
-              <div className="flex justify-between">
-                <p className="text-xl">Aakash Sharma</p>
+            <div className="flex flex-col gap-5 mt-2">
+              <div className="w-full flex justify-center flex-col xl:flex-row xl:justify-between">
+                <p className="text-xl text-center">Aakash Sharma</p>
                 <div className="btn flex items-center justify-center gap-2 border border-white rounded-full p-1 cursor-pointer bg-black">
                   <h3 className="text-white text-sm">+91 7980558433</h3>
                   <div className="w-[24px] h-[24px] flex items-center justify-center text-white border border-white rounded-full hover:rotate-45">
@@ -92,8 +92,8 @@ export default function Footer() {
                   </div>
                 </div>
               </div>
-              <div className="flex justify-between">
-                <p className="text-xl">Asmita Tripathi</p>
+              <div className="w-full flex justify-center flex-col xl:flex-row xl:justify-between">
+                <p className="text-xl text-center">Aakash Sharma</p>
                 <div className="btn flex items-center justify-center gap-2 border border-white rounded-full p-1 cursor-pointer bg-black">
                   <h3 className="text-white text-sm">+91 7980558433</h3>
                   <div className="w-[24px] h-[24px] flex items-center justify-center text-white border border-white rounded-full hover:rotate-45">
@@ -107,11 +107,11 @@ export default function Footer() {
         <div className=" h-full w-3/6 flex flex-col justify-between">
           <div className="w-full h-2/6">
             <div className="w-full h-2/4">
-              <h1>Innerve to Innovate</h1>
+              <h1 className="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">Innerve to Innovate</h1>
             </div>
-            <div>
-              <div className="btn flex items-center justify-center gap-3 border border-[#212121] rounded-full p-2 cursor-pointer bg-white h-full w-fit">
-                <h3 className="text-[#212121] text-2xl">Register Now</h3>
+            <div className="w-full">
+              <div className="btn flex items-center justify-center gap-3 border border-[#212121] rounded-full p-2 cursor-pointer bg-white h-full w-fit mt-10">
+                <h3 className="text-[#212121] text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl">Register Now</h3>
                 <div className="w-[30px] h-[30px] flex items-center justify-center text-[#212121] border border-[#212121] rounded-full hover:rotate-45">
                   ↗
                 </div>
@@ -120,18 +120,19 @@ export default function Footer() {
           </div>
           <div className="w-full h-0.5 bg-[#303030] rounded-full"></div>
           <div className="w-full h-3/6 flex flex-col justify-between">
-            <h1>Venue</h1>
+            <h1 className="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">Venue</h1>
             <div className="w-full h-4/6 bg-white rounded-md"></div>
           </div>
         </div>
       </div>
-      <div className="w-5/6 h-1/6">
+      <div className="w-5/6 h-1/6 mt-10">
         <div>
-          <div className="down-footer flex-col flex justify-center items-center gap-4">
-            <div className="flex flex-row justify-center space-x-6 items-center">
+          <div className="down-footer flex-col flex justify-center items-center gap-4 mt-5">
+            <div className="flex flex-row justify-center space-x-6 items-center ">
 
               <div className="mx-auto w-[1px] h-8 bg-[#303030] "></div>
               <div className="GitHub flex justify-center items-center gap-2">
+                <a href="" className="flex flex-row w-fit  justify-center">
                 <div className="flex justify-center items-center h-8 w-8 bg-[#212121] rounded-[0.375rem]">
                   <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" clipRule="evenodd" d="M13.0103 0.46582C6.09245 0.46582 0.5 6.19496 0.5 13.2827C0.5 18.9483 4.08327 23.7441 9.05422 25.4415C9.67572 25.5691 9.90337 25.1657 9.90337 24.8264C9.90337 24.5293 9.88288 23.5108 9.88288 22.4496C6.40281 23.2136 5.67812 20.9217 5.67812 20.9217C5.11885 19.4363 4.29018 19.0545 4.29018 19.0545C3.15116 18.2694 4.37315 18.2694 4.37315 18.2694C5.63663 18.3543 6.29961 19.585 6.29961 19.585C7.4179 21.5371 9.2199 20.9855 9.94486 20.6459C10.0483 19.8183 10.3799 19.2454 10.732 18.9272C7.95642 18.6301 5.03613 17.5267 5.03613 12.6035C5.03613 11.203 5.53292 10.0572 6.3201 9.16604C6.1959 8.84782 5.76083 7.53194 6.44455 5.77075C6.44455 5.77075 7.50086 5.43116 9.88263 7.08637C10.9023 6.80581 11.954 6.66309 13.0103 6.66189C14.0667 6.66189 15.1435 6.81059 16.1378 7.08637C18.5198 5.43116 19.5761 5.77075 19.5761 5.77075C20.2599 7.53194 19.8245 8.84782 19.7003 9.16604C20.5083 10.0572 20.9846 11.203 20.9846 12.6035C20.9846 17.5267 18.0643 18.6087 15.2679 18.9272C15.7237 19.3303 16.1171 20.0941 16.1171 21.3038C16.1171 23.0225 16.0966 24.4019 16.0966 24.8261C16.0966 25.1657 16.3245 25.5691 16.9457 25.4418C21.9167 23.7438 25.4999 18.9483 25.4999 13.2827C25.5204 6.19496 19.9075 0.46582 13.0103 0.46582Z" fill="#D9D9D9" />
@@ -139,6 +140,7 @@ export default function Footer() {
 
                 </div>
                 <p className="text-[#FFFFFFBF] text-xl hover:text-[#ffffffe4] hover:cursor-pointer transition-all">GitHub</p>
+                </a>
               </div>
 
               <div className="mx-auto w-[1px] h-8 bg-[#303030] "></div>
@@ -181,8 +183,6 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      </div>
-      <div>
       </div>
     </div>
   );

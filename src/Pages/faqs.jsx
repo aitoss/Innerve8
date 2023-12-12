@@ -124,7 +124,7 @@ function Faqs() {
         <Button label="Expenses" onClick={() => setActiveList('expenses')} isActive={activeList === 'expenses'} />
 
 </div>
-        <div className='bg-[#F9F0E7] w-screen lg:pt-12 pt-6 lg:ml-[120px] flex justify-center items-center'>
+        <div className='bg-[#F9F0E7] w-screen lg:pt-12 pt-6 lg:ml-[120px] flex justify-center items-center mt-2'>
           <div className='list'>
             {renderActiveList().map((item, index) => (
               <Accordion
@@ -156,8 +156,8 @@ const Heading = ({ title }) => {
 const Button = ({ label, onClick, isActive = true}) => {
   return (
     <button
-      className={`lg:w-[150px] items-center text-[20px] rounded-[4px] flex text-white font-bold py-2 border-none none px-3 transition-colors duration-300 ease-in-out ${
-        isActive ? 'bg-gradient-to-r from-[#DD6843] via-[#F0A36D] to-[#DD6843] no-underline border-none' : 'bg-gradient-to-r from-[#DD6843] via-[#F0A36D] to-[#DD6843]  no-underline border-none opacity-60 '
+      className={`lg:w-[150px] items-center text-[20px] rounded-[4px] flex text-white font-bold py-2 border-none none px-3 transition-colors duration-300 ease-in-out focus:border-none ${
+        isActive ? 'bg-gradient-to-r from-[#DD6843] via-[#F0A36D] to-[#DD6843] no-underline border-none focus:border-none' : 'bg-gradient-to-r from-[#DD6843] via-[#F0A36D] to-[#DD6843]  no-underline border-none opacity-60 focus:border-none '
       }`}
       onClick={onClick}
     >

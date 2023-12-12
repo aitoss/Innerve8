@@ -34,7 +34,7 @@ export default function Home() {
         <div className="h-fit flex justify-center w-full">
           <Timer />
         </div>
-        <div className="w-full flex justify-center z-10 relative mt-10 ">
+        <div className="w-full flex justify-center z-10 relative p-5">
           <Devfolio />
         </div>
         <div className="flex innerve-text w-full h-fit justify-center bg-black">
