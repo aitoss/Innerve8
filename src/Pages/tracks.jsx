@@ -31,16 +31,16 @@ const Track = ({title, img}) => {
                     initial={{ scale: 1 }}
                     whileHover={{scale: 1.05, rotate: [0, 5, 0], duration: 0.1, style: {background: '#F9F0E7'}}}
                 >
-                    <div className="lg:w-48 lg:h-48 h-32 w-32 rounded-[3.5rem] bg-[#D9D9D9] flex flex-wrap justify-center relative drop-shadow-md">
+                    <div className="lg:w-48 lg:h-48 h-32 w-32 rounded-[2.5rem] lg:rounded-[3.5rem] bg-[#D9D9D9] flex flex-wrap justify-center relative drop-shadow-md">
                         <motion.div
                         initial={{ scale: 0.9 }}
                         whileHover={{scale: 1, rotate: [0, 10, 0], duration: 0.5}}
                         >
-                        <img src={img} alt="" style={{padding: '20%', justifyContent: 'center', paddingTop: '30%'}}/>
+                        <img src="src/assets/images/Vector.svg" alt="" style={{padding: '20%', justifyContent: 'center', paddingTop: '30%'}}/>
                         </motion.div>
                     </div>
                 </motion.div>
-                <div className="text-3xl py-2 text-[#212121] ">
+                <div className="text-3xl py-3 text-[#212121] ">
                     {title}
                 </div>
             </div>
