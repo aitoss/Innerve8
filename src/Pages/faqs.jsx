@@ -115,7 +115,7 @@ function Faqs() {
       <Heading title="FAQs" />
       <HeadingMobile title="FAQs"/>
       <div className=" flex flex-col items-center justify-center   w-screen lg:flex-row ">
-      <div className="flex text-[#121212] lg:ml-[36px] border-none px-3  lg:mt-8 mt-2 items-center justify-center gap-2 lg:flex-col lg:space-y-[70px]">
+      <div className="flex text-[#121212] px-12 focus:border-none lg:ml-[36px] border-none lg:mt-8 mt-4 items-center justify-center gap-2 lg:flex-col lg:space-y-[40px]">
 
 
   <Button label="General" onClick={() => setActiveList('general')} isActive={activeList === 'general'} />
@@ -124,7 +124,7 @@ function Faqs() {
         <Button label="Expenses" onClick={() => setActiveList('expenses')} isActive={activeList === 'expenses'} />
 
 </div>
-        <div className='bg-[#F9F0E7] w-screen lg:pt-12 pt-6 lg:ml-[120px] flex justify-center items-center'>
+        <div className='bg-[#F9F0E7] w-screen lg:pt-12 pt-6 lg:ml-[120px] mt-2 flex justify-center items-center'>
           <div className='list'>
             {renderActiveList().map((item, index) => (
               <Accordion
@@ -144,8 +144,8 @@ function Faqs() {
 
 const Heading = ({ title }) => {
   return (
-      <div className="text-startflex hidden lg:block items-start mt-14 ml-[54px] font-medium text-7xl text-black whitespace-nowrap justify-start">
-          <div className="tracking-tight text-black bg-clip-text whitespace-nowrap">
+      <div className="text-startflex hidden lg:block items-start mt-14 ml-[54px] font-medium text-7xl text-[#121212] whitespace-nowrap justify-start">
+          <div className="tracking-tight text-[#121212] bg-clip-text whitespace-nowrap">
               {title}
           </div>
       </div>
@@ -156,12 +156,15 @@ const Heading = ({ title }) => {
 const Button = ({ label, onClick, isActive = true}) => {
   return (
     <button
-      className={`lg:w-[150px] items-center text-[18px] lg:text-[20px] rounded-[4px] flex text-white font-bold py-2 border-none none lg:px-3 px-2 transition-colors duration-300 ease-in-out ${
-        isActive ? 'bg-gradient-to-r from-[#DD6843] via-[#F0A36D] to-[#DD6843] no-underline border-none' : 'bg-gradient-to-r from-[#DD6843] via-[#F0A36D] to-[#DD6843]  no-underline border-none opacity-60 '
+      className={`lg:w-[150px] items-center focus:border-none text-[18px] lg:text-[20px] rounded-[4px] flex text-white font-bold py-2 lg:py-[16px] border-none none lg:px-[16px] px-2 transition-colors duration-300 ease-in-out ${
+        isActive ? 'activebtn no-underline border-none focus:border-none' : 'normalbtn  no-underline border-none opacity-60 '
       }`}
       onClick={onClick}
     >
+      <div className="lg:px-3">
       {label}
+      </div>
+
     </button>
   );
 };
@@ -169,7 +172,7 @@ const Button = ({ label, onClick, isActive = true}) => {
 const HeadingMobile = ({ title }) => {
   return (
       <div className="text-center ml-[18px] pb-4 flex py-2 lg:hidden item-start justify-start  font-medium text-[54px] text-black whitespace-nowrap">
-          <div className="tracking-tight ttext-black bg-clip-text whitespace-nowrap">
+          <div className="tracking-tight text-[#121212] bg-clip-text whitespace-nowrap">
               {title}
           </div>
       </div>
