@@ -111,7 +111,7 @@ function Faqs() {
 
   return (
     <>
-    <div className="h-full bg-[#F9F0E7] ">
+    <div className="h-[90vh] bg-[#F9F0E7] ">
       <Heading title="FAQs" />
       <HeadingMobile title="FAQs"/>
       <div className=" flex flex-col items-center justify-center lg:mt-16  w-screen lg:flex-row ">
