@@ -36,7 +36,7 @@ const Track = ({title, img}) => {
                         initial={{ scale: 0.9 }}
                         whileHover={{scale: 1, rotate: [0, 10, 0], duration: 0.5}}
                         >
-                        <img src="src/assets/images/Vector.svg" alt="" style={{padding: '20%', justifyContent: 'center', paddingTop: '30%'}}/>
+                        <img src="src/assets/images/vector.svg" alt="" style={{padding: '20%', justifyContent: 'center', paddingTop: '30%'}}/>
                         </motion.div>
                     </div>
                 </motion.div>
