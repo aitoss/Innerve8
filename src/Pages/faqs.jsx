@@ -5,7 +5,7 @@ import Lenis from '@studio-freight/lenis';
 function Faqs() {
   const [generalList, setGeneralList] = useState([
     {
-      question: "What are the main highlights of Innerve 8?",
+      question: "What are the main highlights of Innerve8?",
       answer: "Innerve 8 features sessions with top experts, a 24-hour hackathon with challenging problems, exciting swags, and goodies for participants.",
     },
     {
@@ -13,7 +13,7 @@ function Faqs() {
       answer: "Phase 1, the Idea Submission Round, will be conducted online, while Phase 2, the Building Round, will take place offline at the AIT Campus.",
     },
     {
-      question: "Who is eligible to participate in Innerve 8?",
+      question: "Who is eligible to participate in Innerve8?",
       answer: "Innerve 8 welcomes participants with a passion for coding and problem-solving skills.",
     },
     {
@@ -23,7 +23,7 @@ function Faqs() {
   
   const [stayList, setStayList] = useState([
     {
-      question: "Where can participants find accommodation during Innerve 8?",
+      question: "Where can participants find accommodation during Innerve8?",
       answer: "We have partnered with several nearby hotels. Detailed information is available on our accommodation page.",
     },
     {
@@ -35,7 +35,7 @@ function Faqs() {
       answer: "Yes, we recommend checking our accommodation page for a list of partnered hotels with special rates for Innerve 8 participants.",
     },
     {
-      question: "How can participants book accommodation for Innerve 8?",
+      question: "How can participants book accommodation for Innerve8?",
       answer: "Participants can book accommodation through our official website or by following the instructions on the accommodation page.",
   }]);
   
@@ -115,7 +115,7 @@ function Faqs() {
       <Heading title="FAQs" />
       <HeadingMobile title="FAQs"/>
       <div className=" flex flex-col items-center justify-center   w-screen lg:flex-row ">
-      <div className="flex text-[#121212] lg:ml-[36px] px-4 lg:mt-8 mt-2 items-center justify-center space-x-[10px] lg:flex-col lg:space-y-[70px]">
+      <div className="flex text-[#121212] lg:ml-[36px] border-none px-3  lg:mt-8 mt-2 items-center justify-center gap-2 lg:flex-col lg:space-y-[70px]">
 
 
   <Button label="General" onClick={() => setActiveList('general')} isActive={activeList === 'general'} />
@@ -156,7 +156,7 @@ const Heading = ({ title }) => {
 const Button = ({ label, onClick, isActive = true}) => {
   return (
     <button
-      className={`lg:w-[150px] items-center text-[20px] rounded-[4px] flex text-white font-bold py-2 border-none none px-3 transition-colors duration-300 ease-in-out ${
+      className={`lg:w-[150px] items-center text-[18px] lg:text-[20px] rounded-[4px] flex text-white font-bold py-2 border-none none lg:px-3 px-2 transition-colors duration-300 ease-in-out ${
         isActive ? 'bg-gradient-to-r from-[#DD6843] via-[#F0A36D] to-[#DD6843] no-underline border-none' : 'bg-gradient-to-r from-[#DD6843] via-[#F0A36D] to-[#DD6843]  no-underline border-none opacity-60 '
       }`}
       onClick={onClick}

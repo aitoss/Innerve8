@@ -6,7 +6,7 @@ const Accordion = (props) => {
 
   return (
     <div
-      className={`lg:w-[65vw] w-[95vw] p-2 lg:p-4 border-b-2 border-black text-[#121212]  mb-6 duration-500 group ${
+      className={`lg:w-[65vw] w-[95vw] p-2 lg:p-4 border-b-[1px] rounded-md lg:border-b-2 border-black text-[#121212]  mb-6 duration-500 group ${
         isActive ? 'is-active ' : ''
       }`}
       onClick={onToggle}
