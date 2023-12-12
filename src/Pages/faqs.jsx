@@ -5,83 +5,75 @@ import Lenis from '@studio-freight/lenis';
 function Faqs() {
   const [generalList, setGeneralList] = useState([
     {
-      question: "What are the perks of attending Innerve 7?",
-      answer: "Sessions with the top experts in their fields, a 24-hour hackathon with incredible problems, and rewards Swags and Goodies. C'mon, still need more?",
+      question: "What are the main highlights of Innerve 8?",
+      answer: "Innerve 8 features sessions with top experts, a 24-hour hackathon with challenging problems, exciting swags, and goodies for participants.",
     },
     {
-        question: "What are the perks of attending Innerve 7?",
-        answer: "Sessions with the top experts in their fields, a 24-hour hackathon with incredible problems, and rewards Swags and Goodies. C'mon, still need more?",
-      },
-      {
-        question: "What are the perks of attending Innerve 7?",
-        answer: "Sessions with the top experts in their fields, a 24-hour hackathon with incredible problems, and rewards Swags and Goodies. C'mon, still need more?",
-      },
-      {
-        question: "What are the perks of attending Innerve 7?",
-        answer: "Sessions with the top experts in their fields, a 24-hour hackathon with incredible problems, and rewards Swags and Goodies. C'mon, still need more?",
-      },
+      question: "Can you provide more details about the hackathon phases?",
+      answer: "Phase 1, the Idea Submission Round, will be conducted online, while Phase 2, the Building Round, will take place offline at the AIT Campus.",
+    },
+    {
+      question: "Who is eligible to participate in Innerve 8?",
+      answer: "Innerve 8 welcomes participants with a passion for coding and problem-solving skills.",
+    },
+    {
+      question: "What kind of prizes can participants expect?",
+      answer: "Prizes include cash rewards, goodies, certificates, and special surprises for the winners.",
+  }]);
   
-  ]);
-
   const [stayList, setStayList] = useState([
     {
-      question: "Where can I stay during Innerve 7?",
-      answer: "We have partnered with several hotels nearby. You can find more information on our accommodation page.",
+      question: "Where can participants find accommodation during Innerve 8?",
+      answer: "We have partnered with several nearby hotels. Detailed information is available on our accommodation page.",
     },
     {
-        question: "Where can I stay during Innerve 7?",
-        answer: "We have partnered with several hotels nearby. You can find more information on our accommodation page.",
-      },
-      {
-        question: "Where can I stay during Innerve 7?",
-        answer: "We have partnered with several hotels nearby. You can find more information on our accommodation page.",
-      },
-      {
-        question: "Where can I stay during Innerve 7?",
-        answer: "We have partnered with several hotels nearby. You can find more information on our accommodation page.",
-      },
- 
-  ]);
-
+      question: "Is lodging available on the AIT campus?",
+      answer: "Yes, participants can find lodging directly on the AIT campus, ensuring convenience during the event.",
+    },
+    {
+      question: "Are there any recommended hotels for participants?",
+      answer: "Yes, we recommend checking our accommodation page for a list of partnered hotels with special rates for Innerve 8 participants.",
+    },
+    {
+      question: "How can participants book accommodation for Innerve 8?",
+      answer: "Participants can book accommodation through our official website or by following the instructions on the accommodation page.",
+  }]);
+  
   const [travelList, setTravelList] = useState([
     {
-      question: "What travel arrangements are available?",
-      answer: "We recommend checking our travel guide for information on transportation options.",
+      question: "What transportation options are recommended for participants?",
+      answer: "We advise participants to refer to our travel guide for comprehensive information on available transportation options.",
     },
     {
-        question: "What travel arrangements are available?",
-        answer: "We recommend checking our travel guide for information on transportation options.",
-      },
-      {
-        question: "What travel arrangements are available?",
-        answer: "We recommend checking our travel guide for information on transportation options.",
-      },
-      {
-        question: "What travel arrangements are available?",
-        answer: "We recommend checking our travel guide for information on transportation options.",
-      },
-  ]);
-
+      question: "Is there a shuttle service available between the AIT Campus and recommended hotels?",
+      answer: "Yes, a shuttle service will be provided to facilitate transportation between the AIT Campus and partnered hotels.",
+    },
+    {
+      question: "Are there any discounts available for travel arrangements?",
+      answer: "Participants may find special discounts on transportation options by referring to our travel guide or contacting our travel partners.",
+    },
+    {
+      question: "Can participants use public transportation to reach the AIT Campus?",
+      answer: "Yes, public transportation options are available, and details can be found in our travel guide for Innerve 8.",
+  }]);
+  
   const [expensesList, setExpensesList] = useState([
     {
-      question: "What expenses are covered?",
-      answer: "Innerve 7 covers registration fees",
+      question: "What fees does Innerve 8 cover for participants?",
+      answer: "Innerve 8 covers the registration fees for all participants, ensuring a seamless experience for attendees.",
     },
     {
-        question: "What expenses are covered?",
-        answer: "Innerve 7 covers registration fees",
-      },
-      {
-        question: "What expenses are covered?",
-        answer: "Innerve 7 covers registration fees",
-      },
-      {
-        question: "What expenses are covered?",
-        answer: "Innerve 7 covers registration fees",
-      },
- 
-  ]);
-
+      question: "Are travel-related expenses reimbursable for participants?",
+      answer: "The OSS Club offers financial support to cover or partially reimburse travel expenses for participants.",
+    },
+    {
+      question: "How can participants claim reimbursement for travel expenses?",
+      answer: "Participants can follow the reimbursement process outlined on our website or contact the OSS Club for assistance.",
+    },
+    {
+      question: "Is financial assistance available for participants facing travel-related challenges?",
+      answer: "Yes, participants experiencing difficulties with travel expenses can reach out to the OSS Club for potential financial assistance or alternative solutions.",
+  }]);
 
   
   const [activeList, setActiveList] = useState(generalList);
