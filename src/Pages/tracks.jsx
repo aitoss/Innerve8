@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion"; 
 import Marquee from "react-fast-marquee";
 import Slider from "../Components/slider";
+import Vector from "../assets/images/vector.svg";
 
 const indiData=[['EdTech', 'src/assets/images/Vector.svg'],['Logistics','src/assets/images/Vector.svg'],['GameDev','src/assets/images/Vector.svg'],['XR','src/assets/images/Vector.svg'],['Web3.0','src/assets/images/Vector.svg'],['Healthcare','src/assets/images/Vector.svg']]
 
@@ -36,7 +37,7 @@ const Track = ({title, img}) => {
                         initial={{ scale: 0.9 }}
                         whileHover={{scale: 1, rotate: [0, 10, 0], duration: 0.5}}
                         >
-                        <img src="src/assets/images/vector.svg" alt="" style={{padding: '20%', justifyContent: 'center', paddingTop: '30%'}}/>
+                        <img src={Vector} alt="" style={{padding: '20%', justifyContent: 'center', paddingTop: '30%'}}/>
                         </motion.div>
                     </div>
                 </motion.div>
