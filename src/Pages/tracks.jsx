@@ -116,6 +116,9 @@ const Track = () => {
   return (
 
     <motion.div
+    initial={{ scale: 0.7 }}
+    whileInView={{scale: 1, duration: 0.3}}
+    transition={{type: 'just', stiffness: 110}}
 
       onMouseMove={handleMouseMove}
 
@@ -188,15 +191,17 @@ const Track = () => {
 
 
 const Heading = () => {
-    return (
-        <div className="text-center hidden lg:block tracking-[8px] text-[150px] sticky text-transparent bg-gradient-to-b from-[#FFFFFF] to-[rgba(55,47,47,0.5)] bg-clip-text">
-            <motion.div
-                className=" translate-y-[-120px] tracking-tight text-transparent bg-clip-text bg-gradient-to-t from-[#FFFFFF] to-[rgba(55,47,47,0.5)] whitespace-nowrap"
-            >
-                Tracks
-            </motion.div>
-        </div>
-    );
+  return (
+    <div className="text-center lg:block hidden tracking-[10px] bg-clip-text bg-gradient-to-t from-[#FFFFFF] to-[rgba(55,47,47,0.5)] font-medium text-[250px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
+     <motion.div
+  whileInView={{ y: -80, scale: 1, duration: 5 }}
+  transition={{ type: 'just', stiffness: 110 }}
+  className=" tracking-tight  text-transparent bg-clip-text bg-gradient-to-t from-[#FFFFFF] to-[rgba(55,47,47,0.5)] whitespace-nowrap"
+>
+  Tracks
+</motion.div>
+    </div>
+  );
 };
 
 
