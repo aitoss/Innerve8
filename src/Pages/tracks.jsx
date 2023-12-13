@@ -17,7 +17,7 @@ const Tracks = () => {
                 <Heading2/>
                 <div id="Tracks" className="flex flex-row flex-wrap gap-x-[90px] lg:gap-x-36 gap-y-4 lg:gap-y-10 px-[2%] lg:justify-center justify-center items-center lg:items-center relative top-20">
                     {indiData.map((data) => (
-                        <Track title={data[0]} img={data[1]} />
+                        <Track title={'Cybersec'} img={data[1]} />
                     ))}
                 </div>
                 <div className="flex relative top-[8rem] mt-10 justify-center">
@@ -44,7 +44,7 @@ const Example = () => {
 };
 
 
-const Track = () => {
+const Track = ({title}) => {
 
   const x = useMotionValue(0);
 
@@ -176,7 +176,7 @@ const Track = () => {
 
         >
 
-          Track Name
+          {title}
 
         </p>
 
