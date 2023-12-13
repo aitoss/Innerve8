@@ -111,9 +111,9 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .content h1 {
-    font-size: 16rem;
+    font-size: 19rem;
     margin-top:5%;
   }
 }
