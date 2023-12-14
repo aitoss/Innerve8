@@ -1,10 +1,11 @@
 import React from "react";
 import ossSphere from "../Components/ossSphere";
+import { Link } from "react-router-dom";
 import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
 import { MeshWobbleMaterial, OrbitControls } from "@react-three/drei";
 import Sphere from "../Components/sphere";
-import { useEffect ,useState} from "react";
+import { useEffect, useState } from "react";
 import { IoLogoInstagram } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -65,30 +66,30 @@ export default function Footer() {
     //         <div className="w-full flex justify-center lg:justify-start">
     //           <h1 className="text-white text-3xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl">Contact Us</h1>
     //         </div>
-            // <div className="flex flex-col gap-5 mt-5 w-full">
-            //   <div className="w-full flex justify-between flex-col sm:flex-row">
-            //     <p className="text-center text-md w-full lg:text-start">Aakash Sharma</p>
-            //     <div className="w-full flex justify-center">
-            //       <div className="btn flex items-center justify-center gap-3 border border-white rounded-full p-1 pl-3 cursor-pointer bg-black w-fit">
-            //         <p className="text-white text-sm">+91 7980558433</p>
-            //         <div className="w-[24px] h-[24px] flex items-center justify-center text-white border border-white rounded-full hover:rotate-45">
-            //           ↗
-            //         </div>
-            //       </div>
-            //     </div>
-            //   </div>
-            //   <div className="w-full flex justify-between flex-col sm:flex-row ">
-            //     <p className="text-center text-md w-full lg:text-start">Aakash Sharma</p>
-            //     <div className="w-full flex justify-center">
-            //       <div className="btn flex items-center justify-center gap-3 border border-white rounded-full p-1 pl-3 cursor-pointer bg-black w-fit">
-            //         <p className="text-white text-sm">+91 7980558433</p>
-            //         <div className="w-[24px] h-[24px] flex items-center justify-center text-white border border-white rounded-full hover:rotate-45">
-            //           ↗
-            //         </div>
-            //       </div>
-            //     </div>
-            //   </div>
-            // </div>
+    // <div className="flex flex-col gap-5 mt-5 w-full">
+    //   <div className="w-full flex justify-between flex-col sm:flex-row">
+    //     <p className="text-center text-md w-full lg:text-start">Aakash Sharma</p>
+    //     <div className="w-full flex justify-center">
+    //       <div className="btn flex items-center justify-center gap-3 border border-white rounded-full p-1 pl-3 cursor-pointer bg-black w-fit">
+    //         <p className="text-white text-sm">+91 7980558433</p>
+    //         <div className="w-[24px] h-[24px] flex items-center justify-center text-white border border-white rounded-full hover:rotate-45">
+    //           ↗
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </div>
+    //   <div className="w-full flex justify-between flex-col sm:flex-row ">
+    //     <p className="text-center text-md w-full lg:text-start">Aakash Sharma</p>
+    //     <div className="w-full flex justify-center">
+    //       <div className="btn flex items-center justify-center gap-3 border border-white rounded-full p-1 pl-3 cursor-pointer bg-black w-fit">
+    //         <p className="text-white text-sm">+91 7980558433</p>
+    //         <div className="w-[24px] h-[24px] flex items-center justify-center text-white border border-white rounded-full hover:rotate-45">
+    //           ↗
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
     //       </div>
     //     </div>
     //     <div className="w-full flex flex-col justify-between mt-5  lg:mt-0">
@@ -117,13 +118,13 @@ export default function Footer() {
     //     </div>
     //   </div>
     //   <div className="w-full flex justify-center">
-        
+
     //       <div className="down-footer flex-col flex gap-4 ">
     //         <div className="flex flex-col justify-start space-x-6  gap-2 sm:flex-row">
 
     //           <div className="mx-auto w-[1px] h-8 bg-[#303030] hidden"></div>
     //           <div className="GitHub flex justify-start items-center gap-2">
-                
+
     //             <div className="flex justify-center items-center h-8 w-8 bg-[#212121] rounded-[0.375rem]">
     //               <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
     //                 <path fillRule="evenodd" clipRule="evenodd" d="M13.0103 0.46582C6.09245 0.46582 0.5 6.19496 0.5 13.2827C0.5 18.9483 4.08327 23.7441 9.05422 25.4415C9.67572 25.5691 9.90337 25.1657 9.90337 24.8264C9.90337 24.5293 9.88288 23.5108 9.88288 22.4496C6.40281 23.2136 5.67812 20.9217 5.67812 20.9217C5.11885 19.4363 4.29018 19.0545 4.29018 19.0545C3.15116 18.2694 4.37315 18.2694 4.37315 18.2694C5.63663 18.3543 6.29961 19.585 6.29961 19.585C7.4179 21.5371 9.2199 20.9855 9.94486 20.6459C10.0483 19.8183 10.3799 19.2454 10.732 18.9272C7.95642 18.6301 5.03613 17.5267 5.03613 12.6035C5.03613 11.203 5.53292 10.0572 6.3201 9.16604C6.1959 8.84782 5.76083 7.53194 6.44455 5.77075C6.44455 5.77075 7.50086 5.43116 9.88263 7.08637C10.9023 6.80581 11.954 6.66309 13.0103 6.66189C14.0667 6.66189 15.1435 6.81059 16.1378 7.08637C18.5198 5.43116 19.5761 5.77075 19.5761 5.77075C20.2599 7.53194 19.8245 8.84782 19.7003 9.16604C20.5083 10.0572 20.9846 11.203 20.9846 12.6035C20.9846 17.5267 18.0643 18.6087 15.2679 18.9272C15.7237 19.3303 16.1171 20.0941 16.1171 21.3038C16.1171 23.0225 16.0966 24.4019 16.0966 24.8261C16.0966 25.1657 16.3245 25.5691 16.9457 25.4418C21.9167 23.7438 25.4999 18.9483 25.4999 13.2827C25.5204 6.19496 19.9075 0.46582 13.0103 0.46582Z" fill="#D9D9D9" />
@@ -131,7 +132,7 @@ export default function Footer() {
 
     //             </div>
     //             <p className="text-[#FFFFFFBF] text-xl hover:text-[#ffffffe4] hover:cursor-pointer transition-all"><a href="https://github.com/aitoss" className="text-[#FFFFFFBF] text-xl hover:text-[#ffffffe4] hover:cursor-pointer transition-all decoration-none">Github</a></p>
-                
+
     //           </div>
 
     //           <div className="mx-auto w-[1px] h-8 bg-[#303030] hidden"></div>
@@ -173,117 +174,206 @@ export default function Footer() {
     //           <p className="text-[#FFFFFFBF] text-[12px] sm:text-sm md:text-md lg:text-lg">Made with ❤️ by Open Source Software Club</p>
     //         </div>
     //       </div>
-        
+
     //   </div>
     // </div>
     <>
-    <div className="footer">
-      <div className="front-footer w-full flex justify-center items-center bg-[#121212] gap-12 p-3">
-        <div className="button-holder">
-        <div className="btn flex relative items-center bg-[#F9F0E7] justify-center gap-3 border rounded-full pl-5 pr-2 py-2 cursor-pointer">
-            <h3 className="text-[#000000] text-lg font-[400]">Register Now! Visit Devfolio</h3>
-            <div className="w-[30px] h-[30px] bg-[#000000] flex items-center justify-center border rounded-full hover:rotate-45">↗</div>
-            <img src="/images/footer-spot.png" className="footer-spot z-2 hidden md:block" alt="" />
+      <div className="footer">
+        <div className="front-footer w-full flex justify-center items-center bg-[#121212] gap-12 p-3">
+          <div className="button-holder">
+            <div className="btn flex relative items-center bg-[#F9F0E7] justify-center gap-3 border rounded-full pl-5 pr-2 py-2 cursor-pointer">
+              <h3 className="text-[#000000] text-lg font-[400]">
+                Register Now! Visit Devfolio
+              </h3>
+              <div className="w-[30px] h-[30px] bg-[#000000] flex items-center justify-center border rounded-full hover:rotate-45">
+                ↗
+              </div>
+              <img
+                src="/images/footer-spot.png"
+                className="footer-spot z-2 hidden md:block"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
-        </div>
-      </div>
-      <div className="middle-footer flex flex-wrap bg-[#121212]">
-    <div className="mx-auto w-full max-w-screen-xl">
-      <div className="footer-grid grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
-        <div className="flex items-center justify-center">
-            <img src="/images/osslogo.png" className="oss-logo-footer" alt="" />
-        </div>
-        <div>
-            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Presented By</h2>
-            <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                <li className="mb-2">
+        <div className="middle-footer flex flex-wrap bg-[#121212]">
+          <div className="mx-auto w-full max-w-screen-xl">
+            <div className="footer-grid grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+              <div className="flex items-center justify-center">
+                <img
+                  src="/images/osslogo.png"
+                  className="oss-logo-footer"
+                  alt=""
+                />
+              </div>
+              <div>
+                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                  Presented By
+                </h2>
+                <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                  <li className="mb-2">
                     <p className="hover:underline">Open Source Software Club</p>
-                </li>
-                <li className="mb-4">
-                    <p className="hover:underline">Army Institute Of Technology Pune</p>
-                </li>
-                <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                  <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                  aitoss.club
-                  </span>
-                </button>            
-          </ul>
-        </div>
-        <div>
-            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact Us</h2>
-            <div className="flex flex-col gap-5 mt-5 w-full">
-              <div className="w-full flex flex-col">
-                <p className="text-md w-full lg:text-start">Aakash Sharma</p>
-                <div className="w-full flex mt-2">
-                  <div className="btn flex items-center justify-center gap-3 border border-white rounded-full p-1 pl-3 cursor-pointer bg-black w-fit">
-                    <p className="text-white text-sm">+91 7980558433</p>
-                    <div className="w-[24px] h-[24px] flex items-center justify-center text-white border border-white rounded-full hover:rotate-45">
-                      ↗
+                  </li>
+                  <li className="mb-4">
+                    <p className="hover:underline">
+                      Army Institute Of Technology Pune
+                    </p>
+                  </li>
+                  <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                    <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                      <Link to="http://aitoss.club/" preventScrollReset={true}>
+                        aitoss.club
+                      </Link>
+                    </span>
+                  </button>
+                </ul>
+              </div>
+              <div>
+                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                  Contact Us
+                </h2>
+                <div className="flex flex-col gap-5 mt-5 w-full">
+                  <div className="w-full flex flex-col">
+                    <p className="text-md w-full lg:text-start">
+                      Aakash Sharma
+                    </p>
+                    <div className="w-full flex mt-2">
+                      <div className="btn flex items-center justify-center gap-3 border border-white rounded-full p-1 pl-3 cursor-pointer bg-black w-fit">
+                        <p className="text-white text-sm">+91 7980558433</p>
+                        <div className="w-[24px] h-[24px] flex items-center justify-center text-white border border-white rounded-full hover:rotate-45">
+                          ↗
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-full flex flex-col">
+                    <p className="text-md w-full lg:text-start">
+                      Asmitha TriPorty
+                    </p>
+                    <div className="w-full flex mt-2">
+                      <div className="btn flex items-center justify-center gap-3 border border-white rounded-full p-1 pl-3 cursor-pointer bg-black w-fit">
+                        <p className="text-white text-sm">+91 7980558433</p>
+                        <div className="w-[24px] h-[24px] flex items-center justify-center text-white border border-white rounded-full hover:rotate-45">
+                          ↗
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="w-full flex flex-col">
-                <p className="text-md w-full lg:text-start">Asmitha TriPorty</p>
-                <div className="w-full flex mt-2">
-                  <div className="btn flex items-center justify-center gap-3 border border-white rounded-full p-1 pl-3 cursor-pointer bg-black w-fit">
-                    <p className="text-white text-sm">+91 7980558433</p>
-                    <div className="w-[24px] h-[24px] flex items-center justify-center text-white border border-white rounded-full hover:rotate-45">
-                      ↗
-                    </div>
-                  </div>
-                </div>
+              <div>
+                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                  Venue
+                </h2>
+                <iframe
+                  className="w-full h-fit"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.2697840549395!2d73.87251157535849!3d18.606931466530227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c70090000001%3A0x160a20f3d0273495!2sArmy%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1702564461426!5m2!1sen!2sin"
+                ></iframe>
               </div>
             </div>
+          </div>
         </div>
-        <div>
-            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Venue</h2>
-            <iframe className="w-full h-fit"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.2697840549395!2d73.87251157535849!3d18.606931466530227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c70090000001%3A0x160a20f3d0273495!2sArmy%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1702564461426!5m2!1sen!2sin" ></iframe>
-        </div>
-    </div>
-    </div>
-    </div>
-    <div className="lower-footer bg-[#000000]">
-    <div className="px-4 py-6 md:flex md:items-center md:justify-between max-w-screen-xl mx-auto">
-        <span className="text-sm sm:text-center">Made with ♥ by Open Source Software Club
-        </span>
-        <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
-            <a href="#" className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
-                  <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
-                        <path fillRule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clipRule="evenodd"/>
-                    </svg>
-                  <span className="sr-only">Facebook page</span>
-              </a>
-              <a href="#" className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
-                  <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
-                        <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
-                    </svg>
-                  <span className="sr-only">Discord community</span>
-              </a>
-              <a href="#" className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
-                  <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
-                    <path fillRule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clipRule="evenodd"/>
+        <div className="lower-footer bg-[#000000]">
+          <div className="px-4 py-6 md:flex md:items-center md:justify-between max-w-screen-xl mx-auto">
+            <span className="text-sm sm:text-center">
+              Made with ♥ by Open Source Software Club
+            </span>
+            <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+              >
+                <svg
+                  className="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 8 19"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                    clipRule="evenodd"
+                  />
                 </svg>
-                  <span className="sr-only">Twitter page</span>
+                <span className="sr-only">Facebook page</span>
               </a>
-              <a href="#" className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
-                  <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clipRule="evenodd"/>
-                  </svg>
-                  <span className="sr-only">GitHub account</span>
-              </a>
-              <a href="#" className="text-gray-400 hover:text-gray-900 dark:hover:text-white">
-                  <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z" clipRule="evenodd"/>
+              <a
+                href="#"
+                className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+              >
+                <svg
+                  className="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 21 16"
+                >
+                  <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
                 </svg>
-                  <span className="sr-only">Dribbble account</span>
+                <span className="sr-only">Discord community</span>
               </a>
+              <a
+                href="#"
+                className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+              >
+                <svg
+                  className="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 17"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                <span className="sr-only">Twitter page</span>
+              </a>
+              <a
+                href="#"
+                className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+              >
+                <svg
+                  className="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                <span className="sr-only">GitHub account</span>
+              </a>
+              <a
+                href="#"
+                className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+              >
+                <svg
+                  className="w-4 h-4"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                <span className="sr-only">Dribbble account</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    </div>
-
     </>
-
   );
 }
