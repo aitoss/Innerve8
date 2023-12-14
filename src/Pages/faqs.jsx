@@ -143,10 +143,8 @@ function Faqs() {
 
 const Heading = ({ title }) => {
   return (
-      <div className="m-10 text-startflex hidden lg:block items-start mt-14 font-medium text-7xl text-[#121212] whitespace-nowrap justify-start">
-          <div className="tracking-tight text-[#121212] bg-clip-text whitespace-nowrap">
+      <div className="m-10 text-startflex hidden lg:block items-start mt-14 font-medium text-5xl text-[#121212] justify-start">
               {title}
-          </div>
       </div>
   );
 };
