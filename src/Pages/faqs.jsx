@@ -110,13 +110,12 @@ function Faqs() {
   };
 
   return (
-    <>
-    <div className="h-full bg-[#F9F0E7] ">
+    <div className="h-full bg-[#F9F0E7]">
+    <div className="max-w-screen-xl mx-auto">
       <Heading title="FAQs" />
       <HeadingMobile title="FAQs"/>
-      <div className=" flex flex-col items-center justify-center   w-screen lg:flex-row ">
+      <div className=" flex flex-col items-center justify-center lg:flex-row mr-10 xl:ml-0 ml-10">
       <div className="flex text-[#121212] px-12 focus:border-none  border-none lg:mt-8 mt-4 items-center justify-center gap-2 lg:flex-col lg:space-y-[40px]">
-
 
   <Button label="General" onClick={() => setActiveList('general')} isActive={activeList === 'general'} />
         <Button label="Stay" onClick={() => setActiveList('stay')} isActive={activeList === 'stay'} />
@@ -124,7 +123,7 @@ function Faqs() {
         <Button label="Expenses" onClick={() => setActiveList('expenses')} isActive={activeList === 'expenses'} />
 
 </div>
-        <div className='bg-[#F9F0E7] w-screen lg:pt-12 pt-6 lg:ml-[120px] mt-2 flex justify-center items-center'>
+        <div className='bg-[#F9F0E7] lg:pt-12 pt-6 mt-2 flex justify-center items-center'>
           <div className='list'>
             {renderActiveList().map((item, index) => (
               <Accordion
@@ -138,13 +137,13 @@ function Faqs() {
         </div>
       </div>
       </div>
-    </>
+    </div>
   );
 }
 
 const Heading = ({ title }) => {
   return (
-      <div className="text-startflex hidden lg:block items-start mt-14 ml-[54px] font-medium text-7xl text-[#121212] whitespace-nowrap justify-start">
+      <div className="m-10 text-startflex hidden lg:block items-start mt-14 font-medium text-7xl text-[#121212] whitespace-nowrap justify-start">
           <div className="tracking-tight text-[#121212] bg-clip-text whitespace-nowrap">
               {title}
           </div>
