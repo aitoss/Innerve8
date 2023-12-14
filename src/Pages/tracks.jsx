@@ -7,7 +7,7 @@ import Marquee from "react-fast-marquee";
 import Slider from "../Components/slider";
 import Vector from "../assets/images/vector.svg";
 
-const indiData=[['EdTech', 'src/assets/images/Vector.svg'],['Logistics','src/assets/images/Vector.svg'],['GameDev','src/assets/images/Vector.svg'],['XR','src/assets/images/Vector.svg'],['Web3.0','src/assets/images/Vector.svg'],['Healthcare','src/assets/images/Vector.svg']]
+const indiData=[['GameDev', 'images/icons/gamedev.png'],['Logistics','/images/icons/logi.png'],['EduTech','/images/icons/Frame 6360233.png'],['CyberSec','/images/icons/Frame 6360229.png'],['Health','/images/icons/Frame 6360232.png'],['FinTech','/images/icons/Frame 6360231.png'],['AR/VR','/images/icons/Frame 6360230.png']]
 
 const Tracks = () => {
     return(
@@ -17,7 +17,7 @@ const Tracks = () => {
                 <Heading2/>
                 <div id="Tracks" className="flex flex-row flex-wrap gap-x-[90px] lg:gap-x-36 gap-y-4 lg:gap-y-10 px-[2%] lg:justify-center justify-center items-center lg:items-center relative top-20">
                     {indiData.map((data) => (
-                        <Track title={'Cybersec'} img={data[1]} />
+                        <Track title={data[0]} img={data[1]} />
                     ))}
                 </div>
                 <div className="flex relative top-[8rem] mt-10 justify-center">
@@ -44,54 +44,27 @@ const Example = () => {
 };
 
 
-const Track = ({title}) => {
-
+const Track = ({title, img}) => {
   const x = useMotionValue(0);
-
   const y = useMotionValue(0);
-
-
   const mouseXSpring = useSpring(x);
-
   const mouseYSpring = useSpring(y);
-
-
   const rotateX = useTransform(
-
     mouseYSpring,
-
     [-0.5, 0.5],
-
     ["25deg", "-25deg"]
-
   );
-
   const rotateY = useTransform(
-
     mouseXSpring,
-
     [-0.5, 0.5],
-
     ["-25deg", "25deg"]
-
   );
-
-
   const handleMouseMove = (e) => {
-
     const rect = e.target.getBoundingClientRect();
-
-
     const width = rect.width;
-
     const height = rect.height;
-
-
     const mouseX = e.clientX - rect.left;
-
     const mouseY = e.clientY - rect.top;
-
-
     const xPct = mouseX / width - 0.5;
 
     const yPct = mouseY / height - 0.5;
@@ -148,21 +121,11 @@ const Track = ({title}) => {
 
         }}
 
-        className="absolute inset-4 grid place-content-center rounded-xl bg-white shadow-2xl"
+        className="absolute inset-4 grid place-content-center rounded-xl bg-white shadow-2xl flex flex-col items-center justify-center "
 
       >
 
-        <FiMousePointer
-
-          style={{
-
-            transform: "translateZ(75px)",
-
-          }}
-
-          className="mx-auto text-4xl text-black"
-
-        />
+      <img src={img} alt="" />
 
         <p
 

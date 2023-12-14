@@ -26,7 +26,7 @@ function App() {
       <Dates />
       <Prize  />
       <Tracks  />
-      <Problems />
+      {/* <Problems /> */}
       {/* <Timeline />
       <Timeline />
       <Timeline /> */}
