@@ -236,7 +236,7 @@ export default function Footer() {
                     </p>
                     <div className="w-full flex mt-2">
                       <div className="btn flex items-center justify-center gap-3 border border-white rounded-full p-1 pl-3 cursor-pointer bg-black w-fit">
-                        <p className="text-white text-sm">+91 7980558433</p>
+                        <p className="text-white text-sm">+91 7340785879</p>
                         <div className="w-[24px] h-[24px] flex items-center justify-center text-white border border-white rounded-full hover:rotate-45">
                           ↗
                         </div>
@@ -245,7 +245,7 @@ export default function Footer() {
                   </div>
                   <div className="w-full flex flex-col">
                     <p className="text-md w-full lg:text-start">
-                      Asmitha TriPorty
+                      Asmitha Tripathi
                     </p>
                     <div className="w-full flex mt-2">
                       <div className="btn flex items-center justify-center gap-3 border border-white rounded-full p-1 pl-3 cursor-pointer bg-black w-fit">
