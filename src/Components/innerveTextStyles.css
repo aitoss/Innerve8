@@ -1,13 +1,19 @@
 
 
 .content h1 {
-  margin-top:30%;
-  /* background-color: black; */
   position: absolute;
-  /* color:black; */
-  transform: translate(-50%, -50%);
   z-index: 1000;
-  font-size: 25rem;
+  font-size: clamp(5rem, 25vw, 20rem);
+  font-weight: 900;
+  font-family: 'SuisseIntl', sans-serif;
+}
+
+.placeholder_text{
+  position: relative;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  font-size: clamp(5rem, 25vw, 20rem);
   font-weight: 900;
   font-family: 'SuisseIntl', sans-serif;
 }
@@ -96,7 +102,7 @@
     transform: translateY(-10px);
   }
 }
-
+/* 
 @media screen and (min-width: 1441px) {
   .content h1 {
     font-size: 25rem;
@@ -155,4 +161,4 @@
   .content h1 {
     font-size: 5rem;
   }
-}
+} */
