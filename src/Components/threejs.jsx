@@ -1,15 +1,40 @@
 import React from "react";
+import { useEffect,useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import Infinity from "./infiniteLoop";
 import Controls from "./control";
 
+function calculateZoom(size) {
+  let zoomLevel;
+
+  if (size <= 1400) {
+    zoomLevel = 30 + ((size - 400) / (1400 - 400)) * (150 - 30);
+    zoomLevel = Math.max(30, Math.min(zoomLevel, 150));
+  } else {
+    zoomLevel = 150;
+  }
+
+  return zoomLevel;
+}
+
 export default function Threejs() {
+
+  const [zoom, setZoom] = useState(calculateZoom(window.innerWidth));
+  useEffect(() => {
+    function handleResize() {
+      setZoom(calculateZoom(window.innerWidth));
+    }
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
-    <div className="w-full h-full">
-      <Canvas 
+      <Canvas className=""
       orthographic={true}
-      camera={{zoom:150}}
+      camera={{zoom:zoom}}
       >
         {/* Uncomment the line below if you want to use OrbitControls */}
         {/* <OrbitControls enableZoom={false} /> */}
@@ -32,6 +57,5 @@ export default function Threejs() {
           </mesh>
         </group> */}
       </Canvas>
-    </div>
   );
 }

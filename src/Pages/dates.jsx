@@ -154,16 +154,13 @@ const Heading = () => {
 export default function Dates() {
   return (
     <div className="relative w-screen h-screen flex flex-col justify-center">
-      <div className="">
-        {/* <DummyBanner /> */}
+      {/* <div className="">
         <Slider text={["nerve to innovate"]} />
-      </div>
-      <div className="w-full h-full">
+      </div> */}
         <Threejs />
-      </div>
-      <div className="absolute bottom-0 w-full justify-center">
+      {/* <div className="absolute bottom-0 w-full justify-center">
         <Heading />
-      </div>
+      </div> */}
     </div>
   );
 }
