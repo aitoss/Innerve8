@@ -6,7 +6,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 const Bannercard = () => {
     return (
         <>
-            <section className="w-screen">
+            <section className="w-screen max-w-screen-xl mx-auto md:m-8 md:p-10">
                 <div className="banner flex flex-col gap-8 p-12">
                     <div className="banner-sub w-full flex justify-between items-center">
                         <p className="banner-heading font-medium">Got questions? <br />Contact us</p>
