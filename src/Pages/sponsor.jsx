@@ -103,7 +103,7 @@ const SponsorLogos = ({ logoCount }) => {
                 <motion.div
                    initial={{ scale: 0.9 }}
                 //    whileInView={{ scale: 1 }}
-                    whileHover={{scale: 1.05, rotate: [0, 2, 0], duration: 0.1, background: '#F9F0E7', shadow: '0px 4px 4px rgba(0, 0, 0, 0.25)'}}
+                    whileHover={{scale: 1.05, rotate: [0, 2, 0], duration: 0.1}}
                 >
                 <img
                     key={idx}
