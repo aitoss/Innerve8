@@ -5,7 +5,7 @@ import DarkSlider from "../Components/darkSlider";
 
 const Prize = () => {
   return (
-    <div className="w-screen bg-[#212121] h-screen overflow-hidden">
+    <div className="w-screen bg-[#212121] overflow-hidden">
       {/* <Slider text={['EdTech', 'GameDev', 'Logistics', 'Web3.0', 'Healthcare', 'XR','FinTech','Blockchain']} /> */}
       {/* <DummyBanner /> */}
       <div className="overflow-hidden mt-6">
@@ -251,19 +251,22 @@ const Card = ({ color, textColor, textData, value }) => {
     >
       {value}
       <h3 className="text-4xl">{textData}</h3>
+      <p className="text-[1rem] mt-[1rem] text-center">Innerve Goodies and Merch. Fundings and Internship opportunities from our sponsors</p>
     </motion.div>
   );
 };
 
 const Card2 = ({ color, textColor, textData, value }) => {
   return (
+    <div className="m-8">
     <motion.div
       whileHover={{ scale: 1.03 }}
-      className={`flex flex-col gap-4  justify-center items-center text-6xl w-[300px] h-[350px] ${color} ${textColor} rounded-lg p-4 shadow-2xl shadow-[rgba(0,0,0,0.15)] cursor-pointer transition-transform duration-100 ease-in-out`}
+      className={`flex flex-col gap-4  justify-center items-center text-6xl m-3 w-full h-[350px] ${color} ${textColor} rounded-lg p-4 shadow-2xl shadow-[rgba(0,0,0,0.15)] cursor-pointer transition-transform duration-100 ease-in-out`}
     >
       {value}
       <h3 className="text-3xl">{textData}</h3>
     </motion.div>
+    </div>
   );
 };
 
