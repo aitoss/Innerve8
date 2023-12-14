@@ -30,10 +30,8 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -121,6 +119,22 @@ button:focus-visible {
 opacity: 0.8;
 background: var(--Shocking-Orange, linear-gradient(308deg, #DD6843 25.02%, #F0A36D 96.24%));
 }
+.middle-footer{
+  border-top: .1px solid rgb(61, 60, 60);
+}
+.middle-footer h3{
+  font-size: 1.5rem;
+  padding-bottom: 0.8rem;
+}
+.footer-spot{
+  width: 8rem;
+  position: absolute;
+  bottom: 0;
+  right: -8rem;
+}
+.oss-logo-footer{
+  max-height: 200px;
+}
 
 @media screen and (max-width: 450px) {
   .nav-inner{
@@ -130,6 +144,12 @@ background: var(--Shocking-Orange, linear-gradient(308deg, #DD6843 25.02%, #F0A3
     display: flex;
     flex-flow: row !important;
     flex-wrap: wrap !important;
+  }
+  .footer-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    padding: 1rem;
   }
 }
 
