@@ -143,10 +143,10 @@ function DummyBanner() {
 
 const Heading = () => {
   return (
-    <div className="mt-[-3rem] text-center tracking-[8px] font-medium text-[4rem] md:text-[10rem] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
-     <motion.div className="tracking-tight text-transparent bg-clip-text bg-gradient-to-t from-[#222121] to-[#525252] whitespace-nowrap">
-        Register
-</motion.div>
+    <div className="mt-[-2rem] text-center tracking-[8px] font-medium text-[4rem] md:text-[10rem] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
+      <motion.div className="tracking-tight text-transparent bg-clip-text bg-gradient-to-t from-[#c6c6c6] to-[#6c6c6c] whitespace-nowrap">
+        Register Now!!!
+      </motion.div>
     </div>
   );
 };
@@ -155,12 +155,12 @@ export default function Dates() {
   return (
     <>
       <div className="">
-        <Slider text={["nerve to innovate"]} />
+        <Slider text={["nerve to innovate"]} theme="light"/>
       </div>
     <div className="w-screen" style={{aspectRatio:'2/1'}}>
         <Threejs />
     </div>
-      <div className="w-full justify-center">
+      <div className="w-full justify-center pb-8">
         <Heading />
       </div>
     </>
