@@ -1,5 +1,3 @@
-import React from "react";
-import InnText from "../assets/images/innText.svg";
 import "../Components/innerveTextStyles.css";
 
 import '../../style.css'
@@ -9,6 +7,7 @@ export default function InnerveText() {
       <h1 className="">Innerve</h1>
       <h1 className="">Innerve</h1>
       <h1 className="">Innerve</h1>
+      <p className="placeholder_text">Innerve</p>
       {/* <img src={InnText} alt="Innerve" className="scale-100"/> */}
     </div>
   );

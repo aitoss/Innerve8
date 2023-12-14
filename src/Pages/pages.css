@@ -15,3 +15,11 @@
       font-size: 1rem;
     }
   }
+
+.home {
+  background-image: url(/src/assets/images/dots.svg);
+  background-position: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

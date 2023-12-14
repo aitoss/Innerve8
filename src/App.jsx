@@ -23,7 +23,7 @@ function App() {
     <>
       <div className="noise max-w-[1400px]"></div>
       <Home />
-      <Dates />
+      {/* <Dates /> */}
       <Prize  />
       <Tracks  />
       <Problems />
