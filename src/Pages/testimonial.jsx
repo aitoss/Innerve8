@@ -64,7 +64,7 @@ const Testimonial = () => {
         <Column className="w-[20%] h-[40%] flex  flex-col gap-[2vw] " images={[images[9], images[10], images[11]]} y={y4} />
     </div>
 
-    <div className="relative bottom-0 left-0 right-0 overflow-hidden w-screen bg-red-400">
+    <div className="relative bottom-0 left-0 right-0 overflow-hidden w-screen ">
         <Heading />
     </div>
 </section>
