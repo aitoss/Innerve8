@@ -7,18 +7,7 @@ import Marquee from "react-fast-marquee";
 import Slider from "../Components/slider";
 import Vector from "../assets/images/vector.svg";
 
-<<<<<<< HEAD
 const indiData=[['GameDev', 'images/icons/gamedev.png'],['Logistics','/images/icons/logi.png'],['EduTech','/images/icons/Frame 6360233.png'],['CyberSec','/images/icons/Frame 6360229.png'],['Health','/images/icons/Frame 6360232.png'],['FinTech','/images/icons/Frame 6360231.png'],['AR/VR','/images/icons/Frame 6360230.png']]
-=======
-const indiData = [
-  ["EdTech", "src/assets/images/Vector.svg"],
-  ["Logistics", "src/assets/images/Vector.svg"],
-  ["GameDev", "src/assets/images/Vector.svg"],
-  ["XR", "src/assets/images/Vector.svg"],
-  ["Web3.0", "src/assets/images/Vector.svg"],
-  ["Healthcare", "src/assets/images/Vector.svg"],
-];
->>>>>>> 2eb5852c99bff1762cc0e2f12620a19d3562aa0e
 
 const Tracks = () => {
     return(
@@ -48,25 +37,12 @@ const Example = () => {
   );
 };
 
-<<<<<<< HEAD
 
 const Track = ({title, img}) => {
-=======
-const Track = ({title}) => {
-
->>>>>>> 2eb5852c99bff1762cc0e2f12620a19d3562aa0e
   const x = useMotionValue(0);
   const y = useMotionValue(0);
-<<<<<<< HEAD
-=======
-
->>>>>>> 2eb5852c99bff1762cc0e2f12620a19d3562aa0e
   const mouseXSpring = useSpring(x);
   const mouseYSpring = useSpring(y);
-<<<<<<< HEAD
-=======
-
->>>>>>> 2eb5852c99bff1762cc0e2f12620a19d3562aa0e
   const rotateX = useTransform(
     mouseYSpring,
     [-0.5, 0.5],
@@ -77,27 +53,12 @@ const Track = ({title}) => {
     [-0.5, 0.5],
     ["-25deg", "25deg"]
   );
-<<<<<<< HEAD
   const handleMouseMove = (e) => {
     const rect = e.target.getBoundingClientRect();
-=======
-
-  const handleMouseMove = (e) => {
-    const rect = e.target.getBoundingClientRect();
-
->>>>>>> 2eb5852c99bff1762cc0e2f12620a19d3562aa0e
     const width = rect.width;
     const height = rect.height;
-<<<<<<< HEAD
-=======
-
->>>>>>> 2eb5852c99bff1762cc0e2f12620a19d3562aa0e
     const mouseX = e.clientX - rect.left;
     const mouseY = e.clientY - rect.top;
-<<<<<<< HEAD
-=======
-
->>>>>>> 2eb5852c99bff1762cc0e2f12620a19d3562aa0e
     const xPct = mouseX / width - 0.5;
 
     const yPct = mouseY / height - 0.5;
@@ -138,23 +99,12 @@ const Track = ({title}) => {
 
           transformStyle: "preserve-3d",
         }}
-<<<<<<< HEAD
 
         className="absolute inset-4 grid place-content-center rounded-xl bg-white shadow-2xl flex flex-col items-center justify-center "
 
       >
 
       <img src={img} alt="" />
-=======
-        className="absolute inset-4 grid place-content-center rounded-xl bg-white shadow-2xl"
-      >
-        <FiMousePointer
-          style={{
-            transform: "translateZ(75px)",
-          }}
-          className="mx-auto text-4xl text-black"
-        />
->>>>>>> 2eb5852c99bff1762cc0e2f12620a19d3562aa0e
 
         <p
           style={{
