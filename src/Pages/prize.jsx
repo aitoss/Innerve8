@@ -14,7 +14,9 @@ const Prize = () => {
       <div className="w-screen lg:pt-[120px]  flex-col items-center h-full">
         <Heading2/>
         <StackedCards />
+        <div className="relative bottom-0 left-0 right-0">
         <Heading />
+        </div>
       </div>
     </div>
   );
