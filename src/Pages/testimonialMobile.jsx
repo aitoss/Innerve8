@@ -65,7 +65,7 @@ const Column = ({ images, y = 0 }) => {
                     return (
                         <div key={index} className="w-[100%] py-2 rounded-lg overflow-hidden relative  ">
                             <img className="object-cover"
-                                src={`/images/testim/${src}`} fill
+                                src={`/images/testim1/${src}`} fill
                                 alt='image'
                             />
                         </div>
