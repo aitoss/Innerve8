@@ -14,12 +14,12 @@ const TestimonialMob = () => {
     const y = useTransform(scrollYProgress, [0, 1], [1, -150]);
     const y2 = useTransform(scrollYProgress, [0, 1], [1, 150]);
     const images = [
-        "1.JPG",
-        "2.JPG",
-        "3.JPG",
-        "4.JPG",
-        "5.JPG",
-        "6.JPG",
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
     ];
 
     useEffect(() => {

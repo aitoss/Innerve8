@@ -11,7 +11,7 @@ const Prize = () => {
       <div className="overflow-hidden mt-6">
       <DarkSlider text={["10lac+ Prize pool"]} />
       </div>
-      <div className="w-screen lg:pt-[120px]  flex-col items-center h-full">
+      <div className="w-screen xl:pt-[120px]  flex-col items-center h-full">
         <Heading2/>
         <StackedCards />
         <div className="relative bottom-0 left-0 right-0">
@@ -193,7 +193,7 @@ const StackedCards = () => {
           <div className="m-2  relative z-30">
             <Card2
               color="bg-gradient-to-t from-[#FDDE56] via-[#FFEA8C] to-[#FDF0B7]"
-              textColor="text-[hsla(0,0%,13%,90%)]"
+              textColor="text-[hsla(100%,100%,13%,90%)]"
               textData="First prize"
               value="Rs. 100,000"
             />
@@ -267,6 +267,7 @@ const Card2 = ({ color, textColor, textData, value }) => {
     >
       {value}
       <h3 className="text-3xl">{textData}</h3>
+      <p className="text-[1rem] mt-[1rem] text-center">Innerve Goodies and Merch. <br /> Fundings and Internship opportunities from our sponsors</p>
     </motion.div>
     </div>
   );
