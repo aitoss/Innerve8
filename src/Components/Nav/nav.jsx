@@ -2,23 +2,23 @@ import React, { useState } from 'react';
 import './Nav.css'; // Import the CSS file for your component
 
 const Nav = () => {
-    const [navbarOpen, setNavbarOpen] = useState(true);
+    const [navbarOpen, setNavbarOpen] = useState(false);
 
     return (
         <>  
             <div className="inner-nav">
                 <ul className={`menu-nav ${navbarOpen ? ' show-menu' : ''}`}>
-                    <div className="menu-nav-header w-full flex flow-col items-center justify-between pl-20 p-10">
-                    <div className="btn flex items-center justify-center gap-3 border border-[#ffffff] rounded-full ml-10 pl-5 pr-2 py-2 cursor-pointer">
-                        <h3 className="text-[#ffffff] text-lg font-[400]">Brochure</h3>
-                        <div className="w-[30px] h-[30px] flex items-center justify-center text-[#ffffff] border border-[#ffffff] rounded-full hover:rotate-45">↗</div>
+                    <div className="menu-nav-header w-full flex flow-col items-center justify-between md:pl-20 pl-10 p-10">
+                        <div className="btn flex items-center justify-center gap-3 border border-[#ffffff] rounded-full ml-10 pl-5 pr-2 py-2 cursor-pointer">
+                            <h3 className="text-[#ffffff] text-lg font-[400]">Brochure</h3>
+                            <div className="w-[30px] h-[30px] flex items-center justify-center text-[#ffffff] border border-[#ffffff] rounded-full hover:rotate-45">↗</div>
+                        </div>
+                        <div className='flex flow-col gap-2 cursor-pointer' onClick={() => setNavbarOpen((prev) => !prev)}>
+                            <h3 className="text-[#ffffff] text-lg font-[400]">Close</h3>
+                        <div className="w-[30px] h-[30px] flex items-center justify-center text-[#ffffff] border border-[#ffffff] rounded-full hover:rotate-45">×</div>
                     </div>
-                    <div className='flex flow-col gap-2 cursor-pointer' onClick={() => setNavbarOpen((prev) => !prev)}>
-                    <h3 className="text-[#ffffff] text-lg font-[400]">Close</h3>
-                    <div className="w-[30px] h-[30px] flex items-center justify-center text-[#ffffff] border border-[#ffffff] rounded-full hover:rotate-45">×</div>
                     </div>
-                    </div>
-                    <ul className="menu-nav-items ml-20 pt-20">
+                    <ul className="menu-nav-items md:ml-20 ml-10 pt-20">
                         <li className='mt-20'>
                             <a href="#" className="ml-10 text-white font-Gilroy-SemiBold text-2xl font-normal leading-[146%] tracking-[0.72px]">HOME</a>
                         </li>
@@ -35,7 +35,7 @@ const Nav = () => {
                             <a href="#" className="ml-10 text-white font-Gilroy-SemiBold text-2xl font-normal leading-[146%] tracking-[0.72px]">FAQs</a>
                         </li>
                     </ul>
-                    <div className="menu-nav-footer mb-20 pl-20">
+                    <div className="menu-nav-footer mb-20 md:pl-20 pl-10">
                         <div className="socials-list flex flow-col gap-5 pl-10">
                             <p>Instagram</p>
                             <p>Facebook</p>

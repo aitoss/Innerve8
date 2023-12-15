@@ -143,7 +143,7 @@ function DummyBanner() {
 
 const Heading = () => {
   return (
-    <div className="mt-[-2rem] text-center tracking-[8px] font-medium text-[4rem] md:text-[10rem] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
+    <div className="mt-[-2rem] text-center tracking-[8px] font-medium text-[2rem] xs:text-[4rem] md:text-[6rem] lg:text-[9rem] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
       <motion.div className="tracking-tight text-transparent bg-clip-text bg-gradient-to-t from-[#c6c6c6] to-[#6c6c6c] whitespace-nowrap">
         Register Now!!!
       </motion.div>

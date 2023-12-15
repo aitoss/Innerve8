@@ -110,7 +110,7 @@ function Faqs() {
   };
 
   return (
-    <div className="h-full bg-[#F9F0E7]">
+    <div className="h-full">
     <div className="max-w-screen-xl mx-auto">
       <Heading title="FAQs" />
       <HeadingMobile title="FAQs"/>
@@ -123,7 +123,7 @@ function Faqs() {
         <Button label="Expenses" onClick={() => setActiveList('expenses')} isActive={activeList === 'expenses'} />
 
 </div>
-        <div className='bg-[#F9F0E7] lg:pt-12 pt-6 mt-2 flex justify-center items-center'>
+        <div className=' lg:pt-12 pt-6 mt-2 flex justify-center items-center'>
           <div className='list'>
             {renderActiveList().map((item, index) => (
               <Accordion
