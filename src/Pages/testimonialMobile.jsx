@@ -3,7 +3,7 @@ import { useTransform, useScroll } from 'framer-motion';
 import { useRef } from 'react';
 import { motion } from 'framer-motion';
 import Lenis from '@studio-freight/lenis'
-
+import DarkSlider from '../Components/darkSlider';
 
 const TestimonialMob = () => {
     const container = useRef(null);
@@ -36,8 +36,10 @@ const TestimonialMob = () => {
     return (
         <>
             <section className="bg-[#121212] lg:hidden h-full w-screen">
-                <div className="flex justify-center relative top-[300px] z-30 text-4xl lg:text-7xl font-medium items-center">Connect with Code
-                </div>
+            <div className="py-4">
+        <DarkSlider text={["Connect with code","Memories"]} />
+    </div>
+
                 <div
                     ref={container}
                     className="gallery overflow-hidden h-full bg-[#121212]  flex flex-row gap-[2vw] p-[2vw] border-box"
@@ -63,7 +65,7 @@ const Column = ({ images, y = 0 }) => {
                     return (
                         <div key={index} className="w-[100%] py-2 rounded-lg overflow-hidden relative  ">
                             <img className="object-cover"
-                                src={`/images/testi/${src}`} fill
+                                src={`/images/testim/${src}`} fill
                                 alt='image'
                             />
                         </div>
