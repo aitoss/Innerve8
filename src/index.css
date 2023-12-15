@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+*{
+  user-select: none;
+}
 
 :root {
   font-family: 'SuisseIntl', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
