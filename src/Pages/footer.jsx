@@ -1,6 +1,5 @@
 import React from "react";
 import ossSphere from "../Components/ossSphere";
-import { Link } from "react-router-dom";
 import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
 import { MeshWobbleMaterial, OrbitControls } from "@react-three/drei";
@@ -221,7 +220,7 @@ export default function Footer() {
                   </li>
                   <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                     <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                      {/* <Link to="http://aitoss.club/">aitoss.club</Link> */}
+                      aitoss.club
                     </span>
                   </button>
                 </ul>
@@ -237,7 +236,7 @@ export default function Footer() {
                     </p>
                     <div className="w-full flex mt-2">
                       <div className="btn flex items-center justify-center gap-3 border border-white rounded-full p-1 pl-3 cursor-pointer bg-black w-fit">
-                        <p className="text-white text-sm">+91 7980558433</p>
+                        <p className="text-white text-sm">+91 7340785879</p>
                         <div className="w-[24px] h-[24px] flex items-center justify-center text-white border border-white rounded-full hover:rotate-45">
                           ↗
                         </div>
@@ -246,7 +245,7 @@ export default function Footer() {
                   </div>
                   <div className="w-full flex flex-col">
                     <p className="text-md w-full lg:text-start">
-                      Asmitha TriPorty
+                      Asmitha Tripathi
                     </p>
                     <div className="w-full flex mt-2">
                       <div className="btn flex items-center justify-center gap-3 border border-white rounded-full p-1 pl-3 cursor-pointer bg-black w-fit">
