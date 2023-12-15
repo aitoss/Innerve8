@@ -223,9 +223,9 @@ const StackedCards = () => {
 
 const Heading = () => {
   return (
-    <div className="text-center xl:block hidden tracking-[10px] font-medium text-[250px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
+    <div className="text-center xl:block hidden tracking-[10px] font-medium text-[150px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
      <motion.div
-  whileInView={{ y: -80, scale: 1, duration: 5 }}
+  whileInView={{ y: -80, scale: 1.2, duration: 5 }}
   transition={{ type: 'just', stiffness: 110 }}
   className=" tracking-tight  text-transparent bg-clip-text bg-gradient-to-t from-[#222121] to-[#525252] whitespace-nowrap"
 >

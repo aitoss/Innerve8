@@ -143,13 +143,13 @@ function DummyBanner() {
 
 const Heading = () => {
   return (
-    <div className="text-center lg:block hidden tracking-[10px] bg-clip-text bg-gradient-to-t from-[#FFFFFF] to-[rgba(55,47,47,0.5)] font-medium sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
+    <div className="text-center lg:block hidden tracking-[10px] bg-clip-text font-medium sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
      <motion.div
-  whileInView={{ y: -80, scale: 1, duration: 5 }}
+  whileInView={{ y: -80, scale: 1.2, duration: 5 }}
   transition={{ type: 'just', stiffness: 110 }}
   className=" tracking-tight  text-transparent bg-clip-text bg-gradient-to-t from-[#FFFFFF] to-[rgba(55,47,47,0.5)] whitespace-nowrap"
 >
-  <h1 className="text-[125px] xl:text-[200px]">Register Now</h1>
+  <h1 className="text-[125px] xl:text-[150px] xl:block hidden">Register Now</h1>
 </motion.div>
     </div>
   );
