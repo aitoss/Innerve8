@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 const DarkSlider = ({text}) =>{
         return(
             <>
-            <div className="max-w-[1920px] w-screen z-[-1]">
+            <div className="max-w-[1920px] w-screen z-[-1] select-none">
                 <Marquee autoFill='true' speed={80}>
                     {text.map((item) => (
                         <TextSlide text={item}/>

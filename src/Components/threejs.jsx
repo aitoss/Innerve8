@@ -1,61 +1,48 @@
 import React from "react";
-import { useEffect,useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import Infinity from "./infiniteLoop";
+import InfinteLoop from "./infiniteLoop";
 import Controls from "./control";
-
-function calculateZoom(size) {
-  let zoomLevel;
-
-  if (size <= 1400) {
-    zoomLevel = 30 + ((size - 400) / (1400 - 400)) * (150 - 30);
-    zoomLevel = Math.max(30, Math.min(zoomLevel, 150));
-  } else {
-    zoomLevel = 150;
-  }
-
-  return zoomLevel;
-}
+import { useState , useEffect } from "react";
 
 export default function Threejs() {
 
-  const [zoom, setZoom] = useState(calculateZoom(window.innerWidth));
+  const [height ,setheight] = useState(window.innerHeight);
+  const [width , setwidth] = useState(window.innerWidth);
+  console.log(height , width);
+  const [loopSize, setloopSize] = useState(width > 1340 ? Math.min(window.innerWidth, window.innerHeight) / 150 : Math.min(window.innerWidth, window.innerHeight) / 250);
+
   useEffect(() => {
-    function handleResize() {
-      setZoom(calculateZoom(window.innerWidth));
-    }
-    window.addEventListener('resize', handleResize);
+    const handleResize = () => {
+      setloopSize(width > 1340 ? Math.min(window.innerWidth, window.innerHeight) / 150 : Math.min(window.innerWidth, window.innerHeight) / 250);
+      setwidth(window.innerWidth);
+      console.log(loopSize);
+      console.log(height , width);
+    };
+
+    window.addEventListener("resize", handleResize);
+
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
   return (
-      <Canvas className=""
-      orthographic={true}
-      camera={{zoom:zoom}}
+    <div className="w-full h-full">
+     <Canvas
+        orthographic={true}
+        camera={{zoom:100}}
       >
-        {/* Uncomment the line below if you want to use OrbitControls */}
-        {/* <OrbitControls enableZoom={false} /> */}
+        {/* <OrbitControls /> */}
         {/* <Controls /> */}
-        {/* <ambientLight intensity={} /> */}
-        <directionalLight position={[0.234, 3.776, 7.500]} intensity={1} />
-        <pointLight position={[0.465, 2.915, 5.777]} intensity={1} />
-        <pointLight position={[0.067, 2.813, 5.720]} intensity={1} />
-        <group 
-        position={[17.5, -11, -25]}
-        >
+        <ambientLight intensity={2.5} />
+        {/* <directionalLight position={[2, 2, 8.407]} intensity={3} /> */}
+        <group position={[0 , 0 , -5]} >
           <mesh>
-            <Infinity scale={{ scale:4, position: 0.5 }} />
+            <InfinteLoop scale={{ scale:loopSize ,position: 0.5 }} />
           </mesh>
         </group>
-        {/* <group position={[0, 0 , 0]}>
-          <mesh>
-            <sphereGeometry args={[64, 32, 32]}/>
-            <meshStandardMaterial color="black" />
-          </mesh>
-        </group> */}
       </Canvas>
+    </div>
   );
 }

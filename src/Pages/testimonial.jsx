@@ -48,7 +48,7 @@ const Testimonial = () => {
 
     return (
         <>
-<section className="bg-[#121212] space-y-4 w-screen hidden h-full lg:block relative">
+<section className="bg-[#121212] space-y-4 w-screen hidden h-full lg:block relative overflow-hidden">
     <div className="py-8">
         <DarkSlider text={["Connect with code"]} />
     </div>
@@ -64,7 +64,7 @@ const Testimonial = () => {
         <Column className="w-[20%] h-[40%] flex  flex-col gap-[2vw] " images={[images[9], images[10], images[11]]} y={y4} />
     </div>
 
-    <div className="relative bottom-0 left-0 right-0">
+    <div className="relative bottom-0 left-0 right-0 overflow-hidden w-screen ">
         <Heading />
     </div>
 </section>
@@ -100,7 +100,7 @@ const Heading = () => {
        <motion.div
     whileInView={{ y: 0, scale: 1.5, duration: 5 }}
     transition={{ type: 'just', stiffness: 110 }}
-    className=" tracking-tight  text-transparent bg-clip-text bg-gradient-to-t from-[#222121] to-[#525252] whitespace-nowrap"
+    className=" tracking-tight  text-transparent bg-clip-text bg-gradient-to-t from-[#222121] to-[#525252] whitespace-nowrap w-full overflow-hidden"
   >
     Memories
   </motion.div>
