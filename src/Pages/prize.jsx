@@ -5,13 +5,13 @@ import DarkSlider from "../Components/darkSlider";
 
 const Prize = () => {
   return (
-    <div className="w-screen bg-[#212121] h-full overflow-hidden">
+    <div className="w-screen bg-[#212121] h-screen overflow-hidden">
       {/* <Slider text={['EdTech', 'GameDev', 'Logistics', 'Web3.0', 'Healthcare', 'XR','FinTech','Blockchain']} /> */}
       {/* <DummyBanner /> */}
-      <div className="overflow-hidden">
+      <div className="overflow-hidden mt-6">
       <DarkSlider text={["10lac+ Prize pool"]} />
       </div>
-      <div className="w-screen lg:pt-40  flex-col items-center h-full">
+      <div className="w-screen lg:pt-[120px]  flex-col items-center h-full">
         <Heading2/>
         <StackedCards />
         <Heading />
@@ -141,8 +141,9 @@ const StackedCards = () => {
     <>
       <section className="hidden lg:block">
         <motion.div
-          initial={{}}
-          whileHover={{}}
+          initial={{ scale: 0.7 }}
+          whileInView={{scale: 1, duration: 0.3}}
+          transition={{type: 'just', stiffness: 110}}
           className="flex py-6 justify-center items-center"
         >
           <motion.div
@@ -165,7 +166,7 @@ const StackedCards = () => {
           >
             <Card
               color="bg-gradient-to-t from-[#FDDE56] via-[#FFEA8C] to-[#FDF0B7]"
-              textColor="text-[hsla(0,0%,13%,90%)]"
+              textColor="text-[hsla(10%,8%,93%,2%)]"
               textData="First prize"
               value="Rs. 100,000"
             />
@@ -220,10 +221,14 @@ const StackedCards = () => {
 
 const Heading = () => {
   return (
-    <div className="text-center lg:block hidden tracking-[8px] font-medium text-[200px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
-      <motion.div className=" translate-y-[-120px] tracking-tight text-transparent bg-clip-text bg-gradient-to-t from-[#222121] to-[#525252] whitespace-nowrap">
-        Prizes
-      </motion.div>
+    <div className="text-center lg:block hidden tracking-[10px] font-medium text-[250px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
+     <motion.div
+  whileInView={{ y: -80, scale: 1, duration: 5 }}
+  transition={{ type: 'just', stiffness: 110 }}
+  className=" tracking-tight  text-transparent bg-clip-text bg-gradient-to-t from-[#222121] to-[#525252] whitespace-nowrap"
+>
+  Prizes
+</motion.div>
     </div>
   );
 };

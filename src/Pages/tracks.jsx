@@ -17,35 +17,24 @@ const indiData = [
 ];
 
 const Tracks = () => {
-  return (
-    <>
-      <div className="flex align-middle py-8  max-w-[1920px] w-screen h-full overflow-hidden flex-col relative top-5">
-        <Slider
-          text={[
-            "GameDev",
-            "Logistics",
-            "Web3.0",
-            "Healthcare",
-            "FinTech",
-            "EdTech",
-          ]}
-        />
-        <Heading2 />
-        <div
-          id="Tracks"
-          className="flex flex-row flex-wrap gap-x-[90px] lg:gap-x-36 gap-y-4 lg:gap-y-10 px-[2%] lg:justify-center justify-center items-center lg:items-center relative top-20"
-        >
-          {indiData.map((data) => (
-            <Track title={data[0]} img={data[1]} />
-          ))}
-        </div>
-        <div className="flex relative top-[8rem] mt-10 justify-center">
-          <Heading />
-        </div>
-      </div>
-    </>
-  );
-};
+    return(
+        <>
+            <div className="flex align-middle py-8  max-w-[1920px] w-screen h-full overflow-hidden flex-col relative top-5">
+                <Slider text={["GameDev", 'Logistics', 'Web3.0', 'Healthcare', 'FinTech', 'EdTech']} />
+                <Heading2/>
+                <div id="Tracks" className="flex flex-row flex-wrap gap-x-[90px] lg:gap-x-36 gap-y-4 lg:gap-y-10 px-[2%] lg:justify-center justify-center items-center lg:items-center relative top-20">
+                    {indiData.map((data) => (
+                        <Track title={'Cybersec'} img={data[1]} />
+                    ))}
+                </div>
+                <div className="flex relative top-[8rem] mt-10 justify-center">
+                    <Heading />
+                </div>
+            </div>
+        </>
+    )
+}
+
 
 const Example = () => {
   return (
@@ -55,7 +44,8 @@ const Example = () => {
   );
 };
 
-const Track = () => {
+const Track = ({title}) => {
+
   const x = useMotionValue(0);
 
   const y = useMotionValue(0);
@@ -108,6 +98,10 @@ const Track = () => {
 
   return (
     <motion.div
+    initial={{ scale: 0.7 }}
+    whileInView={{scale: 1, duration: 0.3}}
+    transition={{type: 'just', stiffness: 110}}
+
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={{
@@ -142,7 +136,9 @@ const Track = () => {
           }}
           className="text-center text-[#121212] text-2xl font-bold"
         >
-          Track Name
+
+          {title}
+
         </p>
       </div>
     </motion.div>
@@ -151,10 +147,14 @@ const Track = () => {
 
 const Heading = () => {
   return (
-    <div className="text-center hidden lg:block tracking-[8px] text-[150px] sticky text-transparent bg-gradient-to-b from-[#FFFFFF] to-[rgba(55,47,47,0.5)] bg-clip-text">
-      <motion.div className=" translate-y-[-120px] tracking-tight text-transparent bg-clip-text bg-gradient-to-t from-[#FFFFFF] to-[rgba(55,47,47,0.5)] whitespace-nowrap">
-        Tracks
-      </motion.div>
+    <div className="text-center lg:block hidden tracking-[10px] bg-clip-text bg-gradient-to-t from-[#FFFFFF] to-[rgba(55,47,47,0.5)] font-medium text-[250px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
+     <motion.div
+  whileInView={{ y: -80, scale: 1, duration: 5 }}
+  transition={{ type: 'just', stiffness: 110 }}
+  className=" tracking-tight  text-transparent bg-clip-text bg-gradient-to-t from-[#FFFFFF] to-[rgba(55,47,47,0.5)] whitespace-nowrap"
+>
+  Tracks
+</motion.div>
     </div>
   );
 };
