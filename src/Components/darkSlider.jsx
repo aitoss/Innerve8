@@ -19,13 +19,12 @@ const TextSlide = ({text}) =>{
     return(
     <>
       <div className="flex items-center justify-center text-7xl h-12">
-        <h1 className=" tracking-tight text-5xl text-transparent bg-clip-text bg-gradient-to-t from-[#2c2a2a] to-[#525252] whitespace-nowrap px-3">
+        <h1 className=" tracking-tight text-xl md:text-3xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-t from-[#2c2a2a] to-[#525252] whitespace-nowrap px-3">
           {text}
         </h1>
         <svg
+          className="w-5 md:w-10 lg:w-14 h-5 md:h-10 lg:h-14"
           xmlns="http://www.w3.org/2000/svg"
-          width="41"
-          height="42"
           viewBox="0 0 41 42"
           fill="none"
           filter="invert(120%)"
