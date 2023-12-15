@@ -18,7 +18,7 @@ const DarkSlider = ({text}) =>{
 const TextSlide = ({text}) =>{
     return(
     <>
-      <div className="flex items-center justify-center text-7xl h-12">
+      <div className="flex items-center justify-center text-5xl h-11">
         <h1 className=" tracking-tight text-xl md:text-3xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-t from-[#2c2a2a] to-[#525252] whitespace-nowrap px-3">
           {text}
         </h1>

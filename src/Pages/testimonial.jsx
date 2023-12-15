@@ -3,6 +3,7 @@ import { useTransform, useScroll } from 'framer-motion';
 import { useRef } from 'react';
 import { motion } from 'framer-motion';
 import Lenis from '@studio-freight/lenis'
+import DarkSlider from '../Components/darkSlider';
 
 
 const Testimonial = () => {
@@ -16,10 +17,22 @@ const Testimonial = () => {
     const y3 = useTransform(scrollYProgress, [0, 1], [1, -100]);
     const y4 = useTransform(scrollYProgress, [0, 1], [1, 450]);
     const images = [
-        "1.jpg",
-        "2.jpg",
-        "3.jpg",
-        "4.jpg",
+        "1.JPG",
+        "2.JPG",
+        "3.JPG",
+        "4.JPG",
+        "5.JPG",
+        "6.JPG",
+        "7.jpg",
+        "8.JPG",
+        "9.JPG",
+        "10.JPG",
+        "11.JPG",
+        "12.JPG",
+        "13.JPG",
+        "14.JPG",
+        "15.JPG",
+        "16.JPG",
     ];
 
     useEffect(() => {
@@ -35,18 +48,24 @@ const Testimonial = () => {
 
     return (
         <>
-            <section className="bg-[#121212] w-screen hidden h-full lg:block">
-                <div className="flex justify-center relative top-[400px] z-30 lg:text-7xl items-center">Connect with Code
+            <section className="bg-[#121212] space-y-4 w-screen hidden h-full lg:block">
+                <div className="pt-8">
+                <DarkSlider text={["Connect with code"]} />
                 </div>
+           
+    
                 <div
                     ref={container}
-                    className="gallery overflow-hidden -top-10 h-full bg-[#121212]  flex flex-row gap-[2vw] p-[2vw] border-box"
+                    className="gallery overflow-hidden -top-18 h-full bg-[#121212]  flex flex-row gap-[2vw] p-[2vw] border-box"
                     style={{ y }}
                 >
                     <Column className="w-[20%] h-[40%] relative flex -top-[10%] flex-col gap-[2vw] " images={[images[0], images[1], images[2]]} y={y} />
-                    <Column className="w-[20%] h-[40%]  flex -top-[75%] flex-col gap-[2vw] " images={[images[1], images[0], images[2]]} y={y2} />
-                    <Column className="w-[20%] h-[40%]  flex flex-col gap-[2vw] " images={[images[2], images[0], images[2]]} y={y3} />
-                    <Column className="w-[20%] h-[40%] flex  flex-col gap-[2vw] " images={[images[1], images[2], images[2]]} y={y4} />
+                    <Column className="w-[20%] h-[40%]  flex -top-[75%] flex-col gap-[2vw] " images={[images[3], images[4], images[5]]} y={y2} />
+                    <Column className="w-[20%] h-[40%]  flex flex-col gap-[2vw] " images={[images[6], images[7], images[8]]} y={y3} />
+                    <Column className="w-[20%] h-[40%] flex  flex-col gap-[2vw] " images={[images[9], images[10], images[11]]} y={y4} />
+                </div>
+                <div className="-mt-8">
+                <Heading/>
                 </div>
             </section>
 
@@ -64,7 +83,7 @@ const Column = ({ images, y = 0 }) => {
                     return (
                         <div key={index} className="w-[100%] py-2 rounded-lg overflow-hidden relative">
                             <img className="object-cover"
-                                src={`/images/${src}`} fill
+                                src={`/images/testim/${src}`} fill
                                 alt='image'
                             />
                         </div>
@@ -74,5 +93,19 @@ const Column = ({ images, y = 0 }) => {
         </motion.div>
     );
 };
+
+const Heading = () => {
+    return (
+      <div className="text-center lg:block hidden tracking-[8px] bottom-0 font-medium text-[250px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
+       <motion.div
+    whileInView={{ y: -80, scale: 1, duration: 5 }}
+    transition={{ type: 'just', stiffness: 110 }}
+    className=" tracking-tight  text-transparent bg-clip-text bg-gradient-to-t from-[#222121] to-[#525252] whitespace-nowrap"
+  >
+    Memories
+  </motion.div>
+      </div>
+    );
+  };
 
 export default Testimonial;
