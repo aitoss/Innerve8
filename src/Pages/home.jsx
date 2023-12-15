@@ -40,7 +40,7 @@ export default function Home() {
         <div className="flex innerve-text w-full h-fit justify-center bg-black">
           <InnerveText />
         </div>
-        <div className="absolute w-full flex justify-center overflow-hidden">
+        <div className="absolute w-full flex justify-center overflow-hidden top-8">
           <img src={Dots} alt="dots" style = {{zIndex: '-1'}} className="scale-110" />
         </div>
       </div>

@@ -1,36 +1,47 @@
 import React from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import Infinity from "./infiniteLoop";
+import InfinteLoop from "./infiniteLoop";
 import Controls from "./control";
+import { useState , useEffect } from "react";
 
 export default function Threejs() {
+
+  const [height ,setheight] = useState(window.innerHeight);
+  const [width , setwidth] = useState(window.innerWidth);
+  console.log(height , width);
+  const [loopSize, setloopSize] = useState(Math.min(window.innerWidth, window.innerHeight) / 400);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setloopSize(Math.min(window.innerWidth, window.innerHeight) / 400);
+      console.log(loopSize);
+      console.log(height , width);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="w-full h-full">
-      <Canvas 
-      orthographic={true}
-      camera={{zoom:150}}
+     <Canvas
+        orthographic={true}
+        camera={{zoom:200}}
       >
-        {/* Uncomment the line below if you want to use OrbitControls */}
-        {/* <OrbitControls enableZoom={false} /> */}
-        {/* <Controls /> */}
-        {/* <ambientLight intensity={} /> */}
-        <directionalLight position={[0.234, 3.776, 7.500]} intensity={1} />
-        <pointLight position={[0.465, 2.915, 5.777]} intensity={1} />
-        <pointLight position={[0.067, 2.813, 5.720]} intensity={1} />
-        <group 
-        position={[17.5, -10.5, -25]}
-        >
+        {/* <OrbitControls /> */}
+        <Controls />
+        {/* <ambientLight intensity={1} /> */}
+        <directionalLight position={[2, 2, 8.407]} intensity={3} />
+        <group position={[0 , 0.5 , 0]}>
           <mesh>
-            <Infinity scale={{ scale:4, position: 0.5 }} />
+            <InfinteLoop scale={{ scale:loopSize ,position: 0.5 }} />
+            
           </mesh>
         </group>
-        {/* <group position={[0, 0 , 0]}>
-          <mesh>
-            <sphereGeometry args={[64, 32, 32]}/>
-            <meshStandardMaterial color="black" />
-          </mesh>
-        </group> */}
       </Canvas>
     </div>
   );
