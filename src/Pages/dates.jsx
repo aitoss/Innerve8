@@ -143,6 +143,7 @@ function DummyBanner() {
 
 const Heading = () => {
   return (
+<<<<<<< HEAD
     <div className="text-center lg:block hidden tracking-[10px] bg-clip-text bg-gradient-to-t from-[#FFFFFF] to-[rgba(55,47,47,0.5)] font-medium sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
      <motion.div
   whileInView={{ y: -80, scale: 1, duration: 5 }}
@@ -151,6 +152,12 @@ const Heading = () => {
 >
   <h1 className="text-[125px] xl:text-[200px]">Register Now</h1>
 </motion.div>
+=======
+    <div className="text-center tracking-[8px] font-medium sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)] text-[70px] sm:text-[150px]">
+      <motion.div className="tracking-tight text-transparent bg-clip-text bg-gradient-to-t from-[#222121] to-[#525252] whitespace-nowrap">
+        Register
+      </motion.div>
+>>>>>>> 2eb5852c99bff1762cc0e2f12620a19d3562aa0e
     </div>
   );
 };
@@ -158,7 +165,11 @@ const Heading = () => {
 
 export default function Dates() {
   return (
+<<<<<<< HEAD
     <>
+=======
+    <div className="relative w-screen h-screen flex flex-col justify-center overflow-hidden">
+>>>>>>> 2eb5852c99bff1762cc0e2f12620a19d3562aa0e
       <div className="">
         <Slider text={["Nerve to Innovate"]} theme="light"/>
       </div>
