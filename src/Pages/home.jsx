@@ -27,9 +27,9 @@ export default function Home() {
       <div className="w-full flex flex-col justify-center relative home">
         <div className="flex flex-col w-full items-center justify-center">
             <div className="w-full flex justify-center">
-            <p className="text-md text-[#212121] sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl pt-6 text-black landing-text select-none">India's biggest student driven hackathon</p>
+            <p className="text-md text-[#212121] sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl pt-6  landing-text select-none">India's biggest student driven hackathon</p>
             </div>
-            <p className="text-md text-[#212121] sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl text-black landing-text select-none">happening in</p>
+            <p className="text-md text-[#212121] sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl  landing-text select-none">happening in</p>
         </div>
         <div className="h-fit mb-6 flex justify-center w-full">
           <Timer />

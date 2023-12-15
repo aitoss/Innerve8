@@ -10,11 +10,12 @@ export default function Threejs() {
   const [height ,setheight] = useState(window.innerHeight);
   const [width , setwidth] = useState(window.innerWidth);
   console.log(height , width);
-  const [loopSize, setloopSize] = useState(Math.min(window.innerWidth, window.innerHeight) / 200);
+  const [loopSize, setloopSize] = useState(width > 1340 ? Math.min(window.innerWidth, window.innerHeight) / 150 : Math.min(window.innerWidth, window.innerHeight) / 250);
 
   useEffect(() => {
     const handleResize = () => {
-      setloopSize(Math.min(window.innerWidth, window.innerHeight) / 200);
+      setloopSize(width > 1340 ? Math.min(window.innerWidth, window.innerHeight) / 150 : Math.min(window.innerWidth, window.innerHeight) / 250);
+      setwidth(window.innerWidth);
       console.log(loopSize);
       console.log(height , width);
     };
@@ -33,7 +34,7 @@ export default function Threejs() {
         camera={{zoom:100}}
       >
         {/* <OrbitControls /> */}
-        <Controls />
+        {/* <Controls /> */}
         <ambientLight intensity={2.5} />
         {/* <directionalLight position={[2, 2, 8.407]} intensity={3} /> */}
         <group position={[0 , 0 , -5]} >
