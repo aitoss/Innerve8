@@ -143,13 +143,13 @@ function DummyBanner() {
 
 const Heading = () => {
   return (
-    <div className="text-center lg:block hidden tracking-[10px] bg-clip-text bg-gradient-to-t from-[#FFFFFF] to-[rgba(55,47,47,0.5)] font-medium text-[250px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
+    <div className="text-center lg:block hidden tracking-[10px] bg-clip-text bg-gradient-to-t from-[#FFFFFF] to-[rgba(55,47,47,0.5)] font-medium sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
      <motion.div
   whileInView={{ y: -80, scale: 1, duration: 5 }}
   transition={{ type: 'just', stiffness: 110 }}
   className=" tracking-tight  text-transparent bg-clip-text bg-gradient-to-t from-[#FFFFFF] to-[rgba(55,47,47,0.5)] whitespace-nowrap"
 >
-  Register Now
+  <h1 className="text-[125px] xl:text-[200px]">Register Now</h1>
 </motion.div>
     </div>
   );
@@ -165,7 +165,7 @@ export default function Dates() {
     <div className="w-screen " style={{aspectRatio:'2/1'}}>
         <Threejs />
     </div>
-      <div className="w-full justify-center pb-8">
+      <div className="w-full justify-center pb-8 mt-4">
         <Heading />
       </div>
     </>
