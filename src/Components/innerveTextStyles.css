@@ -2,7 +2,7 @@
 
 .content h1 {
   position: absolute;
-  z-index: 1000;
+  z-index: 100;
   font-size: clamp(5rem, 25vw, 20rem);
   font-weight: 900;
   font-family: 'SuisseIntl', sans-serif;
@@ -37,7 +37,7 @@
   background: -webkit-linear-gradient(90deg, #5a5a5a, #ffffff);
   -webkit-background-clip: text;
   -webkit-text-stroke: 4px transparent;
-  color: #F9F0E7;
+  color: #F6F6F6;
 }
 
 .content h1:nth-child(3) {

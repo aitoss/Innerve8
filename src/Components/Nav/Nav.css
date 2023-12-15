@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+
 .navigator {
     position: fixed;
     top: 0;
@@ -6,6 +8,58 @@
     height: 100%;
     background-color: #000;
     transition: transform 1s ease-in-out;
+}
+
+.menu-nav{
+    position: fixed;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    z-index: 101;
+    background-color: #212121;
+    transition: 1.5s;
+}
+
+.menu-nav-items{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    z-index: -1;
+    border-left: 2px solid #2C2C2C;
+}
+.menu-nav-items ul li{
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+.menu-nav-footer{
+    border-bottom: 2px solid #2C2C2C;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+}
+.socials-list{
+    color: #909090;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 146%; /* 23.36px */
+    letter-spacing: 0.32px;
+}
+
+.menu-nav-header{
+    border-bottom: 2px solid #2C2C2C;
+}
+
+.show-menu{
+    width: 100%;
+    height: 100%;
 }
 
 .navigator.open {
