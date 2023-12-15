@@ -141,7 +141,7 @@ const DummyBanner = () => {
 const StackedCards = () => {
   return (
     <>
-      <section className="hidden lg:block">
+      <section className="hidden xl:block">
         <motion.div
           initial={{ scale: 0.7 }}
           whileInView={{scale: 1, duration: 0.3}}
@@ -188,7 +188,7 @@ const StackedCards = () => {
           </motion.div>
         </motion.div>
       </section>
-      <section className="lg:hidden h-full flex flex-col">
+      <section className="xl:hidden h-full flex flex-col">
         <div className="flex flex-col py-8 justify-center items-center">
           <div className="m-2  relative z-30">
             <Card2
@@ -223,7 +223,7 @@ const StackedCards = () => {
 
 const Heading = () => {
   return (
-    <div className="text-center lg:block hidden tracking-[10px] font-medium text-[250px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
+    <div className="text-center xl:block hidden tracking-[10px] font-medium text-[250px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
      <motion.div
   whileInView={{ y: -80, scale: 1, duration: 5 }}
   transition={{ type: 'just', stiffness: 110 }}
@@ -237,7 +237,7 @@ const Heading = () => {
 
 const Heading2 = () => {
     return (
-      <div className="text-center lg:hidden tracking-[8px] font-medium text-[100px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
+      <div className="text-center xl:hidden tracking-[8px] font-medium text-[100px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
         <motion.div className="tracking-tight text-transparent bg-clip-text bg-gradient-to-t from-[#222121] to-[#525252] whitespace-nowrap">
           Prizes
         </motion.div>

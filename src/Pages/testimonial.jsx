@@ -96,7 +96,7 @@ const Column = ({ images, y = 0 }) => {
 
 const Heading = () => {
     return (
-      <div className="text-center lg:block hidden tracking-[8px] bottom-0 font-medium text-[180px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
+      <div className="text-center xl:block hidden tracking-[8px] bottom-0 font-medium text-[180px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)] memories" >
        <motion.div
     whileInView={{ y: 0, scale: 1.5, duration: 5 }}
     transition={{ type: 'just', stiffness: 110 }}
