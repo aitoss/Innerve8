@@ -170,23 +170,8 @@ function Faqs() {
                 />
               ))}
             </div>
-            <div className='flex gap-2 flex-col sm:flex-row lg:flex-col lg:gap-y-[40px]'>
-            <Button label="Stay&Travel" onClick={() => setActiveList('travel')} isActive={activeList === 'travel'} />
-            <Button label="Expenses" onClick={() => setActiveList('expenses')} isActive={activeList === 'expenses'} />
-            </div>
+
       </div>
-        <div className=' lg:pt-12 pt-6 mt-2 flex justify-center items-center'>
-          <div className='list'>
-            {renderActiveList().map((item, index) => (
-              <Accordion
-                key={index}
-                datas={item}
-                isActive={index === activeIndex}
-                onToggle={() => toggleActive(index)}
-              />
-            ))}
-          </div>
-        </div>
       </div>
       </div>
     </div>
@@ -217,7 +202,7 @@ const Button = ({ label, onClick, isActive = true }) => {
 
 const HeadingMain = () => {
   return (
-    <div className="text-center lg:block hidden tracking-[10px] mt-20 bg-clip-text  font-medium text-[150px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
+    <div className="text-center xl:block hidden tracking-[10px] mt-20 bg-clip-text  font-medium text-[150px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
       <motion.div
         whileInView={{ y: -80, scale: 1.2, duration: 5 }}
         transition={{ type: "just", stiffness: 110 }}

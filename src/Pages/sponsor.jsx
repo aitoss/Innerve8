@@ -37,17 +37,18 @@ const Sponsor = () => {
             <Slider text={['Our Sponsors']} />
           </div>
           <div className="mt-16 -mb-4">
-    
+        <Heading2/>
           </div>
           <div className="p-4 w-screen flex flex-col xl:mt-[3%] justify-center flex-wrap items-center">
             <SponsorCategory title="TITLE SPONSOR" sponsors={titleSponsors} />
             <SponsorCategory title="PLATINUM SPONSOR" sponsors={platinumSponsors} />
             <SponsorCategory title="GOLD SPONSOR" sponsors={goldSponsors} />
           </div>
-          <div className="flex relative mt-8 justify-center">
-
+          <div className="flex relative mt-16 justify-center">
+          <HeadingMain/>
           </div>
         </div>
+
       </>
     );
   };
@@ -92,5 +93,29 @@ const Sponsor = () => {
       </>
     );
   };
+  const HeadingMain = () => {
+    return (
+      <div className="text-center xl:block hidden tracking-[10px] bg-clip-text  font-medium text-[150px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
+       <motion.div
+    whileInView={{ y: -80, scale: 1.2, duration: 5 }}
+    transition={{ type: 'just', stiffness: 110 }}
+    className=" tracking-tight  text-transparent bg-clip-text bg-gradient-to-t from-[#FFFFFF] to-[rgba(55,47,47,0.5)] whitespace-nowrap"
+  >
+    Sponsors
+  </motion.div>
+      </div>
+    );
+  };
+  
+  const Heading2 = () => {
+    return (
+      <div className="py-4 text-center xl:hidden tracking-[8px] font-medium text-[64px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
+        <motion.div className="tracking-tight text-transparent bg-clip-text bg-gradient-to-t from-[#FFFFFF] to-[rgba(55,47,47,0.5)] whitespace-nowrap">
+          Sponsors
+        </motion.div>
+      </div>
+    );
+  };
+  
   
   export default Sponsor;
