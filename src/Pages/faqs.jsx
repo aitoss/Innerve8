@@ -5,16 +5,16 @@ import Lenis from '@studio-freight/lenis';
 function Faqs() {
   const [generalList, setGeneralList] = useState([
     {
-      question: "What are the main highlights of Innerve8?",
-      answer: "Innerve 8 features sessions with top experts, a 24-hour hackathon with challenging problems, exciting swags, and goodies for participants.",
+      question: "What are the highlights of Innerve 8?",
+      answer: "A 24-hour hackathon with challenging problems, exciting swags and goodies for participants. We also conduct seminars and interactions with industry experts.",
     },
     {
-      question: "Can you provide more details about the hackathon phases?",
+      question: "What are the different phases of the hackathon?",
       answer: "Phase 1, the Idea Submission Round, will be conducted online, while Phase 2, the Building Round, will take place offline at the AIT Campus.",
     },
     {
-      question: "Who is eligible to participate in Innerve8?",
-      answer: "Innerve 8 welcomes participants with a passion for coding and problem-solving skills.",
+      question: "Who is eligible to participate?",
+      answer: "Innerve 8 welcomes participants passionate about coding with keen interest in problem-solving.",
     },
     {
       question: "What kind of prizes can participants expect?",
@@ -23,52 +23,48 @@ function Faqs() {
   
   const [stayList, setStayList] = useState([
     {
-      question: "Where can participants find accommodation during Innerve8?",
-      answer: "We have partnered with several nearby hotels. Detailed information is available on our accommodation page.",
+      question: "How do I apply for Innerve 8?",
+      answer: "Our registration forms are out. Kindly refer to the filling instructions available on the website.",
     },
     {
-      question: "Is lodging available on the AIT campus?",
-      answer: "Yes, participants can find lodging directly on the AIT campus, ensuring convenience during the event.",
+      question: "Is there a registration fee for Innerve?",
+      answer: "There is no registration fee. It's open for all.",
     },
     {
-      question: "Are there any recommended hotels for participants?",
-      answer: "Yes, we recommend checking our accommodation page for a list of partnered hotels with special rates for Innerve 8 participants.",
-    },
-    {
-      question: "How can participants book accommodation for Innerve8?",
-      answer: "Participants can book accommodation through our official website or by following the instructions on the accommodation page.",
-  }]);
+      question: "Is there a minimum or maximum size for the team?",
+      answer: "Yes, 2-4 participants are allowed per team.",
+  },
+  {
+    question: "What are the dates of Phase 1 & 2?",
+    answer: "Idea Pitching: 15th Dec - 15th Jan & 24hrs Hackathon: 9th Feb - 11th Feb",
+}]);
   
   const [travelList, setTravelList] = useState([
     {
+      question: "Where can participants find accommodation during Innerve 8?",
+      answer: "Lodging is available at the AIT Campus itself.",
+    },
+    {
+      question: "How do I book accommodation?",
+      answer: "We will be providing accomodation for participants on our own, there will be no hassle from your side. All finalists will be provided with lodging.",
+    },
+    {
       question: "What transportation options are recommended for participants?",
-      answer: "We advise participants to refer to our travel guide for comprehensive information on available transportation options.",
+      answer: "We advise participants to contact the OSS Club, our team will assist you with the transportation options. ",
     },
     {
-      question: "Is there a shuttle service available between the AIT Campus and recommended hotels?",
-      answer: "Yes, a shuttle service will be provided to facilitate transportation between the AIT Campus and partnered hotels.",
-    },
-    {
-      question: "Are there any discounts available for travel arrangements?",
-      answer: "Participants may find special discounts on transportation options by referring to our travel guide or contacting our travel partners.",
-    },
-    {
-      question: "Can participants use public transportation to reach the AIT Campus?",
-      answer: "Yes, public transportation options are available, and details can be found in our travel guide for Innerve 8.",
+      question: "What to bring during in-person reporting at the venue?",
+      answer: "Carry your documents and devices. Stay on the lookout for further updates.",
   }]);
   
   const [expensesList, setExpensesList] = useState([
     {
-      question: "What fees does Innerve 8 cover for participants?",
+      question: "What expenses does Innerve 8 cover for participants?",
       answer: "Innerve 8 covers the registration fees for all participants, ensuring a seamless experience for attendees.",
     },
     {
       question: "Are travel-related expenses reimbursable for participants?",
       answer: "The OSS Club offers financial support to cover or partially reimburse travel expenses for participants.",
-    },
-    {
-      question: "How can participants claim reimbursement for travel expenses?",
-      answer: "Participants can follow the reimbursement process outlined on our website or contact the OSS Club for assistance.",
     },
     {
       question: "Is financial assistance available for participants facing travel-related challenges?",
@@ -118,8 +114,8 @@ function Faqs() {
       <div className="flex flex-wrap text-[#121212] align-items-stretch px-12 focus:border-none  border-none lg:mt-8 mt-4 items-center justify-center gap-2 lg:flex-col lg:space-y-[40px]">
 
   <Button label="General" onClick={() => setActiveList('general')} isActive={activeList === 'general'} />
-        <Button label="Stay" onClick={() => setActiveList('stay')} isActive={activeList === 'stay'} />
-        <Button label="Travel" onClick={() => setActiveList('travel')} isActive={activeList === 'travel'} />
+        <Button label="Application" onClick={() => setActiveList('stay')} isActive={activeList === 'stay'} />
+        <Button label="Stay&Travel" onClick={() => setActiveList('travel')} isActive={activeList === 'travel'} />
         <Button label="Expenses" onClick={() => setActiveList('expenses')} isActive={activeList === 'expenses'} />
 
 </div>
@@ -153,7 +149,7 @@ const Heading = ({ title }) => {
 const Button = ({ label, onClick, isActive = true}) => {
   return (
     <button
-      className={`lg:w-[150px] items-center focus:border-none text-[18px] lg:text-[20px] rounded-[4px] flex text-white font-bold py-2 lg:py-[16px] border-none none lg:px-[16px] px-2 transition-colors duration-300 ease-in-out ${
+      className={`lg:w-full items-center focus:border-none text-[18px] lg:text-[20px] rounded-[4px] flex text-white font-bold py-2 lg:py-[16px] border-none none lg:px-[16px] px-2 transition-colors duration-300 ease-in-out ${
         isActive ? 'activebtn no-underline border-none focus:border-none' : 'normalbtn  no-underline border-none opacity-60 '
       }`}
       onClick={onClick}
