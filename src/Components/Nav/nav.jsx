@@ -1,11 +1,35 @@
 import React, { useState } from 'react';
 import Btn from '../Button/btn';
-import BtnPrespective from '../Button/btnprespective';
+import { motion } from 'framer-motion';
+import MobileNav from './mobileNav';
 import './Nav.css';
 import { Link } from 'react-router-dom';
 
 const Nav = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
+
+
+    const containervars = {
+        initial: {
+            transition: {
+                staggerChildren: 0.09,
+                staggerDirection: 1,
+            },
+        },
+        open: {
+            transition: {
+                delayChildren: 1,
+                staggerChildren: 0.09,
+                staggerDirection: -1,
+            },
+        },
+        exit: {
+            transition: {
+                duration: 0.5,
+                ease: [0.22, 1, 0.36, 1]
+            }
+        }
+    };
 
     return (
         <>
@@ -18,21 +42,61 @@ const Nav = () => {
                         </div>
                     </div>
                     <div className="menu-nav-items flex flex-col gap-5 sm:gap-7 md:ml-20  ml-10 pt-32 sm:pt-32">
-                        <a href="#home" className="ml-10 w-[70%] sm:w-[80%] text-[#f6f6f6c4] hover:text-[#F6F6F6] border-b border-[#121212] hover:border-[#f6f6f654] text-3xl sm:text-4xl sm:pb-5 font-[300] leading-[160%] tracking-[0.7px] transition-all duration-500" onClick={() => setNavbarOpen((prev) => !prev)}>
-                            HOME
-                        </a>
-                        <a href="#prizes" className="ml-10 w-[70%] sm:w-[80%] text-[#f6f6f6c4] hover:text-[#F6F6F6] border-b border-[#121212] hover:border-[#f6f6f654] text-3xl sm:text-4xl sm:pb-5 font-[300] leading-[160%] tracking-[0.7px] transition-all duration-500" onClick={() => setNavbarOpen((prev) => !prev)}>
-                            PRIZES
-                        </a>
-                        <a href="#tracks" className="ml-10 w-[70%] sm:w-[80%] text-[#f6f6f6c4] hover:text-[#F6F6F6] border-b border-[#121212] hover:border-[#f6f6f654] text-3xl sm:text-4xl sm:pb-5 font-[300] leading-[160%] tracking-[0.7px] transition-all duration-500" onClick={() => setNavbarOpen((prev) => !prev)}>
-                            THEMES
-                        </a>
-                        <a href="#sponsors" className="ml-10 w-[70%] sm:w-[80%] text-[#f6f6f6c4] hover:text-[#F6F6F6] border-b border-[#121212] hover:border-[#f6f6f654] text-3xl sm:text-4xl sm:pb-5 font-[300] leading-[160%] tracking-[0.7px] transition-all duration-500" onClick={() => setNavbarOpen((prev) => !prev)}>
-                            SPONSORS
-                        </a>
-                        <a href="#faqs" className="ml-10 w-[70%] sm:w-[80%] text-[#f6f6f6c4] hover:text-[#F6F6F6] border-b border-[#121212] hover:border-[#f6f6f654] text-3xl sm:text-4xl sm:pb-5 font-[300] leading-[160%] tracking-[0.7px] transition-all duration-500" onClick={() => setNavbarOpen((prev) => !prev)}>
-                            FAQs
-                        </a>
+                        <motion.a
+                            href='#'
+                            variants={containervars}
+                            initial="intial"
+                            animate="open"
+                            exit="exit"
+                        >
+                            <div className="overflow-hidden">
+                                <MobileNav title="HOME" />
+                            </div>
+                        </motion.a>
+
+                        <motion.a
+                            href='#prizes'
+                            variants={containervars}
+                            initial="intial"
+                            animate="open"
+                        >
+                            <div className="overflow-hidden">
+                                <MobileNav title="PRIZES" />
+                            </div>
+                        </motion.a>
+
+                        <motion.a
+                            href='#tracks'
+                            variants={containervars}
+                            initial="intial"
+                            animate="open"
+                        >
+                            <div className="overflow-hidden">
+                                <MobileNav title="THEMES" />
+                            </div>
+                        </motion.a>
+
+                        <motion.a
+                            href='#sponsors'
+                            variants={containervars}
+                            initial="intial"
+                            animate="open"
+                        >
+                            <div className="overflow-hidden">
+                                <MobileNav title="SPONSORS" />
+                            </div>
+                        </motion.a>
+
+                        <motion.a
+                            href='#faqs'
+                            variants={containervars}
+                            initial="intial"
+                            animate="open"
+                        >
+                            <div className="overflow-hidden">
+                                <MobileNav title="FAQs" />
+                            </div>
+                        </motion.a>
                     </div>
                     <div className="menu-nav-footer mb-20 md:pl-20 pl-10">
                         <div className="socials-list flex flow-col gap-5 pl-10 max-[525px]:flex-col">
@@ -87,10 +151,6 @@ const Nav = () => {
                     <div onClick={() => setNavbarOpen((prev) => !prev)} >
                         <Btn name="Menu" icon="↗" />
                     </div>
-                    {/* <div className="group btn flex items-center justify-center gap-3 border border-[#212121] rounded-full p-2 cursor-pointer" onClick={() => setNavbarOpen((prev) => !prev)}>
-                        <h3 className="text-[#212121] text-lg font-[400] ">Menu</h3>
-                        <div className="w-[30px] h-[30px] flex items-center justify-center text-[#212121] border border-[#212121] rounded-full group-hover:rotate-45  transition-all">↗</div>
-                    </div> */}
                 </div>
             </div>
         </>
