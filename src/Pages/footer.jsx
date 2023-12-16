@@ -71,7 +71,7 @@ export default function Footer() {
     //     <div className="w-full flex justify-center">
     //       <div className="btn flex items-center justify-center gap-3 border border-white rounded-full p-1 pl-3 cursor-pointer bg-black w-fit">
     //         <p className="text-white text-sm">+91 7980558433</p>
-    //         <div className="w-[24px] h-[24px] flex items-center justify-center text-white border border-white rounded-full hover:rotate-45">
+    //         <div className="w-[24px] h-[24px] flex items-center justify-center text-white border border-white rounded-full hover:rotate-45  transition-all">
     //           ↗
     //         </div>
     //       </div>
@@ -82,7 +82,7 @@ export default function Footer() {
     //     <div className="w-full flex justify-center">
     //       <div className="btn flex items-center justify-center gap-3 border border-white rounded-full p-1 pl-3 cursor-pointer bg-black w-fit">
     //         <p className="text-white text-sm">+91 7980558433</p>
-    //         <div className="w-[24px] h-[24px] flex items-center justify-center text-white border border-white rounded-full hover:rotate-45">
+    //         <div className="w-[24px] h-[24px] flex items-center justify-center text-white border border-white rounded-full hover:rotate-45  transition-all">
     //           ↗
     //         </div>
     //       </div>
@@ -99,7 +99,7 @@ export default function Footer() {
     //         <div className="w-full  flex justify-center p-5">
     //           <div className="btn flex items-center justify-center gap-3 border border-[#212121] rounded-full p-2 cursor-pointer bg-white h-full w-fit">
     //             <h3 className="text-[#212121] text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl">Register Now</h3>
-    //             <div className="w-[30px] h-[30px] flex items-center justify-center text-[#212121] border border-[#212121] rounded-full hover:rotate-45">
+    //             <div className="w-[30px] h-[30px] flex items-center justify-center text-[#212121] border border-[#212121] rounded-full hover:rotate-45  transition-all">
     //               ↗
     //             </div>
     //           </div>
@@ -184,7 +184,7 @@ export default function Footer() {
               <h3 className="text-[#000000] text-lg font-[400]">
                 Register Now! Visit Devfolio
               </h3>
-              <div className="w-[30px] h-[30px] bg-[#000000] flex items-center justify-center border rounded-full hover:rotate-45">
+              <div className="w-[30px] h-[30px] bg-[#000000] flex items-center justify-center border rounded-full hover:rotate-45  transition-all">
                 ↗
               </div>
               <img
@@ -237,7 +237,7 @@ export default function Footer() {
                     <div className="w-full flex mt-2">
                       <div className="btn flex items-center justify-center gap-3 border border-white rounded-full p-1 pl-3 cursor-pointer bg-black w-fit">
                         <p className="text-white text-sm">+91 7340785879</p>
-                        <div className="w-[24px] h-[24px] flex items-center justify-center text-white border border-white rounded-full hover:rotate-45">
+                        <div className="w-[24px] h-[24px] flex items-center justify-center text-white border border-white rounded-full hover:rotate-45  transition-all">
                           ↗
                         </div>
                       </div>
@@ -250,7 +250,7 @@ export default function Footer() {
                     <div className="w-full flex mt-2">
                       <div className="btn flex items-center justify-center gap-3 border border-white rounded-full p-1 pl-3 cursor-pointer bg-black w-fit">
                         <p className="text-white text-sm">+91 7980558433</p>
-                        <div className="w-[24px] h-[24px] flex items-center justify-center text-white border border-white rounded-full hover:rotate-45">
+                        <div className="w-[24px] h-[24px] flex items-center justify-center text-white border border-white rounded-full hover:rotate-45  transition-all">
                           ↗
                         </div>
                       </div>
