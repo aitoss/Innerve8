@@ -342,7 +342,7 @@ export default function Footer() {
                       Asmitha Tripathi
                     </p>
                     <div className="buttn2 tooltip w-full flex mt-2" onClick={handleClick}>
-                      <span class="tooltiptext whitespace-nowrap"><div className="tri"></div><p className="tool">click to copy number</p></span>
+                      <span class="tooltiptext whitespace-nowrap"><div className="tri"></div><p className="tool">Click to copy number</p></span>
                       <div className=" btn flex items-center justify-center gap-1 border border-white rounded-full p-1 cursor-pointer bg-black w-fit">
                         <div className="press">
                           <p className="press__inner1 text-white text-sm">+91 7980558433</p>
