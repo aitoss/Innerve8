@@ -376,7 +376,7 @@ export default function Footer() {
             </span>
             <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
               <a
-                href="#"
+                href="https://www.facebook.com/groups/ossclubait"
                 className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
               >
                 <svg
@@ -410,7 +410,7 @@ export default function Footer() {
                 <span className="sr-only">Discord community</span>
               </a>
               <a
-                href="#"
+                href="https://twitter.com/innerve24hrs"
                 className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
               >
                 <svg
@@ -429,7 +429,7 @@ export default function Footer() {
                 <span className="sr-only">Twitter page</span>
               </a>
               <a
-                href="#"
+                href="https://github.com/aitoss"
                 className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
               >
                 <svg
