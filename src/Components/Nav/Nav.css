@@ -32,10 +32,6 @@
     border-left: 1px solid #2C2C2C;
 }
 
-.menu-nav-items ul li {
-    font-family: 'SuisseIntl', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-}
-
 .menu-nav-footer {
     border-bottom: 1px solid #2C2C2C;
     width: 100%;

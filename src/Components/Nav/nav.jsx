@@ -1,50 +1,39 @@
 import React, { useState } from 'react';
+import Btn from '../Button/btn';
+import BtnPrespective from '../Button/btnprespective';
 import './Nav.css';
 import { Link } from 'react-router-dom';
 
 const Nav = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
-    
-    const scrollToSection = (sectionID) => {
-        const Section = document.getElementById(sectionID);
-        if (Section) {
-            Section.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
-
 
     return (
         <>
             <div className="inner-nav">
                 <ul className={`menu-nav ${navbarOpen ? ' show-menu' : ''}`}>
                     <div className="menu-nav-header w-full flex flow-col items-center justify-between py-6 px-5 sm:px-10">
-                        <div className="btn group flex items-center justify-center gap-3 border border-[#F6F6F6] rounded-full ml-10 sm:15 md:ml-20 p-2 cursor-pointer">
-                            <h3 className="text-[#F6F6F6] text-lg font-[400]">Brochure</h3>
-                            <div className="w-[30px] h-[30px] flex items-center justify-center text-[#F6F6F6] border border-[#F6F6F6] rounded-full group-hover:rotate-45  transition-all">↗</div>
-                        </div>
-                        <div className='group flex flow-col gap-2 cursor-pointer' onClick={() => setNavbarOpen((prev) => !prev)}>
-                            <h3 className="text-[#F6F6F6] text-lg font-[400]">Close</h3>
-                            <div className="w-[30px] h-[30px] flex items-center justify-center text-[#F6F6F6] border border-[#F6F6F6] rounded-full group-hover:rotate-45  transition-all">×</div>
+                        <h3 className="ml-[3.5rem] sm:ml-10 md:ml-20 text-2xl font-[300] text-[#c4c4c4bf] hover:text-[#f6f6f6d4] hover:cursor-pointer transition-all">Brochure ↗</h3>
+                        <div onClick={() => setNavbarOpen((prev) => !prev)} >
+                            <Btn mode="dark" name="Close" icon="×" />
                         </div>
                     </div>
-                    <ul className="menu-nav-items md:ml-20 ml-10 pt-20">
-                        <li className='flex flex-col mt-20'>
-                            <a href="#home"  className="ml-10 text-[#F6F6F6] text-2xl font-normal leading-[146%] tracking-[0.72px]">HOME</a>
-                        </li>
-                        <li className='mt-6'>
-                            <a href="#prizes" className="ml-10 text-[#F6F6F6] text-2xl font-normal leading-[146%] tracking-[0.72px]">PRIZES</a>
-                            {/* <Link onClick={() => scrollToSection('prizes')} to="/" className="ml-10 text-[#F6F6F6] text-2xl font-normal leading-[146%] tracking-[0.72px]">PRIZES</Link> */}
-                        </li>
-                        <li className='mt-6'>
-                            <a href="#" className="ml-10 text-[#F6F6F6] text-2xl font-normal leading-[146%] tracking-[0.72px]">THEMES</a>
-                        </li>
-                        <li className='mt-6'>
-                            <a href="#" className="ml-10 text-[#F6F6F6] text-2xl font-normal leading-[146%] tracking-[0.72px]">SPONSORS</a>
-                        </li>
-                        <li className='mt-6'>
-                            <a href="#" className="ml-10 text-[#F6F6F6] text-2xl font-normal leading-[146%] tracking-[0.72px]">FAQs</a>
-                        </li>
-                    </ul>
+                    <div className="menu-nav-items flex flex-col gap-5 sm:gap-7 md:ml-20  ml-10 pt-32 sm:pt-32">
+                        <a href="#" className="ml-10 w-[70%] sm:w-[80%] text-[#f6f6f6c4] hover:text-[#F6F6F6] border-b border-[#121212] hover:border-[#f6f6f654] text-3xl sm:text-4xl sm:pb-5 font-[300] leading-[160%] tracking-[0.7px] transition-all duration-500">
+                            HOME
+                        </a>
+                        <a href="#" className="ml-10 w-[70%] sm:w-[80%] text-[#f6f6f6c4] hover:text-[#F6F6F6] border-b border-[#121212] hover:border-[#f6f6f654] text-3xl sm:text-4xl sm:pb-5 font-[300] leading-[160%] tracking-[0.7px] transition-all duration-500">
+                            PRIZES
+                        </a>
+                        <a href="#" className="ml-10 w-[70%] sm:w-[80%] text-[#f6f6f6c4] hover:text-[#F6F6F6] border-b border-[#121212] hover:border-[#f6f6f654] text-3xl sm:text-4xl sm:pb-5 font-[300] leading-[160%] tracking-[0.7px] transition-all duration-500">
+                            THEMES
+                        </a>
+                        <a href="#" className="ml-10 w-[70%] sm:w-[80%] text-[#f6f6f6c4] hover:text-[#F6F6F6] border-b border-[#121212] hover:border-[#f6f6f654] text-3xl sm:text-4xl sm:pb-5 font-[300] leading-[160%] tracking-[0.7px] transition-all duration-500">
+                            SPONSORS
+                        </a>
+                        <a href="#" className="ml-10 w-[70%] sm:w-[80%] text-[#f6f6f6c4] hover:text-[#F6F6F6] border-b border-[#121212] hover:border-[#f6f6f654] text-3xl sm:text-4xl sm:pb-5 font-[300] leading-[160%] tracking-[0.7px] transition-all duration-500">
+                            FAQs
+                        </a>
+                    </div>
                     <div className="menu-nav-footer mb-20 md:pl-20 pl-10">
                         <div className="socials-list flex flow-col gap-5 pl-10 max-[525px]:flex-col">
                             {/* <a href='https://instagram.com/oss_club_ait' target='_blank'>Instagram <span className='text-xl'>↗</span></a>
@@ -95,10 +84,13 @@ const Nav = () => {
                         </svg>
                         <h1 className="text-[#212121] text-2xl font-[400]">Innerve</h1>
                     </div>
-                    <div className="group btn flex items-center justify-center gap-3 border border-[#212121] rounded-full p-2 cursor-pointer" onClick={() => setNavbarOpen((prev) => !prev)}>
+                    <div onClick={() => setNavbarOpen((prev) => !prev)} >
+                        <Btn name="Menu" icon="↗" />
+                    </div>
+                    {/* <div className="group btn flex items-center justify-center gap-3 border border-[#212121] rounded-full p-2 cursor-pointer" onClick={() => setNavbarOpen((prev) => !prev)}>
                         <h3 className="text-[#212121] text-lg font-[400] ">Menu</h3>
                         <div className="w-[30px] h-[30px] flex items-center justify-center text-[#212121] border border-[#212121] rounded-full group-hover:rotate-45  transition-all">↗</div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </>
