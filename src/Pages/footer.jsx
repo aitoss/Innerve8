@@ -15,20 +15,18 @@ import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 // import GitHubIcon from '@mui/icons-material/GitHub';
 
-
-
 export default function Footer() {
   const [width, setWidth] = useState(window.innerWidth);
 
   const [sphereSize, setSphereSize] = useState(
-    width > 640
-      ? Math.min(window.innerWidth, window.innerHeight) / 320
-      : 3
+    width > 640 ? Math.min(window.innerWidth, window.innerHeight) / 320 : 3
   );
   useEffect(() => {
     const handleResize = () => {
-      setSphereSize(Math.min(window.innerWidth, window.innerHeight) / 320);
       setWidth(window.innerWidth);
+      setSphereSize(
+        width > 640 ? Math.min(window.innerWidth, window.innerHeight) / 320 : 3
+      );
     };
 
     window.addEventListener("resize", handleResize);
@@ -334,7 +332,10 @@ export default function Footer() {
                   </li>
                   <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                     <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                      <a className="text-white hover:text-white" href="https://aitoss.club/">
+                      <a
+                        className="text-white hover:text-white"
+                        href="https://aitoss.club/"
+                      >
                         aitoss.club
                       </a>
                     </span>
@@ -379,8 +380,14 @@ export default function Footer() {
                     <p className="text-md w-full lg:text-start">
                       Asmitha Tripathi
                     </p>
-                    <div className="buttn2 tooltip w-full flex mt-2" onClick={handleClick}>
-                      <span class="tooltiptext whitespace-nowrap"><div className="tri"></div><p className="tool">Click to copy number</p></span>
+                    <div
+                      className="buttn2 tooltip w-full flex mt-2"
+                      onClick={handleClick}
+                    >
+                      <span class="tooltiptext whitespace-nowrap">
+                        <div className="tri"></div>
+                        <p className="tool">Click to copy number</p>
+                      </span>
                       <div className=" btn flex items-center justify-center gap-1 border border-white rounded-full p-1 cursor-pointer bg-black w-fit">
                         <div className="press">
                           <p className="press__inner1 text-white text-sm">
@@ -493,7 +500,7 @@ export default function Footer() {
                 className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
               >
                 <svg
-                className="w-4 h-4"
+                  className="w-4 h-4"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
