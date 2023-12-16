@@ -178,7 +178,7 @@ export default function Footer() {
     // </div>
     <>
       <div className="footer">
-        <div className="front-footer w-full flex justify-center items-center bg-[#121212] gap-12 p-3">
+        <div className="front-footer w-full flex justify-center items-center bg-[#121212] gap-12 px-3 py-8">
           <div className="button-holder">
             <div className="btn flex relative items-center bg-[#F9F0E7] justify-center gap-3 border rounded-full pl-5 pr-2 py-2 cursor-pointer">
               <h3 className="text-[#000000] text-lg font-[400]">
