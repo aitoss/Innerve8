@@ -129,50 +129,34 @@ function Faqs() {
 
   return (
     <>
-        <div className="h-full">
-          <div className="pt-4">
-          <Slider text={["Our team is always there to assit you"]} />
-          </div>
-          <HeadingMob/>
-      <div className="max-w-screen-xl flex flex-col lg:flex-row mx-auto">
- 
-              <div className="flex flex-wrap text-[#121212] align-items-stretch px-12 focus:border-none  border-none lg:mt-8 mt-4 items-center justify-center gap-2 lg:flex-col lg:space-y-[40px]">
-          <Button
-            label="General"
-            onClick={() => setActiveList("general")}
-            isActive={activeList === "general"}
-          />
-          <Button
-            label="Registration"
-            onClick={() => setActiveList("stay")}
-            isActive={activeList === "stay"}
-          />
-          <Button
-            label="Stay&Travel"
-            onClick={() => setActiveList("travel")}
-            isActive={activeList === "travel"}
-          />
-          <Button
-            label="Expenses"
-            onClick={() => setActiveList("expenses")}
-            isActive={activeList === "expenses"}
-          />
-        </div>
-        <div className=" flex flex-col items-center justify-center lg:flex-row mr-10 xl:ml-0 ml-10">
-          <div className=" lg:pt-12 pt-6 mt-2 flex justify-center items-center">
-            <div className="list">
-              {renderActiveList().map((item, index) => (
-                <Accordion
-                  key={index}
-                  datas={item}
-                  isActive={index === activeIndex}
-                  onToggle={() => toggleActive(index)}
-                />
-              ))}
+    <div className="h-full">
+    <div className="max-w-screen-xl mx-auto">
+      <Heading title="FAQs" />
+      <HeadingMobile title="FAQs"/>
+      <div className=" flex flex-col items-center justify-center lg:flex-row mr-10 xl:ml-0 ml-10 ">
+      <div className="flex flex-row text-[#121212] align-items-stretch px-12 focus:border-none  border-none lg:mt-8  items-center justify-center gap-2 lg:flex-col lg:gap-y-[40px] ">
+            <div className='flex gap-2 flex-col sm:flex-row lg:flex-col lg:gap-y-[40px]'>
+            <Button label="General" onClick={() => setActiveList('general')} isActive={activeList === 'general'} />
+            <Button label="Application" onClick={() => setActiveList('stay')} isActive={activeList === 'stay'} />
             </div>
-    
+            <div className='flex gap-2 flex-col sm:flex-row lg:flex-col lg:gap-y-[40px]'>
+            <Button label="Stay&Travel" onClick={() => setActiveList('travel')} isActive={activeList === 'travel'} />
+            <Button label="Expenses" onClick={() => setActiveList('expenses')} isActive={activeList === 'expenses'} />
+            </div>
+      </div>
+        <div className=' lg:pt-12 pt-6 mt-2 flex justify-center items-center'>
+          <div className='list'>
+            {renderActiveList().map((item, index) => (
+              <Accordion
+                key={index}
+                datas={item}
+                isActive={index === activeIndex}
+                onToggle={() => toggleActive(index)}
+              />
+            ))}
           </div>
         </div>
+      </div>
       </div>
     </div>
     <HeadingMain/>
