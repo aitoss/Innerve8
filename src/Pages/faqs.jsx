@@ -131,7 +131,7 @@ function Faqs() {
     <>
         <div className="h-full">
           <div className="pt-4">
-          <Slider text={["Our team is always there to assit you"]} />
+          <Slider text={["Our team is always there to assist you"]} />
           </div>
           <HeadingMob/>
       <div className="max-w-screen-xl flex flex-col lg:flex-row mx-auto">
@@ -181,13 +181,7 @@ function Faqs() {
   );
 }
 
-const Heading = ({ title }) => {
-  return (
-    <div className="m-10 text-startflex hidden lg:block items-start mt-14 font-medium text-5xl text-[#121212] justify-start">
-      {title}
-    </div>
-  );
-};
+
 
 const Button = ({ label, onClick, isActive = true }) => {
   return (
@@ -204,19 +198,11 @@ const Button = ({ label, onClick, isActive = true }) => {
   );
 };
 
-const HeadingMobile = ({ title }) => {
-  return (
-    <div className="text-center ml-[18px] pb-4 flex py-2 lg:hidden item-start justify-start  font-medium text-[54px] text-black whitespace-nowrap">
-      <div className="tracking-tight text-[#121212] bg-clip-text whitespace-nowrap">
-        {title}
-      </div>
-    </div>
-  );
-};
+
 
 const HeadingMain = () => {
   return (
-    <div className="text-center lg:block hidden tracking-[10px] mt-24 bg-clip-text  font-medium text-[150px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
+    <div className="text-center lg:block hidden tracking-[10px] mt-20 bg-clip-text  font-medium text-[150px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
       <motion.div
         whileInView={{ y: -80, scale: 1.2, duration: 5 }}
         transition={{ type: "just", stiffness: 110 }}
