@@ -17,14 +17,14 @@ import TestimonialMob from './Pages/testimonialMobile.jsx'
 import Teams from './Pages/teams.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
       <div className="noise max-w-[1400px]"></div>
       <Home />
       <Dates />
-      <Prize  />
+      <Prize id="prizes" />
       <Tracks  />
       {/* <Problems /> */}
       {/* <Timeline />

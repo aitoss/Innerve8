@@ -1,8 +1,17 @@
 import React, { useState } from 'react';
-import './Nav.css'; // Import the CSS file for your component
+import './Nav.css';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
+    
+    const scrollToSection = (sectionID) => {
+        const Section = document.getElementById(sectionID);
+        if (Section) {
+            Section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
 
     return (
         <>
@@ -18,22 +27,23 @@ const Nav = () => {
                             <div className="w-[30px] h-[30px] flex items-center justify-center text-[#F6F6F6] border border-[#F6F6F6] rounded-full group-hover:rotate-45  transition-all">×</div>
                         </div>
                     </div>
-                    <ul className="menu-nav-items flex flex-col gap-5 sm:gap-7 md:ml-20  ml-10 pt-32 sm:pt-32">
-                        {/* <li className='mt-20'> */}
-                            <a href="#" className="ml-10 text-[#F6F6F6] text-3xl sm:text-4xl sm:pb-5 font-normal leading-[160%] tracking-[0.7px]">HOME</a>
-                        {/* </li> */}
-                        {/* <li className='mt-6'> */}
-                            <a href="#" className="ml-10 text-[#F6F6F6] text-3xl sm:text-4xl sm:pb-5 font-normal leading-[160%] tracking-[0.7px]">PRIZES</a>
-                        {/* </li> */}
-                        {/* <li className='mt-6'> */}
-                            <a href="#" className="ml-10 text-[#F6F6F6] text-3xl sm:text-4xl sm:pb-5 font-normal leading-[160%] tracking-[0.7px]">THEMES</a>
-                        {/* </li> */}
-                        {/* <li className='mt-6'> */}
-                            <a href="#" className="ml-10 text-[#F6F6F6] text-3xl sm:text-4xl sm:pb-5 font-normal leading-[160%] tracking-[0.7px]">SPONSORS</a>
-                        {/* </li> */}
-                        {/* <li className='mt-6'> */}
-                            <a href="#" className="ml-10 text-[#F6F6F6] text-3xl sm:text-4xl sm:pb-5 font-normal leading-[160%] tracking-[0.7px]">FAQs</a>
-                        {/* </li> */}
+                    <ul className="menu-nav-items md:ml-20 ml-10 pt-20">
+                        <li className='flex flex-col mt-20'>
+                            <a href="#home"  className="ml-10 text-[#F6F6F6] text-2xl font-normal leading-[146%] tracking-[0.72px]">HOME</a>
+                        </li>
+                        <li className='mt-6'>
+                            <a href="#prizes" className="ml-10 text-[#F6F6F6] text-2xl font-normal leading-[146%] tracking-[0.72px]">PRIZES</a>
+                            {/* <Link onClick={() => scrollToSection('prizes')} to="/" className="ml-10 text-[#F6F6F6] text-2xl font-normal leading-[146%] tracking-[0.72px]">PRIZES</Link> */}
+                        </li>
+                        <li className='mt-6'>
+                            <a href="#" className="ml-10 text-[#F6F6F6] text-2xl font-normal leading-[146%] tracking-[0.72px]">THEMES</a>
+                        </li>
+                        <li className='mt-6'>
+                            <a href="#" className="ml-10 text-[#F6F6F6] text-2xl font-normal leading-[146%] tracking-[0.72px]">SPONSORS</a>
+                        </li>
+                        <li className='mt-6'>
+                            <a href="#" className="ml-10 text-[#F6F6F6] text-2xl font-normal leading-[146%] tracking-[0.72px]">FAQs</a>
+                        </li>
                     </ul>
                     <div className="menu-nav-footer mb-20 md:pl-20 pl-10">
                         <div className="socials-list flex flow-col gap-5 pl-10 max-[525px]:flex-col">
