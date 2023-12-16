@@ -19,7 +19,7 @@ export default function Home() {
 }, []);
 
   return (
-    <div className="w-screen select-none">
+    <div className="w-screen select-none" id="home">
       <div className="w-full select-none">
         <Nav />
       </div>

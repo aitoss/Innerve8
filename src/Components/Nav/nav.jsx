@@ -1,8 +1,17 @@
 import React, { useState } from 'react';
-import './Nav.css'; // Import the CSS file for your component
+import './Nav.css';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
+    
+    const scrollToSection = (sectionID) => {
+        const Section = document.getElementById(sectionID);
+        if (Section) {
+            Section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
 
     return (
         <>
@@ -20,10 +29,11 @@ const Nav = () => {
                     </div>
                     <ul className="menu-nav-items md:ml-20 ml-10 pt-20">
                         <li className='flex flex-col mt-20'>
-                            <a href="#" className="ml-10 text-[#F6F6F6] text-2xl font-normal leading-[146%] tracking-[0.72px]">HOME</a>
+                            <a href="#home"  className="ml-10 text-[#F6F6F6] text-2xl font-normal leading-[146%] tracking-[0.72px]">HOME</a>
                         </li>
                         <li className='mt-6'>
-                            <a href="#" className="ml-10 text-[#F6F6F6] text-2xl font-normal leading-[146%] tracking-[0.72px]">PRIZES</a>
+                            <a href="#prizes" className="ml-10 text-[#F6F6F6] text-2xl font-normal leading-[146%] tracking-[0.72px]">PRIZES</a>
+                            {/* <Link onClick={() => scrollToSection('prizes')} to="/" className="ml-10 text-[#F6F6F6] text-2xl font-normal leading-[146%] tracking-[0.72px]">PRIZES</Link> */}
                         </li>
                         <li className='mt-6'>
                             <a href="#" className="ml-10 text-[#F6F6F6] text-2xl font-normal leading-[146%] tracking-[0.72px]">THEMES</a>

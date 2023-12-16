@@ -6,7 +6,7 @@ import Slider from "../Components/slider";
 
 function DummyBanner() {
   return (
-    <div className="absolute top-0 left-0 right-0 overflow-hidden">
+    <div className="absolute top-0 left-0 right-0 overflow-hidden" id="dates">
       <motion.div
         variants={{
           start: { x: "100%" },
