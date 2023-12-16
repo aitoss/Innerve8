@@ -8,6 +8,9 @@ import Slider from "../Components/slider";
 import Kaagaz from "../assets/images/kaagaz.jpg"
 import Solana from "../assets/images/solana.png"
 import ICICI from "../assets/images/icici.png"
+import Quinn from "../../public/images/quinn.png"
+import Replit from "../../public/images/replit.png"
+import Verbwire from "../../public/images/verbwire.png"
 
 const Sponsor = () => {
     const titleSponsors = [
@@ -23,10 +26,10 @@ const Sponsor = () => {
 
     ];
   
-    const goldSponsors = [
-      { id: 1, logo: udchalo, name: 'UDChalo' },
-      { id: 2, logo: byte, name: 'Byte' },
-      { id: 3, logo: mro, name: 'MRO' },
+    const subSponsors = [
+      { id: 1, logo: Replit, name: 'Replit' },
+      { id: 2, logo: Verbwire, name: 'Verbwire' },
+      { id: 3, logo: Quinn, name: 'Quinn' },
 
     ];
   
@@ -42,7 +45,7 @@ const Sponsor = () => {
           <div className="p-4 w-screen flex flex-col xl:mt-[3%] justify-center flex-wrap items-center">
             <SponsorCategory title="TITLE SPONSOR" sponsors={titleSponsors} />
             <SponsorCategory title="PLATINUM SPONSOR" sponsors={platinumSponsors} />
-            <SponsorCategory title="GOLD SPONSOR" sponsors={goldSponsors} />
+            <SponsorCategory title="SUB SPONSOR" sponsors={subSponsors} />
           </div>
           <div className="flex relative mt-16 justify-center">
           <HeadingMain/>
