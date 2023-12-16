@@ -33,6 +33,27 @@ export default function Footer() {
     };
   }, []);
 
+  const text1 = "+91 7340785879";
+  const text2 = "+91 7980558433";
+  const handleClick = () => {
+    const tooltipText = document.querySelectorAll('.tool');
+    // console.log(tooltipText);
+    if (tooltipText[0].innerHTML === 'click to copy number') {
+      tooltipText[0].innerHTML = 'copied!!';
+      tooltipText[1].innerHTML = 'click to copy number';
+      navigator.clipboard.writeText(text1);
+    }
+    else {
+      tooltipText[1].innerHTML = 'copied!!';
+      tooltipText[0].innerHTML = 'click to copy number';
+      navigator.clipboard.writeText(text2);
+    }
+    setTimeout(() => {
+      tooltipText[0].innerHTML = 'click to copy number';
+      tooltipText[1].innerHTML = 'click to copy number';
+    }, 5000);
+  };
+
   return (
     // <div className="w-screen min-h-screen min-w-[320px] flex flex-col justify-center gap-12 items-center bg-gradient-to-t from-[#000000] to-[#121212] xl:gap-24 2xl-gap-32">
     //   <div className="w-5/6 flex justify-center flex-col mt-5 lg:flex-row lg:justify-between lg:gap-26">
@@ -273,7 +294,7 @@ export default function Footer() {
                 />
               </div>
               <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                <h2 className="mb-6 text-sm font-[400] tracking-wider text-[#d9d9d9] uppercase">
                   Presented By
                 </h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
@@ -293,7 +314,7 @@ export default function Footer() {
                 </ul>
               </div>
               <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                <h2 className="mb-6 text-sm font-[400] tracking-wider text-[#d9d9d9] uppercase">
                   Contact Us
                 </h2>
 
@@ -302,7 +323,8 @@ export default function Footer() {
                     <p className="text-md w-full lg:text-start">
                       Aakash Sharma
                     </p>
-                    <div className="buttn2 w-full flex mt-2">
+                    <div className="buttn2 tooltip w-full flex mt-2" onClick={handleClick}>
+                      <span class="tooltiptext whitespace-nowrap"><div className="tri"></div><p className="tool">click to copy number</p></span>
                       <div className=" btn flex items-center justify-center gap-1 border border-white rounded-full p-1 cursor-pointer bg-black w-fit">
                         <div className="press">
                           <p className="press__inner1 text-white text-sm">+91 7340785879</p>
@@ -319,7 +341,8 @@ export default function Footer() {
                     <p className="text-md w-full lg:text-start">
                       Asmitha Tripathi
                     </p>
-                    <div className="buttn2 w-full flex mt-2">
+                    <div className="buttn2 tooltip w-full flex mt-2" onClick={handleClick}>
+                      <span class="tooltiptext whitespace-nowrap"><div className="tri"></div><p className="tool">click to copy number</p></span>
                       <div className=" btn flex items-center justify-center gap-1 border border-white rounded-full p-1 cursor-pointer bg-black w-fit">
                         <div className="press">
                           <p className="press__inner1 text-white text-sm">+91 7980558433</p>
@@ -335,7 +358,7 @@ export default function Footer() {
                 </div>
               </div>
               <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                <h2 className="mb-6 text-sm font-[400] tracking-wider text-[#d9d9d9] uppercase">
                   Venue
                 </h2>
                 <iframe
@@ -346,9 +369,9 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="lower-footer bg-[#000000]">
+        <div className="lower-footer bg-[#0f0f0f]">
           <div className="px-4 py-6 md:flex md:items-center md:justify-between max-w-screen-xl mx-auto">
-            <span className="text-sm sm:text-center">
+            <span className="text-sm font-[300] text-[#d9d9d9] sm:text-center">
               Made with ♥ by Open Source Software Club
             </span>
             <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
