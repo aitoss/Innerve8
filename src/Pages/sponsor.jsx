@@ -16,22 +16,22 @@ const Sponsor = () => {
      </div>
     <div className=" p-4 w-screen flex flex-col mt-[3%] justify-center flex-wrap items-center">
    
-    <Heading title="{Title Sponsor}" />
+    <Heading title="Title Sponsor" />
     <div className='flex flex-wrap justify-center px-[10%] flex-row'>
     <SponsorLogos logoCount={4} />
     <SponsorLogos logoCount={2} />
     </div>
-    <Heading title="{Platinum Sponsor}" />
+    <Heading title="Platinum Sponsor" />
     <div className='flex flex-wrap px-[10%] justify-center'>
     <SponsorLogos logoCount={4} />
     <SponsorLogos logoCount={2} />
     </div>
-    <Heading title="{Gold Sponsor}" />
+    <Heading title="Gold Sponsor" />
     <div className='flex flex-wrap px-[10%] justify-center'>
     <SponsorLogos logoCount={4} />
     <SponsorLogos logoCount={3} />
     </div>
-    <Heading title="{Co Sponsor}" />
+    <Heading title="Co Sponsor" />
     <div className='flex flex-wrap px-[10%] justify-center pb-[10vh]'>
     <SponsorLogos logoCount={4} />
     <SponsorLogos logoCount={3} />

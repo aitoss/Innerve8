@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+*{
+  user-select: none;
+}
 
 :root {
   font-family: 'SuisseIntl', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -175,5 +177,12 @@ background: var(--Shocking-Orange, linear-gradient(308deg, #DD6843 25.02%, #F0A3
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+
+.memories {
+  @media (max-width: 1240px) {
+    display: none;
   }
 }

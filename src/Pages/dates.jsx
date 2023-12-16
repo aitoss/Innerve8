@@ -143,13 +143,18 @@ function DummyBanner() {
 
 const Heading = () => {
   return (
-    <div className="mt-[-2rem] text-center tracking-[8px] font-medium text-[2rem] xs:text-[4rem] md:text-[6rem] lg:text-[9rem] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
-      <motion.div className="tracking-tight text-transparent bg-clip-text bg-gradient-to-t from-[#c6c6c6] to-[#6c6c6c] whitespace-nowrap">
-        Register Now!!!
-      </motion.div>
+    <div className="text-center lg:block hidden tracking-[10px] bg-clip-text font-medium sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
+     <motion.div
+  whileInView={{ y: -80, scale: 1.2, duration: 5 }}
+  transition={{ type: 'just', stiffness: 110 }}
+  className=" tracking-tight  text-transparent bg-clip-text bg-gradient-to-t from-[#FFFFFF] to-[rgba(55,47,47,0.5)] whitespace-nowrap"
+>
+  <h1 className="text-[125px] xl:text-[150px] xl:block hidden">Register Now</h1>
+</motion.div>
     </div>
   );
 };
+
 
 export default function Dates() {
   return (
@@ -157,10 +162,10 @@ export default function Dates() {
       <div className="">
         <Slider text={["Nerve to Innovate"]} theme="light"/>
       </div>
-    <div className="w-screen" style={{aspectRatio:'2/1'}}>
+    <div className="w-screen " style={{aspectRatio:'2/1'}}>
         <Threejs />
     </div>
-      <div className="w-full justify-center pb-8">
+      <div className="w-full justify-center pb-8 mt-4">
         <Heading />
       </div>
     </>
