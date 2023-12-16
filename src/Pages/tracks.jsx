@@ -108,9 +108,9 @@ const Track = ({title, img}) => {
 
         <p
           style={{
-            transform: "translateZ(50px)",
+            transform: "translateZ(10px)",
           }}
-          className="text-center text-[#121212] text-lg md:text-2xl font-bold"
+          className="text-center text-[#121212] text-[10px] md:text-2xl font-bold"
         >
 
           {title}
