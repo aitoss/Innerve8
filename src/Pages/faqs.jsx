@@ -173,9 +173,10 @@ function Faqs() {
 
       </div>
       </div>
+
       </div>
+      <HeadingMain/>
     </div>
-    <HeadingMain/>
     </>
 
   );
