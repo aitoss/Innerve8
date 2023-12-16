@@ -1,16 +1,15 @@
-@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
-
 .navigator {
     position: fixed;
     top: 0;
-    right: -300px; /* Initial position off-screen */
+    right: -300px;
+    /* Initial position off-screen */
     width: 300px;
     height: 100%;
     background-color: #000;
     transition: transform 1s ease-in-out;
 }
 
-.menu-nav{
+.menu-nav {
     position: fixed;
     width: 0;
     height: 0;
@@ -18,11 +17,11 @@
     left: 0;
     top: 0;
     z-index: 101;
-    background-color: #212121;
+    background-color: #121212;
     transition: 1s;
 }
 
-.menu-nav-items{
+.menu-nav-items {
     position: absolute;
     top: 0;
     left: 0;
@@ -30,40 +29,49 @@
     height: 100%;
     padding-top: 50px;
     z-index: -1;
-    border-left: 2px solid #2C2C2C;
+    border-left: 1px solid #2C2C2C;
 }
-.menu-nav-items ul li{
-    font-family: 'Gilroy-Bold', sans-serif;
+
+.menu-nav-items ul li {
+    font-family: 'SuisseIntl', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
-.menu-nav-footer{
-    border-bottom: 2px solid #2C2C2C;
+
+.menu-nav-footer {
+    border-bottom: 1px solid #2C2C2C;
     width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
     padding: 20px;
 }
-.socials-list{
+
+.socials-list a {
     color: #909090;
-    font-family: 'Gilroy-Bold', sans-serif;
+    font-family: 'SuisseIntl', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 146%; /* 23.36px */
+    line-height: 146%;
+    /* 23.36px */
     letter-spacing: 0.32px;
+    cursor: pointer;
+}
+.socials-list a:hover {
+    color: #F6F6F6;
 }
 
-.menu-nav-header{
-    border-bottom: 2px solid #2C2C2C;
+.menu-nav-header {
+    border-bottom: 1px solid #2C2C2C;
 }
 
-.show-menu{
+.show-menu {
     width: 100%;
     height: 100%;
 }
 
 .navigator.open {
-    transform: translateX(-300px); /* Slide in from the right */
+    transform: translateX(-300px);
+    /* Slide in from the right */
 }
 
 .close-button {
@@ -73,7 +81,7 @@
     font-size: 1.5rem;
     background: none;
     border: none;
-    color: #fff;
+    color: #F6F6F6;
     cursor: pointer;
 }
 

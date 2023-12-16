@@ -8,45 +8,45 @@ const Nav = () => {
         <>  
             <div className="inner-nav">
                 <ul className={`menu-nav ${navbarOpen ? ' show-menu' : ''}`}>
-                    <div className="menu-nav-header w-full flex flow-col items-center justify-between md:pl-20 pl-10 p-10">
-                        <div className="btn flex items-center justify-center gap-3 border border-[#ffffff] rounded-full ml-10 pl-5 pr-2 py-2 cursor-pointer">
-                            <h3 className="text-[#ffffff] text-lg font-[400]">Brochure</h3>
-                            <div className="w-[30px] h-[30px] flex items-center justify-center text-[#ffffff] border border-[#ffffff] rounded-full hover:rotate-45">↗</div>
+                    <div className="menu-nav-header w-full flex flow-col items-center justify-between py-6 px-5 sm:px-10">
+                        <div className="btn flex items-center justify-center gap-3 border border-[#F6F6F6] rounded-full ml-10 sm:15 md:ml-20 p-2 cursor-pointer">
+                            <h3 className="text-[#F6F6F6] text-lg font-[400]">Brochure</h3>
+                            <div className="w-[30px] h-[30px] flex items-center justify-center text-[#F6F6F6] border border-[#F6F6F6] rounded-full hover:rotate-45  transition-all">↗</div>
                         </div>
                         <div className='flex flow-col gap-2 cursor-pointer' onClick={() => setNavbarOpen((prev) => !prev)}>
-                            <h3 className="text-[#ffffff] text-lg font-[400]">Close</h3>
-                        <div className="w-[30px] h-[30px] flex items-center justify-center text-[#ffffff] border border-[#ffffff] rounded-full hover:rotate-45">×</div>
+                            <h3 className="text-[#F6F6F6] text-lg font-[400]">Close</h3>
+                        <div className="w-[30px] h-[30px] flex items-center justify-center text-[#F6F6F6] border border-[#F6F6F6] rounded-full hover:rotate-45  transition-all">×</div>
                     </div>
                     </div>
                     <ul className="menu-nav-items md:ml-20 ml-10 pt-20">
-                        <li className='mt-20'>
-                            <a href="#" className="ml-10 text-white font-Gilroy-SemiBold text-2xl font-normal leading-[146%] tracking-[0.72px]">HOME</a>
+                        <li className='flex flex-col mt-20'>
+                            <a href="#" className="ml-10 text-[#F6F6F6] text-2xl font-normal leading-[146%] tracking-[0.72px]">HOME</a>
                         </li>
                         <li className='mt-6'>
-                            <a href="#" className="ml-10 text-white font-Gilroy-SemiBold text-2xl font-normal leading-[146%] tracking-[0.72px]">PRIZES</a>
+                            <a href="#" className="ml-10 text-[#F6F6F6] text-2xl font-normal leading-[146%] tracking-[0.72px]">PRIZES</a>
                         </li>
                         <li className='mt-6'>
-                            <a href="#" className="ml-10 text-white font-Gilroy-SemiBold text-2xl font-normal leading-[146%] tracking-[0.72px]">THEMES</a>
+                            <a href="#" className="ml-10 text-[#F6F6F6] text-2xl font-normal leading-[146%] tracking-[0.72px]">THEMES</a>
                         </li>
                         <li className='mt-6'>
-                            <a href="#" className="ml-10 text-white font-Gilroy-SemiBold text-2xl font-normal leading-[146%] tracking-[0.72px]">SPONSORS</a>
+                            <a href="#" className="ml-10 text-[#F6F6F6] text-2xl font-normal leading-[146%] tracking-[0.72px]">SPONSORS</a>
                         </li>
                         <li className='mt-6'>
-                            <a href="#" className="ml-10 text-white font-Gilroy-SemiBold text-2xl font-normal leading-[146%] tracking-[0.72px]">FAQs</a>
+                            <a href="#" className="ml-10 text-[#F6F6F6] text-2xl font-normal leading-[146%] tracking-[0.72px]">FAQs</a>
                         </li>
                     </ul>
                     <div className="menu-nav-footer mb-20 md:pl-20 pl-10">
                         <div className="socials-list flex flow-col gap-5 pl-10">
-                            <p>Instagram</p>
-                            <p>Facebook</p>
-                            <p>Twitter</p>
+                            <a href='https://instagram.com/oss_club_ait' target='_blank'>Instagram</a>
+                            <a href='' target='_blank'>Facebook</a>
+                            <a href='' target='_blank'>X</a>
                         </div>
                     </div>
                 </ul>
             </div>
 
             <div className="flex justify-center">
-                <div className="w-screen max-w-[1540px] px-12 py-6 flex flex-row justify-between nav-inner">
+                <div className="w-screen max-w-[1540px] px-5 py-6 flex flex-row justify-between sm:px-12 ">
                     <div className="flex items-center gap-4">
                          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="40" viewBox="0 0 19 40" fill="none">
                             <path d="M5.57422 0.655886V13.2C5.60196 13.5323 5.89044 14.0972 6.82248 13.6984C7.75451 13.2997 14.2566 9.37859 17.3911 7.4679C17.7239 7.30176 18.19 6.85316 17.3911 6.38795C16.5922 5.92274 9.84604 2.04044 6.57283 0.157446C6.23996 -0.0363921 5.57422 -0.208077 5.57422 0.655886Z" fill="#212121" />
@@ -54,9 +54,9 @@ const Nav = () => {
                         </svg>
                         <h1 className="text-[#212121] text-2xl font-[400]">Innerve</h1>
                     </div>
-                    <div className="btn flex items-center justify-center gap-3 border border-[#212121] rounded-full pl-5 pr-2 py-2 cursor-pointer" onClick={() => setNavbarOpen((prev) => !prev)}>
+                    <div className="btn flex items-center justify-center gap-3 border border-[#212121] rounded-full p-2 cursor-pointer" onClick={() => setNavbarOpen((prev) => !prev)}>
                         <h3 className="text-[#212121] text-lg font-[400]">Menu</h3>
-                        <div className="w-[30px] h-[30px] flex items-center justify-center text-[#212121] border border-[#212121] rounded-full hover:rotate-45">↗</div>
+                        <div className="w-[30px] h-[30px] flex items-center justify-center text-[#212121] border border-[#212121] rounded-full hover:rotate-45  transition-all">↗</div>
                     </div>
                 </div>
             </div>
