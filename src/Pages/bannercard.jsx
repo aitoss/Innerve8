@@ -4,6 +4,11 @@ import { IoLogoInstagram } from "react-icons/io";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import Btn from '../Components/Button/btn';
 const Bannercard = () => {
+
+    const handleEmailClick = () => {
+        window.location.href = 'mailto:aitoss@aitpune.edu.in';
+    };
+
     return (
         <>
             <section className=" md:px-10 mx-8 mb-8">

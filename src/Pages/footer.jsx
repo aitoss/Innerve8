@@ -1,5 +1,6 @@
 import React from "react";
 import Btn from "../Components/Button/btn";
+import BtnLink from "../Components/Button/btnLink";
 import "./pages.css";
 import ossSphere from "../Components/ossSphere";
 import * as THREE from "three";
@@ -13,6 +14,9 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 // import GitHubIcon from '@mui/icons-material/GitHub';
+
+
+
 export default function Footer() {
   const [width, setWidth] = useState(window.innerWidth);
 
@@ -273,7 +277,11 @@ export default function Footer() {
         <div className="front-footer w-full flex justify-center items-center bg-[#121212] gap-12 p-3">
           <div className="btn flex relative items-center bg-[#f6f6f6] justify-center rounded-full cursor-pointer">
             <div className="button-holder flex flex-row bg-[#f6f6f6] rounded-full">
-              <Btn name="Register Now! Visit Devfolio" icon="↗" />
+              <BtnLink
+                name="Register Now! Visit Devfolio"
+                icon="↗"
+                href="https://innerve-eight.devfolio.co/"
+              />
             </div>
             <img
               src="/images/footer-spot.png"
@@ -326,7 +334,7 @@ export default function Footer() {
                   </li>
                   <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                     <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                      <a className="text-white" href="https://aitoss.club/">
+                      <a className="text-white hover:text-white" href="https://aitoss.club/">
                         aitoss.club
                       </a>
                     </span>
