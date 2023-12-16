@@ -1,20 +1,20 @@
 @media screen and (max-width: 600px) {
-    .landing-text {
-      font-size: 1.5rem;
-    }
+  .landing-text {
+    font-size: 1.5rem;
   }
-  
-  @media screen and (max-width: 450px) {
-    .landing-text {
-      font-size: 1.2rem;
-    }
+}
+
+@media screen and (max-width: 450px) {
+  .landing-text {
+    font-size: 1.2rem;
   }
-  
-  @media screen and (max-width: 360px) {
-    .landing-text {
-      font-size: 1rem;
-    }
+}
+
+@media screen and (max-width: 360px) {
+  .landing-text {
+    font-size: 1rem;
   }
+}
 
 .home {
   background-image: url(/src/assets/images/dots.svg);
@@ -78,4 +78,40 @@
 
 .rot p {
   transform: translate(1px, -1px);
+}
+
+.tooltip .tooltiptext {
+  transform: translate(0px, -35px);
+  opacity: 0;
+  width: 150px;
+  height: 30px;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #212121;
+  text-align: center;
+  padding: 5px 5px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  backdrop-filter: blur(2px);
+  transition: all 0.25s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.tri {
+  position: relative;
+  height: 0px;
+  width: 0px;
+  transform: translate(60px, 24.8px);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgba(255, 255, 255, 0.8);
+}
+
+.tooltiptext p {
+  transform: translate(0px, -12px);
+}
+
+.tooltip:hover .tooltiptext {
+  opacity: 1;
+  transform: translate(0px, -40px);
 }

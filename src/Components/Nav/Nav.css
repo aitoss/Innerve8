@@ -19,6 +19,7 @@
     z-index: 101;
     background-color: #121212;
     transition: 1s;
+    visibility: hidden;
 }
 
 .menu-nav-items {
@@ -58,6 +59,7 @@
 .show-menu {
     width: 100%;
     height: 100%;
+    visibility: visible;
 }
 
 .navigator.open {

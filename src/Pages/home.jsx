@@ -31,10 +31,10 @@ export default function Home() {
             </div>
             <p className="text-md text-[#212121] sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl  landing-text select-none">happening in</p>
         </div>
-        <div className="h-fit mb-6 flex justify-center w-full">
+        <div className="h-fit mb-2 flex justify-center w-full">
           <Timer />
         </div>
-        <div className="w-full flex justify-center z-10 relative py-4 pb-0">
+        <div className="w-full flex justify-center z-10 relative py-8 ">
           <Devfolio />
         </div>
         <div className="flex innerve-text w-full justify-center select-none -my-8">

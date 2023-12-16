@@ -1,6 +1,7 @@
 import React from "react";
 import Btn from "../Components/Button/btn";
-import './pages.css'
+import BtnLink from "../Components/Button/btnLink";
+import "./pages.css";
 import ossSphere from "../Components/ossSphere";
 import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
@@ -13,17 +14,19 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 // import GitHubIcon from '@mui/icons-material/GitHub';
-export default function Footer() {
 
+export default function Footer() {
   const [width, setWidth] = useState(window.innerWidth);
 
   const [sphereSize, setSphereSize] = useState(
-    width > 640 ? Math.min(window.innerWidth, window.innerHeight) / 350 : Math.min(window.innerWidth, window.innerHeight) / 200
+    width > 640 ? Math.min(window.innerWidth, window.innerHeight) / 320 : 3
   );
   useEffect(() => {
     const handleResize = () => {
-      setSphereSize(Math.min(window.innerWidth, window.innerHeight) / 350);
       setWidth(window.innerWidth);
+      setSphereSize(
+        width > 640 ? Math.min(window.innerWidth, window.innerHeight) / 320 : 3
+      );
     };
 
     window.addEventListener("resize", handleResize);
@@ -32,6 +35,26 @@ export default function Footer() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  const text1 = "+91 7340785879";
+  const text2 = "+91 7980558433";
+  const handleClick = () => {
+    const tooltipText = document.querySelectorAll(".tool");
+    // console.log(tooltipText);
+    if (tooltipText[0].innerHTML === "click to copy number") {
+      tooltipText[0].innerHTML = "copied!!";
+      tooltipText[1].innerHTML = "click to copy number";
+      navigator.clipboard.writeText(text1);
+    } else {
+      tooltipText[1].innerHTML = "copied!!";
+      tooltipText[0].innerHTML = "click to copy number";
+      navigator.clipboard.writeText(text2);
+    }
+    setTimeout(() => {
+      tooltipText[0].innerHTML = "click to copy number";
+      tooltipText[1].innerHTML = "click to copy number";
+    }, 5000);
+  };
 
   return (
     // <div className="w-screen min-h-screen min-w-[320px] flex flex-col justify-center gap-12 items-center bg-gradient-to-t from-[#000000] to-[#121212] xl:gap-24 2xl-gap-32">
@@ -250,10 +273,13 @@ export default function Footer() {
     <>
       <div className="footer">
         <div className="front-footer w-full flex justify-center items-center bg-[#121212] gap-12 p-3">
-
           <div className="btn flex relative items-center bg-[#f6f6f6] justify-center rounded-full cursor-pointer">
             <div className="button-holder flex flex-row bg-[#f6f6f6] rounded-full">
-              <Btn name="Register Now! Visit Devfolio" icon="↗" />
+              <BtnLink
+                name="Register Now! Visit Devfolio"
+                icon="↗"
+                href="https://innerve-eight.devfolio.co/"
+              />
             </div>
             <img
               src="/images/footer-spot.png"
@@ -266,14 +292,33 @@ export default function Footer() {
           <div className="mx-auto w-full max-w-screen-xl">
             <div className="footer-grid grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
               <div className="flex items-center justify-center">
-                <img
-                  src="/images/osslogo.png"
-                  className="oss-logo-footer"
-                  alt=""
-                />
+                <div className="">
+                  <Canvas
+                  // orthographic={true}
+                  // camera={{zoom: 50 }}
+                  // Adjust the camera position
+                  // fog={new THREE.Fog("rgb(5, 15, 45)", 5, 15)} // Add fog to the scene
+                  >
+                    {/* <directionalLight position={[0.028, 4.895, 8.407]} /> */}
+                    <ambientLight intensity={7} />
+
+                    <Sphere
+                      position={[0, 0, 0]}
+                      args={[sphereSize, 32, 32]}
+                      color={"green"}
+                      text="Three JS"
+                    />
+                    <OrbitControls
+                      enableZoom={false}
+                      autoRotate={true}
+                      // enableRotate={false}
+                      // rotateSpeed={1}
+                    />
+                  </Canvas>
+                </div>
               </div>
               <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                <h2 className="mb-6 text-sm font-[400] tracking-wider text-[#d9d9d9] uppercase">
                   Presented By
                 </h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
@@ -287,13 +332,18 @@ export default function Footer() {
                   </li>
                   <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                     <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                      aitoss.club
+                      <a
+                        className="text-white hover:text-white"
+                        href="https://aitoss.club/"
+                      >
+                        aitoss.club
+                      </a>
                     </span>
                   </button>
                 </ul>
               </div>
               <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                <h2 className="mb-6 text-sm font-[400] tracking-wider text-[#d9d9d9] uppercase">
                   Contact Us
                 </h2>
 
@@ -302,11 +352,22 @@ export default function Footer() {
                     <p className="text-md w-full lg:text-start">
                       Aakash Sharma
                     </p>
-                    <div className="buttn2 w-full flex mt-2">
+                    <div
+                      className="buttn2 tooltip w-full flex mt-2"
+                      onClick={handleClick}
+                    >
+                      <span class="tooltiptext whitespace-nowrap">
+                        <div className="tri"></div>
+                        <p className="tool">click to copy number</p>
+                      </span>
                       <div className=" btn flex items-center justify-center gap-1 border border-white rounded-full p-1 cursor-pointer bg-black w-fit">
                         <div className="press">
-                          <p className="press__inner1 text-white text-sm">+91 7340785879</p>
-                          <p className="press__inner2 text-white text-sm">+91 7340785879</p>
+                          <p className="press__inner1 text-white text-sm">
+                            +91 7340785879
+                          </p>
+                          <p className="press__inner2 text-white text-sm">
+                            +91 7340785879
+                          </p>
                         </div>
                         <div className="rot w-[24px] h-[24px] flex items-center justify-center text-white border border-white rounded-full hover:rotate-45">
                           <p>↗</p>
@@ -319,11 +380,22 @@ export default function Footer() {
                     <p className="text-md w-full lg:text-start">
                       Asmitha Tripathi
                     </p>
-                    <div className="buttn2 w-full flex mt-2">
+                    <div
+                      className="buttn2 tooltip w-full flex mt-2"
+                      onClick={handleClick}
+                    >
+                      <span class="tooltiptext whitespace-nowrap">
+                        <div className="tri"></div>
+                        <p className="tool">Click to copy number</p>
+                      </span>
                       <div className=" btn flex items-center justify-center gap-1 border border-white rounded-full p-1 cursor-pointer bg-black w-fit">
                         <div className="press">
-                          <p className="press__inner1 text-white text-sm">+91 7980558433</p>
-                          <p className="press__inner2 text-white text-sm">+91 7980558433</p>
+                          <p className="press__inner1 text-white text-sm">
+                            +91 7980558433
+                          </p>
+                          <p className="press__inner2 text-white text-sm">
+                            +91 7980558433
+                          </p>
                         </div>
                         <div className="rot w-[24px] h-[24px] flex items-center justify-center text-white border border-white rounded-full hover:rotate-45">
                           <p>↗</p>
@@ -331,11 +403,10 @@ export default function Footer() {
                       </div>
                     </div>
                   </div>
-
                 </div>
               </div>
               <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                <h2 className="mb-6 text-sm font-[400] tracking-wider text-[#d9d9d9] uppercase">
                   Venue
                 </h2>
                 <iframe
@@ -346,14 +417,14 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="lower-footer bg-[#000000]">
+        <div className="lower-footer bg-[#0f0f0f]">
           <div className="px-4 py-6 md:flex md:items-center md:justify-between max-w-screen-xl mx-auto">
-            <span className="text-sm sm:text-center">
+            <span className="text-sm font-[300] text-[#d9d9d9] sm:text-center">
               Made with ♥ by Open Source Software Club
             </span>
             <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
               <a
-                href="#"
+                href="https://www.facebook.com/groups/ossclubait"
                 className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
               >
                 <svg
@@ -372,7 +443,7 @@ export default function Footer() {
                 <span className="sr-only">Facebook page</span>
               </a>
               <a
-                href="#"
+                href="https://discord.gg/Pa7hJP6h"
                 className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
               >
                 <svg
@@ -387,7 +458,7 @@ export default function Footer() {
                 <span className="sr-only">Discord community</span>
               </a>
               <a
-                href="#"
+                href="https://twitter.com/innerve24hrs"
                 className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
               >
                 <svg
@@ -406,7 +477,7 @@ export default function Footer() {
                 <span className="sr-only">Twitter page</span>
               </a>
               <a
-                href="#"
+                href="https://github.com/aitoss"
                 className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
               >
                 <svg
@@ -425,28 +496,25 @@ export default function Footer() {
                 <span className="sr-only">GitHub account</span>
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/open-source-software-club/mycompany/?viewAsMember=true"
                 className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
               >
                 <svg
                   className="w-4 h-4"
-                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
                   fill="currentColor"
-                  viewBox="0 0 20 20"
                 >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
-                    clipRule="evenodd"
-                  />
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                 </svg>
-                <span className="sr-only">Dribbble account</span>
+                <span className="sr-only">LinkedIn account</span>
               </a>
             </div>
           </div>
         </div>
-      </div >
+      </div>
     </>
   );
 }

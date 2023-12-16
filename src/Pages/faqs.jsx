@@ -129,14 +129,14 @@ function Faqs() {
 
   return (
     <>
-        <div className="h-full">
+        <div className="h-full" id="faqs">
           <div className="pt-4">
           <Slider text={["Our team is always there to assist you"]} />
           </div>
           <HeadingMob/>
-      <div className="max-w-screen-xl flex flex-col lg:flex-row mx-auto">
+      <div className="max-w-screen-xl flex flex-col lg:flex-row mx-auto ">
  
-              <div className="flex flex-wrap text-[#121212] align-items-stretch px-12 focus:border-none  border-none lg:mt-8 mt-4 items-center justify-center gap-2 lg:flex-col lg:space-y-[40px]">
+              <div className="flex flex-wrap  text-[#121212] align-items-stretch px-12 focus:border-none  border-none lg:mt-8 mt-4 items-center justify-center gap-2 lg:flex-col lg:space-y-[40px]">
           <Button
             label="General"
             onClick={() => setActiveList("general")}

@@ -143,7 +143,7 @@ function DummyBanner() {
 
 const Heading = () => {
   return (
-    <div className="text-center lg:block hidden tracking-[10px] bg-clip-text font-medium sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
+    <div className="text-center lg:block hidden tracking-[10px] bg-clip-text font-medium sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]" id="date">
      <motion.div
   whileInView={{ y: -80, scale: 1.2, duration: 5 }}
   transition={{ type: 'just', stiffness: 110 }}
