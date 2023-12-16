@@ -2,7 +2,7 @@ import React from 'react'
 import './btn.css'
 import BtnPrespective from './btnprespective'
 
-const btnLink = ({ name, icon, mode , href }) => {
+const btnLink = ({ name, icon, mode, href }) => {
 
 
     if (mode === "dark") {

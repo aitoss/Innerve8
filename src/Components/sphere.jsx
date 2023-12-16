@@ -6,7 +6,7 @@ import { TextureLoader } from "three";
 import myTextureImage from "../assets/images/Logo.png"
 
 
-const Sphere = ({ position, args, color ,text }) => {
+const Sphere = ({ position, args, color, text }) => {
     const ref = useRef();
     const texture = new TextureLoader().load(myTextureImage);
     const [isHovered, setIsHovered] = useState(false);
@@ -21,17 +21,17 @@ const Sphere = ({ position, args, color ,text }) => {
 
     return (
         <group>
-        <mesh position={position} 
-              ref={ref}
-              onPointerEnter={(event) => (event.stopPropagation(), setIsHovered(true))}
-              onPointerLeave={() => setIsHovered(false)}
-              // onClick={() => setIsClicked(!isClicked)}
-              // scale={isClicked ? 1.5 : 1}
-        >
-            <sphereGeometry args={args} />
-            <meshStandardMaterial color={isHovered ? "white" : "white"} map={texture}  />
-            {/* <MeshWobbleMaterial factor={25} speed={4} color={"#"} /> */}
-        </mesh>
+            <mesh position={position}
+                ref={ref}
+                onPointerEnter={(event) => (event.stopPropagation(), setIsHovered(true))}
+                onPointerLeave={() => setIsHovered(false)}
+            // onClick={() => setIsClicked(!isClicked)}
+            // scale={isClicked ? 1.5 : 1}
+            >
+                <sphereGeometry args={args} />
+                <meshStandardMaterial color={isHovered ? "white" : "white"} map={texture} />
+                {/* <MeshWobbleMaterial factor={25} speed={4} color={"#"} /> */}
+            </mesh>
         </group>
     );
 };

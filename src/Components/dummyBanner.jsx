@@ -1,7 +1,7 @@
 import React from "react";
 
 
- function DummyBanner()  {
+function DummyBanner() {
     return (
         <div className="absolute top-10 left-0 right-0 overflow-hidden">
             <motion.div

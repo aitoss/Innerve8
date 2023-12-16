@@ -311,8 +311,8 @@ export default function Footer() {
                     <OrbitControls
                       enableZoom={false}
                       autoRotate={true}
-                      // enableRotate={false}
-                      // rotateSpeed={1}
+                    // enableRotate={false}
+                    // rotateSpeed={1}
                     />
                   </Canvas>
                 </div>

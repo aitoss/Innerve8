@@ -21,9 +21,9 @@ export default function LaptopModel(scale) {
       actions.loop3.play();
     }
   }, [actions]);
-  
 
-    //Original
+
+  //Original
   //   console.log(Object.keys(actions))
   //   actions.bodyaction.repetitions = 1;
   //   actions.screenaction.repetitions = 1;
@@ -46,9 +46,9 @@ export default function LaptopModel(scale) {
           object={nodes.Scene}
           scale={scale.scale.scale}
           // rotation={[0.0, -0.05, 0]}
-          rotation = {[0,0,0]}
+          rotation={[0, 0, 0]}
           // position={[0, -1 * scale.scale.position, 0]}
-          posiition={[0,0,0]}
+          posiition={[0, 0, 0]}
           ref={ref}
         />
       </Flex>

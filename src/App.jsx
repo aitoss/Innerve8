@@ -18,26 +18,26 @@ import Teams from './Pages/teams.jsx'
 import GoTop from './Components/GoTop.jsx'
 
 function App() {
-  
+
 
   return (
     <>
       <div className="noise max-w-[1400px]"></div>
       <Home />
-      <GoTop/>
+      <GoTop />
       <Dates />
       <Prize id="prizes" />
-      <Tracks  />
+      <Tracks />
       {/* <Problems /> */}
       {/* <Timeline />
       <Timeline />
       <Timeline /> */}
-      <Sponsor/>
-      <Testimonial/>
-      <TestimonialMob/>
-      <Faqs/>
-      <Bannercard/>
-      <Footer/>
+      <Sponsor />
+      <Testimonial />
+      <TestimonialMob />
+      <Faqs />
+      <Bannercard />
+      <Footer />
 
     </>
   )

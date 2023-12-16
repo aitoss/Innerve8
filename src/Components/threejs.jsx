@@ -3,13 +3,13 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import InfinteLoop from "./infiniteLoop";
 import Controls from "./control";
-import { useState , useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export default function Threejs() {
 
-  const [height ,setheight] = useState(window.innerHeight);
-  const [width , setwidth] = useState(window.innerWidth);
-  console.log(height , width);
+  const [height, setheight] = useState(window.innerHeight);
+  const [width, setwidth] = useState(window.innerWidth);
+  console.log(height, width);
   const [loopSize, setloopSize] = useState(width > 1340 ? Math.min(window.innerWidth, window.innerHeight) / 150 : Math.min(window.innerWidth, window.innerHeight) / 250);
 
   useEffect(() => {
@@ -17,7 +17,7 @@ export default function Threejs() {
       setloopSize(width > 1340 ? Math.min(window.innerWidth, window.innerHeight) / 150 : Math.min(window.innerWidth, window.innerHeight) / 250);
       setwidth(window.innerWidth);
       console.log(loopSize);
-      console.log(height , width);
+      console.log(height, width);
     };
 
     window.addEventListener("resize", handleResize);
@@ -29,17 +29,17 @@ export default function Threejs() {
 
   return (
     <div className="w-full h-full">
-     <Canvas
+      <Canvas
         orthographic={true}
-        camera={{zoom:100}}
+        camera={{ zoom: 100 }}
       >
         {/* <OrbitControls /> */}
         {/* <Controls /> */}
         <ambientLight intensity={2.5} />
         {/* <directionalLight position={[2, 2, 8.407]} intensity={3} /> */}
-        <group position={[0 , 0 , -5]} >
+        <group position={[0, 0, -5]} >
           <mesh>
-            <InfinteLoop scale={{ scale:loopSize ,position: 0.5 }} />
+            <InfinteLoop scale={{ scale: loopSize, position: 0.5 }} />
           </mesh>
         </group>
       </Canvas>
