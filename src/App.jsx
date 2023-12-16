@@ -15,6 +15,7 @@ import Problems from './Pages/problems.jsx'
 import Faqs from './Pages/faqs.jsx'
 import TestimonialMob from './Pages/testimonialMobile.jsx'
 import Teams from './Pages/teams.jsx'
+import GoTop from './Components/GoTop.jsx'
 
 function App() {
   
@@ -23,6 +24,7 @@ function App() {
     <>
       <div className="noise max-w-[1400px]"></div>
       <Home />
+      <GoTop/>
       <Dates />
       <Prize id="prizes" />
       <Tracks  />
