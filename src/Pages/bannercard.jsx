@@ -23,7 +23,7 @@ const Bannercard = () => {
                                 <div className="w-[30px] h-[30px] flex items-center justify-center text-[#121212e6] border border-[#121212e6] rounded-full group-hover:rotate-45  transition-all">↗</div>
                             </div>
                             <div className="btn group flex items-center justify-center gap-3 border border-[#121212e6] rounded-full p-2 pl-5 cursor-pointer">
-                                <h3 className="banner-subheading font-[400]">Brochure</h3>
+                                <a className="banner-subheading font-[400] text-[#212121] hover:text-[#212121] hover:cursor-pointer transition-all" href="https://drive.google.com/file/d/1EVmRI751L4iOeCWSnH735M8_5KgzJFsr/view?usp=sharing">Brochure</a>
                                 <div className="w-[30px] h-[30px] flex items-center justify-center text-[#121212e6] border border-[#121212e6] rounded-full group-hover:rotate-45  transition-all">↗</div>
                             </div>
                         </div>
