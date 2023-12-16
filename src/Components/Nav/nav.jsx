@@ -7,6 +7,16 @@ import { Link } from 'react-router-dom';
 const Nav = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
 
+    const scrollTo = (id) => {
+        const element = document.getElementById(id);
+        if(element){
+            element.scrollIntoView({
+                behavior: 'smooth',
+                
+            });
+            setNavbarOpen(false);
+        }
+    };
 
     return (
         <>
@@ -19,7 +29,7 @@ const Nav = () => {
                         </div>
                     </div>
                     <div className="menu-nav-items flex flex-col gap-5 sm:gap-7 md:ml-20  ml-10 pt-32 sm:pt-32">
-                        <a href="#" className="ml-10 w-[70%] sm:w-[80%] text-[#f6f6f6c4] hover:text-[#F6F6F6] border-b border-[#121212] hover:border-[#f6f6f654] text-3xl sm:text-4xl sm:pb-5 font-[300] leading-[160%] tracking-[0.7px] transition-all duration-500">
+                        <a href="#" onClick={() => scrollTo('home')} className="ml-10 w-[70%] sm:w-[80%] text-[#f6f6f6c4] hover:text-[#F6F6F6] border-b border-[#121212] hover:border-[#f6f6f654] text-3xl sm:text-4xl sm:pb-5 font-[300] leading-[160%] tracking-[0.7px] transition-all duration-500">
                             HOME
                         </a>
                         <a href="#" className="ml-10 w-[70%] sm:w-[80%] text-[#f6f6f6c4] hover:text-[#F6F6F6] border-b border-[#121212] hover:border-[#f6f6f654] text-3xl sm:text-4xl sm:pb-5 font-[300] leading-[160%] tracking-[0.7px] transition-all duration-500">
