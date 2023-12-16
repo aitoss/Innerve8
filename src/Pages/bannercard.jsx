@@ -11,7 +11,7 @@ const Bannercard = () => {
                     <div className="banner-sub w-full flex justify-between items-center">
                         <p className="banner-heading font-medium">Got questions? <br />Contact us</p>
                         <div className="btn group flex items-center justify-center gap-3 border border-[#212121] rounded-full p-2 pl-5 cursor-pointer">
-                            <h3 className="banner-subheading font-[400]">aitoss@aitpune.edu.in</h3>
+                            <a className="banner-subheading font-[400] text-[#212121] hover:text-[#212121] hover:cursor-pointer transition-all" href='https://aitoss.club/'>aitoss@aitpune.edu.in</a>
                             <div className="w-[30px] h-[30px] flex items-center justify-center text-base text-[#121212e6] border border-[#121212e6] rounded-full group-hover:rotate-45  transition-all">↗</div>
                         </div>
                     </div>
