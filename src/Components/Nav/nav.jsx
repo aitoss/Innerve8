@@ -23,12 +23,6 @@ const Nav = () => {
                 staggerDirection: -1,
             },
         },
-        exit: {
-            transition: {
-                duration: 0.5,
-                ease: [0.22, 1, 0.36, 1]
-            }
-        }
     };
 
     return (

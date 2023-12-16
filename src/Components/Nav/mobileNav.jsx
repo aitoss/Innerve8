@@ -18,6 +18,13 @@ const mobileNav = ({ title }) => {
                 ease: [0, 0.55, 0.45, 1],
             },
         },
+        exit: {
+            y: 0,
+            transition: {
+                duration: 0.5,
+                ease: [0.22, 1, 0.36, 1]
+            }
+        }
     };
 
     return (
