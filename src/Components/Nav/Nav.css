@@ -47,18 +47,13 @@
 
 .socials-list a {
     color: #909090;
-    font-family: 'SuisseIntl', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    /* font-family: 'SuisseIntl', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 146%;
-    /* 23.36px */
-    letter-spacing: 0.32px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
     cursor: pointer;
 }
-.socials-list a:hover {
-    color: #F6F6F6;
-}
+
 
 .menu-nav-header {
     border-bottom: 1px solid #2C2C2C;
