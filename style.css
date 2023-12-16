@@ -29,7 +29,7 @@ body {
 /* scroll-bar */
 ::-webkit-scrollbar {
     width: 15px;
-    background-color: #F9F0E7;
+    background-color: #f6f6f6;
 }
 
 ::-webkit-scrollbar-thumb {
