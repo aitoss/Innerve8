@@ -34,10 +34,10 @@ export default function Home() {
         <div className="h-fit mb-6 flex justify-center w-full">
           <Timer />
         </div>
-        <div className="w-full flex justify-center z-10 relative p-5 pb-0">
+        <div className="w-full flex justify-center z-10 relative py-4 pb-0">
           <Devfolio />
         </div>
-        <div className="flex innerve-text w-full justify-center select-none">
+        <div className="flex innerve-text w-full justify-center select-none -my-8">
           <InnerveText />
         </div>
       </div>

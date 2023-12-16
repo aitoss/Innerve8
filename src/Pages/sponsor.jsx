@@ -12,7 +12,7 @@ const Sponsor = () => {
     <>
      {/* <DummyBanner/> */}
      <div className='flex justify-center w-screen top-16 relative overflow-hidden'>
-     <Slider text={['Sponsors']} />
+     <Slider text={['Our Sponsors']} />
      </div>
     <div className=" p-4 w-screen flex flex-col mt-[3%] justify-center flex-wrap items-center">
    

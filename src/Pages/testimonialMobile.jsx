@@ -14,12 +14,12 @@ const TestimonialMob = () => {
     const y = useTransform(scrollYProgress, [0, 1], [1, -150]);
     const y2 = useTransform(scrollYProgress, [0, 1], [1, 150]);
     const images = [
-        "1.JPG",
-        "2.JPG",
-        "3.JPG",
-        "4.JPG",
-        "5.JPG",
-        "6.JPG",
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "14.jpg",
+        "6.jpg",
     ];
 
     useEffect(() => {
@@ -65,7 +65,7 @@ const Column = ({ images, y = 0 }) => {
                     return (
                         <div key={index} className="w-[100%] py-2 rounded-lg overflow-hidden relative  ">
                             <img className="object-cover"
-                                src={`/images/testim/${src}`} fill
+                                src={`/images/testim1/${src}`} fill
                                 alt='image'
                             />
                         </div>
