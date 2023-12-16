@@ -308,7 +308,7 @@ export default function Footer() {
                   </li>
                   <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                     <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                      aitoss.club
+                      <a className="text-white" href="https://aitoss.club/">aitoss.club</a>
                     </span>
                   </button>
                 </ul>
@@ -376,7 +376,7 @@ export default function Footer() {
             </span>
             <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
               <a
-                href="#"
+                href="https://www.facebook.com/groups/ossclubait"
                 className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
               >
                 <svg
@@ -395,7 +395,7 @@ export default function Footer() {
                 <span className="sr-only">Facebook page</span>
               </a>
               <a
-                href="#"
+                href="https://discord.gg/Pa7hJP6h"
                 className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
               >
                 <svg
@@ -410,7 +410,7 @@ export default function Footer() {
                 <span className="sr-only">Discord community</span>
               </a>
               <a
-                href="#"
+                href="https://twitter.com/innerve24hrs"
                 className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
               >
                 <svg
@@ -429,7 +429,7 @@ export default function Footer() {
                 <span className="sr-only">Twitter page</span>
               </a>
               <a
-                href="#"
+                href="https://github.com/aitoss"
                 className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
               >
                 <svg

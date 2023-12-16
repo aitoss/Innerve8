@@ -35,7 +35,7 @@ const Sponsor = () => {
   
     return (
       <>
-        <div className="h-full">
+        <div className="h-full" id='sponsors'>
           <div className="flex justify-center w-screen top-16 relative">
             <Slider text={['Our Sponsors']} />
           </div>
