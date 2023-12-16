@@ -23,7 +23,7 @@ export default function Footer() {
   const [sphereSize, setSphereSize] = useState(
     width > 640
       ? Math.min(window.innerWidth, window.innerHeight) / 320
-      : Math.min(window.innerWidth, window.innerHeight) / 200
+      : 3
   );
   useEffect(() => {
     const handleResize = () => {
