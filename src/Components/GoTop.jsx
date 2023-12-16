@@ -26,15 +26,15 @@ const GoToTop = () => {
 
   return (
     <div className="flex justify-center items-center relative">
-    {isVisible && (
-      <div
-        className="top-btn fixed bottom-2 right-2 z-[99999999] flex justify-center items-center cursor-pointer p-3 m-3 bg-[#121212] border-1 rounded-full"
-        onClick={goToBtn}
-      >
-        <FaArrowUp className="top-btn--icon animate-gototop " />
-      </div>
-    )}
-  </div>
+      {isVisible && (
+        <div
+          className="top-btn w-[2.5rem] h-[2.5rem] text-xl font-[400] text-[#212121] fixed bottom-2 right-2 z-[99999999] shadow-md shadow-[rgba(255,255,255,0.2)] flex justify-center items-center cursor-pointer rounded-full p-3 m-3 mix-blend-difference bg-[#d9d9d9] hover:bg-[#c9c9c9] transition-all duration-500"
+          onClick={goToBtn}
+        >
+          ↑
+        </div>
+      )}
+    </div>
   );
 };
 
