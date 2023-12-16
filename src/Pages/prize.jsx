@@ -247,11 +247,11 @@ const Card = ({ color, textColor, textData, value }) => {
   return (
     <motion.div
       whileHover={{ scale: 1.04 }}
-      className={`flex flex-col gap-4 justify-center items-center text-6xl w-[400px] h-[450px] ${color} ${textColor} rounded-lg p-4 shadow-2xl shadow-[rgba(0,0,0,0.15)] cursor-pointer transition-transform duration-100 ease-in-out`}
+      className={`flex flex-col gap-4 justify-center items-center text-4xl xl:text-6xl w-[300px] xl:w-[400px] h-[350px] xl:h-[450px] ${color} ${textColor} rounded-lg p-4 shadow-2xl shadow-[rgba(0,0,0,0.15)] cursor-pointer transition-transform duration-100 ease-in-out`}
     >
       {value}
-      <h3 className="text-4xl">{textData}</h3>
-      <p className="text-[1rem] mt-[1rem] text-center">Innerve Goodies and Merch. Fundings and Internship opportunities from our sponsors</p>
+      <h3 className="text-3xl xl:text-5xl">{textData}</h3>
+      <p className="text-[0.75rem] xl:text-lg mt-[0.5rem] xl:leading-5 text-center leading-3">Innerve Goodies and Merch. Fundings and Internship opportunities from our sponsors</p>
     </motion.div>
   );
 };
