@@ -23,3 +23,59 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+
+.buttn2 {
+  height: 35px;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.press {
+  transition: all 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+  transform-style: preserve-3d;
+}
+
+.press p {
+  transition: all 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.press .press__inner2 {
+  position: absolute;
+  transform: rotateX(-90deg) translateY(9px);
+  transform-origin: bottom-center;
+  opacity: 0;
+}
+
+.buttn2:hover .press {
+  transform: rotateX(90deg);
+}
+
+.buttn2:hover .press__inner1 {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.buttn2:hover .press__inner2 {
+  transform: rotateX(-90deg) translateY(0px);
+  opacity: 1;
+}
+
+.buttn2:hover .rot {
+  transform: rotate(45deg);
+  transition: all 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.rot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+  text-align: center;
+  transition: all 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.rot p {
+  transform: translate(1px, -1px);
+}

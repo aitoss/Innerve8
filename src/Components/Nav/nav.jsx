@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 const Nav = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
 
+
     return (
         <>
             <div className="inner-nav">
