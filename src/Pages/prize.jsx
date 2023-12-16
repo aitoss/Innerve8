@@ -4,8 +4,9 @@ import Slider from "../Components/slider";
 import DarkSlider from "../Components/darkSlider";
 
 const Prize = () => {
+
   return (
-    <div className="w-screen bg-[#212121] overflow-hidden py-6">
+    <div className="w-screen bg-[#212121] overflow-hidden py-6" id="prizes">
       {/* <Slider text={['EdTech', 'GameDev', 'Logistics', 'Web3.0', 'Healthcare', 'XR','FinTech','Blockchain']} /> */}
       {/* <DummyBanner /> */}
       <div className="overflow-hidden">

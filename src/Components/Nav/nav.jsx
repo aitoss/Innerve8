@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Btn from '../Button/btn';
 import BtnPrespective from '../Button/btnprespective';
-import './Nav.css'; // Import the CSS file for your component
+import './Nav.css';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);

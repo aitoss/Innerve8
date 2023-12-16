@@ -137,8 +137,8 @@ const Heading = () => {
 
 const Heading2 = () => {
   return (
-    <div className="text-center lg:hidden tracking-[8px] font-medium text-[100px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
-      <motion.div className="tracking-tight text-transparent bg-clip-text bg-gradient-to-t from-[#222121] to-[#525252] whitespace-nowrap">
+    <div className="py-4 text-center xl:hidden tracking-[8px] font-medium text-[64px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
+      <motion.div className="tracking-tight text-transparent bg-clip-text bg-gradient-to-t from-[#FFFFFF] to-[rgba(55,47,47,0.5)] whitespace-nowrap">
         Tracks
       </motion.div>
     </div>
