@@ -20,17 +20,17 @@ const Sponsor = () => {
      </div>
     <div className=" p-4 w-screen flex flex-col xl:mt-[3%] justify-center flex-wrap items-center">
    
-    <Heading title="Title Sponsor" />
+    <Heading title="TITLE SPONSOR" />
     <div className='flex flex-wrap justify-center px-[10%] flex-row'>
     <SponsorLogos logoCount={4} />
     <SponsorLogos logoCount={2} />
     </div>
-    <Heading title="Platinum Sponsor" />
+    <Heading title="PLATINUM SPONSOR" />
     <div className='flex flex-wrap px-[10%] justify-center'>
     <SponsorLogos logoCount={4} />
     <SponsorLogos logoCount={2} />
     </div>
-    <Heading title="Gold Sponsor" />
+    <Heading title="GOLD SPONSOR" />
     <div className='flex flex-wrap px-[10%] justify-center'>
     <SponsorLogos logoCount={4} />
     <SponsorLogos logoCount={3} />
@@ -48,8 +48,8 @@ const Sponsor = () => {
 
 const Heading = ({ title }) => {
     return (
-        <div className="text-center flex  mt-14 font-medium text-4xl text-black whitespace-nowrap justify-center">
-            <motion.div className="tracking-tight text-black bg-clip-text whitespace-nowrap">
+        <div className="text-center flex  mt-14 font-medium text-4xl text-[24px] text-[#121212] whitespace-nowrap justify-center">
+            <motion.div className="tracking-tight text-[#121212] bg-clip-text whitespace-nowrap">
                 {title}
             </motion.div>
         </div>
