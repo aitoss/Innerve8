@@ -2,30 +2,27 @@ import React from 'react'
 import { IoMdMail } from "react-icons/io";
 import { IoLogoInstagram } from "react-icons/io";
 import { IoIosArrowRoundForward } from "react-icons/io";
-
+import Btn from '../Components/Button/btn';
 const Bannercard = () => {
     return (
         <>
             <section className=" md:px-10 mx-8 mb-8">
-                <div className="banner flex flex-col gap-8 p-12 max-w-screen-xl" style={{margin: 'auto'}}>
-                    <div className="banner-sub w-full flex justify-between items-center">
+                <div className="banner flex flex-col gap-8 p-12 max-w-screen-xl" style={{ margin: 'auto' }}>
+                    <div className="banner-sub w-full flex flex-row justify-between items-center">
                         <p className="banner-heading font-medium">Got questions? <br />Contact us</p>
-                        <div className="btn group flex items-center justify-center gap-3 border border-[#212121] rounded-full p-2 pl-5 cursor-pointer">
-                            <a className="banner-subheading font-[400] text-[#212121] hover:text-[#212121] hover:cursor-pointer transition-all" href=''>aitoss@aitpune.edu.in</a>
-                            <div className="w-[30px] h-[30px] flex items-center justify-center text-base text-[#121212e6] border border-[#121212e6] rounded-full group-hover:rotate-45  transition-all">↗</div>
-                        </div>
+                        <a href="mailto:innerve@aitpune.edu.in" className="w-[250px]">
+                            <Btn name="innerve@aitpune.edu.in" icon="↗" />
+                        </a>
                     </div>
                     <div className="banner-sub w-full flex justify-between items-center">
                         <p className="banner-heading font-medium">Want to <br />sponsor us?</p>
                         <div className="banner-sponser flex flex-col justify-center items-end gap-4">
-                            <div className="btn group flex items-center gap-3 border border-[#212121] rounded-full p-2 pl-5 cursor-pointer">
-                                <h3 className="banner-subheading font-[400]">Fill the form</h3>
-                                <div className="w-[30px] h-[30px] flex items-center justify-center text-[#121212e6] border border-[#121212e6] rounded-full group-hover:rotate-45  transition-all">↗</div>
-                            </div>
-                            <div className="btn group flex items-center justify-center gap-3 border border-[#121212e6] rounded-full p-2 pl-5 cursor-pointer">
-                                <a className="banner-subheading font-[400] text-[#212121] hover:text-[#212121] hover:cursor-pointer transition-all" href="https://drive.google.com/file/d/1EVmRI751L4iOeCWSnH735M8_5KgzJFsr/view?usp=sharing">Brochure</a>
-                                <div className="w-[30px] h-[30px] flex items-center justify-center text-[#121212e6] border border-[#121212e6] rounded-full group-hover:rotate-45  transition-all">↗</div>
-                            </div>
+                            <a href="" className="w-[155px]">
+                                <Btn name="Fill the form" icon="↗" />
+                            </a>
+                            <a href="https://drive.google.com/file/d/1EVmRI751L4iOeCWSnH735M8_5KgzJFsr/view?usp=sharing" className="w-[135px]">
+                                <Btn name="Brochure" icon="↗" />
+                            </a>
                         </div>
                     </div>
                 </div>
