@@ -4,82 +4,96 @@ import udchalo from "../assets/images/udchalo.png"
 import accops from "../assets/images/accops.png"
 import byte from "../assets/images/byte.png"
 import mro from "../assets/images/mro.png"
-// import Slider from '../Components/slider';
 import Slider from "../Components/slider";
+import Kaagaz from "../assets/images/kaagaz.jpg"
+import Solana from "../assets/images/solana.png"
+import ICICI from "../assets/images/icici.png"
 
 const Sponsor = () => {
-  return (
-    <>
-     {/* <DummyBanner/> */}
-     <div className="h-full">
-     <div className='flex justify-center w-screen top-16 relative'>
-     <Slider text={['Our Sponsors']} />
-     </div>
-     <div className="mt-16 -mb-4">
-     <Heading2/>
-     </div>
-    <div className=" p-4 w-screen flex flex-col xl:mt-[3%] justify-center flex-wrap items-center">
-   
-    <Heading title="TITLE SPONSOR" />
-    <div className='flex flex-wrap justify-center px-[10%] flex-row'>
-    <SponsorLogos logoCount={4} />
-    <SponsorLogos logoCount={2} />
-    </div>
-    <Heading title="PLATINUM SPONSOR" />
-    <div className='flex flex-wrap px-[10%] justify-center'>
-    <SponsorLogos logoCount={4} />
-    <SponsorLogos logoCount={2} />
-    </div>
-    <Heading title="GOLD SPONSOR" />
-    <div className='flex flex-wrap px-[10%] justify-center'>
-    <SponsorLogos logoCount={4} />
-    <SponsorLogos logoCount={3} />
-    </div>
-        </div>
-        <div className="flex relative  mt-8 justify-center">
-        <HeadingMain/>
-        </div>
-     </div>
+    const titleSponsors = [
+      { id: 1, logo: accops, name: 'Accops' },
+      { id: 2, logo: mro, name: 'Mro' },
 
-    </>
-  )
-}
+    ];
+  
+    const platinumSponsors = [
+      { id: 1, logo: Kaagaz, name: 'kaagaz' },
+      { id: 2, logo: ICICI, name: 'icici' },
+      { id:3, logo: Solana, name: 'solana'},
 
+    ];
+  
+    const goldSponsors = [
+      { id: 1, logo: udchalo, name: 'UDChalo' },
+      { id: 2, logo: byte, name: 'Byte' },
+      { id: 3, logo: mro, name: 'MRO' },
 
-const Heading = ({ title }) => {
+    ];
+  
     return (
-        <div className="text-center flex  mt-14 font-medium text-4xl text-[24px] text-[#121212] whitespace-nowrap justify-center">
-            <motion.div className="tracking-tight text-[#121212] bg-clip-text whitespace-nowrap">
-                {title}
-            </motion.div>
+      <>
+        <div className="h-full">
+          <div className="flex justify-center w-screen top-16 relative">
+            <Slider text={['Our Sponsors']} />
+          </div>
+          <div className="mt-16 -mb-4">
+        <Heading2/>
+          </div>
+          <div className="p-4 w-screen flex flex-col xl:mt-[3%] justify-center flex-wrap items-center">
+            <SponsorCategory title="TITLE SPONSOR" sponsors={titleSponsors} />
+            <SponsorCategory title="PLATINUM SPONSOR" sponsors={platinumSponsors} />
+            <SponsorCategory title="GOLD SPONSOR" sponsors={goldSponsors} />
+          </div>
+          <div className="flex relative mt-16 justify-center">
+          <HeadingMain/>
+          </div>
         </div>
+
+      </>
     );
-};
-
-const SponsorLogos = ({ logoCount }) => {
-    const sponsorLogos = [udchalo, byte, mro, accops].slice(0, logoCount);
-
+  };
+  
+  const Heading = ({ title }) => {
     return (
-        <div className="flex justify-center items-center flex-row flex-wrap gap-7 mt-8">
-            {sponsorLogos.map((logo, idx) => (
-                <motion.div
-                   initial={{ scale: 0.9 }}
-                //    whileInView={{ scale: 1 }}
-                    whileHover={{scale: 1.05, rotate: [0, 2, 0], duration: 0.1}}
-                >
-                <img
-                    key={idx}
-                    src={logo}
-                    alt={`Sponsor Logo ${idx + 1}`}
-                    className="max-h-16 max-w-16"
-                />
-                </motion.div>
-            ))}
-        </div>
+      <div className="text-center flex  mt-14 font-medium text-4xl text-[24px] text-[#121212] whitespace-nowrap justify-center">
+        <motion.div className="tracking-tight text-[#121212] bg-clip-text whitespace-nowrap">
+          {title}
+        </motion.div>
+      </div>
     );
-};
-
-const HeadingMain = () => {
+  };
+  
+  const SponsorLogos = ({ sponsors }) => {
+    return (
+      <div className="flex justify-center items-center flex-row flex-wrap gap-7 mt-8">
+        {sponsors.map((sponsor) => (
+          <motion.div
+            key={sponsor.id}
+            initial={{ scale: 0.9 }}
+            whileHover={{ scale: 1.05, rotate: [0, 2, 0], duration: 0.1 }}
+          >
+            <img
+              src={sponsor.logo} 
+              alt={`Sponsor Logo ${sponsor.id}`}
+              className="max-h-16 max-w-16"
+            />
+          </motion.div>
+        ))}
+      </div>
+    );
+  };
+  
+  const SponsorCategory = ({ title, sponsors }) => {
+    return (
+      <>
+        <Heading title={title} />
+        <div className="flex flex-wrap px-[10%] justify-center">
+          <SponsorLogos sponsors={sponsors} />
+        </div>
+      </>
+    );
+  };
+  const HeadingMain = () => {
     return (
       <div className="text-center xl:block hidden tracking-[10px] bg-clip-text  font-medium text-[150px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
        <motion.div
@@ -92,7 +106,7 @@ const HeadingMain = () => {
       </div>
     );
   };
-
+  
   const Heading2 = () => {
     return (
       <div className="py-4 text-center xl:hidden tracking-[8px] font-medium text-[64px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
@@ -102,6 +116,6 @@ const HeadingMain = () => {
       </div>
     );
   };
-
-
-export default Sponsor
+  
+  
+  export default Sponsor;
