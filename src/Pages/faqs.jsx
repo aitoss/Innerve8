@@ -170,9 +170,24 @@ function Faqs() {
                 />
               ))}
             </div>
-    
+            <div className='flex gap-2 flex-col sm:flex-row lg:flex-col lg:gap-y-[40px]'>
+            <Button label="Stay&Travel" onClick={() => setActiveList('travel')} isActive={activeList === 'travel'} />
+            <Button label="Expenses" onClick={() => setActiveList('expenses')} isActive={activeList === 'expenses'} />
+            </div>
+      </div>
+        <div className=' lg:pt-12 pt-6 mt-2 flex justify-center items-center'>
+          <div className='list'>
+            {renderActiveList().map((item, index) => (
+              <Accordion
+                key={index}
+                datas={item}
+                isActive={index === activeIndex}
+                onToggle={() => toggleActive(index)}
+              />
+            ))}
           </div>
         </div>
+      </div>
       </div>
     </div>
     <HeadingMain/>

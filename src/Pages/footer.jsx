@@ -1,4 +1,6 @@
 import React from "react";
+import Btn from "../Components/Button/btn";
+import './pages.css'
 import ossSphere from "../Components/ossSphere";
 import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
@@ -13,7 +15,7 @@ import { FaXTwitter } from "react-icons/fa6";
 // import GitHubIcon from '@mui/icons-material/GitHub';
 export default function Footer() {
 
-  const [width , setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState(window.innerWidth);
 
   const [sphereSize, setSphereSize] = useState(
     width > 640 ? Math.min(window.innerWidth, window.innerHeight) / 350 : Math.min(window.innerWidth, window.innerHeight) / 200
@@ -248,20 +250,16 @@ export default function Footer() {
     <>
       <div className="footer">
         <div className="front-footer w-full flex justify-center items-center bg-[#121212] gap-12 p-3">
-          <div className="button-holder">
-            <div className="btn flex relative items-center bg-[#F9F0E7] justify-center gap-3 border rounded-full pl-5 pr-2 py-2 cursor-pointer">
-              <h3 className="text-[#000000] text-lg font-[400]">
-                Register Now! Visit Devfolio
-              </h3>
-              <div className="w-[30px] h-[30px] bg-[#000000] flex items-center justify-center border rounded-full hover:rotate-45">
-                ↗
-              </div>
-              <img
-                src="/images/footer-spot.png"
-                className="footer-spot z-2 hidden md:block"
-                alt=""
-              />
+
+          <div className="btn flex relative items-center bg-[#f6f6f6] justify-center rounded-full cursor-pointer">
+            <div className="button-holder flex flex-row bg-[#f6f6f6] rounded-full">
+              <Btn name="Register Now! Visit Devfolio" icon="↗" />
             </div>
+            <img
+              src="/images/footer-spot.png"
+              className="footer-spot z-2 hidden md:block"
+              alt=""
+            />
           </div>
         </div>
         <div className="middle-footer flex flex-wrap bg-[#121212]">
@@ -298,33 +296,42 @@ export default function Footer() {
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                   Contact Us
                 </h2>
+
                 <div className="flex flex-col gap-5 mt-5 w-full">
                   <div className="w-full flex flex-col">
                     <p className="text-md w-full lg:text-start">
                       Aakash Sharma
                     </p>
-                    <div className="w-full flex mt-2">
-                      <div className="btn flex items-center justify-center gap-3 border border-white rounded-full p-1 pl-3 cursor-pointer bg-black w-fit">
-                        <p className="text-white text-sm">+91 7340785879</p>
-                        <div className="w-[24px] h-[24px] flex items-center justify-center text-white border border-white rounded-full hover:rotate-45">
-                          ↗
+                    <div className="buttn2 w-full flex mt-2">
+                      <div className=" btn flex items-center justify-center gap-1 border border-white rounded-full p-1 cursor-pointer bg-black w-fit">
+                        <div className="press">
+                          <p className="press__inner1 text-white text-sm">+91 7340785879</p>
+                          <p className="press__inner2 text-white text-sm">+91 7340785879</p>
+                        </div>
+                        <div className="rot w-[24px] h-[24px] flex items-center justify-center text-white border border-white rounded-full hover:rotate-45">
+                          <p>↗</p>
                         </div>
                       </div>
                     </div>
                   </div>
+
                   <div className="w-full flex flex-col">
                     <p className="text-md w-full lg:text-start">
                       Asmitha Tripathi
                     </p>
-                    <div className="w-full flex mt-2">
-                      <div className="btn flex items-center justify-center gap-3 border border-white rounded-full p-1 pl-3 cursor-pointer bg-black w-fit">
-                        <p className="text-white text-sm">+91 7980558433</p>
-                        <div className="w-[24px] h-[24px] flex items-center justify-center text-white border border-white rounded-full hover:rotate-45">
-                          ↗
+                    <div className="buttn2 w-full flex mt-2">
+                      <div className=" btn flex items-center justify-center gap-1 border border-white rounded-full p-1 cursor-pointer bg-black w-fit">
+                        <div className="press">
+                          <p className="press__inner1 text-white text-sm">+91 7980558433</p>
+                          <p className="press__inner2 text-white text-sm">+91 7980558433</p>
+                        </div>
+                        <div className="rot w-[24px] h-[24px] flex items-center justify-center text-white border border-white rounded-full hover:rotate-45">
+                          <p>↗</p>
                         </div>
                       </div>
                     </div>
                   </div>
+
                 </div>
               </div>
               <div>
@@ -439,7 +446,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      </div>
+      </div >
     </>
   );
 }
