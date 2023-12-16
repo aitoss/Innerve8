@@ -129,7 +129,7 @@ function Faqs() {
 
   return (
     <>
-        <div className="h-full">
+        <div className="h-full" id="faqs">
           <div className="pt-4">
           <Slider text={["Our team is always there to assist you"]} />
           </div>
