@@ -100,7 +100,7 @@ const Heading = () => {
        <motion.div
     whileInView={{ y: 0, scale: 1.2, duration: 5 }}
     transition={{ type: 'just', stiffness: 110 }}
-    className=" tracking-tight  text-transparent bg-clip-text bg-gradient-to-t from-[#222121] to-[#525252] whitespace-nowrap w-full overflow-hidden"
+    className=" tracking-tight  text-transparent bg-clip-text bg-gradient-to-t from-[#0f0f0f] to-[#515151] whitespace-nowrap w-full overflow-hidden"
   >
     Memories
   </motion.div>

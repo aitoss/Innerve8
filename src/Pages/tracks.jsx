@@ -127,7 +127,7 @@ const Heading = () => {
      <motion.div
   whileInView={{ y: -80, scale: 1.2, duration: 5 }}
   transition={{ type: 'just', stiffness: 110 }}
-  className=" tracking-tight  text-transparent bg-clip-text bg-gradient-to-t from-[#FFFFFF] to-[rgba(55,47,47,0.5)] whitespace-nowrap"
+  className=" tracking-tight  text-transparent bg-clip-text bg-gradient-to-t from-[#d9d9d9] to-[#f6f6f6] whitespace-nowrap"
 >
   Tracks
 </motion.div>

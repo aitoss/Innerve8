@@ -84,9 +84,9 @@ function Faqs() {
     },
     {
       question:
-      "Is there any additional cost for mess and lodgings?",
+        "Is there any additional cost for mess and lodgings?",
       answer:
-      "There will be no additional expenses.",
+        "There will be no additional expenses.",
     },
     {
       question:
@@ -129,54 +129,54 @@ function Faqs() {
 
   return (
     <>
-        <div className="h-full" id="faqs">
-          <div className="pt-4">
+      <div className="h-full" id="faqs">
+        <div className="pt-4">
           <Slider text={["Our team is always there to assist you"]} />
-          </div>
-          <HeadingMob/>
-      <div className="max-w-screen-xl flex flex-col lg:flex-row mx-auto ">
- 
-              <div className="flex flex-wrap  text-[#121212] align-items-stretch px-12 focus:border-none  border-none lg:mt-8 mt-4 items-center justify-center gap-2 lg:flex-col lg:space-y-[40px]">
-          <Button
-            label="General"
-            onClick={() => setActiveList("general")}
-            isActive={activeList === "general"}
-          />
-          <Button
-            label="Registration"
-            onClick={() => setActiveList("stay")}
-            isActive={activeList === "stay"}
-          />
-          <Button
-            label="Stay&Travel"
-            onClick={() => setActiveList("travel")}
-            isActive={activeList === "travel"}
-          />
-          <Button
-            label="Expenses"
-            onClick={() => setActiveList("expenses")}
-            isActive={activeList === "expenses"}
-          />
         </div>
-        <div className=" flex flex-col items-center justify-center lg:flex-row mr-10 xl:ml-0 ml-10">
-          <div className=" lg:pt-12 pt-6 mt-2 flex justify-center items-center">
-            <div className="list">
-              {renderActiveList().map((item, index) => (
-                <Accordion
-                  key={index}
-                  datas={item}
-                  isActive={index === activeIndex}
-                  onToggle={() => toggleActive(index)}
-                />
-              ))}
+        <HeadingMob />
+        <div className="max-w-screen-xl flex flex-col lg:flex-row mx-auto ">
+
+          <div className="flex flex-wrap  text-[#121212] align-items-stretch px-12 focus:border-none  border-none lg:mt-8 mt-4 items-center justify-center gap-2 lg:flex-col lg:space-y-[40px]">
+            <Button
+              label="General"
+              onClick={() => setActiveList("general")}
+              isActive={activeList === "general"}
+            />
+            <Button
+              label="Registration"
+              onClick={() => setActiveList("stay")}
+              isActive={activeList === "stay"}
+            />
+            <Button
+              label="Stay&Travel"
+              onClick={() => setActiveList("travel")}
+              isActive={activeList === "travel"}
+            />
+            <Button
+              label="Expenses"
+              onClick={() => setActiveList("expenses")}
+              isActive={activeList === "expenses"}
+            />
+          </div>
+          <div className=" flex flex-col items-center justify-center lg:flex-row mr-10 xl:ml-0 ml-10">
+            <div className=" lg:pt-12 pt-6 mt-2 flex justify-center items-center">
+              <div className="list">
+                {renderActiveList().map((item, index) => (
+                  <Accordion
+                    key={index}
+                    datas={item}
+                    isActive={index === activeIndex}
+                    onToggle={() => toggleActive(index)}
+                  />
+                ))}
+              </div>
+
             </div>
+          </div>
 
+        </div>
+        <HeadingMain />
       </div>
-      </div>
-
-      </div>
-      <HeadingMain/>
-    </div>
     </>
 
   );
@@ -187,11 +187,10 @@ function Faqs() {
 const Button = ({ label, onClick, isActive = true }) => {
   return (
     <button
-      className={`lg:w-full items-start focus:border-none text-[18px] lg:text-[20px] rounded-[4px] flex text-white font-bold py-2 lg:py-[16px] border-none none lg:px-[16px] px-2 transition-colors duration-300 ease-in-out ${
-        isActive
+      className={`lg:w-full items-start focus:border-none text-[18px] lg:text-[20px] rounded-[4px] flex text-white font-bold py-2 lg:py-[16px] border-none none lg:px-[16px] px-2 transition-colors duration-300 ease-in-out ${isActive
           ? "activebtn no-underline border-none focus:border-none"
           : "normalbtn  no-underline border-none opacity-60 "
-      }`}
+        }`}
       onClick={onClick}
     >
       <div className="lg:px-3">{label}</div>
@@ -207,7 +206,7 @@ const HeadingMain = () => {
       <motion.div
         whileInView={{ y: -80, scale: 1.2, duration: 5 }}
         transition={{ type: "just", stiffness: 110 }}
-        className=" tracking-tight  text-transparent bg-clip-text bg-gradient-to-t from-[#FFFFFF] to-[rgba(55,47,47,0.5)] whitespace-nowrap"
+        className=" tracking-tight  text-transparent bg-clip-text bg-gradient-to-t from-[#d9d9d9] to-[#f6f6f6] whitespace-nowrap"
       >
         FAQs
       </motion.div>
