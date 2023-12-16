@@ -1,122 +1,123 @@
-
 .timer-day {
-    font-size: 1.2rem;
-  }
+  font-size: 1.2rem;
+}
 
-  .timer-count{
-      font-size:2rem;
-  }
+.timer-count {
+  font-size: 2rem;
+}
 
-  .timer-width{
-        width:80%;
-        max-width:600px;
-  }
-  .devfolio-button{
-     height: 50px; 
-     width: 10px; 
-     margin-bottom: 20px;
-  }
+.timer-width {
+  width: 80%;
+  max-width: 600px;
+}
 
-  
+.devfolio-button {
+  height: 50px;
+  width: 10px;
+  margin-bottom: 20px;
+}
+
+
 
 
 @media screen and (max-width: 1440px) {
-    .timer-day {
-      font-size: 1.2rem;
-    }
-
-    .timer-count{
-        font-size:2rem;
-    }
-
-    .timer-width{
-        width:600px
-    }
+  .timer-day {
+    font-size: 1.2rem;
   }
-  
-  @media screen and (max-width: 1300px) {
-    .timer-day {
-        font-size: 1rem;
-      }
-  
-      .timer-count{
-          font-size:1.7rem;
-      }
 
-      .timer-width{
-        width:500px
-    }
+  .timer-count {
+    font-size: 2rem;
   }
-  
-  @media screen and (max-width: 860px) {
-    .timer-day {
-        font-size: 1rem;
-      }
-  
-      .timer-count{
-          font-size:1.5rem;
-      }
 
-      .timer-width{
-        width:450px
-    }
+  .timer-width {
+    width: 600px
   }
-  
-  @media screen and (max-width: 770px) {
-    .timer-day {
-        font-size: 0.7rem;
-      }
-  
-      .timer-count{
-          font-size:1.4rem;
-      }
+}
 
-      .timer-width{
-        width:350px
-    }
+@media screen and (max-width: 1300px) {
+  .timer-day {
+    font-size: 1rem;
   }
-  
-  @media screen and (max-width: 600px) {
-    .timer-day {
-        font-size: 0.7rem;
-      }
-  
-      .timer-count{
-          font-size:1.4rem;
-      }
 
-      .timer-width{
-        width:300px
-    }
-    .apply-button{
-      width:200px;
-    }
+  .timer-count {
+    font-size: 1.7rem;
   }
-  
-  @media screen and (max-width: 450px) {
-    .timer-day {
-        font-size: .6rem;
-      }
-  
-      .timer-count{
-          font-size:1.4rem;
-      }
 
-      .timer-width{
-        width:280px
-    }
+  .timer-width {
+    width: 500px
   }
-  
-  @media screen and (max-width: 350px) {
-    .timer-day {
-        font-size: 0.5rem;
-      }
-  
-      .timer-count{
-          font-size:1.1rem;
-      }
+}
 
-      .timer-width{
-          width:280px
-      }
+@media screen and (max-width: 860px) {
+  .timer-day {
+    font-size: 1rem;
   }
+
+  .timer-count {
+    font-size: 1.5rem;
+  }
+
+  .timer-width {
+    width: 450px
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .timer-day {
+    font-size: 0.7rem;
+  }
+
+  .timer-count {
+    font-size: 1.4rem;
+  }
+
+  .timer-width {
+    width: 350px
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timer-day {
+    font-size: 0.7rem;
+  }
+
+  .timer-count {
+    font-size: 1.4rem;
+  }
+
+  .timer-width {
+    width: 300px
+  }
+
+  .apply-button {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .timer-day {
+    font-size: .6rem;
+  }
+
+  .timer-count {
+    font-size: 1.4rem;
+  }
+
+  .timer-width {
+    width: 280px
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .timer-day {
+    font-size: 0.5rem;
+  }
+
+  .timer-count {
+    font-size: 1.1rem;
+  }
+
+  .timer-width {
+    width: 280px
+  }
+}

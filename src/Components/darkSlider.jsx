@@ -1,22 +1,22 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 
-const DarkSlider = ({text}) =>{
-        return(
-            <>
-            <div className="max-w-[1920px] w-screen z-[-1] select-none h-fit">
-                <Marquee autoFill='true' speed={80}>
-                    {text.map((item) => (
-                        <TextSlide text={item}/>
-                    ))}
-                </Marquee>
-                </div>
-            </>
-        )
+const DarkSlider = ({ text }) => {
+  return (
+    <>
+      <div className="max-w-[1920px] w-screen z-[-1] select-none h-fit">
+        <Marquee autoFill='true' speed={80}>
+          {text.map((item) => (
+            <TextSlide text={item} />
+          ))}
+        </Marquee>
+      </div>
+    </>
+  )
 }
 
-const TextSlide = ({text}) =>{
-    return(
+const TextSlide = ({ text }) => {
+  return (
     <>
       <div className="flex items-center justify-center text-5xl h-fit">
         <h1 className=" tracking-tight text-xl md:text-3xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-t from-[#212121] to-[#414141] whitespace-nowrap px-3">

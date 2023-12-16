@@ -36,9 +36,9 @@ const TestimonialMob = () => {
     return (
         <>
             <section className="bg-[#121212] lg:hidden h-full w-screen">
-            <div className="py-4">
-        <DarkSlider text={["Connect with code","Memories"]} />
-    </div>
+                <div className="py-4">
+                    <DarkSlider text={["Connect with code", "Memories"]} />
+                </div>
 
                 <div
                     ref={container}
@@ -47,12 +47,12 @@ const TestimonialMob = () => {
                 >
                     <Column className=" w-1/3 h-[40%] relative flex -top-[10%] flex-col gap-[2vw] " images={[images[0], images[1], images[2]]} y={y} />
                     <Column className=" h-[40%] w-1/3 flex -top-[75%] flex-col gap-[2vw] " images={[images[3], images[4], images[5]]} y={y2} />
-                   
+
                 </div>
             </section>
 
 
-    
+
         </>
     );
 };

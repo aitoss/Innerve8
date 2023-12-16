@@ -7,25 +7,25 @@ import Marquee from "react-fast-marquee";
 import Slider from "../Components/slider";
 import Vector from "../assets/images/vector.svg";
 
-const indiData=[['GameDev', 'images/icons/gamedev.png'],['Logistics','/images/icons/logi.png'],['EduTech','/images/icons/Frame 6360233.png'],['CyberSec','/images/icons/Frame 6360229.png'],['Health','/images/icons/Frame 6360232.png'],['FinTech','/images/icons/Frame 6360231.png'],['AR/VR','/images/icons/Frame 6360230.png']]
+const indiData = [['GameDev', 'images/icons/gamedev.png'], ['Logistics', '/images/icons/logi.png'], ['EduTech', '/images/icons/Frame 6360233.png'], ['CyberSec', '/images/icons/Frame 6360229.png'], ['Health', '/images/icons/Frame 6360232.png'], ['FinTech', '/images/icons/Frame 6360231.png'], ['AR/VR', '/images/icons/Frame 6360230.png']]
 
 const Tracks = () => {
-    return(
-        <>
-            <div className="flex align-middle  max-w-[1920px] w-screen h-full flex-col relative mt-6" id="tracks">
-                <Slider text={["GameDev", 'Logistics', 'Web3.0', 'Healthcare', 'FinTech', 'EdTech']} />
-                <Heading2/>
-                <div id="Tracks" className="flex flex-row flex-wrap gap-x-6 md:gap-x-[90px] lg:gap-x-36 gap-y-4 lg:gap-y-10 px-[2%] lg:justify-center justify-center items-center lg:items-center relative top-20">
-                    {indiData.map((data) => (
-                        <Track title={data[0]} img={data[1]} />
-                    ))}
-                </div>
-                <div className="flex relative top-[8rem] mt-10 justify-center">
-                    <Heading />
-                </div>
-            </div>
-        </>
-    )
+  return (
+    <>
+      <div className="flex align-middle  max-w-[1920px] w-screen h-full flex-col relative mt-6" id="tracks">
+        <Slider text={["GameDev", 'Logistics', 'Web3.0', 'Healthcare', 'FinTech', 'EdTech']} />
+        <Heading2 />
+        <div id="Tracks" className="flex flex-row flex-wrap gap-x-6 md:gap-x-[90px] lg:gap-x-36 gap-y-4 lg:gap-y-10 px-[2%] lg:justify-center justify-center items-center lg:items-center relative top-20">
+          {indiData.map((data) => (
+            <Track title={data[0]} img={data[1]} />
+          ))}
+        </div>
+        <div className="flex relative top-[8rem] mt-10 justify-center">
+          <Heading />
+        </div>
+      </div>
+    </>
+  )
 }
 
 
@@ -38,7 +38,7 @@ const Example = () => {
 };
 
 
-const Track = ({title, img}) => {
+const Track = ({ title, img }) => {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const mouseXSpring = useSpring(x);
@@ -76,9 +76,9 @@ const Track = ({title, img}) => {
 
   return (
     <motion.div
-    initial={{ scale: 0.7 }}
-    whileInView={{scale: 1, duration: 0.3}}
-    transition={{type: 'just', stiffness: 110}}
+      initial={{ scale: 0.7 }}
+      whileInView={{ scale: 1, duration: 0.3 }}
+      transition={{ type: 'just', stiffness: 110 }}
 
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
@@ -104,7 +104,7 @@ const Track = ({title, img}) => {
 
       >
 
-      <img src={img} alt="" className="object-contain h-full w-full md:h-auto md:w-auto"/>
+        <img src={img} alt="" className="object-contain h-full w-full md:h-auto md:w-auto" />
 
         <p
           style={{
@@ -124,13 +124,13 @@ const Track = ({title, img}) => {
 const Heading = () => {
   return (
     <div className="text-center xl:block hidden tracking-[10px] bg-clip-text  font-medium text-[150px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
-     <motion.div
-  whileInView={{ y: -80, scale: 1.2, duration: 5 }}
-  transition={{ type: 'just', stiffness: 110 }}
-  className=" tracking-tight  text-transparent bg-clip-text bg-gradient-to-t from-[#d9d9d9] to-[#f6f6f6] whitespace-nowrap"
->
-  Tracks
-</motion.div>
+      <motion.div
+        whileInView={{ y: -80, scale: 1.2, duration: 5 }}
+        transition={{ type: 'just', stiffness: 110 }}
+        className=" tracking-tight  text-transparent bg-clip-text bg-gradient-to-t from-[#d9d9d9] to-[#f6f6f6] whitespace-nowrap"
+      >
+        Tracks
+      </motion.div>
     </div>
   );
 };

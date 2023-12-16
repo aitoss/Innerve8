@@ -35,16 +35,16 @@ const ossSphere = () => {
       window.removeEventListener('resize', handleResize);
       console.log(sphereSize);
     };
-    
+
   }, []);
 
   return (
     <>
       <Canvas
       // orthographic={true}
-        // camera={{zoom: 50 }}
-        // Adjust the camera position
-        // fog={new THREE.Fog("rgb(5, 15, 45)", 5, 15)} // Add fog to the scene
+      // camera={{zoom: 50 }}
+      // Adjust the camera position
+      // fog={new THREE.Fog("rgb(5, 15, 45)", 5, 15)} // Add fog to the scene
       >
         {/* <directionalLight position={[0.028, 4.895, 8.407]} /> */}
         <ambientLight intensity={10} />

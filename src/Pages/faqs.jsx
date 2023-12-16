@@ -188,8 +188,8 @@ const Button = ({ label, onClick, isActive = true }) => {
   return (
     <button
       className={`lg:w-full items-start focus:border-none text-[18px] lg:text-[20px] rounded-[4px] flex text-white font-bold py-2 lg:py-[16px] border-none none lg:px-[16px] px-2 transition-colors duration-300 ease-in-out ${isActive
-          ? "activebtn no-underline border-none focus:border-none"
-          : "normalbtn  no-underline border-none opacity-60 "
+        ? "activebtn no-underline border-none focus:border-none"
+        : "normalbtn  no-underline border-none opacity-60 "
         }`}
       onClick={onClick}
     >
