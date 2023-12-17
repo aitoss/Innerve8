@@ -6,6 +6,7 @@ import { FiMousePointer } from "react-icons/fi";
 import Marquee from "react-fast-marquee";
 import Slider from "../Components/slider";
 import Vector from "../assets/images/vector.svg";
+import HeadingMain from "../Components/HeadingMain";
 
 const indiData = [['GameDev', 'images/icons/gamedev.png'], ['Logistics', '/images/icons/logi.png'], ['EduTech', '/images/icons/Frame 6360233.png'], ['CyberSec', '/images/icons/Frame 6360229.png'], ['Health', '/images/icons/Frame 6360232.png'], ['FinTech', '/images/icons/Frame 6360231.png'], ['AR/VR', '/images/icons/Frame 6360230.png']]
 
@@ -20,8 +21,8 @@ const Tracks = () => {
             <Track title={data[0]} img={data[1]} />
           ))}
         </div>
-        <div className="flex relative top-[8rem] mt-10 justify-center">
-          <Heading />
+        <div className="flex relative top-[4rem] justify-center">
+          <HeadingMain name="Tracks" />
         </div>
       </div>
     </>
@@ -121,18 +122,5 @@ const Track = ({ title, img }) => {
   );
 };
 
-const Heading = () => {
-  return (
-    <div className="text-center xl:block hidden tracking-[10px] bg-clip-text  font-medium text-[150px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
-      <motion.div
-        whileInView={{ y: -80, scale: 1.2, duration: 5 }}
-        transition={{ type: 'just', stiffness: 110 }}
-        className=" tracking-tight  text-transparent bg-clip-text bg-gradient-to-t from-[#d9d9d9] to-[#f6f6f6] whitespace-nowrap"
-      >
-        Tracks
-      </motion.div>
-    </div>
-  );
-};
 
 export default Tracks;

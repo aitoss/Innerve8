@@ -14,6 +14,7 @@ import Quinn from "../../public/images/quinn.png"
 import Replit from "../../public/images/replit.png"
 import Verbwire from "../../public/images/verbwire.png"
 import HeadingMob from '../Components/HeadingMob';
+import HeadingMain from '../Components/HeadingMain';
 
 const Sponsor = () => {
   const titleSponsors = [
@@ -50,8 +51,8 @@ const Sponsor = () => {
           <SponsorCategory title="PLATINUM SPONSOR" sponsors={platinumSponsors} />
           <SponsorCategory title="SUB SPONSOR" sponsors={subSponsors} />
         </div>
-        <div className="flex relative mt-16 justify-center">
-          <HeadingMain />
+        <div className="flex relative justify-center">
+          <HeadingMain name="Sponsors"/>
         </div>
       </div>
 
@@ -97,19 +98,6 @@ const SponsorCategory = ({ title, sponsors }) => {
         <SponsorLogos sponsors={sponsors} />
       </div>
     </>
-  );
-};
-const HeadingMain = () => {
-  return (
-    <div className="text-center xl:block hidden tracking-[10px] bg-clip-text  font-medium text-[150px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
-      <motion.div
-        whileInView={{ y: -80, scale: 1.2, duration: 5 }}
-        transition={{ type: 'just', stiffness: 110 }}
-        className=" tracking-tight  text-transparent bg-clip-text bg-gradient-to-t from-[#d9d9d9] to-[#f6f6f6] whitespace-nowrap"
-      >
-        Sponsors
-      </motion.div>
-    </div>
   );
 };
 
