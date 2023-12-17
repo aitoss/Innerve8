@@ -22,7 +22,7 @@ const Bannercard = () => {
                     <div className="banner-sub w-full flex justify-between items-center">
                         <p className="banner-heading font-medium">Want to <br />sponsor us?</p>
                         <div className="banner-sponser flex flex-col justify-center items-end gap-4">
-                            <a href="" className="w-[155px]">
+                            <a href="https://forms.gle/UePkH2FAiL29dkkC9" className="w-[155px]">
                                 <Btn name="Fill the form" icon="↗" />
                             </a>
                             <a href="https://drive.google.com/file/d/1EVmRI751L4iOeCWSnH735M8_5KgzJFsr/view?usp=sharing" className="w-[135px]">

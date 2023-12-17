@@ -42,7 +42,7 @@ const Sponsor = () => {
         <div className="mt-16 -mb-4">
           <Heading2 />
         </div>
-        <div className="p-4 w-screen flex flex-col xl:mt-[3%] justify-center flex-wrap items-center">
+        <div className="lg:p-4 w-screen flex flex-col xl:mt-[3%] justify-center flex-wrap items-center">
           <SponsorCategory title="TITLE SPONSOR" sponsors={titleSponsors} />
           <SponsorCategory title="PLATINUM SPONSOR" sponsors={platinumSponsors} />
           <SponsorCategory title="SUB SPONSOR" sponsors={subSponsors} />
