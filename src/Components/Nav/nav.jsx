@@ -8,6 +8,9 @@ import { Link } from 'react-router-dom';
 const Nav = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
 
+    const onClick = () => {
+        setNavbarOpen(false)
+    };
 
     const containervars = {
         initial: {
@@ -30,7 +33,7 @@ const Nav = () => {
             <div className="inner-nav">
                 <ul className={`menu-nav ${navbarOpen ? ' show-menu' : ''}`}>
                     <div className="menu-nav-header w-full flex flow-col items-center justify-between py-6 px-5 sm:px-10">
-                        <a className="ml-[3.5rem] sm:ml-10 md:ml-20 text-2xl font-[300] text-[#c4c4c4bf] hover:text-[#f6f6f6d4] hover:cursor-pointer transition-all" href='https://drive.google.com/file/d/1yPnfmM8D1lXGVe40r-xRtjsbG_i3itlV/view?usp=sharing' target='_blank'>Brochure ↗</a>
+                        <a className="ml-[3.5rem] sm:ml-10 md:ml-20 text-2xl font-[300] text-[#c4c4c4bf] hover:text-[#f6f6f6d4] hover:cursor-pointer transition-all" href='https://drive.google.com/file/d/1-Xdhdc8jOhWg5IWhJlM0NP4rfFcWWP3_/view?usp=sharing' target='_blank'>Brochure ↗</a>
                         <div onClick={() => setNavbarOpen((prev) => !prev)} >
                             <Btn mode="dark" name="Close" icon="×" />
                         </div>
@@ -42,9 +45,10 @@ const Nav = () => {
                             initial="intial"
                             animate="open"
                             exit="exit"
+                            onClick={()=> onClick}
                         >
-                            <div className="overflow-hidden">
-                                <MobileNav title="HOME" />
+                            <div className="overflow-hidden" onClick={() => setNavbarOpen((prev) => !prev)}>
+                                <MobileNav title="HOME"  />
                             </div>
                         </motion.a>
 
@@ -53,8 +57,9 @@ const Nav = () => {
                             variants={containervars}
                             initial="intial"
                             animate="open"
+                            onClick={()=> onClick}
                         >
-                            <div className="overflow-hidden">
+                            <div className="overflow-hidden" onClick={() => setNavbarOpen((prev) => !prev)}>
                                 <MobileNav title="PRIZES" />
                             </div>
                         </motion.a>
@@ -65,8 +70,8 @@ const Nav = () => {
                             initial="intial"
                             animate="open"
                         >
-                            <div className="overflow-hidden">
-                                <MobileNav title="THEMES" />
+                            <div className="overflow-hidden" onClick={() => setNavbarOpen((prev) => !prev)}>
+                                <MobileNav title="TRACKS" />
                             </div>
                         </motion.a>
 
@@ -76,7 +81,7 @@ const Nav = () => {
                             initial="intial"
                             animate="open"
                         >
-                            <div className="overflow-hidden">
+                            <div className="overflow-hidden" onClick={() => setNavbarOpen((prev) => !prev)}>
                                 <MobileNav title="SPONSORS" />
                             </div>
                         </motion.a>
@@ -87,7 +92,7 @@ const Nav = () => {
                             initial="intial"
                             animate="open"
                         >
-                            <div className="overflow-hidden">
+                            <div className="overflow-hidden" onClick={() => setNavbarOpen((prev) => !prev)}>
                                 <MobileNav title="FAQs" />
                             </div>
                         </motion.a>
