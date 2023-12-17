@@ -1,7 +1,7 @@
 import React from "react";
 
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-
+import HeadingMob from "../Components/HeadingMob";
 import { FiMousePointer } from "react-icons/fi";
 import Marquee from "react-fast-marquee";
 import Slider from "../Components/slider";
@@ -14,7 +14,7 @@ const Tracks = () => {
     <>
       <div className="flex align-middle  max-w-[1920px] w-screen h-full flex-col relative mt-6" id="tracks">
         <Slider text={["GameDev", 'Logistics', 'Web3.0', 'Healthcare', 'FinTech', 'EdTech']} />
-        <Heading2 />
+        <HeadingMob name="Tracks" />
         <div id="Tracks" className="flex flex-row flex-wrap gap-x-6 md:gap-x-[90px] lg:gap-x-36 gap-y-4 lg:gap-y-10 px-[2%] lg:justify-center justify-center items-center lg:items-center relative lg:top-20">
           {indiData.map((data) => (
             <Track title={data[0]} img={data[1]} />
@@ -135,13 +135,4 @@ const Heading = () => {
   );
 };
 
-const Heading2 = () => {
-  return (
-    <div className="py-4 text-center xl:hidden tracking-[8px] font-medium text-[64px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
-      <motion.div className="tracking-tight text-transparent bg-clip-text bg-gradient-to-t from-[#FFFFFF] to-[rgba(55,47,47,0.5)] whitespace-nowrap">
-        Tracks
-      </motion.div>
-    </div>
-  );
-};
 export default Tracks;

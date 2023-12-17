@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Slider from "../Components/slider";
 import DarkSlider from "../Components/darkSlider";
+import HeadingMob from "../Components/HeadingMob";
 
 const Prize = () => {
 
@@ -13,7 +14,7 @@ const Prize = () => {
         <DarkSlider text={["10lac+ Prize pool"]} />
       </div>
       <div className="w-screen xl:pt-[120px]  flex-col items-center h-full">
-        <Heading2 />
+        <HeadingMob name="Prizes" />
         <StackedCards />
         <div className="relative bottom-0 left-0 right-0">
           <Heading />
@@ -234,15 +235,7 @@ const Heading = () => {
   );
 };
 
-const Heading2 = () => {
-  return (
-    <div className="py-4 text-center xl:hidden tracking-[8px] font-medium text-[64px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
-      <motion.div className="tracking-tight text-transparent bg-clip-text bg-gradient-to-t from-[#121212] to-[#515151] whitespace-nowrap">
-        Prizes
-      </motion.div>
-    </div>
-  );
-};
+
 
 const Card = ({ color, textColor, textData, value }) => {
   return (

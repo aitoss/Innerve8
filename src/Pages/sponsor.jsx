@@ -1,5 +1,7 @@
 import React from 'react'
-import { motion } from "framer-motion";
+import { motion, useAnimation } from 'framer-motion';
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import udchalo from "../assets/images/udchalo.png"
 import accops from "../assets/images/accops.png"
 import byte from "../assets/images/byte.png"
@@ -11,6 +13,7 @@ import ICICI from "../assets/images/icici.png"
 import Quinn from "../../public/images/quinn.png"
 import Replit from "../../public/images/replit.png"
 import Verbwire from "../../public/images/verbwire.png"
+import HeadingMob from '../Components/HeadingMob';
 
 const Sponsor = () => {
   const titleSponsors = [
@@ -40,7 +43,7 @@ const Sponsor = () => {
           <Slider text={['Our Sponsors']} />
         </div>
         <div className="mt-16 -mb-4">
-          <Heading2 />
+          <HeadingMob name="Sponsors" />
         </div>
         <div className="lg:p-4 w-screen flex flex-col xl:mt-[3%] justify-center flex-wrap items-center">
           <SponsorCategory title="TITLE SPONSOR" sponsors={titleSponsors} />
@@ -110,15 +113,6 @@ const HeadingMain = () => {
   );
 };
 
-const Heading2 = () => {
-  return (
-    <div className="py-4 text-center xl:hidden tracking-[8px] font-medium text-[64px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
-      <motion.div className="tracking-tight text-transparent bg-clip-text bg-gradient-to-t from-[#FFFFFF] to-[rgba(55,47,47,0.5)] whitespace-nowrap">
-        Sponsors
-      </motion.div>
-    </div>
-  );
-};
 
 
 export default Sponsor;
