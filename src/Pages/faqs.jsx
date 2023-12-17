@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import Slider from "../Components/slider";
+import HeadingMob from "../Components/HeadingMob";
 
 function Faqs() {
   const [generalList, setGeneralList] = useState([
@@ -133,7 +134,7 @@ function Faqs() {
         <div className="pt-4">
           <Slider text={["Our team is always there to assist you"]} />
         </div>
-        <HeadingMob />
+        <HeadingMob name="FAQs"/>
         <div className="max-w-screen-xl flex flex-col lg:flex-row mx-auto ">
 
           <div className="flex flex-wrap  text-[#121212] align-items-stretch px-12 focus:border-none  border-none lg:mt-8 mt-4 items-center justify-center gap-2 lg:flex-col lg:space-y-[40px]">
@@ -214,14 +215,6 @@ const HeadingMain = () => {
   );
 };
 
-const HeadingMob = () => {
-  return (
-    <div className="py-4 text-center xl:hidden tracking-[8px] font-medium text-[64px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
-      <motion.div className="tracking-tight text-transparent bg-clip-text bg-gradient-to-t from-[#FFFFFF] to-[rgba(55,47,47,0.5)] whitespace-nowrap">
-        FAQs
-      </motion.div>
-    </div>
-  );
-};
+
 
 export default Faqs;
