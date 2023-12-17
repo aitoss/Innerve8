@@ -18,7 +18,7 @@ export default function Controls() {
         camera={camera}
         enableZoom={false}
         enablePan={false}
-      //   onEnd={() => camera.position.set(40, 0, 0)}
+      // onEnd={() => camera.position.set(40, 0, 0)}
       />
     </>
   );
