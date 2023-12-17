@@ -8,6 +8,9 @@ import { Link } from 'react-router-dom';
 const Nav = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
 
+    const onClick = () => {
+        setNavbarOpen(false)
+    };
 
     const containervars = {
         initial: {
@@ -42,9 +45,10 @@ const Nav = () => {
                             initial="intial"
                             animate="open"
                             exit="exit"
+                            onClick={()=> onClick}
                         >
-                            <div className="overflow-hidden">
-                                <MobileNav title="HOME" />
+                            <div className="overflow-hidden" onClick={() => setNavbarOpen((prev) => !prev)}>
+                                <MobileNav title="HOME"  />
                             </div>
                         </motion.a>
 
@@ -53,8 +57,9 @@ const Nav = () => {
                             variants={containervars}
                             initial="intial"
                             animate="open"
+                            onClick={()=> onClick}
                         >
-                            <div className="overflow-hidden">
+                            <div className="overflow-hidden" onClick={() => setNavbarOpen((prev) => !prev)}>
                                 <MobileNav title="PRIZES" />
                             </div>
                         </motion.a>
@@ -65,8 +70,8 @@ const Nav = () => {
                             initial="intial"
                             animate="open"
                         >
-                            <div className="overflow-hidden">
-                                <MobileNav title="THEMES" />
+                            <div className="overflow-hidden" onClick={() => setNavbarOpen((prev) => !prev)}>
+                                <MobileNav title="TRACKS" />
                             </div>
                         </motion.a>
 
@@ -76,7 +81,7 @@ const Nav = () => {
                             initial="intial"
                             animate="open"
                         >
-                            <div className="overflow-hidden">
+                            <div className="overflow-hidden" onClick={() => setNavbarOpen((prev) => !prev)}>
                                 <MobileNav title="SPONSORS" />
                             </div>
                         </motion.a>
@@ -87,7 +92,7 @@ const Nav = () => {
                             initial="intial"
                             animate="open"
                         >
-                            <div className="overflow-hidden">
+                            <div className="overflow-hidden" onClick={() => setNavbarOpen((prev) => !prev)}>
                                 <MobileNav title="FAQs" />
                             </div>
                         </motion.a>
