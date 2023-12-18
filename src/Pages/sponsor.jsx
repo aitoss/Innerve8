@@ -10,29 +10,30 @@ import Slider from "../Components/slider";
 import Kaagaz from "../assets/images/kaagaz.jpg"
 import Solana from "../assets/images/solana.png"
 import ICICI from "../assets/images/icici.png"
-import Quinn from "../../public/images/quinn.png"
+import Quine from "../../public/images/quine.png"
 import Replit from "../../public/images/replit.png"
 import Verbwire from "../../public/images/verbwire.png"
 import HeadingMob from '../Components/HeadingMob';
+import HeadingMain from '../Components/HeadingMain';
 
 const Sponsor = () => {
   const titleSponsors = [
-    { id: 1, logo: accops, name: 'Accops' },
-    { id: 2, logo: mro, name: 'Mro' },
+    { id: 1, logo: accops, name: 'Accops', link: 'https://accops.com/' },
+    { id: 2, logo: mro, name: 'Mro', link: 'https://mrocorp.com/' },
 
   ];
 
   const platinumSponsors = [
-    { id: 1, logo: Kaagaz, name: 'kaagaz' },
-    { id: 2, logo: ICICI, name: 'icici' },
-    { id: 3, logo: Solana, name: 'solana' },
+    { id: 1, logo: Kaagaz, name: 'kaagaz', link: 'https://kaagaz.app/' },
+    { id: 2, logo: ICICI, name: 'icici', link: 'https://www.icicibank.com/' },
+    { id: 3, logo: Solana, name: 'solana', link: 'https://solana.com/' },
 
   ];
 
   const subSponsors = [
-    { id: 1, logo: Replit, name: 'Replit' },
-    { id: 2, logo: Verbwire, name: 'Verbwire' },
-    { id: 3, logo: Quinn, name: 'Quinn' },
+    { id: 1, logo: Replit, name: 'Replit', link:'https://replit.com' },
+    { id: 2, logo: Verbwire, name: 'Verbwire', link:'https://www.verbwire.com/' },
+    { id: 3, logo: Quine, name: 'Quine',link:'https://quine.sh/' },
 
   ];
 
@@ -50,8 +51,8 @@ const Sponsor = () => {
           <SponsorCategory title="PLATINUM SPONSOR" sponsors={platinumSponsors} />
           <SponsorCategory title="SUB SPONSOR" sponsors={subSponsors} />
         </div>
-        <div className="flex relative mt-16 justify-center">
-          <HeadingMain />
+        <div className="flex relative justify-center">
+          <HeadingMain name="Sponsors"/>
         </div>
       </div>
 
@@ -73,7 +74,8 @@ const SponsorLogos = ({ sponsors }) => {
   return (
     <div className="flex justify-center items-center flex-row flex-wrap gap-7 mt-8">
       {sponsors.map((sponsor) => (
-        <motion.div
+        <a href={sponsor.link}>
+                  <motion.div
           key={sponsor.id}
           initial={{ scale: 0.9 }}
           whileHover={{ scale: 1.05, rotate: [0, 2, 0], duration: 0.1 }}
@@ -84,6 +86,8 @@ const SponsorLogos = ({ sponsors }) => {
             className="max-h-16 max-w-16"
           />
         </motion.div>
+        </a>
+
       ))}
     </div>
   );
@@ -97,19 +101,6 @@ const SponsorCategory = ({ title, sponsors }) => {
         <SponsorLogos sponsors={sponsors} />
       </div>
     </>
-  );
-};
-const HeadingMain = () => {
-  return (
-    <div className="text-center xl:block hidden tracking-[10px] bg-clip-text  font-medium text-[150px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
-      <motion.div
-        whileInView={{ y: -80, scale: 1.2, duration: 5 }}
-        transition={{ type: 'just', stiffness: 110 }}
-        className=" tracking-tight  text-transparent bg-clip-text bg-gradient-to-t from-[#d9d9d9] to-[#f6f6f6] whitespace-nowrap"
-      >
-        Sponsors
-      </motion.div>
-    </div>
   );
 };
 

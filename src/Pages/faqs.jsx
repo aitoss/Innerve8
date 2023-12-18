@@ -4,6 +4,7 @@ import Lenis from "@studio-freight/lenis";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import Slider from "../Components/slider";
 import HeadingMob from "../Components/HeadingMob";
+import HeadingMain from "../Components/HeadingMain";
 
 function Faqs() {
   const [generalList, setGeneralList] = useState([
@@ -176,7 +177,7 @@ function Faqs() {
           </div>
 
         </div>
-        <HeadingMain />
+        <HeadingMain name="FAQs"/>
       </div>
     </>
 
@@ -200,20 +201,6 @@ const Button = ({ label, onClick, isActive = true }) => {
 };
 
 
-
-const HeadingMain = () => {
-  return (
-    <div className="text-center xl:block hidden tracking-[10px] mt-20 bg-clip-text  font-medium text-[150px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
-      <motion.div
-        whileInView={{ y: -80, scale: 1.2, duration: 5 }}
-        transition={{ type: "just", stiffness: 110 }}
-        className=" tracking-tight  text-transparent bg-clip-text bg-gradient-to-t from-[#d9d9d9] to-[#f6f6f6] whitespace-nowrap"
-      >
-        FAQs
-      </motion.div>
-    </div>
-  );
-};
 
 
 

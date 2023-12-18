@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import { motion } from 'framer-motion';
 import Lenis from '@studio-freight/lenis'
 import DarkSlider from '../Components/darkSlider';
+import HeadingMainBlack from '../Components/HeadingMainBlack';
 
 
 const Testimonial = () => {
@@ -65,7 +66,7 @@ const Testimonial = () => {
                 </div>
 
                 <div className="relative bottom-0 left-0 right-0 overflow-hidden w-screen ">
-                    <Heading />
+                    <HeadingMainBlack name="Memories" />
                 </div>
             </section>
 
@@ -94,18 +95,6 @@ const Column = ({ images, y = 0 }) => {
     );
 };
 
-const Heading = () => {
-    return (
-        <div className="text-center xl:block hidden tracking-[10px] bottom-0 font-medium text-[150px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)] memories" >
-            <motion.div
-                whileInView={{ y: 0, scale: 1.2, duration: 5 }}
-                transition={{ type: 'just', stiffness: 110 }}
-                className=" tracking-tight  text-transparent bg-clip-text bg-gradient-to-t from-[#0f0f0f] to-[#515151] whitespace-nowrap w-full overflow-hidden"
-            >
-                Memories
-            </motion.div>
-        </div>
-    );
-};
+
 
 export default Testimonial;
