@@ -10,9 +10,9 @@ import Slider from "../Components/slider";
 import Kaagaz from "../assets/images/kaagaz.jpg"
 import Solana from "../assets/images/solana.png"
 import ICICI from "../assets/images/icici.png"
-import Quine from "../../public/images/quine.png"
-import Replit from "../../public/images/replit.png"
-import Verbwire from "../../public/images/verbwire.png"
+import Quine from "../assets/images/quine.png"
+import Replit from "../assets/images/replit.png"
+import Verbwire from "../assets/images/verbwire.png"
 import HeadingMob from '../Components/HeadingMob';
 import HeadingMain from '../Components/HeadingMain';
 
