@@ -4,7 +4,6 @@ import Home from './Pages/home.jsx'
 import Prize from './Pages/prize.jsx'
 import Tracks from './Pages/tracks.jsx'
 import './Components/noise.css'
-import Timeline from './Pages/timeline.jsx'
 import Threejs from './Components/threejs.jsx'
 import Testimonial from './Pages/testimonial.jsx'
 import Dates from './Pages/dates.jsx'
@@ -16,6 +15,7 @@ import Faqs from './Pages/faqs.jsx'
 import TestimonialMob from './Pages/testimonialMobile.jsx'
 import Teams from './Pages/teams.jsx'
 import GoTop from './Components/GoTop.jsx'
+import Timeline from './Pages/Timeline.jsx'
 
 function App() {
 
@@ -32,6 +32,8 @@ function App() {
       {/* <Timeline />
       <Timeline />
       <Timeline /> */}
+      {/* <Timeline/> */}
+      {/* <Timeline/> */}
       <Sponsor />
       <Testimonial />
       <TestimonialMob />
