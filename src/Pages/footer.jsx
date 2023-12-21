@@ -434,7 +434,7 @@ export default function Footer() {
                 <span className="sr-only">Facebook page</span>
               </a>
               <a
-                href="https://discord.gg/Pa7hJP6h"
+                href="https://discord.com/invite/fVJd4yzKwW"
                 className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
               >
                 <svg
