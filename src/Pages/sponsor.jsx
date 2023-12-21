@@ -39,19 +39,19 @@ const Sponsor = () => {
 
   return (
     <>
-      <div className="h-full" id='sponsors'>
+      <div className="h-full py-6" id='sponsors'>
         <div className="flex justify-center w-screen top-16 relative">
           <Slider text={['Our Sponsors']} />
         </div>
         <div className="mt-16 -mb-4">
           <HeadingMob name="Sponsors" />
         </div>
-        <div className="lg:p-4 w-screen flex flex-col xl:mt-[3%] justify-center flex-wrap items-center">
+        <div className=" lg:py-4 lg:p w-screen flex flex-col xl:mt-[3%] justify-center flex-wrap items-center">
           <SponsorCategory title="TITLE SPONSOR" sponsors={titleSponsors} />
           <SponsorCategory title="PLATINUM SPONSOR" sponsors={platinumSponsors} />
           <SponsorCategory title="SUB SPONSOR" sponsors={subSponsors} />
         </div>
-        <div className="flex relative justify-center">
+        <div className="flex relative mt-4 justify-center">
           <HeadingMain name="Sponsors"/>
         </div>
       </div>
