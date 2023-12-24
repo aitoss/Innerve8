@@ -113,7 +113,7 @@ const Nav = () => {
                                     <p className=" group text-lg text-[#c4c4c4bf] hover:text-[#f6f6f6d4] hover:cursor-pointer transition-all">Instagram ↗</p>
                                 </div>
                             </a>
-                            <a href='https://twitter.com/innervehack' target='_blank'>
+                            <a href='https://twitter.com/innerve_8' target='_blank'>
                                 <div className="twitter flex justify-start items-center gap-1">
                                     <div className="flex justify-center items-center h-6 w-6 p-[0.1rem] sm:p-[0.1rem] bg-[#212121] rounded-[0.375rem]">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -123,7 +123,7 @@ const Nav = () => {
                                     <p className="text-[#c4c4c4bf] text-lg hover:text-[#f6f6f6d4] hover:cursor-pointer transition-all">Twitter ↗</p>
                                 </div>
                             </a>
-                            <a href='https://www.facebook.com/innerve7.0' target='_blank'>
+                            <a href='https://www.facebook.com/ossclubait' target='_blank'>
                                 <div className="twitter flex justify-start items-center gap-1">
                                     <div className="flex justify-center items-center  h-6 w-6 p-[0.1rem] bg-[#212121] rounded-[0.375rem]">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">

@@ -33,7 +33,6 @@ function App() {
       <Timeline />
       <Timeline /> */}
       {/* <Timeline/> */}
-      <Timeline/>
       <Sponsor />
       <Testimonial />
       <TestimonialMob />
