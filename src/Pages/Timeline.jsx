@@ -1,7 +1,30 @@
 import React from 'react';
 import DarkSlider from '../Components/darkSlider';
 import HeadingMainBlack from '../Components/HeadingMainBlack';
+import './timeline.css'
 const Timeline = () => {
+
+    const progressbar = document.querySelector('progress')
+    const article = document.querySelector('article')
+
+    let isScrolling = false
+
+    document.addEventListener('scroll', (e) => isScrolling = true)
+
+    render()
+
+    function render() {
+      
+      requestAnimationFrame(render)
+      
+      if (!isScrolling) return
+      
+      progressbar.value = window.scrollY / (article.offsetHeight - window.innerHeight) * 100
+      
+      isScrolling = false
+      
+    }
+
   return (
     <>
       <section>
@@ -23,8 +46,8 @@ const Timeline = () => {
             </div>
             <div className="ml-0 md:ml-12 lg:w-2/3 sticky">
               <div className="container mx-auto w-full h-full">
-                <div className="relative wrap overflow-hidden p-10 h-full">
-                  <div
+                <div className="relative wrap overflow-hidden p-10 h-full bg-white">
+                  {/* <div
                     className="border-2-2 border-[#F5AEDD] absolute h-full border transition-opacity duration-300"
                     style={{
                       right: '50%',
@@ -33,9 +56,12 @@ const Timeline = () => {
                       background: 'var(--pink, linear-gradient(to left, #743ad5, #d53a9d)',
                     }}
                   >
-
-                  </div>
-                  <div
+              
+                  </div> */}
+                  {/* <section1> */}
+                      <progress min="0" max="100" value="0"></progress>
+                  {/* </section1> */}
+                  {/* <div
                     className="border-2-2 border-[#F5AEDD] absolute h-full border transition-opacity duration-300"
                     style={{
                       right: '50%',
@@ -43,7 +69,7 @@ const Timeline = () => {
                       borderRadius: '1%',
                       background: 'var(--pink, linear-gradient(to left, #743ad5, #d53a9d)',
                     }}
-                  ></div>
+                  ></div> */}
 
                   <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                     <div className="order-1 w-5/12"></div>

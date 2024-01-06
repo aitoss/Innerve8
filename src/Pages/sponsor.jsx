@@ -54,7 +54,7 @@ const Sponsor = () => {
         </div>
         <div className=" lg:py-4 lg:p w-screen flex flex-col xl:mt-[3%] justify-center flex-wrap items-center">
           <SponsorCategory title="TITLE SPONSOR" sponsors={titleSponsors} />
-          <SponsorCategory title="PLATINUM SPONSOR" sponsors={platinumSponsors} />
+          <SponsorCategory title="CO SPONSOR" sponsors={platinumSponsors} />
           <SponsorCategory title="SUB SPONSOR" sponsors={subSponsors} />
           <SponsorCategory title="COMMUNITY PARTNER" sponsors={community} />
         </div>
