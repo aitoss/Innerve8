@@ -39,7 +39,7 @@ const Sponsor = () => {
   ];
 
   const community = [
-    { id: 1, logo: GDSC, name: 'GDSC', link:'https://l.instagram.com/?u=https%3A%2F%2Flinktr.ee%2Fdsc_ait&e=AT0uwdNAHENmY0gg0aVeKCfG3RjhgJGHseTwljlIa2R2Dv8Uq9FNdp0jZSLcD_SvV2Gh_I2DTd7eRSQZ5MH1r4YCo6J0Dy3FxSu0AGA' },
+    { id: 1, logo: GDSC, name: 'GDSC', link:'https://linktr.ee/dsc_ait' },
 
   ];
 
