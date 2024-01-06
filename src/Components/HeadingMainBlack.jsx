@@ -23,7 +23,7 @@ const HeadingMainBlack = ({ name }) => {
     }, [inView, controls]);
   
     return (
-      <div className="text-center xl:block hidden tracking-[10px] mt-20 bg-clip-text  font-medium text-[150px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
+      <div className="text-center xl:block hidden tracking-[10px] bg-clip-text  font-medium text-[150px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
         <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 80, scale: 0.8 }}

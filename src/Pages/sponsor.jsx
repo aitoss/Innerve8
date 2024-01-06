@@ -15,6 +15,7 @@ import Replit from "../assets/images/replit.png"
 import Verbwire from "../assets/images/verbwire.png"
 import HeadingMob from '../Components/HeadingMob';
 import HeadingMain from '../Components/HeadingMain';
+import GDSC from "../assets/images/GDSCAIT.png"
 
 const Sponsor = () => {
   const titleSponsors = [
@@ -37,6 +38,11 @@ const Sponsor = () => {
 
   ];
 
+  const community = [
+    { id: 1, logo: GDSC, name: 'GDSC', link:'https://l.instagram.com/?u=https%3A%2F%2Flinktr.ee%2Fdsc_ait&e=AT0uwdNAHENmY0gg0aVeKCfG3RjhgJGHseTwljlIa2R2Dv8Uq9FNdp0jZSLcD_SvV2Gh_I2DTd7eRSQZ5MH1r4YCo6J0Dy3FxSu0AGA' },
+
+  ];
+
   return (
     <>
       <div className="h-full py-6" id='sponsors'>
@@ -50,6 +56,7 @@ const Sponsor = () => {
           <SponsorCategory title="TITLE SPONSOR" sponsors={titleSponsors} />
           <SponsorCategory title="PLATINUM SPONSOR" sponsors={platinumSponsors} />
           <SponsorCategory title="SUB SPONSOR" sponsors={subSponsors} />
+          <SponsorCategory title="COMMUNITY PARTNER" sponsors={community} />
         </div>
         <div className="flex relative mt-4 justify-center">
           <HeadingMain name="Sponsors"/>
