@@ -59,7 +59,7 @@ const Timeline = () => {
               
                   </div> */}
                   {/* <section1> */}
-                      <progress min="0" max="100" value="0"></progress>
+                      {/* <progress min="0" max="100" value="0"></progress> */}
                   {/* </section1> */}
                   {/* <div
                     className="border-2-2 border-[#F5AEDD] absolute h-full border transition-opacity duration-300"
