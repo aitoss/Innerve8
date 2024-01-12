@@ -32,29 +32,46 @@ const Timeline = () => {
     Math.min(window.innerWidth, window.innerHeight) / 400
   );
 
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setloopSize(Math.min(window.innerWidth, window.innerHeight) / 400);
+  //   };
+
+  //   window.addEventListener("resize", handleResize);
+
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
+
+  const [progress, setProgress] = useState(0);
+
+  const handleScroll = () => {
+    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercentage = (window.scrollY / totalHeight) * 100;
+    setProgress(scrollPercentage);
+    
+  };
+
   useEffect(() => {
-    const handleResize = () => {
-      setloopSize(Math.min(window.innerWidth, window.innerHeight) / 400);
-    };
-
-    window.addEventListener("resize", handleResize);
-
+    window.addEventListener("scroll", handleScroll);
+    console.log(progress);
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
     <>
-      <section>
-        <div className="bg-[#121212] text-white relative py-4">
+      <section className="pt-2">
+        <div className="bg-[#121212] text-white relative pt-4">
           <DarkSlider text={["Timeline"]} />
-          <div className="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
-            <div className="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
-              <p className="text-3xl md:text-5xl leading-normal md:leading-relaxed mb-2">
+          <div className="container mx-auto flex flex-col items-start lg:flex-row my-12 md:my-24">
+            <div className="flex flex-col w-full sticky lg:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
+              <p className="text-3xl md:text-5xl leading-normal md:leading-relaxed mb-2 ">
                 Dive deep
               </p>
-              <p className="text-sm md:text-base text-gray-300 mb-4">
+              <p className="text-sm md:text-base text-gray-300 mb-4 ">
                 Here’s your guide to Innerve 8. Go through all the steps.
               </p>
               {/* <a
@@ -63,7 +80,7 @@ const Timeline = () => {
               >
                 Know more
               </a> */}
-              <div className="h-[500px] mt-5 hidden md:block z-50">
+              <div className="h-[500px] mt-16 hidden lg:block z-50">
                 <Canvas orthographic={true} camera={{ zoom: 50 }}>
                   <OrbitControls
                     autoRotate={true}
@@ -97,17 +114,6 @@ const Timeline = () => {
             <div className="ml-0 md:ml-12 lg:w-2/3 sticky">
               <div className="container mx-auto w-full h-full">
                 <div className="relative wrap overflow-hidden p-10 h-full">
-                  <div
-                    className="border-2-2 border-[#F5AEDD] absolute h-full border transition-opacity duration-300"
-                    style={{
-                      right: "50%",
-                      border: "2px solid #F5AEDD",
-                      borderRadius: "1%",
-                      background:
-                        "var(--pink, linear-gradient(to left, #743ad5, #d53a9d)",
-                    }}
-                  ></div>
-
                   {/* <progress min="0" max="100" value="0"></progress> */}
 
                   <div
@@ -120,6 +126,18 @@ const Timeline = () => {
                         "var(--pink, linear-gradient(to left, #743ad5, #d53a9d)",
                     }}
                   ></div>
+                  {/* <div
+                    className="border-2-2 border-[#F5AEDD] absolute h-full border transition-opacity duration-300"
+                    style={{
+                      right: "50%",
+                      border: "2px solid #F5AEDD",
+                      borderRadius: "1%",
+                      background: "linear-gradient(to left, #743ad5, #d53a9d)",
+                      width: "4px", 
+                      height: `${progress}%`, 
+                      // transition: "height 0.1s ease", 
+                    }} */}
+                  {/* ></div> */}
 
                   {/* <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                     <div className="order-1 w-5/12"></div>
@@ -176,7 +194,7 @@ const Timeline = () => {
                         25 Jan, 2024
                       </p>
                       <h4 className="mb-3 font-medium text-lg md:text-2xl">
-                        Pre-Innerve Game-1
+                        Pre-Innerve Games
                       </h4>
                       <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
                         Embark on an exciting Pre-Innerve game designed
@@ -185,7 +203,7 @@ const Timeline = () => {
                     </div>
                   </div>
 
-                  <div className="border-white hover:border-black no-underline">
+                  {/* <div className="border-white hover:border-black no-underline">
                     <div className="mb-8 flex justify-between items-center w-full right-timeline">
                       <div className="order-1 w-5/12"></div>
                       <div className="order-1 w-5/12 px-1 py-4">
@@ -201,9 +219,9 @@ const Timeline = () => {
                         </p>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
 
-                  <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                  {/* <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                     <div className="order-1 w-5/12"></div>
                     <div className="order-1 w-5/12 px-1 py-4 text-right">
                       <p className="mb-3 text-xl text-[#D9D9D9]">
@@ -217,13 +235,13 @@ const Timeline = () => {
                         exclusively for first-year students!
                       </p>
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="mb-8 flex justify-between items-center w-full right-timeline">
                     <div className="order-1 w-5/12"></div>
                     <div className="order-1  w-5/12 px-1 py-4">
                       <p className="mb-3 text-xl text-[#D9D9D9]">
-                        9 Feb, 2024 8:00 AM - 9:00 AM
+                        8 Feb, 2024 6:00 PM - 10:00 PM
                       </p>
                       <h4 className="mb-3 font-medium text-lg md:text-2xl">
                         Participant Check-in and Onboarding
@@ -240,15 +258,15 @@ const Timeline = () => {
                     <div className="order-1 w-5/12"></div>
                     <div className="order-1 w-5/12 px-1 py-4 text-right">
                       <p className="mb-3 text-xl text-[#D9D9D9]">
-                        9 Feb, 2024 10:00 AM - 11:00 AM
+                        9 Feb, 2024 10:00 AM
                       </p>
                       <h4 className="mb-3 font-medium text-lg md:text-2xl text-right">
-                        Speaker Session
+                        Hackathon Begins
                       </h4>
                       <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
-                        Elevate your knowledge with a brief, impactful speaker
-                        session—an opportunity for inspiration and insights from
-                        industry leaders.
+                        Get ready to code, innovate, and collaborate! The
+                        Hackathon journey begins—ideas soar, projects flourish,
+                        success celebrated
                       </p>
                     </div>
                   </div>
@@ -307,7 +325,7 @@ const Timeline = () => {
                     <div className="order-1 w-5/12"></div>
                     <div className="order-1 w-5/12 px-1 py-4 text-right">
                       <p className="mb-3 text-xl text-[#D9D9D9]">
-                        10 Feb, 2024 12:00 PM - 3:00 PM
+                        10 Feb, 2024 12:00 PM - 5:00 PM
                       </p>
                       <h4 className="mb-3 font-medium text-lg md:text-2xl">
                         Judging Round
@@ -323,6 +341,40 @@ const Timeline = () => {
                     <div className="order-1 w-5/12"></div>
                     <div className="order-1  w-5/12 px-1 py-4">
                       <p className="mb-3 text-xl text-[#D9D9D9]">
+                        10 Feb, 2024 6:00 PM
+                      </p>
+                      <h4 className="mb-3 font-medium text-lg md:text-2xl text-left">
+                        Final Presentation
+                      </h4>
+                      <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
+                        The moment you've been waiting for is here! Discover the
+                        hackathon winners and celebrate the outstanding
+                        achievements of participants.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                    <div className="order-1 w-5/12"></div>
+                    <div className="order-1 w-5/12 px-1 py-4 text-right">
+                      <p className="mb-3 text-xl text-[#D9D9D9]">
+                      10 Feb, 2024 7:00 PM
+                      </p>
+                      <h4 className="mb-3 font-medium text-lg md:text-2xl">
+                      Result Declaration
+                      </h4>
+                      <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
+                        The moment you've been waiting for is here! Discover the
+                        hackathon winners and celebrate the outstanding
+                        achievements of participants.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* <div className="mb-8 flex justify-between items-center w-full right-timeline">
+                    <div className="order-1 w-5/12"></div>
+                    <div className="order-1  w-5/12 px-1 py-4">
+                      <p className="mb-3 text-xl text-[#D9D9D9]">
                         10 Feb, 2024 5:00 PM
                       </p>
                       <h4 className="mb-3 font-medium text-lg md:text-2xl text-left">
@@ -334,7 +386,7 @@ const Timeline = () => {
                         achievements of participants.
                       </p>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

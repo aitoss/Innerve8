@@ -16,6 +16,7 @@ import Verbwire from "../assets/images/verbwire.png"
 import HeadingMob from '../Components/HeadingMob';
 import HeadingMain from '../Components/HeadingMain';
 import GDSC from "../assets/images/GDSCAIT.png"
+import devfolio from "../assets/images/devfolio.png"
 
 const Sponsor = () => {
   const titleSponsors = [
@@ -28,7 +29,7 @@ const Sponsor = () => {
     { id: 1, logo: Kaagaz, name: 'kaagaz', link: 'https://kaagaz.app/' },
     { id: 2, logo: ICICI, name: 'icici', link: 'https://www.icicibank.com/' },
     { id: 3, logo: Solana, name: 'solana', link: 'https://solana.com/' },
-
+    { id: 4, logo: devfolio, name: 'devfolio', link: 'https://devfolio.co/'}
   ];
 
   const subSponsors = [

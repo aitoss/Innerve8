@@ -38,7 +38,7 @@ export default function InnerveModel(scale) {
   //     actions.displayaction.play();
   //   }
   // });
-  console.log(scale);
+  // console.log(scale);
   return (
     <>
       <Flex justifyContent="center">
