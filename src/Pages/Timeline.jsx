@@ -24,7 +24,7 @@ const Timeline = () => {
             <div className="ml-0 md:ml-12 lg:w-2/3 sticky">
               <div className="container mx-auto w-full h-full">
                 <div className="relative wrap overflow-hidden p-10 h-full">
-                  <div
+                <div
                     className="border-2-2 border-[#F5AEDD] absolute h-full border transition-opacity duration-300"
                     style={{
                       right: '50%',
@@ -43,7 +43,7 @@ const Timeline = () => {
                       borderRadius: '1%',
                       background: 'var(--pink, linear-gradient(to left, #743ad5, #d53a9d)',
                     }}
-                  ></div>
+                  ></div>        
 
                   <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                     <div className="order-1 w-5/12"></div>
