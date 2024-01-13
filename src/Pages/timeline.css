@@ -1,0 +1,33 @@
+section1 {
+	/* width: 100%; */
+	height: 300vh;
+	background-color: #efefef;
+	border-bottom: 5px solid #444;
+	position:relative;
+}
+
+
+progress {
+	-webkit-appearance: none;
+	appearance: none;
+	position: absolute;
+	top: 30;
+	left: 100;
+	transform: translate(calc(-50% + 3px), calc(50vh - 50%)) rotate(90deg);
+	width: 520vh;
+	height: 50px;
+}
+
+progress::-webkit-progress-bar {
+	background-color: #f5f5f5;
+}
+
+progress[value="100"]::-webkit-progress-bar {
+	background-color: #fd79a8;
+}
+
+progress::-webkit-progress-value {
+	background-color: #fd79a8;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+}

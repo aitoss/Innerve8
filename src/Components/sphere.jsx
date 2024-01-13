@@ -1,9 +1,9 @@
 import * as THREE from "three";
 import { useRef, useState, onEffect } from "react";
 import { useFrame } from "@react-three/fiber";
-import { MeshWobbleMaterial } from "@react-three/drei";
+import { MeshWobbleMaterial, OrbitControls } from "@react-three/drei";
 import { TextureLoader } from "three";
-import myTextureImage from "../assets/images/Logo.png"
+import myTextureImage from "../assets/images/Logo1.png"
 
 
 const Sphere = ({ position, args, color, text }) => {
@@ -20,6 +20,13 @@ const Sphere = ({ position, args, color, text }) => {
     });
 
     return (
+        <>
+        <OrbitControls 
+            enableZoom={false}
+            enableRotate={true}
+            rotateSpeed={0.5}
+            autoRotate
+        />
         <group>
             <mesh position={position}
                 ref={ref}
@@ -33,6 +40,8 @@ const Sphere = ({ position, args, color, text }) => {
                 {/* <MeshWobbleMaterial factor={25} speed={4} color={"#"} /> */}
             </mesh>
         </group>
+
+        </>
     );
 };
 
