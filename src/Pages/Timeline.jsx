@@ -117,9 +117,19 @@ const Timeline = () => {
                   {/* <progress min="0" max="100" value="0"></progress> */}
 
                   <div
-                    className="border-2-2 border-[#F5AEDD] absolute h-full border transition-opacity duration-300"
+                    className="border-2-2 border-[#F5AEDD] hidden lg:block absolute h-full border transition-opacity duration-300"
                     style={{
                       right: "50%",
+                      border: "2px solid #F5AEDD",
+                      borderRadius: "1%",
+                      background:
+                        "var(--pink, linear-gradient(to left, #743ad5, #d53a9d)",
+                    }}
+                  ></div>
+                    <div
+                    className="border-2-2 border-[#F5AEDD] block lg:hidden absolute h-full border transition-opacity duration-300"
+                    style={{
+                      left: "5%",
                       border: "2px solid #F5AEDD",
                       borderRadius: "1%",
                       background:
@@ -154,9 +164,9 @@ const Timeline = () => {
                     </div>
                   </div> */}
 
-                  <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-                    <div className="order-1 w-5/12"></div>
-                    <div className="order-1 w-5/12 px-1 py-4 text-right">
+                  <div className="mb-8 flex justify-between flex-col lg:flex-row-reverse items-center w-full left-timeline">
+                    <div className="order-1 w-8/12 lg:w-5/12"></div>
+                    <div className="order-1 w-8/12 lg:w-5/12 px-1 py-4 text-left lg:text-right">
                       <p className="mb-3 text-xl text-[#D9D9D9]">
                         15 Dec, 2023
                       </p>
@@ -170,9 +180,9 @@ const Timeline = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="mb-8 flex justify-between items-center w-full right-timeline">
-                    <div className="order-1 w-5/12"></div>
-                    <div className="order-1  w-5/12 px-1 py-4 text-left">
+                  <div className="mb-8 lg:hidden flex-col flex justify-between items-center w-full right-timeline">
+                    <div className="order-1 w-8/12 lg:w-5/12"></div>
+                    <div className="order-1  w-8/12 lg:w-5/12 px-1 py-4 text-left lg:text-left">
                       <p className="mb-3 text-xl text-[#D9D9D9]">
                         15 Jan, 2024
                       </p>
@@ -187,9 +197,26 @@ const Timeline = () => {
                     </div>
                   </div>
 
-                  <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-                    <div className="order-1 w-5/12"></div>
-                    <div className="order-1 w-5/12 px-1 py-4 text-right">
+                  <div className="mb-8 lg:flex hidden justify-between items-center w-full right-timeline">
+                    <div className="order-1 w-8/12 lg:w-5/12"></div>
+                    <div className="order-1  w-8/12 lg:w-5/12 px-1 py-4 text-left lg:text-left">
+                      <p className="mb-3 text-xl text-[#D9D9D9]">
+                        15 Jan, 2024
+                      </p>
+                      <h4 className="mb-3 font-medium text-lg md:text-2xl">
+                        Registration Ends
+                      </h4>
+                      <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
+                        Last date to register for the hackathon!. Don't miss out
+                        on this opportunity—finalize your participation before
+                        it's too late!{" "}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="mb-8 flex justify-between flex-col lg:flex-row-reverse items-center w-full left-timeline">
+                    <div className="order-1 w-8/12 lg:w-5/12"></div>
+                    <div className="order-1 w-8/12 lg:w-5/12 px-1 py-4 text-left lg:text-right">
                       <p className="mb-3 text-xl text-[#D9D9D9]">
                         25 Jan, 2024
                       </p>
@@ -237,9 +264,9 @@ const Timeline = () => {
                     </div>
                   </div> */}
 
-                  <div className="mb-8 flex justify-between items-center w-full right-timeline">
-                    <div className="order-1 w-5/12"></div>
-                    <div className="order-1  w-5/12 px-1 py-4">
+                  <div className="mb-8 lg:hidden flex flex-col justify-between items-center w-full right-timeline">
+                    <div className="order-1 w-8/12 lg:w-5/12"></div>
+                    <div className="order-1  w-8/12 lg:w-5/12 px-1 py-4">
                       <p className="mb-3 text-xl text-[#D9D9D9]">
                         8 Feb, 2024 6:00 PM - 10:00 PM
                       </p>
@@ -254,13 +281,30 @@ const Timeline = () => {
                     </div>
                   </div>
 
-                  <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-                    <div className="order-1 w-5/12"></div>
-                    <div className="order-1 w-5/12 px-1 py-4 text-right">
+                  <div className="mb-8 lg:flex hidden justify-between items-center w-full right-timeline">
+                    <div className="order-1 w-8/12 lg:w-5/12"></div>
+                    <div className="order-1  w-8/12 lg:w-5/12 px-1 py-4">
+                      <p className="mb-3 text-xl text-[#D9D9D9]">
+                        8 Feb, 2024 6:00 PM - 10:00 PM
+                      </p>
+                      <h4 className="mb-3 font-medium text-lg md:text-2xl">
+                        Participant Check-in and Onboarding
+                      </h4>
+                      <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
+                        Engage in a warm welcome, thorough orientation, and the
+                        distribution of essential welcome kits as we kick off
+                        the hackathon experience.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="mb-8 flex justify-between flex-col lg:flex-row-reverse items-center w-full left-timeline">
+                    <div className="order-1 w-8/12 lg:w-5/12"></div>
+                    <div className="order-1 w-8/12 lg:w-5/12 px-1 py-4 text-left lg:text-right">
                       <p className="mb-3 text-xl text-[#D9D9D9]">
                         9 Feb, 2024 10:00 AM
                       </p>
-                      <h4 className="mb-3 font-medium text-lg md:text-2xl text-right">
+                      <h4 className="mb-3 font-medium text-lg md:text-2xl text-left lg:text-right">
                         Hackathon Begins
                       </h4>
                       <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
@@ -272,9 +316,26 @@ const Timeline = () => {
                   </div>
 
                   <div className="border-white hover:border-black no-underline">
-                    <div className="mb-8 flex justify-between items-center w-full right-timeline">
-                      <div className="order-1 w-5/12"></div>
-                      <div className="order-1 w-5/12 px-1 py-4">
+                    <div className="mb-8 flex lg:hidden flex-col justify-between items-center w-full right-timeline">
+                      <div className="order-1 w-8/12 lg:w-5/12"></div>
+                      <div className="order-1 w-8/12 lg:w-5/12 px-1 py-4">
+                        <p className="mb-3 text-xl text-[#D9D9D9]">
+                          9 Feb, 2024 05:00 PM - 07:00 PM
+                        </p>
+                        <h4 className="mb-3 font-medium text-lg md:text-2xl text-left">
+                          Mentorship Session
+                        </h4>
+                        <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
+                          Get personalized guidance from experienced mentors in
+                          a dedicated session.{" "}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="border-white hover:border-black no-underline">
+                    <div className="mb-8 hidden lg:flex justify-between items-center w-full right-timeline">
+                      <div className="order-1 w-8/12 lg:w-5/12"></div>
+                      <div className="order-1 w-8/12 lg:w-5/12 px-1 py-4">
                         <p className="mb-3 text-xl text-[#D9D9D9]">
                           9 Feb, 2024 05:00 PM - 07:00 PM
                         </p>
@@ -289,9 +350,9 @@ const Timeline = () => {
                     </div>
                   </div>
 
-                  <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-                    <div className="order-1 w-5/12"></div>
-                    <div className="order-1 w-5/12 px-1 py-4 text-right">
+                  <div className="mb-8 flex justify-between flex-col lg:flex-row-reverse items-center w-full left-timeline">
+                    <div className="order-1 w-8/12 lg:w-5/12"></div>
+                    <div className="order-1 w-8/12 lg:w-5/12 px-1 py-4 text-left lg:text-right">
                       <p className="mb-3 text-xl text-[#D9D9D9]">
                         10 Feb, 2024 12:00 AM
                       </p>
@@ -305,9 +366,9 @@ const Timeline = () => {
                     </div>
                   </div>
 
-                  <div className="mb-8 flex justify-between items-center w-full right-timeline">
-                    <div className="order-1 w-5/12"></div>
-                    <div className="order-1  w-5/12 px-1 py-4">
+                  <div className="mb-8 flex flex-col lg:hidden justify-between items-center w-full right-timeline">
+                    <div className="order-1 w-8/12 lg:w-5/12"></div>
+                    <div className="order-1  w-8/12 lg:w-5/12 px-1 py-4">
                       <p className="mb-3 text-xl text-[#D9D9D9]">
                         10 Feb, 2024 10:00 AM
                       </p>
@@ -321,9 +382,25 @@ const Timeline = () => {
                     </div>
                   </div>
 
-                  <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-                    <div className="order-1 w-5/12"></div>
-                    <div className="order-1 w-5/12 px-1 py-4 text-right">
+                  <div className="mb-8 lg:flex hidden justify-between items-center w-full right-timeline">
+                    <div className="order-1 w-8/12 lg:w-5/12"></div>
+                    <div className="order-1  w-8/12 lg:w-5/12 px-1 py-4">
+                      <p className="mb-3 text-xl text-[#D9D9D9]">
+                        10 Feb, 2024 10:00 AM
+                      </p>
+                      <h4 className="mb-3 font-medium text-lg md:text-2xl text-left">
+                        Coding hours end
+                      </h4>
+                      <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
+                        Wrap up your coding journey, take a breather, and gear
+                        up for the project submission phase.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="mb-8 flex justify-between flex-col lg:flex-row-reverse items-center w-full left-timeline">
+                    <div className="order-1 w-8/12 lg:w-5/12"></div>
+                    <div className="order-1 w-8/12 lg:w-5/12 px-1 py-4 text-left lg:text-right">
                       <p className="mb-3 text-xl text-[#D9D9D9]">
                         10 Feb, 2024 12:00 PM - 5:00 PM
                       </p>
@@ -337,9 +414,25 @@ const Timeline = () => {
                     </div>
                   </div>
 
-                  <div className="mb-8 flex justify-between items-center w-full right-timeline">
-                    <div className="order-1 w-5/12"></div>
-                    <div className="order-1  w-5/12 px-1 py-4">
+                  <div className="mb-8 lg:flex hidden justify-between items-center w-full right-timeline">
+                    <div className="order-1 w-8/12 lg:w-5/12"></div>
+                    <div className="order-1  w-8/12 lg:w-5/12 px-1 py-4">
+                      <p className="mb-3 text-xl text-[#D9D9D9]">
+                        10 Feb, 2024 6:00 PM
+                      </p>
+                      <h4 className="mb-3 font-medium text-lg md:text-2xl text-left">
+                        Final Presentation
+                      </h4>
+                      <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
+                        The moment you've been waiting for is here! Discover the
+                        hackathon winners and celebrate the outstanding
+                        achievements of participants.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="mb-8 flex-col flex lg:hidden justify-between items-center w-full right-timeline">
+                    <div className="order-1 w-8/12 lg:w-5/12"></div>
+                    <div className="order-1  w-8/12 lg:w-5/12 px-1 py-4">
                       <p className="mb-3 text-xl text-[#D9D9D9]">
                         10 Feb, 2024 6:00 PM
                       </p>
@@ -354,9 +447,9 @@ const Timeline = () => {
                     </div>
                   </div>
 
-                  <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-                    <div className="order-1 w-5/12"></div>
-                    <div className="order-1 w-5/12 px-1 py-4 text-right">
+                  <div className="mb-8 flex justify-between flex-col lg:flex-row-reverse items-center w-full left-timeline">
+                    <div className="order-1 w-8/12 lg:w-5/12"></div>
+                    <div className="order-1 w-8/12 lg:w-5/12 px-1 py-4 text-left lg:text-right">
                       <p className="mb-3 text-xl text-[#D9D9D9]">
                       10 Feb, 2024 7:00 PM
                       </p>
