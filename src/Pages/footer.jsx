@@ -308,12 +308,7 @@ export default function Footer() {
                       color={"green"}
                       text="Three JS"
                     />
-                    <OrbitControls
-                      enableZoom={false}
-                      autoRotate={true}
-                      // enableRotate={false}
-                      // rotateSpeed={1}
-                    />
+  
                   </Canvas>
                 </div>
               </div>
