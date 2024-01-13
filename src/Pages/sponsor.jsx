@@ -8,7 +8,7 @@ import byte from "../assets/images/byte.png"
 import mro from "../assets/images/mro.png"
 import Slider from "../Components/slider";
 import Kaagaz from "../assets/images/kaagaz.jpg"
-import Solana from "../assets/images/solana.png"
+import Solana from "../assets/images/solana.svg"
 import ICICI from "../assets/images/icici.png"
 import Quine from "../assets/images/quine.png"
 import Replit from "../assets/images/replit.png"
@@ -17,6 +17,8 @@ import HeadingMob from '../Components/HeadingMob';
 import HeadingMain from '../Components/HeadingMain';
 import GDSC from "../assets/images/GDSCAIT.png"
 import devfolio from "../assets/images/devfolio.png"
+import xyz from "../assets/images/xyz.png"
+import echo from "../assets/images/echo3D.png"
 
 const Sponsor = () => {
   const titleSponsors = [
@@ -25,18 +27,30 @@ const Sponsor = () => {
 
   ];
 
+
   const platinumSponsors = [
+    { id: 1, logo: Solana, name: 'solana', link: 'https://solana.com/' },
+    { id: 2, logo: devfolio, name: 'devfolio', link: 'https://devfolio.co/'}
+  ];
+
+
+  const coSponsors = [
     { id: 1, logo: Kaagaz, name: 'kaagaz', link: 'https://kaagaz.app/' },
-    { id: 2, logo: ICICI, name: 'icici', link: 'https://www.icicibank.com/' },
-    { id: 3, logo: Solana, name: 'solana', link: 'https://solana.com/' },
-    { id: 4, logo: devfolio, name: 'devfolio', link: 'https://devfolio.co/'}
+    { id: 2, logo: Replit, name: 'Replit', link:'https://replit.com' },
+    { id: 3, logo: Quine, name: 'Quine',link:'https://quine.sh/' },
+
   ];
 
   const subSponsors = [
-    { id: 1, logo: Replit, name: 'Replit', link:'https://replit.com' },
-    { id: 2, logo: Verbwire, name: 'Verbwire', link:'https://www.verbwire.com/' },
-    { id: 3, logo: Quine, name: 'Quine',link:'https://quine.sh/' },
+    { id: 1, logo: Verbwire, name: 'Verbwire', link:'https://www.verbwire.com/' },
+    { id: 2, logo: xyz, name: 'xyz', link:'https://www.gen.xyz/' },
+    { id: 3, logo: echo, name: 'echo3D',link:'https://www.echo3d.com/' },
 
+
+  ];
+
+  const goodwillSponsors = [
+    { id: 1, logo: ICICI, name: 'icici', link: 'https://www.icicibank.com/' },
   ];
 
   const community = [
@@ -55,8 +69,10 @@ const Sponsor = () => {
         </div>
         <div className=" lg:py-4 lg:p w-screen flex flex-col xl:mt-[3%] justify-center flex-wrap items-center">
           <SponsorCategory title="TITLE SPONSOR" sponsors={titleSponsors} />
-          <SponsorCategory title="CO SPONSOR" sponsors={platinumSponsors} />
+          <SponsorCategory title="PLATINUM SPONSOR" sponsors={platinumSponsors} />
+          <SponsorCategory title="CO SPONSOR" sponsors={coSponsors} />
           <SponsorCategory title="SUB SPONSOR" sponsors={subSponsors} />
+          <SponsorCategory title="GOODWILL SPONSOR" sponsors={goodwillSponsors} />
           <SponsorCategory title="COMMUNITY PARTNER" sponsors={community} />
         </div>
         <div className="flex relative mt-4 justify-center">
