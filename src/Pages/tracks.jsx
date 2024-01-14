@@ -13,7 +13,7 @@ const indiData = [['GameDev', 'images/icons/gamedev.png'], ['Logistics', '/image
 const Tracks = () => {
   return (
     <>
-      <div className="flex align-middle  max-w-[1920px] w-screen h-full flex-col relative mt-6" id="tracks">
+      <div className="flex align-middle mx-auto max-w-[1920px] w-screen h-full flex-col relative mt-6" id="tracks">
         <Slider text={["GameDev", 'Logistics', 'Web3.0', 'Healthcare', 'FinTech', 'EdTech']} />
         <HeadingMob name="Tracks" />
         <div id="Tracks" className="flex flex-row flex-wrap gap-x-6 md:gap-x-[90px] lg:gap-x-36 gap-y-4 lg:gap-y-10 px-[2%] lg:justify-center justify-center items-center lg:items-center relative lg:top-20">

@@ -5,7 +5,7 @@ import "./pages.css";
 import ossSphere from "../Components/ossSphere";
 import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
-import { MeshWobbleMaterial, OrbitControls } from "@react-three/drei";
+import { MeshWobbleMaterial, OrbitControls , CameraShake } from "@react-three/drei";
 import Sphere from "../Components/sphere";
 import { useEffect, useState } from "react";
 import { IoLogoInstagram } from "react-icons/io5";
@@ -301,7 +301,7 @@ export default function Footer() {
                   >
                     {/* <directionalLight position={[0.028, 4.895, 8.407]} /> */}
                     <ambientLight intensity={7} />
-
+                    
                     <Sphere
                       position={[0, 0, 0]}
                       args={[sphereSize, 32, 32]}

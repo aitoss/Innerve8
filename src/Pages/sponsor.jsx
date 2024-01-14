@@ -19,7 +19,7 @@ import GDSC from "../assets/images/GDSCAIT.png"
 import devfolio from "../assets/images/devfolio.png"
 import xyz from "../assets/images/xyz.png"
 import echo from "../assets/images/echo3D.png"
-
+import iciciFinal from "../assets/images/icici-final.svg"
 const Sponsor = () => {
   const titleSponsors = [
     { id: 1, logo: accops, name: 'Accops', link: 'https://accops.com/' },
@@ -50,7 +50,7 @@ const Sponsor = () => {
   ];
 
   const goodwillSponsors = [
-    { id: 1, logo: ICICI, name: 'icici', link: 'https://www.icicibank.com/' },
+    { id: 1, logo: iciciFinal, name: 'iciciFinal', link: 'https://www.icicibank.com/' },
   ];
 
   const community = [

@@ -3,7 +3,7 @@ import DarkSlider from "../Components/darkSlider";
 import HeadingMainBlack from "../Components/HeadingMainBlack";
 // import "./timeline.css";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+import { OrbitControls, CameraShake } from "@react-three/drei";
 import InnerveModel from "../Components/innerve3d";
 import { useState, useEffect } from "react";
 import Controls from "../Components/control";
@@ -48,15 +48,16 @@ const Timeline = () => {
 
   const handleScroll = () => {
     const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const scrollPercentage = (window.scrollY / totalHeight) * 100;
+    const scrollPercentage = (window.scrollY / totalHeight) * 1;
     setProgress(scrollPercentage);
-    
+    console.log(progress);
   };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     console.log(progress);
     return () => {
+      console.log(progress);
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
@@ -80,7 +81,7 @@ const Timeline = () => {
               >
                 Know more
               </a> */}
-              <div className="h-[500px] mt-16 hidden lg:block z-50">
+              <div className="h-[500px] mt-8 hidden lg:block z-50">
                 <Canvas orthographic={true} camera={{ zoom: 50 }}>
                   <OrbitControls
                     autoRotate={true}
@@ -88,8 +89,20 @@ const Timeline = () => {
                     enableZoom={false}
                   />
 
+                {/* <CameraShake
+                    // controls={{
+                    //   current: '[Circular]'
+                    // }}
+                    maxPitch={0.05}
+                    maxRoll={0.05}
+                    maxYaw={0.05}
+                    pitchFrequency={0.8}
+                    rollFrequency={0.8}
+                    yawFrequency={0.8}
+                  /> */}
+
                   {/* <Controls /> */}
-                  {/* <ambientLight intensity={1} /> */}
+                  <ambientLight intensity={0.5} />
                   <directionalLight position={[-8, -1, 5]} intensity={1} />
                   <directionalLight position={[6, 1.9, -1]} intensity={1} />
                   <directionalLight position={[-7, 2, -7]} intensity={1} />
@@ -146,8 +159,8 @@ const Timeline = () => {
                       width: "4px", 
                       height: `${progress}%`, 
                       // transition: "height 0.1s ease", 
-                    }} */}
-                  {/* ></div> */}
+                    }}
+                  ></div> */}
 
                   {/* <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                     <div className="order-1 w-5/12"></div>
