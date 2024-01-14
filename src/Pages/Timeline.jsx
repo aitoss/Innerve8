@@ -81,7 +81,7 @@ const Timeline = () => {
               >
                 Know more
               </a> */}
-              <div className="h-[500px] mt-12 hidden lg:block z-50">
+              <div className="h-[500px] mt-8 hidden lg:block z-50">
                 <Canvas orthographic={true} camera={{ zoom: 50 }}>
                   <OrbitControls
                     autoRotate={true}
