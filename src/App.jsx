@@ -16,6 +16,7 @@ import TestimonialMob from './Pages/testimonialMobile.jsx'
 import Teams from './Pages/teams.jsx'
 import GoTop from './Components/GoTop.jsx'
 import Timeline from './Pages/Timeline.jsx'
+import ProblemStatement from './Pages/problemStatement.jsx'
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
       <GoTop />
       <Dates />
       <Prize id="prizes" />
+      <ProblemStatement />
       <Tracks />
       {/* <Problems /> */}
       {/* <Timeline />
