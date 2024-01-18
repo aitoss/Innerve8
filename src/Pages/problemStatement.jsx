@@ -14,7 +14,7 @@ export default function ProblemStatement() {
   const [width, setWidth] = useState(window.innerWidth);
 
   const [sphereSize, setSphereSize] = useState(
-    width > 640 ? Math.min(window.innerWidth, window.innerHeight) / 320 : 3
+    width > 640 ? Math.min(window.innerWidth, window.innerHeight) / 380 : 3
   );
   useEffect(() => {
     const handleResize = () => {
@@ -40,7 +40,7 @@ export default function ProblemStatement() {
         <HeadingMob name="Statement" />
       </div>
       <div className="w-screen flex justify-center">
-        <div className="w-3/4 my-5">
+        <div className="w-3/4 ">
           <Canvas>
             <OrbitControls
               autoRotate={true}
@@ -54,7 +54,7 @@ export default function ProblemStatement() {
           </Canvas>
         </div>
       </div>
-      <div className="flex relative top-[4rem] justify-center">
+      <div className="flex relative justify-center">
         <HeadingMain name="Problem Statement" />
       </div>
     </>

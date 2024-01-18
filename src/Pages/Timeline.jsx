@@ -181,7 +181,7 @@ const Timeline = () => {
                     <div className="order-1 w-8/12 lg:w-5/12"></div>
                     <div className="order-1 w-8/12 lg:w-5/12 px-1 py-4 text-left lg:text-right">
                       <p className="mb-3 text-xl text-[#D9D9D9]">
-                        20 Dec, 2023
+                        15 Dec, 2023
                       </p>
                       <h4 className="mb-3 font-medium text-lg md:text-2xl">
                         Registration Starts
@@ -197,7 +197,7 @@ const Timeline = () => {
                     <div className="order-1 w-8/12 lg:w-5/12"></div>
                     <div className="order-1  w-8/12 lg:w-5/12 px-1 py-4 text-left lg:text-left">
                       <p className="mb-3 text-xl text-[#D9D9D9]">
-                        15 Jan, 2024
+                        20 Jan, 2024
                       </p>
                       <h4 className="mb-3 font-medium text-lg md:text-2xl">
                         Registration Ends
