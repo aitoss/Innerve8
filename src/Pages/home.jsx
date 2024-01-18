@@ -5,6 +5,7 @@ import Timer from "../Components/timer.jsx";
 import InnerveText from "../Components/innerveText.jsx";
 import Devfolio from "../Components/devfolio.jsx";
 import "./pages.css";
+import Btn from '../Components/Button/btn';
 
 export default function Home() {
   React.useEffect(() => {
@@ -34,8 +35,9 @@ export default function Home() {
         <div className="h-fit mb-2 flex justify-center w-full">
           <Timer />
         </div>
-        <div className="w-full flex justify-center z-10 relative py-8 ">
+        <div className="w-full flex flex-col justify-center z-10 relative py-8 ">
           <Devfolio />
+          
         </div>
         <div className="flex innerve-text w-full justify-center select-none -my-8">
           <InnerveText />

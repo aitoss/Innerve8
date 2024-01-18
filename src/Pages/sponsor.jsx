@@ -3,23 +3,26 @@ import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import udchalo from "../assets/images/udchalo.png"
-import accops from "../assets/images/accops.png"
+import accops from "../assets/images/Accops.png"
 import byte from "../assets/images/byte.png"
-import mro from "../assets/images/mro.png"
+import mro from "../assets/images/MRRO.png"
 import Slider from "../Components/slider";
-import Kaagaz from "../assets/images/kaagaz.jpg"
-import Solana from "../assets/images/solana.svg"
+import Kaagaz from "../assets/images/kgaz.png"
+import Solana from "../assets/images/SOL.png"
 import ICICI from "../assets/images/icici.png"
-import Quine from "../assets/images/quine.png"
-import Replit from "../assets/images/replit.png"
-import Verbwire from "../assets/images/verbwire.png"
+import Quine from "../assets/images/qne.png"
+import Replit from "../assets/images/rplt.png"
+import Verbwire from "../assets/images/vbwire.png"
 import HeadingMob from '../Components/HeadingMob';
 import HeadingMain from '../Components/HeadingMain';
-import GDSC from "../assets/images/GDSCAIT.png"
-import devfolio from "../assets/images/devfolio.png"
-import xyz from "../assets/images/xyz.png"
-import echo from "../assets/images/echo3D.png"
-import iciciFinal from "../assets/images/icici-final.svg"
+import GDSC from "../assets/images/GDsc.png"
+import devfolio from "../assets/images/devf.png"
+import xyz from "../assets/images/xyzz.png"
+import echo from "../assets/images/ec3d.png"
+import iciciFinal from "../assets/images/icic.png"
+import tailcall from "../assets/images/taillc.png"
+import groupme from "../assets/images/groupme.png"
+import microsoft from "../assets/images/microsoft.png"
 const Sponsor = () => {
   const titleSponsors = [
     { id: 1, logo: accops, name: 'Accops', link: 'https://accops.com/' },
@@ -29,8 +32,14 @@ const Sponsor = () => {
 
 
   const platinumSponsors = [
+    { id: 1, logo: tailcall, name: 'tailcall', link: 'https://tailcall.run/'},
+    { id: 2, logo: microsoft, name: 'microsoft', link: 'https://www.microsoft.com/en-in'},
+    { id: 3, logo: groupme, name: 'groupme', link: 'https://groupme.com/en-US/'},
+  ];
+
+  const platformSponsors = [
     { id: 1, logo: Solana, name: 'solana', link: 'https://solana.com/' },
-    { id: 2, logo: devfolio, name: 'devfolio', link: 'https://devfolio.co/'}
+    { id: 3, logo: devfolio, name: 'devfolio', link: 'https://devfolio.co/'}
   ];
 
 
@@ -67,12 +76,13 @@ const Sponsor = () => {
         <div className="mt-16 -mb-4">
           <HeadingMob name="Sponsors" />
         </div>
-        <div className=" lg:py-4 lg:p w-screen flex flex-col xl:mt-[3%] justify-center flex-wrap items-center">
+        <div className=" lg:py-4 lg:p w-screen flex flex-col xl:mt-[3%] space-x-12 justify-center flex-wrap  items-center">
           <SponsorCategory title="TITLE SPONSOR" sponsors={titleSponsors} />
           <SponsorCategory title="PLATINUM SPONSOR" sponsors={platinumSponsors} />
+          <SponsorCategory title="PLATFORM SPONSOR" sponsors={platformSponsors} />
           <SponsorCategory title="CO SPONSOR" sponsors={coSponsors} />
           <SponsorCategory title="SUB SPONSOR" sponsors={subSponsors} />
-          <SponsorCategory title="GOODWILL SPONSOR" sponsors={goodwillSponsors} />
+          <SponsorCategory title="GOODWILL PARTNER" sponsors={goodwillSponsors} />
           <SponsorCategory title="COMMUNITY PARTNER" sponsors={community} />
         </div>
         <div className="flex relative mt-4 justify-center">
@@ -96,13 +106,13 @@ const Heading = ({ title }) => {
 
 const SponsorLogos = ({ sponsors }) => {
   return (
-    <div className="flex justify-center items-center flex-row flex-wrap gap-7 mt-8">
+    <div className="flex justify-center items-center flex-row flex-wrap lg:gap-24 gap-7 mt-8">
       {sponsors.map((sponsor) => (
         <a href={sponsor.link}>
                   <motion.div
           key={sponsor.id}
-          initial={{ scale: 0.9 }}
-          whileHover={{ scale: 1.05, rotate: [0, 2, 0], duration: 0.1 }}
+          initial={{ scale: 1.5 }}
+          whileHover={{ scale: 1.8, rotate: [0, 2, 0], duration: 0.1 }}
         >
           <img
             src={sponsor.logo}
