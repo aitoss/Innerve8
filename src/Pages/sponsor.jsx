@@ -76,7 +76,7 @@ const Sponsor = () => {
         <div className="mt-16 -mb-4">
           <HeadingMob name="Sponsors" />
         </div>
-        <div className=" lg:py-4 lg:p w-screen flex flex-col xl:mt-[3%] space-x-12 justify-center flex-wrap  items-center">
+        <div className=" lg:py-4 lg:p w-screen flex flex-col xl:mt-[3%] justify-center flex-wrap  items-center">
           <SponsorCategory title="TITLE SPONSOR" sponsors={titleSponsors} />
           <SponsorCategory title="PLATINUM SPONSOR" sponsors={platinumSponsors} />
           <SponsorCategory title="PLATFORM SPONSOR" sponsors={platformSponsors} />
@@ -106,13 +106,13 @@ const Heading = ({ title }) => {
 
 const SponsorLogos = ({ sponsors }) => {
   return (
-    <div className="flex justify-center items-center flex-row flex-wrap lg:gap-24 gap-7 mt-8">
+    <div className="flex justify-center items-center flex-row flex-wrap md:gap-20 lg:gap-24 sm:gap-[80px] gap-8 mt-8">
       {sponsors.map((sponsor) => (
         <a href={sponsor.link}>
                   <motion.div
           key={sponsor.id}
-          initial={{ scale: 1.5 }}
-          whileHover={{ scale: 1.8, rotate: [0, 2, 0], duration: 0.1 }}
+          initial={{ scale: 1.3 }}
+          whileHover={{ scale: 1.4, rotate: [0, 2, 0], duration: 0.1 }}
         >
           <img
             src={sponsor.logo}
