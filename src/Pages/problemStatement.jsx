@@ -10,28 +10,10 @@ import { Canvas } from "@react-three/fiber";
 import { MeshWobbleMaterial } from "@react-three/drei";
 import { OrbitControls } from "@react-three/drei";
 import { Text3D } from "@react-three/drei";
-import PlaceholderLoading from 'react-placeholder-loading'
+import PlaceholderLoading from "react-placeholder-loading";
 import Form from "../Components/Form";
 export default function ProblemStatement() {
-  const [width, setWidth] = useState(window.innerWidth);
-
-  const [sphereSize, setSphereSize] = useState(
-    width > 640 ? Math.min(window.innerWidth, window.innerHeight) / 380 : 3
-  );
-  useEffect(() => {
-    const handleResize = () => {
-      setWidth(window.innerWidth);
-      setSphereSize(
-        width > 640 ? Math.min(window.innerWidth, window.innerHeight) / 320 : 3
-      );
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+ 
   return (
     <>
       <div className="">
@@ -41,9 +23,8 @@ export default function ProblemStatement() {
       <div className="w-full justify-center pb-8 mt-4">
         <HeadingMob name="Statement" />
       </div>
-      <div className="w-screen flex justify-center mx-auto align-middle">
-        
-          {/* <div className="w-full flex flex-row gap-2">
+      <div className="w-screen flex justify-center mx-auto align-middle relative">
+        {/* <div className="w-full flex flex-row gap-2">
           <PlaceholderLoading shape="rect" width={500} height={150} colorStart="#fff" colorEnd="#000" />
           <PlaceholderLoading shape="rect" width={500} height={150} />
           </div>
@@ -51,10 +32,14 @@ export default function ProblemStatement() {
           <PlaceholderLoading shape="rect" width={500} height={150} />
           <PlaceholderLoading shape="rect" width={500} height={150} />
           </div> */}
-          <Form />
-       
+
+        <Form />
+        <div className="absolute top-1/4 text-center">
+          <p className="text-3xl md:text-5xl leading-normal md:leading-relaxed text-black">Coming Soon...</p>
+        </div>
       </div>
-{/* 
+
+      {/* 
       <div className="w-full h-full flex justify-center">
         <h2 className="text-black">Coming Soon</h2>
       </div> */}
