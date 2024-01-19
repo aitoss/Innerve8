@@ -46,7 +46,7 @@ export default function ProblemStatement() {
             <ProblemStatementText
               image={microsoft}
               text="Hack your way into creating a bot that does cool things and can be plugged into GroupMe Chat App. Build a bot that can do amazing things and connect with GroupMe chat app"
-              link="https://docs.google.com/document/d/1awT_3Kl4qiNl5Ws4HLW85YZ8LmPQR13yxBsrVM85Tek/edit?usp=sharing"
+              link="https://unstop.com/hackathons/innerve-8-army-institute-of-technology-ait-pune-860812"
             />
           </div>
 
@@ -62,12 +62,12 @@ export default function ProblemStatement() {
         <div className="flex flex-col w-full items-center justify-center my-4">
           <div className="w-full flex justify-center">
             <p className="text-md text-[#212121] sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl pt-6  landing-text select-none">
-              Stay Tuned for more statements
+              Stay Tuned for More Statements...
             </p>
           </div>
-          <p className="text-md text-[#212121] sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl  landing-text select-none">
+          {/* <p className="text-md text-[#212121] sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl  landing-text select-none">
             Coming Soon...
-          </p>
+          </p> */}
         </div>
 
         <div className="flex flex-col relative justify-center">
@@ -237,7 +237,7 @@ const ProblemStatementText = ({ image, text , link }) => {
         target="_blank"
         class="inline-flex items-center text-blue-600 hover:underline"
       >
-        For more info
+        Apply Now
         <svg
           class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
           aria-hidden="true"
