@@ -46,7 +46,7 @@ export default function ProblemStatement() {
             <ProblemStatementText
               image={microsoft}
               text="Hack your way into creating a bot that does cool things and can be plugged into GroupMe Chat App. Build a bot that can do amazing things and connect with GroupMe chat app"
-              link="https://drive.google.com/drive/folders/1pa81lT4VZC6JJAdOeqZhR_1soL_OxQM6"
+              link="https://docs.google.com/document/d/1awT_3Kl4qiNl5Ws4HLW85YZ8LmPQR13yxBsrVM85Tek/edit?usp=sharing"
             />
           </div>
 
