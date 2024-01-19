@@ -106,7 +106,7 @@ const Heading = ({ title }) => {
 
 const SponsorLogos = ({ sponsors }) => {
   return (
-    <div className="flex justify-center items-center flex-row flex-wrap md:gap-20 lg:gap-24 sm:gap-[80px] gap-8 mt-8">
+    <div className="flex justify-center items-center flex-row flex-wrap md:gap-20 lg:gap-24 sm:gap-[80px] gap-8 mt-8 ">
       {sponsors.map((sponsor) => (
         <a href={sponsor.link}>
                   <motion.div
