@@ -13,18 +13,26 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import ComingSoon from "../assets/images/comingSoon.png";
 import Marquee from "react-fast-marquee";
+import microsoft from "../assets/images/microsoft.png";
+import StayTuned from "../assets/images/stayTuned.png";
+
 export default function ProblemStatement() {
   return (
     <>
-      <div className="mb-20">
+      <div className="mb-20 h-screen">
         <div className="">
           <Slider text={["Problem Statement"]} theme="light" />
-          <Slider1 text={["Submit the idea for the sponsored statements, qualify for both prizes"]} theme="light" />
+          {/* <Slider1
+            text={[
+              "Submit the idea for the sponsored statements, qualify for both prizes",
+            ]}
+            theme="light"
+          /> */}
         </div>
 
         <div className="w-full justify-center pb-8 mt-4">
-          <HeadingMob name="Sponsored " />
-          <HeadingMob name="Problem Statement" />
+          {/* <HeadingMob name="Sponsors" /> */}
+          <HeadingMob name="Sponsors' Statement" />
         </div>
         {/* <div className="w-full">
           <p className="text-black">
@@ -33,29 +41,38 @@ export default function ProblemStatement() {
             for both prizes.
           </p>
         </div> */}
-        <div className="w-screen flex justify-center items-center mx-auto align-middle relative ">
-          {/* <div className="w-full flex flex-row gap-2">
-          <PlaceholderLoading shape="rect" width={500} height={150} colorStart="#fff" colorEnd="#000" />
-          <PlaceholderLoading shape="rect" width={500} height={150} />
+        <div className="w-screen flex  justify-center items-center mx-auto align-middle relative ">
+          <div className="w-full px-4 flex items-center justify-center my-2">
+            <ProblemStatementText
+              image={microsoft}
+              text="Hack your way into creating a bot that does cool things and can be plugged into GroupMe Chat App. Build a bot that can do amazing things and connect with GroupMe chat app"
+              link="https://drive.google.com/drive/folders/1pa81lT4VZC6JJAdOeqZhR_1soL_OxQM6"
+            />
           </div>
-          <div className="w-full flex flex-row gap-2">
-          <PlaceholderLoading shape="rect" width={500} height={150} />
-          <PlaceholderLoading shape="rect" width={500} height={150} />
-          </div> */}
 
-          <Form />
-          <div
-            className="
-       z-50 absolute
-        "
-          >
-            <CommingSoonText />
-          </div>
+          {/* <Form /> */}
         </div>
 
-        <div className="flex flex-col relative justify-center -mt-20">
-          <HeadingMain name="Sponsered" />
-          <HeadingMain name="Problem Statement" />
+        {/* <div
+            className=""
+          >
+            <CommingSoonText />
+          </div> */}
+
+        <div className="flex flex-col w-full items-center justify-center my-4">
+          <div className="w-full flex justify-center">
+            <p className="text-md text-[#212121] sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl pt-6  landing-text select-none">
+              Stay Tuned for more statements
+            </p>
+          </div>
+          <p className="text-md text-[#212121] sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl  landing-text select-none">
+            Coming Soon...
+          </p>
+        </div>
+
+        <div className="flex flex-col relative justify-center">
+          {/* <HeadingMain name="Sponsors" /> */}
+          <HeadingMain name="Sponsors' Statements" />
         </div>
       </div>
     </>
@@ -144,17 +161,16 @@ const HeadingMain = ({ name }) => {
 
 const CommingSoonText = () => {
   return (
-    <div className="flex justify-center items-center ">
+    <div className="flex justify-center items-center mt-8">
       <motion.div
         initial={{ scale: 1.3 }}
         whileHover={{ scale: 1.4, rotate: [0, 2, 0], duration: 0.1 }}
       >
-        <img src={ComingSoon} className="h-10 sm:h-14 md:h-20 lg:h-32" />
+        <img src={StayTuned} className="h-10 sm:h-14 md:h-20 lg:h-24" />
       </motion.div>
     </div>
   );
 };
-
 
 const Slider1 = ({ text }) => {
   return (
@@ -174,7 +190,9 @@ const TextSlide1 = ({ text }) => {
   return (
     <>
       <div className="flex items-center justify-center text-7xl max-w-fit h-fit">
-        <h1 className={`tracking-tight text-xl md:text-3xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-t from-[#d9d9d9] to-[#747474] whitespace-nowrap px-3`}>
+        <h1
+          className={`tracking-tight text-xl md:text-3xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-t from-[#d9d9d9] to-[#747474] whitespace-nowrap px-3`}
+        >
           {text}
         </h1>
         <svg
@@ -199,5 +217,43 @@ const TextSlide1 = ({ text }) => {
         </svg>
       </div>
     </>
+  );
+};
+
+const ProblemStatementText = ({ image, text , link }) => {
+  return (
+    <div class="max-w-xl p-6 bg-white border border-gray-200 rounded-lg ">
+      <div className="w-full flex justify-center">
+        <img src={image} className="max-h-16 max-w-16" />
+      </div>
+      {/* <a href="#">
+        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+          {title}
+        </h5>
+      </a> */}
+      <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">{text}</p>
+      <a
+        href={link}
+        target="_blank"
+        class="inline-flex items-center text-blue-600 hover:underline"
+      >
+        For more info
+        <svg
+          class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 18 18"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+          />
+        </svg>
+      </a>
+    </div>
   );
 };
