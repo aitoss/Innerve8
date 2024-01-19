@@ -43,6 +43,7 @@ export default function Home() {
         <div className="w-full flex flex-col z-10 py-8 items-center gap-6">
           <Devfolio />
           <div className="flex flex-col sm:flex-row">
+            <a href="https://github.com/tailcallhq/tailcall">
             <button
               type="button"
               class="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 me-2 mb-2"
@@ -62,13 +63,16 @@ export default function Home() {
               </svg>
               Checkout TailCall
             </button>
+            </a>
+            <a href="https://groupme.com/join_group/98531164/bUIb5Zqv">
             <button
               type="button"
-              class="text-gray-900 bg-gray-100 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 me-2 mb-2 border-2 border-black "
+              class="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 me-2 mb-2"
             >
               <img src={GroupMe} className="w-4 h-4 me-2"/>
               24/7 Support
             </button>
+            </a>
           </div>
         </div>
         <div className="flex innerve-text w-full justify-center select-none -my-8">
