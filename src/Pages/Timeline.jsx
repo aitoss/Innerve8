@@ -64,7 +64,7 @@ const Timeline = () => {
 
   return (
     <>
-      <section className="pt-2">
+      <section className="pt-2" id="timeline">
         <div className="bg-[#121212] text-white relative pt-4">
           <DarkSlider text={["Timeline"]} />
           <div className="container mx-auto flex flex-col items-start lg:flex-row my-12 md:my-24">
