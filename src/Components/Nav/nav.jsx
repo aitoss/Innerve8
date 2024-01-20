@@ -65,6 +65,18 @@ const Nav = () => {
                         </motion.a>
 
                         <motion.a
+                            href='#problem'
+                            variants={containervars}
+                            initial="intial"
+                            animate="open"
+                            onClick={()=> onClick}
+                        >
+                            <div className="overflow-hidden" onClick={() => setNavbarOpen((prev) => !prev)}>
+                                <MobileNav title="SPONSORS' STATEMENT" />
+                            </div>
+                        </motion.a>
+
+                        <motion.a
                             href='#tracks'
                             variants={containervars}
                             initial="intial"
@@ -72,6 +84,18 @@ const Nav = () => {
                         >
                             <div className="overflow-hidden" onClick={() => setNavbarOpen((prev) => !prev)}>
                                 <MobileNav title="TRACKS" />
+                            </div>
+                        </motion.a>
+
+                        <motion.a
+                            href='#timeline'
+                            variants={containervars}
+                            initial="intial"
+                            animate="open"
+                            onClick={()=> onClick}
+                        >
+                            <div className="overflow-hidden" onClick={() => setNavbarOpen((prev) => !prev)}>
+                                <MobileNav title="TIMELINE" />
                             </div>
                         </motion.a>
 

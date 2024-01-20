@@ -19,7 +19,7 @@ import StayTuned from "../assets/images/stayTuned.png";
 export default function ProblemStatement() {
   return (
     <>
-      <div className="mb-20 h-screen">
+      <div className="mb-20 h-full" id="problem">
         <div className="">
           <Slider text={["Problem Statement"]} theme="light" />
           {/* <Slider1
@@ -108,7 +108,7 @@ const HeadingMob = ({ name }) => {
   }, [inView, controls]);
 
   return (
-    <div className="pt-4 text-center xl:hidden tracking-[8px] font-medium text-[34px] sm:text-[64px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
+    <div className="pt-4 text-center 2xl:hidden tracking-[8px] font-medium text-[34px] sm:text-[64px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 50, scale: 0.8 }}
@@ -137,17 +137,17 @@ const HeadingMain = ({ name }) => {
         scale: 1,
         transition: {
           duration: 1,
-          ease: "easeOut",
+          ease: 'easeOut',
         },
       });
     }
   }, [inView, controls]);
 
   return (
-    <div className="text-center xl:block hidden tracking-[10px] mt-2 bg-clip-text  font-medium text-[120px] 2xl:text-[150px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
+    <div className="text-center 2xl:block hidden tracking-[10px] mt-20 bg-clip-text  font-medium text-[100px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
       <motion.div
-        ref={ref}
-        initial={{ opacity: 0, y: 80, scale: 0.8 }}
+      ref={ref}
+      initial={{ opacity: 0, y: 80, scale: 0.8 }}
         whileInView={{ y: -50, scale: 1.2, duration: 5 }}
         transition={{ type: "just", stiffness: 110 }}
         animate={controls}
