@@ -41,6 +41,7 @@ function App() {
       <Faqs />
       <Bannercard />
       <Footer />
+      {/* <Teams/> */}
 
     </>
   )
