@@ -21,10 +21,6 @@ import xyz from "../assets/images/xyzz.png"
 import echo from "../assets/images/ec3d.png"
 import iciciFinal from "../assets/images/icic.png"
 import tailcall from "../assets/images/taillc.png"
-import groupme from "../assets/images/groupme.png"
-import microsoft from "../assets/images/microsoft.png"
-import mgr from "../assets/images/micro.png"
-import micro from "../assets/images/mgr.png"
 import microgrp from "../assets/images/msoft.png"
 const Sponsor = () => {
   const titleSponsors = [
@@ -32,13 +28,11 @@ const Sponsor = () => {
     { id: 2, logo: mro, name: 'Mro', link: 'https://mrocorp.com/' },
 
   ];
-
-
   const platinumSponsors = [
     { id: 1, logo: tailcall, name: 'tailcall', link: 'https://tailcall.run/'},
     // { id: 2, logo: microsoft, name: 'microsoft', link: 'https://www.microsoft.com/en-in'},
     // { id: 3, logo: groupme, name: 'groupme', link: 'https://groupme.com/en-US/'},
-    { id: 3, logo: microgrp, name: 'mgr', link: 'https://groupme.com/en-US/'},
+    { id: 3, logo: microgrp, name: 'microgrp', link: 'https://groupme.com/en-US/'},
 
   ];
 
