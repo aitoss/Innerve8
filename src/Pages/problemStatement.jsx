@@ -19,7 +19,7 @@ import StayTuned from "../assets/images/stayTuned.png";
 export default function ProblemStatement() {
   return (
     <>
-      <div className="mb-20 h-screen">
+      <div className="mb-20 ">
         <div className="">
           <Slider text={["Problem Statement"]} theme="light" />
           {/* <Slider1

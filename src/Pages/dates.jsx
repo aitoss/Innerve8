@@ -15,7 +15,7 @@ export default function Dates() {
       <div className="w-screen " style={{ aspectRatio: '2/1' }}>
         <Threejs />
       </div>
-      <div className="w-full justify-center pb-8 mt-4">
+      <div className="w-full justify-center pb-8 xl:-mt-24 2xl:-mt-48">
         <HeadingMain name="Register Now" />
       </div>
     </>
