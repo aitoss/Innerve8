@@ -15,6 +15,7 @@ import ComingSoon from "../assets/images/comingSoon.png";
 import Marquee from "react-fast-marquee";
 import microsoft from "../assets/images/msoft.png"
 import StayTuned from "../assets/images/stayTuned.png";
+import mro from "../assets/images/MRRO.png"
 
 export default function ProblemStatement() {
   return (
@@ -42,10 +43,16 @@ export default function ProblemStatement() {
           </p>
         </div> */}
         <div className="w-screen flex  justify-center items-center mx-auto align-middle relative ">
-          <div className="w-full px-4 flex items-center justify-center my-2">
+          <div className="w-full px-4 flex flex-wrap gap-4 items-center justify-center my-2">
             <ProblemStatementText
               image={microsoft}
               text="Hack your way into creating a bot that does cool things and can be plugged into GroupMe Chat App. Build a bot that can do amazing things and connect with GroupMe chat app"
+              link="https://unstop.com/hackathons/innerve-8-army-institute-of-technology-ait-pune-860812"
+            />
+
+<ProblemStatementText
+              image={mro}
+              text="Automate medical form data extraction for efficient healthcare management by reducing manual efforts, ensuring accuracy, and accelerating the process for handwritten and digital documents."
               link="https://unstop.com/hackathons/innerve-8-army-institute-of-technology-ait-pune-860812"
             />
           </div>
@@ -254,6 +261,8 @@ const ProblemStatementText = ({ image, text , link }) => {
           />
         </svg>
       </a>
+
+      
     </div>
   );
 };
