@@ -13,7 +13,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import ComingSoon from "../assets/images/comingSoon.png";
 import Marquee from "react-fast-marquee";
-import microsoft from "../assets/images/microsoft.png";
+import microsoft from "../assets/images/microsoft.png"
 import StayTuned from "../assets/images/stayTuned.png";
 
 export default function ProblemStatement() {
@@ -61,9 +61,9 @@ export default function ProblemStatement() {
 
         <div className="flex flex-col w-full items-center justify-center my-4">
           <div className="w-full flex justify-center">
-            <p className="text-md text-[#212121] sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl pt-6  landing-text select-none">
+            {/* <p className="text-md text-[#212121] sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl pt-6  landing-text select-none">
               Stay Tuned for More Statements...
-            </p>
+            </p> */}
           </div>
           {/* <p className="text-md text-[#212121] sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl  landing-text select-none">
             Coming Soon...
