@@ -42,7 +42,7 @@ export default function Home() {
         </div>
         <div className="w-full flex flex-col z-10 py-8 items-center gap-6">
           <Devfolio />
-          <div className="flex flex-col sm:flex-row">
+          <div className="flex flex-col sm:flex-row mx-auto items-center ">
             <a href="https://github.com/tailcallhq/tailcall" target="_blank">
             <button
               type="button"
