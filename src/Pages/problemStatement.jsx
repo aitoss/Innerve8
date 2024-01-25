@@ -13,7 +13,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import ComingSoon from "../assets/images/comingSoon.png";
 import Marquee from "react-fast-marquee";
-import microsoft from "../assets/images/microsoft.png"
+import microsoft from "../assets/images/msoft.png"
 import StayTuned from "../assets/images/stayTuned.png";
 
 export default function ProblemStatement() {
