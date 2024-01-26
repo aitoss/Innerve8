@@ -130,7 +130,7 @@ const Timeline = () => {
               <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
                 {/* Icon */}
                 <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
-                  <svg class="fill-emerald-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                  <svg class="fill-[#3E1AB4]" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                     <path d="M8 0a8 8 0 1 0 8 8 8.009 8.009 0 0 0-8-8Zm0 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" />
                   </svg>
                 </div>
@@ -150,7 +150,7 @@ const Timeline = () => {
               <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
                 {/* Icon */}
                 <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
-                  <svg class="fill-emerald-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                  <svg class="fill-[#3E1AB4]" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                     <path d="M8 0a8 8 0 1 0 8 8 8.009 8.009 0 0 0-8-8Zm0 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" />
                   </svg>
                 </div>
@@ -170,7 +170,7 @@ const Timeline = () => {
               <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
                 {/* Icon */}
                 <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
-                  <svg class="fill-emerald-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                  <svg class="fill-[#3E1AB4]" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                     <path d="M8 0a8 8 0 1 0 8 8 8.009 8.009 0 0 0-8-8Zm0 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" />
                   </svg>
                 </div>
@@ -192,7 +192,7 @@ const Timeline = () => {
               <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
                 {/* Icon */}
                 <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
-                  <svg class="fill-emerald-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                  <svg class="fill-[#3E1AB4]" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                     <path d="M8 0a8 8 0 1 0 8 8 8.009 8.009 0 0 0-8-8Zm0 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" />
                   </svg>
                 </div>
@@ -211,7 +211,7 @@ const Timeline = () => {
               <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
                 {/* Icon */}
                 <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
-                  <svg class="fill-emerald-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                  <svg class="fill-[#3E1AB4]" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                     <path d="M8 0a8 8 0 1 0 8 8 8.009 8.009 0 0 0-8-8Zm0 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" />
                   </svg>
                 </div>
@@ -231,7 +231,7 @@ const Timeline = () => {
               <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
                 {/* Icon */}
                 <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
-                  <svg class="fill-emerald-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                  <svg class="fill-[#3E1AB4]" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                     <path d="M8 0a8 8 0 1 0 8 8 8.009 8.009 0 0 0-8-8Zm0 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" />
                   </svg>
                 </div>
@@ -249,7 +249,7 @@ const Timeline = () => {
               <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
                 {/* Icon */}
                 <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
-                  <svg class="fill-emerald-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                  <svg class="fill-[#3E1AB4]" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                     <path d="M8 0a8 8 0 1 0 8 8 8.009 8.009 0 0 0-8-8Zm0 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" />
                   </svg>
                 </div>
@@ -268,7 +268,7 @@ const Timeline = () => {
               <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
                 {/* Icon */}
                 <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
-                  <svg class="fill-emerald-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                  <svg class="fill-[#3E1AB4]" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                     <path d="M8 0a8 8 0 1 0 8 8 8.009 8.009 0 0 0-8-8Zm0 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" />
                   </svg>
                 </div>
@@ -286,7 +286,7 @@ const Timeline = () => {
               <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
                 {/* Icon */}
                 <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
-                  <svg class="fill-emerald-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                  <svg class="fill-[#3E1AB4]" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                     <path d="M8 0a8 8 0 1 0 8 8 8.009 8.009 0 0 0-8-8Zm0 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" />
                   </svg>
                 </div>
@@ -304,7 +304,7 @@ const Timeline = () => {
               <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
                 {/* Icon */}
                 <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
-                  <svg class="fill-emerald-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                  <svg class="fill-[#3E1AB4]" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                     <path d="M8 0a8 8 0 1 0 8 8 8.009 8.009 0 0 0-8-8Zm0 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" />
                   </svg>
                 </div>
@@ -324,7 +324,7 @@ const Timeline = () => {
               <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
                 {/* Icon */}
                 <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
-                  <svg class="fill-emerald-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                  <svg class="fill-[#3E1AB4]" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
                     <path d="M8 0a8 8 0 1 0 8 8 8.009 8.009 0 0 0-8-8Zm0 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" />
                   </svg>
                 </div>
