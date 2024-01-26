@@ -20,7 +20,7 @@ import mro from "../assets/images/MRRO.png"
 export default function ProblemStatement() {
   return (
     <>
-      <div className="mb-20 ">
+      <div className="mb-20" id="problem">
         <div className="">
           <Slider text={["Problem Statement"]} theme="light" />
           {/* <Slider1
