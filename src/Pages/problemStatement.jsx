@@ -13,9 +13,10 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import ComingSoon from "../assets/images/comingSoon.png";
 import Marquee from "react-fast-marquee";
-import microsoft from "../assets/images/msoft.png"
+import microsoft from "../assets/images/msoft.png";
 import StayTuned from "../assets/images/stayTuned.png";
-import mro from "../assets/images/MRRO.png"
+import mro from "../assets/images/MRRO.png";
+import accops from "../assets/images/Accops.png"
 
 export default function ProblemStatement() {
   return (
@@ -42,7 +43,7 @@ export default function ProblemStatement() {
             for both prizes.
           </p>
         </div> */}
-        <div className="w-screen flex  justify-center items-center mx-auto align-middle relative ">
+        <div className="w-screen flex flex-col  justify-center items-center mx-auto align-middle relative ">
           <div className="w-full px-4 flex flex-wrap gap-4 items-center justify-center my-2">
             <ProblemStatementText
               image={microsoft}
@@ -51,11 +52,20 @@ export default function ProblemStatement() {
               link2="https://docs.google.com/document/d/1awT_3Kl4qiNl5Ws4HLW85YZ8LmPQR13yxBsrVM85Tek/edit?usp=sharing"
             />
 
-<ProblemStatementText
+            <ProblemStatementText
               image={mro}
               text="Automate medical form data extraction for efficient healthcare management by reducing manual efforts, ensuring accuracy, and accelerating the process for handwritten and digital documents."
               link1="https://unstop.com/hackathons/innerve-8-army-institute-of-technology-ait-pune-860812"
               link2="https://docs.google.com/document/d/1wqcy-MW1IsoNnluLUhzseTEAks2OPeNt7zSyt5M6-WA/edit?usp=sharing"
+            />
+            </div>
+            <div className="w-full px-4 flex flex-wrap gap-4 items-center justify-center my-2">
+
+            <ProblemStatementText
+              image={accops}
+              text="Build a Windows user behavior analysis system to detect insider threats, compromised accounts, unauthorized access, and abnormal behavior through defined use cases, hypotheses, data processing, and reporting for effective threat mitigation."
+              link1="https://unstop.com/hackathons/innerve-8-army-institute-of-technology-ait-pune-860812"
+              link2="https://docs.google.com/document/d/1Qo5Qfmaet5xNCoxsWDNKj2Mz4pDEiieFnjghrQAyWc0/edit?usp=sharing"
             />
           </div>
 
@@ -146,7 +156,7 @@ const HeadingMain = ({ name }) => {
         scale: 1,
         transition: {
           duration: 1,
-          ease: 'easeOut',
+          ease: "easeOut",
         },
       });
     }
@@ -155,8 +165,8 @@ const HeadingMain = ({ name }) => {
   return (
     <div className="text-center 2xl:block hidden tracking-[10px] mt-20 bg-clip-text  font-medium text-[100px] sticky text-gradient-to-b from-white via-white to-[rgba(55, 47, 47, 0.5)]">
       <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: 80, scale: 0.8 }}
+        ref={ref}
+        initial={{ opacity: 0, y: 80, scale: 0.8 }}
         whileInView={{ y: -50, scale: 1.2, duration: 5 }}
         transition={{ type: "just", stiffness: 110 }}
         animate={controls}
@@ -229,7 +239,7 @@ const TextSlide1 = ({ text }) => {
   );
 };
 
-const ProblemStatementText = ({ image, text , link1, link2 }) => {
+const ProblemStatementText = ({ image, text, link1, link2 }) => {
   return (
     <div class="max-w-xl p-6 bg-white border border-gray-200 rounded-lg ">
       <div className="w-full flex justify-center">
@@ -242,55 +252,52 @@ const ProblemStatementText = ({ image, text , link1, link2 }) => {
       </a> */}
       <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">{text}</p>
       <div className="space-x-4">
-      <a
-        href={link1}
-        target="_blank"
-        class="inline-flex items-center text-blue-600 hover:underline"
-      >
-        Apply Now
-        <svg
-          class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 18 18"
+        <a
+          href={link1}
+          target="_blank"
+          class="inline-flex items-center text-blue-600 hover:underline"
         >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
-          />
-        </svg>
-      </a>
+          Apply Now
+          <svg
+            class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 18 18"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+            />
+          </svg>
+        </a>
 
-      <a
-        href={link2}
-        target="_blank"
-        class="inline-flex items-center text-blue-600 hover:underline"
-      >
-        Read More
-        <svg
-          class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 18 18"
+        <a
+          href={link2}
+          target="_blank"
+          class="inline-flex items-center text-blue-600 hover:underline"
         >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
-          />
-        </svg>
-      </a>
+          Read More
+          <svg
+            class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 18 18"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
+            />
+          </svg>
+        </a>
       </div>
-     
-
-      
     </div>
   );
 };
