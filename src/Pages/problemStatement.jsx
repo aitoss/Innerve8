@@ -43,7 +43,7 @@ export default function ProblemStatement() {
             for both prizes.
           </p>
         </div> */}
-        <div className="w-screen flex  justify-center items-center mx-auto align-middle relative ">
+        <div className="w-screen flex flex-col  justify-center items-center mx-auto align-middle relative ">
           <div className="w-full px-4 flex flex-wrap gap-4 items-center justify-center my-2">
             <ProblemStatementText
               image={microsoft}
@@ -58,10 +58,12 @@ export default function ProblemStatement() {
               link1="https://unstop.com/hackathons/innerve-8-army-institute-of-technology-ait-pune-860812"
               link2="https://docs.google.com/document/d/1wqcy-MW1IsoNnluLUhzseTEAks2OPeNt7zSyt5M6-WA/edit?usp=sharing"
             />
+            </div>
+            <div className="w-full px-4 flex flex-wrap gap-4 items-center justify-center my-2">
 
             <ProblemStatementText
               image={accops}
-              text="Build a Windows endpoint user behavior analysis system to identify security threats such as insider threats, compromised accounts, unauthorized access, and abnormal behavior. Define use cases, develop hypotheses, collect and process data from endpoint sources, and implement reporting mechanisms for timely threat detection and mitigation."
+              text="Build a Windows user behavior analysis system to detect insider threats, compromised accounts, unauthorized access, and abnormal behavior through defined use cases, hypotheses, data processing, and reporting for effective threat mitigation."
               link1="https://unstop.com/hackathons/innerve-8-army-institute-of-technology-ait-pune-860812"
               link2="https://docs.google.com/document/d/1Qo5Qfmaet5xNCoxsWDNKj2Mz4pDEiieFnjghrQAyWc0/edit?usp=sharing"
             />
