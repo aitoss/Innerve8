@@ -373,7 +373,7 @@ export default function Footer() {
 
                   <div className="w-full flex flex-col">
                     <p className="text-md w-full lg:text-start">
-                      Asmitha Tripathi
+                      Asmita Tripathi
                     </p>
                     <div
                       className="buttn2 tooltip w-full flex mt-2"
