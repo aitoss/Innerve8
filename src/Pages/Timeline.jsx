@@ -89,7 +89,7 @@ const Timeline = () => {
                     enableZoom={false}
                   />
 
-                {/* <CameraShake
+                  {/* <CameraShake
                     // controls={{
                     //   current: '[Circular]'
                     // }}
@@ -124,378 +124,224 @@ const Timeline = () => {
               </div>
               {/* <img src="/images/V5.png" alt="" /> */}
             </div>
-            <div className="ml-0 md:ml-12 lg:w-2/3 sticky">
-              <div className="container mx-auto w-full h-full">
-                <div className="relative wrap overflow-hidden p-10 h-full">
-                  {/* <progress min="0" max="100" value="0"></progress> */}
+            <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
 
-                  <div
-                    className="border-2-2 border-[#F5AEDD] hidden lg:block absolute h-full border transition-opacity duration-300"
-                    style={{
-                      right: "50%",
-                      border: "2px solid #F5AEDD",
-                      borderRadius: "1%",
-                      background:
-                        "var(--pink, linear-gradient(to left, #743ad5, #d53a9d)",
-                    }}
-                  ></div>
-                    <div
-                    className="border-2-2 border-[#F5AEDD] block lg:hidden absolute h-full border transition-opacity duration-300"
-                    style={{
-                      left: "5%",
-                      border: "2px solid #F5AEDD",
-                      borderRadius: "1%",
-                      background:
-                        "var(--pink, linear-gradient(to left, #743ad5, #d53a9d)",
-                    }}
-                  ></div>
-                  {/* <div
-                    className="border-2-2 border-[#F5AEDD] absolute h-full border transition-opacity duration-300"
-                    style={{
-                      right: "50%",
-                      border: "2px solid #F5AEDD",
-                      borderRadius: "1%",
-                      background: "linear-gradient(to left, #743ad5, #d53a9d)",
-                      width: "4px", 
-                      height: `${progress}%`, 
-                      // transition: "height 0.1s ease", 
-                    }}
-                  ></div> */}
-
-                  {/* <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-                    <div className="order-1 w-5/12"></div>
-                    <div className="order-1 w-5/12 px-1 py-4 text-right">
-                      <p className="mb-3 text- text-[#D9D9D9]">15 Dec, 2023</p>
-                      <h4 className="mb-3 font-medium text-lg md:text-2xl">
-                        Registration Starts
-                      </h4>
-                      <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
-                        Secure your spot starting December 15, 2023, at 12:00 AM
-                        IST. Join us for an exciting 24-hour hackathon by
-                        registering early!
-                      </p>
-                    </div>
-                  </div> */}
-
-                  <div className="mb-8 flex justify-between flex-col lg:flex-row-reverse items-center w-full left-timeline">
-                    <div className="order-1 w-8/12 lg:w-5/12"></div>
-                    <div className="order-1 w-8/12 lg:w-5/12 px-1 py-4 text-left lg:text-right">
-                      <p className="mb-3 text-xl text-[#D9D9D9]">
-                        15 Dec, 2023
-                      </p>
-                      <h4 className="mb-3 font-medium text-lg md:text-2xl">
-                        Registration Starts
-                      </h4>
-                      <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
-                        Secure your spot starting December 15, 2023, at 12:00 AM
-                        IST. Join us for an exciting 24-hour hackathon by
-                        registering early!
-                      </p>
-                    </div>
+              {/* Item #1 */}
+              <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                {/* Icon */}
+                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                  <svg class="fill-[#3E1AB4]" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                    <path d="M8 0a8 8 0 1 0 8 8 8.009 8.009 0 0 0-8-8Zm0 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" />
+                  </svg>
+                </div>
+                {/* Card */}
+                <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded shadow">
+                  <div className="flex items-center justify-between space-x-2 mb-1">
+                    <div className="font-bold text-white">Registration Starts</div>
+                    <time className="font-caveat font-medium text-gray-400">15 Dec, 2023</time>
                   </div>
-                  <div className="mb-8 lg:hidden flex-col flex justify-between items-center w-full right-timeline">
-                    <div className="order-1 w-8/12 lg:w-5/12"></div>
-                    <div className="order-1  w-8/12 lg:w-5/12 px-1 py-4 text-left lg:text-left">
-                      <p className="mb-3 text-xl text-[#D9D9D9]">
-                        20 Jan, 2024
-                      </p>
-                      <h4 className="mb-3 font-medium text-lg md:text-2xl">
-                        Registration Ends
-                      </h4>
-                      <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
-                        Last date to register for the hackathon!. Don't miss out
-                        on this opportunity—finalize your participation before
-                        it's too late!{" "}
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="mb-8 lg:flex hidden justify-between items-center w-full right-timeline">
-                    <div className="order-1 w-8/12 lg:w-5/12"></div>
-                    <div className="order-1  w-8/12 lg:w-5/12 px-1 py-4 text-left lg:text-left">
-                      <p className="mb-3 text-xl text-[#D9D9D9]">
-                        15 Jan, 2024
-                      </p>
-                      <h4 className="mb-3 font-medium text-lg md:text-2xl">
-                        Registration Ends
-                      </h4>
-                      <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
-                        Last date to register for the hackathon!. Don't miss out
-                        on this opportunity—finalize your participation before
-                        it's too late!{" "}
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="mb-8 flex justify-between flex-col lg:flex-row-reverse items-center w-full left-timeline">
-                    <div className="order-1 w-8/12 lg:w-5/12"></div>
-                    <div className="order-1 w-8/12 lg:w-5/12 px-1 py-4 text-left lg:text-right">
-                      <p className="mb-3 text-xl text-[#D9D9D9]">
-                        25 Jan, 2024
-                      </p>
-                      <h4 className="mb-3 font-medium text-lg md:text-2xl">
-                        Pre-Innerve Games
-                      </h4>
-                      <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
-                        Embark on an exciting Pre-Innerve game designed
-                        exclusively for first-year students!
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* <div className="border-white hover:border-black no-underline">
-                    <div className="mb-8 flex justify-between items-center w-full right-timeline">
-                      <div className="order-1 w-5/12"></div>
-                      <div className="order-1 w-5/12 px-1 py-4">
-                        <p className="mb-3 text-xl text-[#D9D9D9]">
-                          25 Jan, 2024
-                        </p>
-                        <h4 className="mb-3 font-medium text-lg md:text-2xl text-left">
-                          Pre-Innerve Game-2
-                        </h4>
-                        <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
-                          Embark on an exciting Pre-Innerve game designed
-                          exclusively for first-year students!
-                        </p>
-                      </div>
-                    </div>
-                  </div> */}
-
-                  {/* <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-                    <div className="order-1 w-5/12"></div>
-                    <div className="order-1 w-5/12 px-1 py-4 text-right">
-                      <p className="mb-3 text-xl text-[#D9D9D9]">
-                        25 Jan, 2024
-                      </p>
-                      <h4 className="mb-3 font-medium text-lg md:text-2xl">
-                        Pre-Innerve Game-3
-                      </h4>
-                      <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
-                        Embark on an exciting Pre-Innerve game designed
-                        exclusively for first-year students!
-                      </p>
-                    </div>
-                  </div> */}
-
-                  <div className="mb-8 lg:hidden flex flex-col justify-between items-center w-full right-timeline">
-                    <div className="order-1 w-8/12 lg:w-5/12"></div>
-                    <div className="order-1  w-8/12 lg:w-5/12 px-1 py-4">
-                      <p className="mb-3 text-xl text-[#D9D9D9]">
-                        8 Feb, 2024 6:00 PM - 10:00 PM
-                      </p>
-                      <h4 className="mb-3 font-medium text-lg md:text-2xl">
-                        Participant Check-in and Onboarding
-                      </h4>
-                      <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
-                        Engage in a warm welcome, thorough orientation, and the
-                        distribution of essential welcome kits as we kick off
-                        the hackathon experience.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="mb-8 lg:flex hidden justify-between items-center w-full right-timeline">
-                    <div className="order-1 w-8/12 lg:w-5/12"></div>
-                    <div className="order-1  w-8/12 lg:w-5/12 px-1 py-4">
-                      <p className="mb-3 text-xl text-[#D9D9D9]">
-                        8 Feb, 2024 6:00 PM - 10:00 PM
-                      </p>
-                      <h4 className="mb-3 font-medium text-lg md:text-2xl">
-                        Participant Check-in and Onboarding
-                      </h4>
-                      <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
-                        Engage in a warm welcome, thorough orientation, and the
-                        distribution of essential welcome kits as we kick off
-                        the hackathon experience.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="mb-8 flex justify-between flex-col lg:flex-row-reverse items-center w-full left-timeline">
-                    <div className="order-1 w-8/12 lg:w-5/12"></div>
-                    <div className="order-1 w-8/12 lg:w-5/12 px-1 py-4 text-left lg:text-right">
-                      <p className="mb-3 text-xl text-[#D9D9D9]">
-                        9 Feb, 2024 10:00 AM
-                      </p>
-                      <h4 className="mb-3 font-medium text-lg md:text-2xl text-left lg:text-right">
-                        Hackathon Begins
-                      </h4>
-                      <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
-                        Get ready to code, innovate, and collaborate! The
-                        Hackathon journey begins—ideas soar, projects flourish,
-                        success celebrated
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="border-white hover:border-black no-underline">
-                    <div className="mb-8 flex lg:hidden flex-col justify-between items-center w-full right-timeline">
-                      <div className="order-1 w-8/12 lg:w-5/12"></div>
-                      <div className="order-1 w-8/12 lg:w-5/12 px-1 py-4">
-                        <p className="mb-3 text-xl text-[#D9D9D9]">
-                          9 Feb, 2024 05:00 PM - 07:00 PM
-                        </p>
-                        <h4 className="mb-3 font-medium text-lg md:text-2xl text-left">
-                          Mentorship Session
-                        </h4>
-                        <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
-                          Get personalized guidance from experienced mentors in
-                          a dedicated session.{" "}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="border-white hover:border-black no-underline">
-                    <div className="mb-8 hidden lg:flex justify-between items-center w-full right-timeline">
-                      <div className="order-1 w-8/12 lg:w-5/12"></div>
-                      <div className="order-1 w-8/12 lg:w-5/12 px-1 py-4">
-                        <p className="mb-3 text-xl text-[#D9D9D9]">
-                          9 Feb, 2024 05:00 PM - 07:00 PM
-                        </p>
-                        <h4 className="mb-3 font-medium text-lg md:text-2xl text-left">
-                          Mentorship Session
-                        </h4>
-                        <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
-                          Get personalized guidance from experienced mentors in
-                          a dedicated session.{" "}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="mb-8 flex justify-between flex-col lg:flex-row-reverse items-center w-full left-timeline">
-                    <div className="order-1 w-8/12 lg:w-5/12"></div>
-                    <div className="order-1 w-8/12 lg:w-5/12 px-1 py-4 text-left lg:text-right">
-                      <p className="mb-3 text-xl text-[#D9D9D9]">
-                        10 Feb, 2024 12:00 AM
-                      </p>
-                      <h4 className="mb-3 font-medium text-lg md:text-2xl">
-                        Midnight Jam and Energizer
-                      </h4>
-                      <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
-                        Fuel your creativity with our Midnight Jam—a lively
-                        session featuring energizing activities and music.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="mb-8 flex flex-col lg:hidden justify-between items-center w-full right-timeline">
-                    <div className="order-1 w-8/12 lg:w-5/12"></div>
-                    <div className="order-1  w-8/12 lg:w-5/12 px-1 py-4">
-                      <p className="mb-3 text-xl text-[#D9D9D9]">
-                        10 Feb, 2024 10:00 AM
-                      </p>
-                      <h4 className="mb-3 font-medium text-lg md:text-2xl text-left">
-                        Coding hours end
-                      </h4>
-                      <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
-                        Wrap up your coding journey, take a breather, and gear
-                        up for the project submission phase.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="mb-8 lg:flex hidden justify-between items-center w-full right-timeline">
-                    <div className="order-1 w-8/12 lg:w-5/12"></div>
-                    <div className="order-1  w-8/12 lg:w-5/12 px-1 py-4">
-                      <p className="mb-3 text-xl text-[#D9D9D9]">
-                        10 Feb, 2024 10:00 AM
-                      </p>
-                      <h4 className="mb-3 font-medium text-lg md:text-2xl text-left">
-                        Coding hours end
-                      </h4>
-                      <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
-                        Wrap up your coding journey, take a breather, and gear
-                        up for the project submission phase.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="mb-8 flex justify-between flex-col lg:flex-row-reverse items-center w-full left-timeline">
-                    <div className="order-1 w-8/12 lg:w-5/12"></div>
-                    <div className="order-1 w-8/12 lg:w-5/12 px-1 py-4 text-left lg:text-right">
-                      <p className="mb-3 text-xl text-[#D9D9D9]">
-                        10 Feb, 2024 12:00 PM - 5:00 PM
-                      </p>
-                      <h4 className="mb-3 font-medium text-lg md:text-2xl">
-                        Judging Round
-                      </h4>
-                      <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
-                        Step into the spotlight as you present your projects in
-                        the judging round. Showcase your innovation.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="mb-8 lg:flex hidden justify-between items-center w-full right-timeline">
-                    <div className="order-1 w-8/12 lg:w-5/12"></div>
-                    <div className="order-1  w-8/12 lg:w-5/12 px-1 py-4">
-                      <p className="mb-3 text-xl text-[#D9D9D9]">
-                        10 Feb, 2024 6:00 PM
-                      </p>
-                      <h4 className="mb-3 font-medium text-lg md:text-2xl text-left">
-                        Final Presentation
-                      </h4>
-                      <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
-                        The moment you've been waiting for is here! Discover the
-                        hackathon winners and celebrate the outstanding
-                        achievements of participants.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="mb-8 flex-col flex lg:hidden justify-between items-center w-full right-timeline">
-                    <div className="order-1 w-8/12 lg:w-5/12"></div>
-                    <div className="order-1  w-8/12 lg:w-5/12 px-1 py-4">
-                      <p className="mb-3 text-xl text-[#D9D9D9]">
-                        10 Feb, 2024 6:00 PM
-                      </p>
-                      <h4 className="mb-3 font-medium text-lg md:text-2xl text-left">
-                        Final Presentation
-                      </h4>
-                      <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
-                        The moment you've been waiting for is here! Discover the
-                        hackathon winners and celebrate the outstanding
-                        achievements of participants.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="mb-8 flex justify-between flex-col lg:flex-row-reverse items-center w-full left-timeline">
-                    <div className="order-1 w-8/12 lg:w-5/12"></div>
-                    <div className="order-1 w-8/12 lg:w-5/12 px-1 py-4 text-left lg:text-right">
-                      <p className="mb-3 text-xl text-[#D9D9D9]">
-                      10 Feb, 2024 7:00 PM
-                      </p>
-                      <h4 className="mb-3 font-medium text-lg md:text-2xl">
-                      Result Declaration
-                      </h4>
-                      <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
-                        The moment you've been waiting for is here! Discover the
-                        hackathon winners and celebrate the outstanding
-                        achievements of participants.
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* <div className="mb-8 flex justify-between items-center w-full right-timeline">
-                    <div className="order-1 w-5/12"></div>
-                    <div className="order-1  w-5/12 px-1 py-4">
-                      <p className="mb-3 text-xl text-[#D9D9D9]">
-                        10 Feb, 2024 5:00 PM
-                      </p>
-                      <h4 className="mb-3 font-medium text-lg md:text-2xl text-left">
-                        Result Declaration
-                      </h4>
-                      <p className="text-sm md:text-base leading-snug text-gray-300 text-opacity-100">
-                        The moment you've been waiting for is here! Discover the
-                        hackathon winners and celebrate the outstanding
-                        achievements of participants.
-                      </p>
-                    </div>
-                  </div> */}
+                  <div className="text-slate-500">Secure your spot starting December 15, 2023, at 12:00 AM
+                    IST. Join us for an exciting 24-hour hackathon by
+                    registering early!</div>
                 </div>
               </div>
+
+              {/* Item #2 */}
+              <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                {/* Icon */}
+                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                  <svg class="fill-[#3E1AB4]" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                    <path d="M8 0a8 8 0 1 0 8 8 8.009 8.009 0 0 0-8-8Zm0 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" />
+                  </svg>
+                </div>
+                {/* Card */}
+                <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded shadow">
+                  <div className="flex items-center justify-between space-x-2 mb-1">
+                    <div className="font-bold text-white">Registration Ends</div>
+                    <time className="font-caveat font-medium text-gray-400">20 Jan, 2024</time>
+                  </div>
+                  <div className="text-slate-500">Last date to register for the hackathon!. Don't miss out
+                    on this opportunity—finalize your participation before
+                    it's too late!{" "}</div>
+                </div>
+              </div>
+
+              {/* Item #3 */}
+              <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                {/* Icon */}
+                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                  <svg class="fill-[#3E1AB4]" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                    <path d="M8 0a8 8 0 1 0 8 8 8.009 8.009 0 0 0-8-8Zm0 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" />
+                  </svg>
+                </div>
+                {/* Card */}
+                <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded shadow">
+                  <div className="flex items-center justify-between space-x-2 mb-1">
+                    <div className="font-bold text-white">Pre-Innerve Games</div>
+                    <time className="font-caveat font-medium text-gray-400">25 Jan, 2024</time>
+                  </div>
+                  <div className="text-slate-500">Embark on an exciting Pre-Innerve game designed
+                    exclusively for first-year students!</div>
+                </div>
+              </div>
+
+              {/* Item #4 */}
+
+
+              {/* Item #5 */}
+              <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                {/* Icon */}
+                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                  <svg class="fill-[#3E1AB4]" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                    <path d="M8 0a8 8 0 1 0 8 8 8.009 8.009 0 0 0-8-8Zm0 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" />
+                  </svg>
+                </div>
+                {/* Card */}
+                <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded shadow">
+                  <div className="flex items-center justify-between space-x-2 mb-1">
+                    <div className="font-bold text-white">Participant Check-in</div>
+                    <time className="font-caveat font-medium text-gray-400">8 Feb, 2024 6:00 PM</time>
+                  </div>
+                  <div className="text-slate-500">Engage in a warm welcome, thorough orientation, and the
+                    distribution of essential welcome kits as we kick off
+                    the hackathon experience.</div>
+                </div>
+              </div>
+
+              <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                {/* Icon */}
+                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                  <svg class="fill-[#3E1AB4]" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                    <path d="M8 0a8 8 0 1 0 8 8 8.009 8.009 0 0 0-8-8Zm0 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" />
+                  </svg>
+                </div>
+                {/* Card */}
+                <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded shadow">
+                  <div className="flex items-center justify-between space-x-2 mb-1">
+                    <div className="font-bold text-white">Hackathon Begins</div>
+                    <time className="font-caveat font-medium text-gray-400"> 9 Feb, 2024 10:00 AM</time>
+                  </div>
+                  <div className="text-slate-500">Get ready to code, innovate, and collaborate! The
+                    Hackathon journey begins—ideas soar, projects flourish,
+                    success celebrated</div>
+                </div>
+              </div>
+
+
+              <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                {/* Icon */}
+                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                  <svg class="fill-[#3E1AB4]" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                    <path d="M8 0a8 8 0 1 0 8 8 8.009 8.009 0 0 0-8-8Zm0 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" />
+                  </svg>
+                </div>
+                {/* Card */}
+                <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded shadow">
+                  <div className="flex items-center justify-between space-x-2 mb-1">
+                    <div className="font-bold text-white">Mentorship Session</div>
+                    <time className="font-caveat font-medium text-gray-400">9 Feb, 2024 05:00 PM</time>
+                  </div>
+                  <div className="text-slate-500">Get personalized guidance from experienced mentors in
+                    a dedicated session.{" "}</div>
+                </div>
+              </div>
+
+              <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                {/* Icon */}
+                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                  <svg class="fill-[#3E1AB4]" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                    <path d="M8 0a8 8 0 1 0 8 8 8.009 8.009 0 0 0-8-8Zm0 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" />
+                  </svg>
+                </div>
+                {/* Card */}
+                <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded shadow">
+                  <div className="flex items-center justify-between space-x-2 mb-1">
+                    <div className="font-bold text-white">Midnight Jam and Energizer</div>
+                    <time className="font-caveat font-medium text-gray-400">10 Feb, 2024 12:00 AM</time>
+                  </div>
+                  <div className="text-slate-500">Fuel your creativity with our Midnight Jam—a lively
+                    session featuring energizing activities and music.</div>
+                </div>
+              </div>
+
+
+              <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                {/* Icon */}
+                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                  <svg class="fill-[#3E1AB4]" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                    <path d="M8 0a8 8 0 1 0 8 8 8.009 8.009 0 0 0-8-8Zm0 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" />
+                  </svg>
+                </div>
+                {/* Card */}
+                <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded shadow">
+                  <div className="flex items-center justify-between space-x-2 mb-1">
+                    <div className="font-bold text-white">Coding hours end</div>
+                    <time className="font-caveat font-medium text-gray-400">10 Feb, 2024 10:00 AM</time>
+                  </div>
+                  <div className="text-slate-500">Wrap up your coding journey, take a breather, and gear
+                    up for the project submission phase.</div>
+                </div>
+              </div>
+
+              <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                {/* Icon */}
+                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                  <svg class="fill-[#3E1AB4]" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                    <path d="M8 0a8 8 0 1 0 8 8 8.009 8.009 0 0 0-8-8Zm0 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" />
+                  </svg>
+                </div>
+                {/* Card */}
+                <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded shadow">
+                  <div className="flex items-center justify-between space-x-2 mb-1">
+                    <div className="font-bold text-white">Judging Round</div>
+                    <time className="font-caveat font-medium text-gray-400">10 Feb, 2024 12:00 PM</time>
+                  </div>
+                  <div className="text-slate-500">Step into the spotlight as you present your projects in
+                    the judging round. Showcase your innovation.</div>
+                </div>
+              </div>
+
+              <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                {/* Icon */}
+                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                  <svg class="fill-[#3E1AB4]" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                    <path d="M8 0a8 8 0 1 0 8 8 8.009 8.009 0 0 0-8-8Zm0 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" />
+                  </svg>
+                </div>
+                {/* Card */}
+                <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded shadow">
+                  <div className="flex items-center justify-between space-x-2 mb-1">
+                    <div className="font-bold text-white">Final Presentation</div>
+                    <time className="font-caveat font-medium text-gray-400">10 Feb, 2024 6:00 PM</time>
+                  </div>
+                  <div className="text-slate-500">The moment you've been waiting for is here! Discover the
+                    hackathon winners and celebrate the outstanding
+                    achievements of participants.</div>
+                </div>
+              </div>
+
+
+              <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                {/* Icon */}
+                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                  <svg class="fill-[#3E1AB4]" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                    <path d="M8 0a8 8 0 1 0 8 8 8.009 8.009 0 0 0-8-8Zm0 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" />
+                  </svg>
+                </div>
+                {/* Card */}
+                <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded shadow">
+                  <div className="flex items-center justify-between space-x-2 mb-1">
+                    <div className="font-bold text-white">Result Declaration</div>
+                    <time className="font-caveat font-medium text-gray-400">10 Feb, 2024 7:00 PM</time>
+                  </div>
+                  <div className="text-slate-500">The moment you've been waiting for is here! Discover the
+                    hackathon winners and celebrate the outstanding
+                    achievements of participants.</div>
+                </div>
+              </div>
+
             </div>
+
           </div>
           <div className="flex relative justify-center">
             <HeadingMainBlack name="Timeline" />
