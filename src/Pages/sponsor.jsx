@@ -68,7 +68,7 @@ const Sponsor = () => {
   ];
 
   const foodParters = [
-    { id: 1, logo: Budhani, name: 'budhani', link:'https://www.budhanibros.com/index.php' },
+    { id: 1, logo: Budhani, name: 'budhani', link:'https://gurukrupabudhanibrothers.com/' },
 
   ];
 
