@@ -22,6 +22,7 @@ import echo from "../assets/images/ec3d.png"
 import iciciFinal from "../assets/images/icic.png"
 import tailcall from "../assets/images/taillc.png"
 import microgrp from "../assets/images/msoft.png"
+import Budhani from "../assets/images/budhani.png"
 const Sponsor = () => {
   const titleSponsors = [
     { id: 1, logo: accops, name: 'Accops', link: 'https://accops.com/' },
@@ -66,6 +67,11 @@ const Sponsor = () => {
 
   ];
 
+  const foodParters = [
+    { id: 1, logo: Budhani, name: 'budhani', link:'https://www.budhanibros.com/index.php' },
+
+  ];
+
   return (
     <>
       <div className="h-full py-6" id='sponsors'>
@@ -83,6 +89,7 @@ const Sponsor = () => {
           <SponsorCategory title="SUB SPONSOR" sponsors={subSponsors} />
           <SponsorCategory title="GOODWILL PARTNER" sponsors={goodwillSponsors} />
           <SponsorCategory title="COMMUNITY PARTNER" sponsors={community} />
+          <SponsorCategory title="FOOD PARTNER" sponsors={foodParters} />
         </div>
         <div className="flex relative mt-4 justify-center">
           <HeadingMain name="Sponsors"/>
