@@ -42,7 +42,7 @@ export default function Home() {
         </div>
         <div className="w-full flex flex-col z-10 py-8 items-center gap-6">
           <Devfolio />
-          <div className="flex flex-col sm:flex-row mx-auto items-center ">
+          {/* <div className="flex flex-col sm:flex-row mx-auto items-center ">
             <a href="https://github.com/tailcallhq/tailcall" target="_blank">
             <button
               type="button"
@@ -73,7 +73,7 @@ export default function Home() {
               24/7 Support
             </button>
             </a>
-          </div>
+          </div> */}
         </div>
         <div className="flex innerve-text w-full justify-center select-none -my-8">
           <InnerveText />
