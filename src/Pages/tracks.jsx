@@ -8,7 +8,7 @@ import Slider from "../Components/slider";
 import Vector from "../assets/images/vector.svg";
 import HeadingMain from "../Components/HeadingMain";
 
-const indiData = [['GameDev', 'images/icons/gamedev.png'], ['Logistics', '/images/icons/logi.png'], ['EduTech', '/images/icons/Frame 6360233.png'], ['CyberSec', '/images/icons/Frame 6360229.png'], ['Health', '/images/icons/Frame 6360232.png'], ['FinTech', '/images/icons/Frame 6360231.png'], ['AR/VR', '/images/icons/Frame 6360230.png']]
+const indiData = [['GameDev', 'images/icons/gamedev.png'], ['Logistics', '/images/icons/logi.png'], ['EduTech', '/images/icons/Frame 6360233.png'], ['CyberSec', '/images/icons/Frame 6360229.png'], ['Health', '/images/icons/Frame 6360232.png'], ['FinTech', '/images/icons/Frame 6360231.png'], ['AR/VR', '/images/icons/Frame 6360230.png'], ]
 
 const Tracks = () => {
   return (

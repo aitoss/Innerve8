@@ -25,7 +25,7 @@ const Bannercard = () => {
                             <a href="https://forms.gle/UePkH2FAiL29dkkC9" className="w-[155px]">
                                 <Btn name="Fill the form" icon="↗" />
                             </a>
-                            <a href="https://drive.google.com/file/d/1tbocdRB4l1iOlunx1hSzEqrI45mg5zU9/view?usp=sharing" className="w-[135px]">
+                            <a href="https://drive.google.com/file/d/1x4MOfC9sVzDxaOhnl3jdXOkCR96weMlA/view?usp=drive_link" className="w-[135px]">
                                 <Btn name="Brochure" icon="↗" />
                             </a>
                         </div>
