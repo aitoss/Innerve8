@@ -12,9 +12,9 @@ export default function Dates() {
       <div className="">
         <Slider text={["Nerve to Innovate"]} theme="light" />
       </div>
-      <div className="w-screen " style={{ aspectRatio: '2/1' }}>
+      {/* <div className="w-screen " style={{ aspectRatio: '2/1' }}>
         <Threejs />
-      </div>
+      </div> */}
       <div className="w-full justify-center pb-8 xl:-mt-24 2xl:-mt-48">
         <HeadingMain name="Register Now" />
       </div>

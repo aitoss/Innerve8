@@ -79,7 +79,7 @@ const Sponsor = () => {
           <Slider text={['Our Sponsors']} />
         </div>
         <div className="mt-16 -mb-4">
-          <HeadingMob name="Sponsors" />
+          <HeadingMob name=" Our Past Sponsors" />
         </div>
         <div className=" lg:py-4 lg:p w-screen flex flex-col xl:mt-[3%] justify-center flex-wrap  items-center">
           <SponsorCategory title="TITLE SPONSOR" sponsors={titleSponsors} />
