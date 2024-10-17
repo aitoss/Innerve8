@@ -28,7 +28,7 @@ function App() {
       <GoTop />
       <Dates />
       <Prize id="prizes" />
-      <ProblemStatement />
+      {/* <ProblemStatement /> */}
       <Tracks />
       {/* <Problems /> */}
       {/* <Timeline />

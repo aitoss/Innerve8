@@ -36,7 +36,7 @@ const Nav = () => {
             <div className="inner-nav">
                 <ul className={`menu-nav ${navbarOpen ? ' show-menu' : ''}`}>
                     <div className="menu-nav-header w-full flex flow-col items-center justify-between py-6 px-5 sm:px-10">
-                        <a className="ml-[3.5rem] sm:ml-10 md:ml-20 text-2xl font-[300] text-[#c4c4c4bf] hover:text-[#f6f6f6d4] hover:cursor-pointer transition-all" href='https://drive.google.com/file/d/1-Xdhdc8jOhWg5IWhJlM0NP4rfFcWWP3_/view?usp=sharing' target='_blank'>Brochure ↗</a>
+                        <a className="ml-[3.5rem] sm:ml-10 md:ml-20 text-2xl font-[300] text-[#c4c4c4bf] hover:text-[#f6f6f6d4] hover:cursor-pointer transition-all" href='https://drive.google.com/file/d/1x4MOfC9sVzDxaOhnl3jdXOkCR96weMlA/view?usp=drive_link' target='_blank'>Brochure ↗</a>
                         <div onClick={() => setNavbarOpen((prev) => !prev)} >
                             <Btn mode="dark" name="Close" icon="×" />
                         </div>

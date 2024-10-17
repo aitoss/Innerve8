@@ -274,13 +274,13 @@ export default function Footer() {
       <div className="footer">
         <div className="front-footer w-full flex justify-center items-center bg-[#121212] gap-12 p-3">
           <div className="btn flex relative items-center bg-[#f6f6f6] justify-center rounded-full cursor-pointer">
-            <div className="button-holder flex flex-row bg-[#f6f6f6] rounded-full">
+            {/* <div className="button-holder flex flex-row bg-[#f6f6f6] rounded-full">
               <BtnLink
                 name="Register Now! Visit Devfolio"
                 icon="↗"
                 href="https://innerve-eight.devfolio.co/"
               />
-            </div>
+            </div> */}
             <img
               src="/images/footer-spot.png"
               className="footer-spot z-2 hidden md:block"
@@ -345,7 +345,7 @@ export default function Footer() {
                 <div className="flex flex-col gap-5 mt-5 w-full">
                   <div className="w-full flex flex-col">
                     <p className="text-md w-full lg:text-start">
-                      Aakash Sharma
+                      Kaushal Vyas
                     </p>
                     <div
                       className="buttn2 tooltip w-full flex mt-2"
@@ -358,10 +358,10 @@ export default function Footer() {
                       <div className=" btn flex items-center justify-center gap-1 border border-white rounded-full p-1 cursor-pointer bg-black w-fit">
                         <div className="press">
                           <p className="press__inner1 text-white text-sm">
-                            +91 7340785879
+                          +91 8668952920
                           </p>
                           <p className="press__inner2 text-white text-sm">
-                            +91 7340785879
+                          +91 8668952920
                           </p>
                         </div>
                         <div className="rot w-[24px] h-[24px] flex items-center justify-center text-white border border-white rounded-full hover:rotate-45">
@@ -373,7 +373,7 @@ export default function Footer() {
 
                   <div className="w-full flex flex-col">
                     <p className="text-md w-full lg:text-start">
-                      Asmita Tripathi
+                    Deepshika Rawat
                     </p>
                     <div
                       className="buttn2 tooltip w-full flex mt-2"
@@ -386,10 +386,10 @@ export default function Footer() {
                       <div className=" btn flex items-center justify-center gap-1 border border-white rounded-full p-1 cursor-pointer bg-black w-fit">
                         <div className="press">
                           <p className="press__inner1 text-white text-sm">
-                            +91 7980558433
+                          +91 6398793447
                           </p>
                           <p className="press__inner2 text-white text-sm">
-                            +91 7980558433
+                          +91 6398793447
                           </p>
                         </div>
                         <div className="rot w-[24px] h-[24px] flex items-center justify-center text-white border border-white rounded-full hover:rotate-45">
